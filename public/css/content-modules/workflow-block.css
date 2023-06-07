@@ -1,0 +1,227 @@
+.workflowBlock {
+	background: #fff;
+	padding: 0 14px;
+}
+.workflowBlock .workflow_header {
+    overflow: hidden;
+}
+.workflowBlock .workflow_header h3 {
+    font-weight: normal;
+    float: left;
+    margin: 0 0 10px 0;
+    color: #3f556e;
+    font-size: 1.818em;
+}
+.workflowBlock span.close {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    height: 20px;
+    width: 20px;
+    background: url(../../images/icons/delete.gif) no-repeat;
+    cursor: pointer;
+}
+.workflowBlock .workflow_item {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 10px 0 0;
+    clear: both;
+    overflow: hidden;
+}
+.workflowBlock .workflow_list > .workflow_item:last-of-type {
+    border-bottom-width: 0;
+}
+.workflowBlock .workflow_item_head {
+    background: transparent;
+    margin: 0 0 0.7em 18px;
+}
+.workflowBlock .workflow_item_head > .ui-icon {
+    display: none;
+}
+.workflowBlock .wih_icon {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    vertical-align: middle;
+    background-image: url(../../images/icons/workflow_icons.png);
+    background-repeat: no-repeat;
+    line-height: 16px;
+    margin-left: -18px;
+}
+.workflowBlock .status-completed-success .wih_icon{
+    background-position: center top;
+}
+.workflowBlock .status-completed-failed .wih_icon{
+    background-position: center -16px;
+}
+.workflowBlock .status-continuing .wih_icon{
+    background-position: center -32px;
+}
+.workflowBlock .status-waiting .wih_icon {
+    background-position: center -64px;
+}
+.workflowBlock.arbitrary .status-continuing .wih_icon,
+.workflowBlock.arbitrary .status-waiting .wih_icon,
+.workflowBlock .unchecked .wih_icon, /*��� ���?*/
+.workflowBlock .incomplete .wih_icon {
+    background-position: center -48px;
+}
+.workflowBlock .wih_title {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    /*font-weight: bold;*/
+    margin-left: 0;
+    min-width: 100%;
+}
+.workflowBlock .status-completed-success .wih_title,
+.workflowBlock .status-completed-failed .wih_title {
+    color: #455b81;
+}
+
+.workflowBlock .status-continuing .wih_title {
+    color: #455b81;
+}
+
+.workflowBlock.arbitrary .status-continuing .wih_title,
+.workflowBlock.arbitrary .status-waiting .wih_title,
+.workflowBlock .incomplete .wih_title,
+.workflowBlock .unchecked .wih_title {
+    color: #516689;
+}
+.workflowBlock .status-waiting .wih_title {
+    color: #9a9a9a;
+    cursor: default;
+}
+
+.workflowBlock .wid_text {
+	font-size: 0.9em;
+}
+
+.workflowBlock .wid_text-comment {
+    padding: 10px;
+    margin: 2px 0;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+}
+
+.workflowBlock .wid_control_link li {
+    margin: .7em 0;
+}
+.workflowBlock .wid_control_link li:hover label {
+    text-shadow: rgba(0, 0, 0, .5) 0 0 1px;
+}
+.workflowBlock .wid_control_link a {
+    font-style: italic;
+}
+.workflowBlock .wid_control_link a.ui-selectmenu {
+    font-style: normal;
+}
+.workflowBlock .wid_control_link ul li {
+    list-style-type: none;
+    margin-left: -17px;
+    padding: 0 17px;
+	border: 0;
+}
+.page-context-accordion .ui-accordion-content .workflowBlock .wid_control_link ul li {
+	margin-left: -5px;
+}
+
+.workflowBlock .wid_control_link div {
+	height: 12px; 
+	width: 12px;
+	float: left;
+	margin: 2px 0 0 -14px;
+}
+.workflowBlock .wid_control_link .wid_control_link_next {
+    background: url("../../images/icons/workflow_actions_icons.png") no-repeat scroll 0 0 transparent;
+}
+.workflowBlock .wid_control_link .wid_control_link_fail {
+    background: url("../../images/icons/workflow_actions_icons.png") no-repeat scroll 0 -12px transparent;
+}
+.workflowBlock .wid_control_link .wid_control_link_success {
+    background: url("../../images/icons/workflow_actions_icons.png") no-repeat scroll 0 -24px transparent;
+}
+
+.workflowBlock .wid_control_link li span {
+	color: #888;
+	font-style: italic;
+}
+
+.workflowBlock .hm-action > label,
+.workflowBlock .hm-action > form {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+}
+.workflowBlock .hm-action > label {
+    /*width: 70%;*/
+}
+.workflowBlock .hm-action > form {
+    width: 29%;
+    margin-left: 1%;
+}
+.ie7 .workflowBlock .hm-action > form {
+    margin-left: 0.99%;
+}
+.workflowBlock .hm-action input,
+.workflowBlock .hm-action select,
+.workflowBlock .hm-action .ui-selectmenu,
+.workflowBlock .hm-action textarea {
+    width: 100%;
+    max-width: 100%;
+    resize: none;
+}
+.workflowBlock .hm-action input,
+.workflowBlock .hm-action .ui-selectmenu,
+.workflowBlock .hm-action textarea {
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+}
+.workflowBlock .hm-action-read .no-data {
+    font-style: italic;
+    color: #999;
+}
+.workflowBlock .wid_d_clear {
+    clear: both;
+}
+
+.workflowBlock .hm-action-select:before,
+.workflowBlock .hm-action-select {
+    display: none; /*todo*/
+}
+
+.workflowBlock .hm-workflow-actions a.hm-workflow-action {
+    display: inline-block;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+.hm-workflow-action.hm-icon-pencil {
+    background-position: 0 0;
+    background-image: url('/images/blog/controls-edit.png');
+}
+.hm-workflow-action.hm-icon-attach {
+    background-position: 0 0;
+    background-image: url('/images/blog/controls-attach.png');
+}
+
+.workflow_item_description  {
+    border: none !important;
+    margin: 0 !important;
+    overflow-x: hidden;
+}
+
+.page-context-accordion .ui-accordion-content ul {
+    margin: 0 10px;
+}
+
+.page-context-accordion .ui-accordion-content ul li {
+    padding-bottom: 3px;
+}

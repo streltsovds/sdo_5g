@@ -1,0 +1,1 @@
+<hm-calendar :data-calendar='<?php echo $this->data?>'/>

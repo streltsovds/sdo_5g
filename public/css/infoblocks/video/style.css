@@ -1,0 +1,41 @@
+#videoBlock,
+#videoBlock .ui-widget-content {
+  color: #fff;
+}
+
+#videoBlock a,
+#videoBlock a:hover,
+#videoBlock a:visited,
+#videoBlock a:active {
+  color: #fff;
+}
+
+#videoBlock .ui-portlet-titlebar,
+#videoBlock .ui-portlet-titlebar-wrapper, 
+#videoBlock .ui-portlet-body-wrapper,
+#videoBlock .ui-portlet-titlebar .bg,
+#videoBlock .ui-portlet-titlebar .h3 {
+  background-color: #6b6b6b !important;
+  border: 0;
+  margin: 0;
+}
+
+#videoBlock .bottom-links {
+
+}
+
+#videoBlock .more span {
+  color: #ccc;
+  display: block;
+  float: left;
+  width: 120px;
+  font-size: 1.2em;
+  margin-top: 5px; 
+}
+
+#videoBlock .more ul {
+  display: block;
+  float: left;
+  list-style: none;
+  margin-left: 5px;
+}

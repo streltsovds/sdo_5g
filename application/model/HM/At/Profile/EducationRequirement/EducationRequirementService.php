@@ -1,0 +1,4 @@
+<?php
+class HM_At_Profile_EducationRequirement_EducationRequirementService extends HM_Service_Abstract
+{
+}

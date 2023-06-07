@@ -1,0 +1,90 @@
+.hm-proctoring-start {
+    display: flex;
+    flex-direction: column;
+}
+.hm-proctoring-start__title {
+    font-weight: 300;
+    font-size: 34px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: #2A2A2A;
+    padding: 16px;
+    padding-top: 26px;
+}
+.hm-proctoring-start__subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: rgb(30, 30, 30);
+    padding: 0 16px;
+    font-weight: 300;
+}
+.hm-proctoring-start__comment {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #1E1E1E;
+    letter-spacing: 0.02em;
+}
+.hm-proctoring-start .v-list-item__content {
+    flex-wrap: nowrap;
+}
+.hm-proctoring-start__navpanel {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    padding-bottom: 26px;
+    margin-top: 40px;
+}
+.hm-proctoring-start__button,
+.hm-proctoring-start__button .ui-button-text {
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hm-proctoring-start__button.ui-button-disabled,
+.hm-proctoring-start__button.ui-button-disabled:hover
+.hm-proctoring-start__button.ui-button-disabled:active {
+    opacity: 0.4 !important;
+    cursor: default;
+}
+
+.hm-proctoring-start__button_start {
+    border-radius: 4px;
+    padding: 4px 25px;
+    width: 125px;
+    background-color: #ff9800 !important;
+    border-color: #ff9800 !important;
+    color: #ffffff !important;
+    -webkit-box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    margin-right: 26px;
+}
+
+.hm-proctoring-start__button_start:hover {
+    opacity: 0.9;
+}
+.hm-proctoring-start__button_start:active {
+    opacity: 0.7;
+}
+
+.hm-proctoring-start__button_stop:hover {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.hm-proctoring-start__button_stop:active {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+
+.hm-proctoring-start__button_stop {
+    padding: 6px 25px;
+    width: 120px;
+    background: #ffffff!important;
+    border: 1px solid #70889E;
+    border-radius: 4px;
+    color: #1E1E1E !important;
+}
+

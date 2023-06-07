@@ -1,0 +1,18 @@
+// workflow color
+$waitingStatusWorkflow:     #e0e0e0
+$successStatusWorkflow:     #4caf50
+$continuingStatusWorkflow:  #2196f3
+$fialedStatusWorlflow:      #ff5252
+
+$letterSpacingDefault:      0.02rem
+$lineHeightMultiplierDefault:   1.2
+
+/**
+ * Размеры переносим из макета figma в расчёте 16 px/rem
+ * based of https://gist.github.com/garystorey/5920051
+ */
+@function pxToRem($sizePx)
+  $remSize: $sizePx / 16px
+  //Default font size on html element is 100%, equivalent to 16px;
+  @return #{$remSize}rem
+

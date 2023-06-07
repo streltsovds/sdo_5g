@@ -1,0 +1,115 @@
+//#hm-page-support-content.hm-page-support-content {
+//  height: 536px;
+//  width: 600px;
+//  background: #70889E;
+//  .hm-page-support-content__body {
+//    width: 100%;
+//    height: 536px;
+//    background: #70889e;
+//  }
+//}
+//
+//
+//.hm-page-support-absolute {
+//  position: absolute;
+//  bottom: 0;
+//  left: 0;
+//  z-index: 500000;
+//}
+//
+//.hm-page-support-absolute__header {
+//  width: 100%;
+//  height: 48px;
+//  background: #4F4F4F;
+//  margin-bottom: 0 !important;
+//  > div {
+//    align-items: center;
+//    > a {
+//      display: flex;
+//      align-items: center;
+//      .text-page {
+//        margin-left: 12px;
+//      }
+//    }
+//  }
+//}
+//
+//
+//.request-form {
+//  padding: 25px 26px 0 26px;
+//  display: flex;
+//  flex-direction: column;
+//  align-items: start;
+//  justify-content: center;
+//  position: relative;
+//  #request-form {
+//    width: 100%;
+//    display: flex;
+//    flex-direction: column;
+//    align-items: start;
+//    .request-form__theme-label {
+//      margin-bottom: 9px;
+//    }
+//    .request-form__theme-form {
+//      width: 100%;
+//      height: 34px;
+//      margin-bottom: 26px;
+//      > input {
+//        width: 100%;
+//        height: 100%;
+//        background: #FFFFFF;
+//        border-radius: 2px;
+//        color: black;
+//        padding: 2px 5px;
+//        box-sizing: border-box;
+//      }
+//    }
+//    .request-form__desc-label, .request-form__result-label {
+//      margin-bottom: 9px;
+//      > label {
+//        > span {
+//          color: #FFC850;
+//        }
+//      }
+//    }
+//    .request-form__desc-form, .request-form__result-form {
+//      width: 100%;
+//      height: 80px;
+//      margin-bottom: 26px;
+//      > textarea {
+//        width: 100%;
+//        height: 100%;
+//        background: #FFFFFF;
+//        border-radius: 2px;
+//        color: black;
+//        padding: 2px 5px;
+//        box-sizing: border-box;
+//      }
+//    }
+//    .request-form__button {
+//      margin-top: 27px;
+//      > input {
+//        width: 127px;
+//        height: 38px;
+//        color: #FFFFFF;
+//        border-radius: 4px;
+//      }
+//      > input:nth-child(1) {
+//        background: #FF9800;
+//        margin-right: 26px;
+//      }
+//      > input:nth-child(2) {
+//        background: #666666;
+//      }
+//    }
+//    > a {
+//      color: #FFFFFF;
+//      text-decoration: none;
+//      display: flex;
+//      justify-content: center;
+//      align-items: center;
+//      position: relative;
+//      right: 0;
+//    }
+//  }
+//}

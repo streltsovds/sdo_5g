@@ -1,0 +1,187 @@
+.workflow{
+    background: none repeat scroll 0 0 #FFFFFF;
+    left: 500px;
+    padding: 15px 25px;
+    position: absolute;
+    top: 200px;
+	box-shadow: 0 0 5px gray;
+	-webkit-box-shadow:0 0 5px gray;
+	-moz-box-shadow:0 0 5px gray;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius:5px;
+	-khtml-border-radius:5px;
+}
+.ie7 .workflow,
+.ie8 .workflow{
+	border:1px solid gray;
+}
+.workflow_corner{
+	position:absolute;
+	height:5px;
+	width:7px;
+	background:url(/images/icons/workflow_corner.png) no-repeat center center;
+	top: 85px;
+	left:-5px;
+}
+.workflow_header{
+	overflow:hidden;
+}
+.workflow_header h1{
+	font-weight:normal;
+	float:left;
+	margin:0 0 10px 0;
+	color:#3f556e;
+	font-size:1.818em;
+}
+.workflow_header span.close{
+	display:inline-block;
+	float:right;
+	height:20px;
+	width:20px;
+	background:url(/images/icons/delete.gif) no-repeat;
+	cursor:pointer;
+}
+.workflow_item{
+	width:530px;
+	border-bottom:1px solid #f0f0f0;
+	padding: 10px 0;
+	clear:both;
+	overflow:hidden;
+}
+.workflow_item_head{
+	overflow:hidden;
+}
+.workflow .wih_icon{
+	height:16px;
+	width:16px;
+	float:left;
+	margin: 0 20px 0 0;
+}
+.success .wih_icon{
+	background:url(/images/icons/workflow_icons.png) no-repeat top center;	
+}
+.fail .wih_icon{
+	background:url(/images/icons/workflow_icons.png) no-repeat center -16px;
+}
+.complete .wih_icon{
+	background:url(/images/icons/workflow_icons.png) no-repeat center -32px;
+}
+.incomplete .wih_icon{
+	background:url(/images/icons/workflow_icons.png) no-repeat center -48px;
+}
+.unchecked .wih_icon{
+	background:url(/images/icons/workflow_icons.png) no-repeat center -48px;
+}
+.freeze .wih_icon{
+	background:url(/images/icons/workflow_icons.png) no-repeat center -64px;
+}
+.wih_title{
+	float:left;
+	font-weight:bold;
+	cursor:pointer;
+}
+.wih_time{
+	float:right;
+	font-size:0.909em;
+	color:#a4a4a4;
+}
+.wih_time span{
+	display:block;
+	text-align:right;
+	color:#000;
+}
+.fail .wih_time{
+	color:#c55050;
+}
+.success .wih_title,
+.fail .wih_title{
+	color:#455b81;
+}
+.complete .wih_title{
+	color:#2b5eae;		
+}
+.success .wih_time{
+	color:#a4a4a4;
+}
+.incomplete .wih_title,
+.unchecked .wih_title{
+	color:#516689;
+}
+.freeze .wih_title{
+	color:#9a9a9a;
+	cursor:default;
+}
+.workflow_item_description{
+	display:none;
+}
+.workflow .wid_text{
+	width:315px;
+	float:left;
+	padding:20px 0 0 0;
+	color:#4a4a4a;
+}
+.workflow .wid_text hr{
+	border-top:1px dashed #a3a3a3;
+	margin: 10px 0 5px 0;
+}
+.wid_control_link a{
+	font-style: italic;
+	margin: 0 5px 0 0;
+}
+.wid_deadline{
+	float:right;
+	width:200px;	
+}
+.wid_d_time{
+	text-align:right;
+	font-size:0.909em;
+}
+.wid_d_full{
+	border:1px solid #b1bcca;
+	background:#f1f6fc;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius:3px;
+	-khtml-border-radius:3px;
+	overflow:hidden;
+	padding:10px;
+	margin:15px 0 0 0;	
+}
+.wid_d_full_se{
+	float:left;
+	width:50%;
+	color:#8d8d8d;
+	overflow:hidden;
+}
+.wid_d_full_se span{
+	color:#000;
+}
+.wid_d_full_desc{
+	clear:both;
+	overflow:hidden;
+	margin:10px 0 0 0;
+}
+
+.wid_d_full .complete div{
+	color:#6eb369;
+	font-weight:bold;
+}
+.wid_d_full .delay div{
+	color:#8f8f8f;
+	font-weight:bold;
+}
+.wid_d_full .not div{
+	color:#ba4747;
+	font-weight:bold;
+}
+.workflow .wid_d_full .wid_d_full_desc_time{
+	color:#a3a3a3;
+	font-weight:normal;	
+}
+.wid_d_full_desc_time span{
+	color:#000;
+}
+.wid_d_clear{
+	clear:both;
+}

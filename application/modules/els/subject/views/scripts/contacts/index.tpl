@@ -1,0 +1,1 @@
+<hm-contacts :subject-id="JSON.parse(view.subjectId)" :enable-personal-info="view.enablePersonalInfo" :disable-messages="view.disableMessages" />

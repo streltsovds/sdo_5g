@@ -1,0 +1,209 @@
+@use 'sass:map'
+@import "./variables"
+
+.sidebar-chat
+    width:100%
+    color: map.get($colors, 'textBlack')
+    height: 100%
+    &__img
+      width: 100%
+      height: 164px
+      background: #a8c7ec
+      position: relative
+      display: flex
+      justify-content: center
+      > img
+        margin-top: 20px
+        width: 100px
+
+      &-edit
+        position: absolute
+        bottom: -24px
+        right: 52px
+        z-index: 100
+
+
+      &-info
+        width: 100%
+        min-height: 56px
+        position: absolute
+        bottom: 0
+        left: 0
+        display: flex
+        align-items: center
+        background: rgba(30, 30, 30, 0.32)
+        mix-blend-mode: normal
+        backdrop-filter: blur(30px)
+        padding: 11px 16px
+        > span
+          margin-top: 4px
+          font-weight: 500
+          font-size: 14px
+          line-height: 17px
+          letter-spacing: 0.02em
+          color: #FFFFFF
+
+    &__image
+      width: 100%
+      height: 164px
+      background-position: center
+      background-size: cover
+      background-repeat: no-repeat
+      position: relative
+      display: flex
+      justify-content: center
+
+      &-edit
+        position: absolute
+        bottom: -24px
+        right: 52px
+        z-index: 100
+
+
+      &-info
+        width: 100%
+        height: 76px
+        position: absolute
+        bottom: 0
+        left: 0
+        display: flex
+        align-items: center
+        justify-content: center
+        background: rgba(30, 30, 30, 0.5)
+        > span
+          margin-top: 4px
+          font-weight: 500
+          font-size: 16px
+          line-height: 24px
+          letter-spacing: 0.02em
+          color: #ffffff
+          text-align: center
+    &__info
+      width: 100%
+      padding: 16px
+      margin-top: 16px
+      max-height: 60% !important
+      &-title
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        > svg
+          margin-right: 12px
+
+        > span
+          font-weight: 500
+          font-size: 16px
+          line-height: 24px
+          letter-spacing: 0.02em
+          color: #1e1e1e
+      &-body
+        width: 100%
+        height: auto
+        padding: 0 0 25px 12px
+        margin-top: 17px
+        &-file
+          min-height: 22px
+          display: flex
+          justify-content: flex-start
+          align-items: center
+          &__icon
+            width: 12%
+            cursor: default
+            text-decoration: none
+            > span
+              font-weight: normal
+              font-size: 14px
+              line-height: 21px
+              letter-spacing: 0.02em
+              color: #1e1e1e
+              cursor: default
+          &__title
+            width: 80%
+            cursor: default
+            text-decoration: none
+            > span
+              font-weight: normal
+              font-size: 14px
+              line-height: 21px
+              letter-spacing: 0.02em
+              color: #1e1e1e
+              cursor: default
+          > span
+            font-weight: normal
+            font-size: 14px
+            line-height: 21px
+            letter-spacing: 0.02em
+            color: #1e1e1e
+            text-transform: capitalize
+            cursor: default
+          > a
+            text-decoration: none
+            cursor: pointer
+            > span
+              cursor: pointer
+
+            > div
+              margin-right: 12px
+          &:hover
+            span
+              color: #2960a0
+
+            > a > span
+              color: #2960a0
+        &-file:not(:first-child)
+          margin-top: 17px
+      &-add
+        width: 100%
+        height: 21px
+        display: flex
+        justify-content: center
+        margin: 24px 0 0 12px
+        > a
+          text-decoration: none
+          width: 100%
+          height: 100%
+          display: flex
+          align-items: center
+          > svg
+            margin-right: 12px
+
+          > span
+            font-weight: 400
+            font-size: 14px
+            line-height: 24px
+            letter-spacing: 0.02em
+            color: #70889e
+    &__base
+      width: 100%
+      height: 36px
+      display: flex
+      justify-content: center
+      align-items: center
+      margin: 34px 0 15px 0
+      &-title
+        width: 294px
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        text-decoration: none
+        border: 1px solid #4A90E2
+        border-radius: 4px
+        .settings
+          margin-right: 10px
+
+        > span
+          font-weight: 500
+          font-size: 14px
+          line-height: 21px
+          letter-spacing: 0.02em
+          color:  #000000
+    &__form
+      width: 100%
+      max-height: 140px
+      height: auto
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 0 16px
+      margin-top: 25px

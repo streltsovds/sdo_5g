@@ -1,0 +1,9 @@
+.hm-mobile-app {
+  .hm-material-responsive {
+    padding: 0 !important;
+
+    &__panel {
+      display: none;
+    }
+  }
+}

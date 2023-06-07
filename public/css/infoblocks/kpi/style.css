@@ -1,0 +1,187 @@
+#kpi .kpi-desc {
+	padding: 0 10px;
+}
+
+#kpi {
+	width: 100%;
+}
+
+#kpi * {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#kpi .kpi__progress-bar {
+	width: 70%;
+	height: 20px;
+}
+
+#kpi .kpi__progress-bar div {
+	margin: 0;
+	width: 100%;
+	max-width: 100%;
+}
+
+#kpi .kpi__progress {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 50px;
+	width: 100%;
+}
+
+#kpi .kpi__progress-title {
+	font-weight: normal;
+	font-style: italic;
+}
+
+#kpi .kpi__header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+}
+
+#kpi .kpi__header-column {
+	width: 20%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+#kpi .kpi__header-column--column-1 {
+	width: 40%;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+
+#kpi .kpi__body {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	min-height: 100px;
+	position: relative;
+}
+
+#kpi .kpi__body-column {
+	width: 20%;
+}
+
+#kpi .kpi__body-column>span {
+	margin: 0;
+}
+
+#kpi .kpi__body-column>div {
+	margin: 0;
+}
+
+#kpi .kpi__body-column--column-1 {
+	width: 40%;
+}
+
+#kpi .kpi__body-column--span-2 {
+	width: 20%;
+	margin-left: 20%;
+}
+
+#kpi .kpi__units {
+	bottom: 40px;
+	left: 60%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	position: absolute;
+}
+
+#kpi .score_red,
+#kpi .score_gray {
+	border-radius: 30px;
+	width: 60px;
+	height: 60px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+#kpi .score_gray span,
+#kpi .score_red span {
+	width: auto;
+	height: auto;
+}
+
+#kpi .score_gray input {
+	height: 30px;
+	padding: 2px;
+}
+
+#kpi .check img {
+	display: none;
+}
+
+#kpi .check {
+	width: 40px;
+	height: 40px;
+	background-image: url('/images/kpi-checkboxes/unchecked.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	-webkit-transition: background 0.3s ease-in-out;
+	-o-transition: background 0.3s ease-in-out;
+	transition: background 0.3s ease-in-out;
+}
+
+#kpi .check:not(.check-checked):hover {
+	background-image: url('/images/kpi-checkboxes/checked.svg');
+}
+
+/* #kpi .check.check-checked:hover {
+	background-image: url('/images/kpi-checkboxes/unchecked.svg');
+} */
+
+#kpi .check.check-checked {
+	width: 40px;
+	height: 40px;
+	background-image: url('/images/kpi-checkboxes/checked.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#kpi .score_checkbox {
+	width: 60px;
+	height: 60px;
+}
+
+#kpi .tComment {
+    height: 60px;
+    width: 100%;
+	min-width: 120px;
+    background: none;
+    border: 1px solid #ccc;
+    display: block;
+	font-size: 12px;
+	color: #555;
+}

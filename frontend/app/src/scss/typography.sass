@@ -1,0 +1,125 @@
+@import "_variables"
+
+/**
+ * @see url /demo/vue/fonts
+ * @see https://vuetifyjs.com/en/styles/typography - оригинальный классы vuetify
+ *
+ * @see frontend/app/node_modules/vuetify/src/styles/elements/_typography.sass
+ * @see frontend/app/node_modules/vuetify/src/styles/settings/_variables.scss`, $headings
+ * @see frontend/app/src/components/demo/demo-hm-typography.vue
+ *
+ * Примечания:
+ * .headline-3, .headline-2 - добавочные стили
+ * .subheading-2 вместо .subtitle-1 (также переопределение для совместимости)
+ * .subheading-1 вместо .subtitle-2
+ * .body-1 крупнее .body-2 в оригинале
+ */
+.v-application
+  .display-4
+    // Во vuetify это h1, но у нас не используется. у нас h1 соответствует headline-3
+    // По-умолчанию соотношение размера шрифта и высоты строки 1.2
+    font-weight: 300
+    font-size: pxToRem(112px) !important // 112px / ~16(px/rem)
+    line-height: pxToRem(112px * $lineHeightMultiplierDefault)
+    letter-spacing: $letterSpacingDefault
+
+  .display-3
+    font-weight: 300
+    font-size: pxToRem(56px) !important
+    line-height: pxToRem(56px * $lineHeightMultiplierDefault)
+    letter-spacing: $letterSpacingDefault
+
+  .display-2
+    font-weight: 300
+    font-size: pxToRem(45px) !important
+    line-height: pxToRem(45px * $lineHeightMultiplierDefault)
+    letter-spacing: $letterSpacingDefault
+
+  .display-1
+    font-weight: 300
+    font-size: pxToRem(34px) !important
+    line-height: pxToRem(34px * $lineHeightMultiplierDefault)
+    letter-spacing: $letterSpacingDefault
+
+  // добавочный класс
+  .headline-3,
+  .hm-user-content h1
+    font-weight: 300
+    font-size: pxToRem(34px) !important
+    line-height: pxToRem(34px * $lineHeightMultiplierDefault)
+    letter-spacing: $letterSpacingDefault
+
+  // добавочный класс
+  .headline-2,
+  .hm-user-content h2
+    font-weight: 500
+    font-size: pxToRem(30px) !important
+    line-height: pxToRem(30px * $lineHeightMultiplierDefault)
+    letter-spacing: $letterSpacingDefault
+
+  .headline,
+  .hm-user-content h3
+    font-weight: 300
+    font-size: pxToRem(24px) !important
+    line-height: pxToRem(24px * $lineHeightMultiplierDefault)
+    letter-spacing: $letterSpacingDefault
+
+  .title,
+  .hm-user-content h4
+    font-weight: 300
+    font-size: pxToRem(20px) !important
+    line-height: pxToRem(20px * $lineHeightMultiplierDefault)
+    letter-spacing: $letterSpacingDefault
+
+
+  .subtitle-1,
+  .subheading-2,
+  .hm-user-content h5
+    font-weight: 300
+    font-size: pxToRem(16px) !important
+    line-height: pxToRem(16px * $lineHeightMultiplierDefault)
+    letter-spacing: $letterSpacingDefault
+
+  .subtitle-2,
+  .subheading,
+  .hm-user-content h6
+    font-weight: 300
+    font-size: pxToRem(16px) !important
+    line-height: pxToRem(16px * $lineHeightMultiplierDefault)
+    letter-spacing: $letterSpacingDefault
+
+  // NOTE в оригинальных vuetify https://vuetifyjs.com/en/styles/typography
+  //   .body-1 крупнее .body-2 и имеет то же начертание
+  .body-2
+    font-weight: 300
+    font-size: pxToRem(14px) !important
+    line-height: pxToRem(14px * 1.5)
+    letter-spacing: $letterSpacingDefault
+
+  .body-1,
+  .hm-user-content
+    font-weight: 300
+    font-size: pxToRem(14px) !important
+    line-height: pxToRem(14px * 1.5)
+    letter-spacing: $letterSpacingDefault
+
+
+  // добавлен, пока не используется
+  ._info
+    font-weight: 300
+    font-size: pxToRem(10px) !important
+    line-height: pxToRem(10px * $lineHeightMultiplierDefault)
+    letter-spacing: pxToRem(1px)
+    color: #000
+
+  .hm-user-content a
+    text-decoration: none
+
+  // TODO в оригинале https://vuetifyjs.com/en/styles/typography
+  //   есть также класс .overline
+
+  // .hm-user-content a
+    // color: задаётся в hm-app-styles.vue
+@media(max-width: 768px)
+  .v-application .body-1, .v-application .hm-user-content
+    padding: 0 16px

@@ -1,0 +1,570 @@
+.strawberry-field { }
+.strawberry-field .strawberry-field-wrapper {
+	margin: 0 39px 0;
+}
+.strawberry-field h1 {
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c5c8ca), color-stop(100%, #93989c));
+	background-image: -webkit-linear-gradient(top, #c5c8ca, #93989c);
+	background-image:    -moz-linear-gradient(top, #c5c8ca, #93989c);
+	background-image:     -ms-linear-gradient(top, #c5c8ca, #93989c);
+	background-image:      -o-linear-gradient(top, #c5c8ca, #93989c);
+	background-image:         linear-gradient(top, #c5c8ca, #93989c);
+	filter: progid:DXImageTransform.Microsoft.Gradient(enabled=true, startColorstr=#ffc5c8ca, endColorstr=#ff93989c, gradientType=0);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Gradient(enabled=true, startColorstr=#ffc5c8ca, endColorstr=#ff93989c, gradientType=0)";
+	*zoom: 1;
+	margin: 0;
+	padding: 10px 39px 13px;
+	font-size: 2.5em;
+	font-weight: normal;
+	text-shadow: #686c6f 0px -1px 1px;
+	color: #fff;
+	position: relative;
+}
+.strawberry-field h1 .return {
+	display: block;
+	width: 16px;
+	height: 17px;
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	margin-top: -8px;
+	background: url(../../images/content-modules/tests/break.gif);
+}
+.strawberry-field h2,
+.strawberry-field h3 {
+	margin: 1em 0;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.strawberry-field .strawberry-field-card-label {
+    float: left;
+    width: 200px;
+    clear: both;
+	margin: 2px 0;	
+}
+.strawberry-field .strawberry-field-card-value {
+    float: left;
+	margin: 2px 0;
+}
+.strawberry-field .strawberry-field-card-value dt {
+    display: none;
+}
+.strawberry-field .textarea-fields {
+	margin-top: 2em;
+}
+.strawberry-field .textarea-fields .textarea-wrapper {
+	*zoom: 1;
+	border: 1px solid #b6bfc3;
+	padding: 0.5em;
+	background-color: #e6eaec;
+	-moz-border-radius: 2px;
+	     border-radius: 2px;
+}
+.strawberry-field .textarea-fields label {
+	color: #5d6970;
+	margin: 0 0 0.5em;
+	display: block;
+}
+.strawberry-field .textarea-fields textarea {
+	border: 0 solid;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	*zoom: 1;
+	background: transparent;
+	height: 10em;
+}
+.strawberry-field .textarea-fields textarea.placeholder {
+	color: #bbb;
+}
+.strawberry-field .textarea-fields textarea::-webkit-input-placeholder {
+	color: #bbb;
+}
+.strawberry-field .textarea-fields textarea:-moz-placeholder {
+	color: #bbb;
+}
+.strawberry-field .form-submit {
+	text-align: center;
+	font-size: 1.3em;
+}
+.document-blank #main .els-box,
+.document-blank #main .els-content {
+	margin: 0;
+	display: none;
+}
+.document-blank .error-box {
+	margin: 0.5em;
+}
+.document-blank #main .els-content {
+	display: block;
+}
+
+
+.strawberry-audit .table-wrapper {
+	border: 1px solid #67b4ce;
+	-moz-border-radius: 5px 5px 0 0;
+	     border-radius: 5px 5px 0 0;
+	padding: 1em;
+}
+.strawberry-audit .table-wrapper table {
+	width: 100%;
+	border: 0 solid;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 1.2em;
+}
+.strawberry-audit .table-wrapper table th,
+.strawberry-audit .table-wrapper table td {
+	padding: 0;
+	text-align: center;
+}
+.strawberry-audit .table-wrapper table th {
+	border: 0 dotted #8b9499;
+	vertical-align: middle;
+	font-weight: normal;
+	font-style: italic;
+	color: #425462;
+	line-height: 1;
+	padding: 0.5em 0.3em;
+}
+.strawberry-audit .table-wrapper table th.task,
+.strawberry-audit .table-wrapper table td.task {
+	text-align: left;
+	padding-left: 0;
+}
+.strawberry-audit .table-wrapper table td.custom {
+    font-style: italic;
+}
+
+.strawberry-audit .table-wrapper table tr.new-criteria td.task em,
+.strawberry-audit .table-wrapper table tr.new-criteria td.task input {
+	font-style: italic;
+}
+.strawberry-audit .table-wrapper table tr.added-criteria td.task input {
+	width: 100%;
+	border: 0 solid;
+	padding: 0;
+}
+.strawberry-audit .table-wrapper table tr.new-criteria .count-applicable .input-wrapper,
+.strawberry-audit .table-wrapper table tr.new-criteria .count-achieved .input-wrapper,
+.strawberry-audit .table-wrapper table tr.new-criteria .measured .value {
+	visibility: hidden;
+}
+.strawberry-audit .table-wrapper table th.count {
+	border-left-width: 1px;
+	border-right-width: 1px;
+	vertical-align: top;
+	padding-top: 0;
+}
+.strawberry-audit .table-wrapper table th.task,
+.strawberry-audit .table-wrapper table th.measured,
+.strawberry-audit .table-wrapper table th.count-applicable,
+.strawberry-audit .table-wrapper table th.count-achieved {
+	border-bottom-width: 1px;
+}
+.strawberry-audit .table-wrapper table th.count-applicable,
+.strawberry-audit .table-wrapper table th.count-achieved {
+	border-width: 1px;
+}
+.strawberry-audit .table-wrapper table th.count-applicable {
+	border-right-width: 1px;
+}
+.strawberry-audit .table-wrapper table th.count-achieved {
+	border-left-width: 1px;
+}
+.strawberry-audit .table-wrapper table th.count-applicable,
+.strawberry-audit .table-wrapper table th.count-achieved,
+.strawberry-audit .table-wrapper table th.measured {
+	width: 7em;
+}
+.strawberry-audit .table-wrapper table td {
+	vertical-align: middle;
+	padding: 0.2em;
+}
+.strawberry-audit .table-wrapper table tr.even td {
+	background-color: #f2f2f2;
+}
+.strawberry-audit .table-wrapper table td.task .input-wrapper,
+.strawberry-audit .table-wrapper table td.count .input-wrapper {
+	border: 1px solid #b6bfc3;
+	display: block;
+	margin: 0 auto;
+	padding: 2px;
+	-moz-border-radius: 3px;
+	     border-radius: 3px;
+}
+.strawberry-audit .table-wrapper table td.count .input-wrapper {
+	width: 4em;
+	font-size: 0.9em;
+	background: #e6eaec;
+}
+.strawberry-audit .table-wrapper table td.task input,
+.strawberry-audit .table-wrapper table td.count input {
+	border: 0 solid;
+	padding: 0;
+	margin: 0;
+	background: transparent;
+	width: 100%;
+	-webkit-appearance: button;
+	display: block;
+}
+.strawberry-audit .table-wrapper table td.count input {
+	line-height: 1;
+	text-align: center;
+}
+.strawberry-audit .table-wrapper table td.count input:focus {
+	outline: none;
+	box-shadow: 0 0 1px 1px orange;
+	-moz-border-radius: 1px;
+	     border-radius: 1px;
+}
+.strawberry-audit input::-webkit-outer-spin-button,
+.strawberry-audit input::-webkit-inner-spin-button,
+.strawberry-field-coaching input::-webkit-outer-spin-button,
+.strawberry-field-coaching input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+.strawberry-audit .table-wrapper table td.measured {
+	font-weight: bold;
+}
+@-webkit-keyframes goood {
+	from {
+		background-color: transparent;
+		color: inherit;
+	}
+	50% {
+		background-color: green;
+		color: white;
+	}
+	to {
+		background-color: transparent;
+		color: inherit;
+	}
+}
+@-moz-keyframes goood {
+	from {
+		background-color: transparent;
+		color: inherit;
+	}
+	50% {
+		background-color: green;
+		color: white;
+	}
+	to {
+		background-color: transparent;
+		color: inherit;
+	}
+}
+@-ms-keyframes goood {
+	from {
+		background-color: transparent;
+		color: inherit;
+	}
+	50% {
+		background-color: green;
+		color: white;
+	}
+	to {
+		background-color: transparent;
+		color: inherit;
+	}
+}
+@-o-keyframes goood {
+	from {
+		background-color: transparent;
+		color: inherit;
+	}
+	50% {
+		background-color: green;
+		color: white;
+	}
+	to {
+		background-color: transparent;
+		color: inherit;
+	}
+}
+@keyframes goood {
+	from {
+		background-color: transparent;
+		color: inherit;
+	}
+	50% {
+		background-color: green;
+		color: white;
+	}
+	to {
+		background-color: transparent;
+		color: inherit;
+	}
+}
+.strawberry-audit .table-wrapper table td.measured.good {
+	-webkit-animation-iteration-count: infinite;
+	   -moz-animation-iteration-count: infinite;
+	    -ms-animation-iteration-count: infinite;
+	     -o-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	   -moz-animation-timing-function: ease-in-out;
+	    -ms-animation-timing-function: ease-in-out;
+	     -o-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+	-webkit-animation-duration: 1.4s;
+	   -moz-animation-duration: 1.4s;
+	    -ms-animation-duration: 1.4s;
+	     -o-animation-duration: 1.4s;
+	        animation-duration: 1.4s;
+	-webkit-animation-name: goood;
+	   -moz-animation-name: goood;
+	    -ms-animation-name: goood;
+	     -o-animation-name: goood;
+	        animation-name: goood;
+}
+
+.strawberry-audit .textarea-fields > div {
+	width: 49.4%;
+}
+.strawberry-audit .textarea-fields > div.first {
+	float: left;
+}
+.strawberry-audit .textarea-fields > div.second {
+	float: right;
+}
+
+
+
+.strawberry-field-coaching { }
+.strawberry-field-coaching .section {
+	width: 49.5%;
+	border: 1px solid black;
+	-moz-border-radius: 5px 5px 0 0;
+	     border-radius: 5px 5px 0 0;
+	float: left;
+}
+.strawberry-field-coaching .section.a {
+	border-color: #67b4ce;
+}
+.strawberry-field-coaching .section.b {
+	border-color: #f2d53a;
+	float: right;
+}
+.strawberry-field-coaching .section > .wrapper {
+	padding: 1em 0 1em 1em;
+}
+.strawberry-field-coaching .section h3 {
+	font-size: 1.2em;
+	margin: 0 1em 0.5em 0;
+}
+.strawberry-field-coaching .section h4 {
+	font-size: 1.2em;
+	color: #7a8694;
+	font-weight: normal;
+	font-style: italic;
+	margin: 0.5em 0;
+}
+.strawberry-field-coaching .section .tree {
+	height: 18em;
+	overflow: auto;
+	border-bottom: 1px solid #cecece;
+	*zoom: 1;
+	position: relative;
+}
+.strawberry-field-coaching .section .tree ul {
+	visibility: hidden;
+}
+.strawberry-field-coaching .section .tree ul.dynatree-container,
+.strawberry-field-coaching .section .tree ul.dynatree-container ul {
+	visibility: visible;
+}
+.strawberry-field-coaching .section .tree .dynatree-checkbox {
+	display: none;
+}
+.strawberry-field-coaching .section .tree .dynatree-selected,
+.strawberry-field-coaching .section .tree .dynatree-selected a {
+	color: red;
+}
+.strawberry-field-coaching .section .selected {
+	margin-right: 1em;
+}
+.strawberry-field-coaching .section .selected ul {
+	margin: 0;
+	padding: 0 13px;
+	list-style-type: none;
+	background-color: #eaf4fc;
+	border: 1px solid #d0dee9;
+	-moz-border-radius: 2px;
+	     border-radius: 2px;
+}
+.strawberry-field-coaching .section .selected li {
+	min-height: 3em;
+	border-bottom: 1px solid #d0dee9;
+	position: relative
+}
+.strawberry-field-coaching .section .selected li .title {
+	display: block;
+	padding: 10px 0;
+	margin-right: 55px;
+	word-wrap: break-word;
+}
+.strawberry-field-coaching .section .selected li .custom {
+	font-style: italic;
+}
+.strawberry-field-coaching .section .selected li.new-criteria .title {
+	margin-right: 0;
+}
+.strawberry-field-coaching .section .selected li.new-criteria .title input {
+	font-style: italic;
+}
+.strawberry-field-coaching .section .selected li.added-criteria .title input {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	border: 0;
+}
+.strawberry-field-coaching .section .selected li.added-criteria .title .input-wrapper {
+	border: 1px solid #b6bfc3;
+	display: block;
+	margin: 0 auto;
+	padding: 2px;
+	-moz-border-radius: 3px;
+	     border-radius: 3px;
+}
+.strawberry-field-coaching .section .selected li .remove-criteria {
+	visibility: hidden;
+	text-decoration: none;
+}
+.strawberry-field-coaching .section .selected li:hover .remove-criteria {
+	visibility: visible;
+}
+.strawberry-field-coaching .section .selected li.added-criteria .remove-criteria {
+	display: none;
+}
+.strawberry-field-coaching .section .selected li .els-icon {
+	position: absolute;
+	top: 50%;
+	margin-top: -7px;
+	height: 15px;
+	display: block;
+	cursor: pointer;
+	background-image: url(../../images/forms/field-training/btt.gif);
+	overflow: hidden;
+}
+.strawberry-field-readonly .section .selected li .els-icon {
+	cursor: default;
+}
+.strawberry-field-coaching .section .selected li.new-criteria .els-icon {
+	display: none;
+}
+.strawberry-field-coaching .section .selected li .els-icon img {
+	display: none;
+	position: relative;
+}
+.strawberry-field-readonly.strawberry-field-coaching .section .selected li .els-icon {
+	background-image: none;
+}
+.strawberry-field-readonly.strawberry-field-coaching .section .selected li .els-icon img {
+	display: block;
+}
+.strawberry-field-coaching .section .selected li .cross {
+	width: 15px;
+	right: 1px;
+	background-position: -19px -15px;
+}
+.strawberry-field-coaching .section .selected li .cross img {
+	left: -19px;
+	top: -15px;
+}
+.strawberry-field-coaching .section .selected li .cross-checked {
+	background-position: -19px 0;
+}
+.strawberry-field-coaching .section .selected li .cross-checked img {
+	left: -19px;
+	top: 0;
+}
+.strawberry-field-coaching .section .selected li .check {
+	width: 19px;
+	right: 25px;
+	background-position: 0 -15px;
+}
+.strawberry-field-coaching .section .selected li .check img {
+	left: 0;
+	top: -15px;
+}
+.strawberry-field-coaching .section .selected li .check-checked {
+	background-position: 0 0;
+}
+.strawberry-field-coaching .section .selected li .check-checked img {
+	left: 0;
+	top: 0;
+}
+.strawberry-field-coaching .section .selected li.last {
+	border-bottom-width: 0;
+}
+.strawberry-field-coaching .textarea-fields > div {
+	width: 32.7%;
+}
+.strawberry-field-coaching .textarea-fields > div.first {
+	float: left;
+}
+.strawberry-field-coaching .textarea-fields > div.third {
+	float: right;
+}
+.strawberry-field-coaching .textarea-fields > div.second {
+	margin: 0 auto;
+}
+
+@media print {
+	a[href]:after { content: ""; }
+	#ZFDebug_debug {
+		display: none;
+	}
+	.form-submit {
+		display: none;
+	}
+	.strawberry-field-coaching .section {
+		width: 100%;
+		float: none;
+		margin: 0.5em 0;
+		border-width: 0;
+	}
+	.strawberry-field-coaching .section .tree {
+		display: none;
+	}
+	.strawberry-field-coaching .section h3 {
+		margin: 1em 0;
+	}
+	.strawberry-field-coaching .section > .wrapper {
+		padding: 0;
+	}
+	.strawberry-field-coaching .section .selected li .els-icon {
+		right: 1px;
+		display: none;
+	}
+	.strawberry-field-coaching .section .selected li .cross-checked,
+	.strawberry-field-coaching .section .selected li .check-checked {
+		display: block;
+	}
+	.strawberry-field-coaching .section .selected li:hover .remove-criteria {
+		display: none;
+	}
+	.strawberry-audit .table-wrapper {
+		border-width: 0;
+		padding: 0;
+	}
+	.strawberry-audit table {
+		border-collapse: collapse !important;
+	}
+	.strawberry-audit table,
+	.strawberry-audit table td,
+	.strawberry-audit table th {
+		border: 1px solid black !important;
+	}
+	.strawberry-audit .table-wrapper table th.task,
+	.strawberry-audit .table-wrapper table td.task {
+		padding-left: 0.3em;
+	}
+	.strawberry-audit .table-wrapper table td.count .input-wrapper {
+		border-width: 0;
+	}
+}

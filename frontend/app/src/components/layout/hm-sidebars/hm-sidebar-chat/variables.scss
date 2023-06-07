@@ -1,0 +1,15 @@
+/**
+ * Multiline maps поддерживаются только в scss
+ * https://github.com/sass/sass/issues/1088
+ */
+
+$colors: (
+    sidebarCheckboxesColor:               #5965DB,
+    sidebarBackground:                    #F5F5F5,
+    sendBtnBackground:                    #FF9800, 
+    myMessageTextBackground:              rgba(212, 227, 251, 0.5),
+    messageTextBackground:                rgba(255, 233, 157, 0.4),
+    messageLogsBackground:                #F8FAFD,
+    textBlack:                            #323E4A,
+    grayHigh:                            #424242,
+);

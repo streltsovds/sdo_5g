@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link href="http://{{DOMAIN}}/css/forms/at-forms.css" media="screen,print" rel="stylesheet" type="text/css">
+        <link href="http://{{DOMAIN}}/css/forms/competencies.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="http://{{DOMAIN}}/css/content-modules/test.css" media="screen" rel="stylesheet" type="text/css">
+    </head>
+    <style>
+        html{
+            width: 21cm;
+            font-family: Arial, sans-serif;
+            font-size: 12px !important;
+        }
+        input {
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: white !important;
+        }
+        .at-form-container {
+            page-break-inside: avoid;
+        }
+        td {
+             padding-top: 5px !important;
+             padding-bottom: 5px !important;
+         }
+        h2, h4 {
+            margin: 2px !important;
+        }
+        h2 > p {
+            margin: 1px !important;
+        }
+        .quest-question {
+            margin-bottom: 1px !important;
+        }
+        img {
+            max-width:100%;
+            height:auto;
+        }
+        .pagebreak {
+            display: block;
+            height: 0;
+            page-break-after: always;
+        }
+    </style>
+    <body>
+     {{LESSONS}}
+    </body>
+</html>

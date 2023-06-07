@@ -1,0 +1,160 @@
+@import "./mixins"
+
+$layout-footer-menu-column-width: 260px
+$layout-footer-menu-column-margin-bottom: 32px
+$layout-footer-menu-page-gap: 26px
+
+$layout-footer-menu-column-margin-bottom-small-width: 44px
+$layout-footer-menu-page-gap-small-width: 16px
+
+.v-footer .v-card.footer__block
+  display: flex
+  flex-wrap: wrap
+  width: 100%
+  background: inherit !important
+  padding: 45px 56px 16px 56px
+
+/* с лого, кнопкой техподдержки и copyright */
+.footer__info
+  flex-basis: 230px
+  flex-shrink: 0
+  flex-grow: 1
+  margin-bottom: $layout-footer-menu-column-margin-bottom
+
+//.footer-menu
+  //display: flex
+  //flex-wrap: wrap
+  //align-items: flex-start
+  //align-content: flex-start
+.footer-copyright
+  width: 100%
+
+.footer__info__copyright
+  a
+    color: #fff !important
+
+.footer-menu__column
+  flex-basis: $layout-footer-menu-column-width
+  margin-bottom: $layout-footer-menu-column-margin-bottom
+  flex-grow: 1
+  flex-shrink: 0
+
+// @see https://stackoverflow.com/a/22018710
+.dummy-to-fix-flex-layout
+  margin: 0
+  padding: 0
+
+// ссылка в футере
+.v-tab
+  &.footer-menu__page,
+  &.footer-menu__subpage
+    text-transform: unset
+    letter-spacing: 0.02em
+    justify-content: left
+    padding: 2px
+    color: #FFFFFF
+    font-size: 14px
+    font-weight: 300 !important
+    font-family: 'Roboto', sans-serif
+    line-height: 21px
+    text-align: left
+
+    + .footer-menu__page,
+    + .footer-menu__subpage
+      margin-top: $layout-footer-menu-page-gap
+
+
+.footer-support-link
+  text-decoration: none
+
+.footer-support
+  width: auto
+  min-width: 180px
+  max-width: 200px
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  margin-bottom: 14px
+  cursor: pointer
+
+  &__icon
+    width: 24px
+    height: 23px
+    margin-right: 12px
+
+  &__technical
+    width: 80%
+    display: flex
+    justify-content: flex-start
+
+    > span
+      font-family: 'Roboto', sans-serif
+      font-size: 14px
+      line-height: 14px
+      font-weight: 300
+      letter-spacing: 0.3px
+      color: #FFFFFF
+
+
+.footer-social
+  flex-shrink: 0
+  flex-grow: 0
+  display: flex
+  justify-content: flex-end
+  margin-bottom: 32px
+  //align-items: center
+  //margin-top: -30px
+
+  > .icon-social
+    width: 36px
+    height: 36px
+
+  > .icon-social:not(:last-child)
+    margin-right: 26px
+
+    > a
+      > img
+        width: 36px
+        height: 36px
+
+
+
+.footer__block.medium-width
+  .footer-social,
+  .footer__info
+    flex-basis: $layout-footer-menu-column-width
+    flex-shrink: 0
+    flex-grow: 1
+
+
+  .footer-social
+    justify-content: flex-start
+    margin-top: 0
+
+  .dummy-to-fix-flex-layout
+    flex-basis: $layout-footer-menu-column-width
+    flex-grow: 1
+
+.footer__block.small-width
+  .footer__info__copyright
+    // перенос надписи на две строки
+    max-width: unset
+
+  .footer-menu__column,
+  .footer__info
+    margin-bottom: $layout-footer-menu-column-margin-bottom-small-width
+
+  .v-tab
+    &.footer-menu__page,
+    &.footer-menu__subpage
+      + .footer-menu__page,
+      + .footer-menu__subpage
+        margin-top: $layout-footer-menu-page-gap-small-width
+
+@media(max-width: 600px)
+  .footer__block
+    margin: 0 !important
+    padding: 45px 16px 16px 16px
+
+  .footer-social
+    margin-bottom: 20px

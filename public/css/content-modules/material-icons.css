@@ -1,0 +1,189 @@
+.material-icon-small,
+.material-icon {
+    background-image: url(../../images/material-icons.png) !important;
+    background-repeat: no-repeat;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.material-icon {
+    width: 35px;
+    height: 35px;
+}
+
+.material-icon.material-icon-small {
+    width: 16px;
+    height: 16px;
+}
+
+/* Какое-то наследие */
+
+.material-icon.resource-activitytype-url {
+    background: url("/images/events/4g/19x/forum.png") no-repeat 0 2px;
+}
+
+.material-icon.resource-activitytype-64 {
+    background: url("/images/events/4g/19x/resource.png") no-repeat 0 2px;
+}
+
+.material-icon.resource-activitytype-128 {
+    background: url("/images/events/4g/19x/wiki.png") no-repeat 0 2px;
+}
+
+.material-icon.resource-activitytype-512 {
+    background: url("/images/events/4g/19x/chat.png") no-repeat 0 2px;
+}
+
+
+/* Большие иконки */
+
+.material-icon.resource-unknown,
+.material-icon.resource-filetype-unknown {
+    background-position: -17px 0;
+}
+
+.material-icon.resource-html,
+.material-icon.resource-filetype-html {
+    background-position: -17px -35px;
+}
+
+.material-icon.resource-image,
+.material-icon.resource-filetype-image {
+    background-position: -17px -70px;
+}
+
+.material-icon.resource-audio,
+.material-icon.resource-filetype-audio {
+    background-position: -17px -105px;
+}
+
+.material-icon.resource-video,
+.material-icon.resource-filetype-video {
+    background-position: -17px -140px;
+}
+
+.material-icon.course,
+.material-icon.resource-filetype-course {
+    background-position: -17px -175px;
+}
+
+.material-icon.resource-html,
+.material-icon.resource-filetype-html {
+    background-position: -17px -210px;
+}
+
+.material-icon.resource-doc,
+.material-icon.resource-filetype-doc {
+    background-position: -53px 0;
+}
+
+.material-icon.resource-pdf,
+.material-icon.resource-filetype-pdf {
+    background-position: -53px -35px;
+}
+
+.material-icon.resource-xls,
+.material-icon.resource-filetype-xls {
+    background-position: -53px -70px;
+}
+
+.material-icon.resource-ppt,
+.material-icon.resource-filetype-ppt {
+    background-position: -53px -105px;
+}
+
+.material-icon.resource-flash,
+.material-icon.resource-filetype-flash {
+    background-position: -53px -140px;
+}
+
+.material-icon.resource-external,
+.material-icon.resource-filetype-external {
+    background-position: -53px -175px;
+}
+
+/* Какая-то иконка iWeb */
+.material-icon.resource-iweb,
+.material-icon.resource-filetype-iweb {
+    background-position: -53px -210px;
+}
+
+
+/* Мелкие иконки*/
+
+.material-icon.resource-filetype-unknown,
+.material-icon.material-icon-small.resource-unknown {
+    background-position: 0 0;
+}
+
+.material-icon.resource-filetype-html,
+.material-icon.material-icon-small.resource-filetype-html {
+    background-position: 0 -16px;
+}
+
+.material-icon.resource-filetype-image,
+.material-icon.material-icon-small.resource-filetype-image {
+    background-position: 0 -32px;
+}
+
+.material-icon.resource-filetype-audio,
+.material-icon.material-icon-small.resource-filetype-audio {
+    background-position: 0 -48px;
+}
+
+.material-icon.resource-filetype-video,
+.material-icon.material-icon-small.resource-filetype-video {
+    background-position: 0 -64px;
+}
+
+.material-icon.resource-filetype-doc,
+.material-icon.material-icon-small.resource-filetype-doc {
+    background-position: 0 -80px;
+}
+
+.material-icon.resource-filetype-pdf,
+.material-icon.material-icon-small.resource-filetype-pdf {
+    background-position: 0 -96px;
+}
+
+.material-icon.resource-filetype-xls,
+.material-icon.material-icon-small.resource-filetype-xls {
+    background-position: 0 -112px;
+}
+
+.material-icon.resource-filetype-ppt,
+.material-icon.material-icon-small.resource-filetype-ppt {
+    background-position: 0 -128px;
+}
+
+.material-icon.resource-filetype-flsh,
+.material-icon.material-icon-small.resource-filetype-flash {
+    background-position: 0 -144px;
+}
+
+.material-icon.material-icon-small.resource-external,
+.material-icon.material-icon-small.resource-filetype-external {
+    background-position: 0 -160px;
+}
+
+.material-icon.material-icon-small.resource-course,
+.material-icon.material-icon-small.resource-filetype-course {
+    background-position: 0 -176px;
+}
+
+/* Какая-то иконка iWeb */
+.material-icon.material-icon-small.resource-iweb,
+.material-icon.material-icon-small.resource-filetype-iweb {
+    background-position: 0 -192px;
+}
+
+.material-icon.material-icon-small.resource-html,
+.material-icon.material-icon-small.resource-filetype-html,
+.material-icon.material-icon-small.resource-url,
+.material-icon.material-icon-small.resource-filetype-url {
+    background-position: 0 -208px;
+}
+
+
+

@@ -1,0 +1,218 @@
+//out: dragndrop.css
+
+//Mixins
+.transition(@transition){
+	-webkit-transition:@transition;
+	transition:@transition;
+}
+.transition-prop(...){
+	-webkit-transition-property:@arguments;
+	transition-property:@arguments;
+
+	will-change:@arguments;
+}
+.transform(@string){
+	-webkit-transform:@string;
+	transform:@string;
+}
+
+.for(@i, @n){.-each(@i)}
+.for(@n) when (isnumber(@n)){.for(1, @n)}
+.for(@i, @n) when not (@i = @n){
+    .for((@i + (@n - @i) / abs(@n - @i)), @n);
+}
+
+.for(@array) when (default()) {.for-impl_(length(@array))}
+.for-impl_(@i) when (@i > 1) {.for-impl_((@i - 1))}
+.for-impl_(@i) when (@i > 0) {.-each(extract(@array, @i))}
+
+
+.clearfix, .cf{
+	zoom:1;
+	&:before, &:after{
+		content:'';
+		display:table;
+	}
+	&:after{
+		clear:both;
+	}
+}
+
+//Variables
+@ease: cubic-bezier(0.19, 1, 0.22, 1);
+
+//Styles
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height:100%;
+}
+body{
+    margin:0;
+    padding:0;
+    font:15px tahoma;
+}
+.hidden-form{
+    width: 300px;
+    float: left;
+}
+.dnd{
+    width: 100%;
+    // height: 100%;
+	position: relative;
+    // overflow: hidden;
+
+    *{
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+
+	@space-width: 659px;
+
+ 	& + .legend{
+		width:@space-width;
+	}
+
+    &-workspace{
+        width: @space-width;
+	    height:@space-width/1.50800915;
+        margin:0 auto;
+        outline: 1px solid #999;
+        position: relative;
+        background:url(../img/1.png) 50% 50% no-repeat;
+        background-size:contain;
+		padding:0;
+		list-style: none;
+
+
+        .dnd-dropbox{
+            border:4px dashed #ccc;
+            width:120px;
+            height:120px;
+            line-height:120px;
+            text-align:center;
+            font-size:55px;
+            color:#61b28f;
+            float:left;
+            border-radius: 20px;
+            position: absolute;
+            background:#fff;
+			box-shadow:0 0 30px transparent;
+
+			.transition(.5s @ease);
+			.transition-prop(~'border, box-shadow');
+
+            &.no-drop, &.no-drop *{
+                cursor: no-drop !important;
+            }
+
+            &.ondrophover{
+                &:not(.no-drop){
+                    border-color:lightblue;
+					box-shadow:0 0 20px rgba(0,0,0, .45);
+					z-index:33;
+                }
+            }
+			&.true-drop{
+				border-color:#78e800;
+			}
+			&.false-drop{
+				border-color:#ff3000;
+			}
+        }
+    }
+    &-list{
+        width: @space-width;
+        height: auto;
+        margin:0 auto;
+        outline: 1px solid #999;
+		// padding:15px;
+
+        .dnd-dragbox{
+            width:110px;
+            height:110px;
+            text-align:center;
+            font-size:15px;
+            background:#61b28f;
+            color:#fff;
+            float:left;
+            margin:0 0 15px;
+            cursor:move;
+            border-radius: 13px;
+            position: relative;
+            will-change:transform;
+            opacity:.77;
+			box-shadow:0 0 10px rgba(0,0,0, .33);
+
+            .transition(.7s @ease);
+            -webkit-transition-property:opacity;
+            transition-property:opacity;
+
+			&-offset{
+				position: relative;
+			}
+
+			span{
+				width:100%;
+				display: block;
+				position: absolute;
+				left:0;
+				top:50%;
+				-webkit-transform:translateY(-50%);
+				transform:translateY(-50%);
+				padding:5px;
+				text-align: center;
+			}
+
+            &.no-drop{
+                cursor:no-drop;
+            }
+
+            &:not(.static):not(.fixed){
+                pointer-events: none;
+				z-index:131;
+            }
+
+
+            &.static{
+                opacity:1;
+                -webkit-transition-property:-webkit-transform, opacity;
+                transition-property:transform, opacity;
+
+				.for(1, 30); .-each(@i) {
+					&:nth-child(@{i}){
+						z-index:(130-@i)
+					}
+				}
+				&:hover{
+					z-index:131;
+				}
+
+
+                &.fixed{
+                    .transform(~'translate(0, 0) !important');
+                }
+            }
+        }
+    }
+
+	& > table{
+		position: absolute;
+		left:50%; top: 0;
+		margin:0 auto;
+
+		-webkit-transform:translateX(-50%);
+		transform:translateX(-50%);
+
+        width: @space-width;
+	    height:@space-width/1.50800915;
+		border-collapse: collapse;
+
+		td{
+			border:1px solid #ccc;
+		}
+	}
+
+}

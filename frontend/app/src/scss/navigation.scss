@@ -1,0 +1,9 @@
+@media(max-width: 599px) {
+  .main-nav > .v-toolbar__content {
+    height: 48px !important;
+  }
+
+  .main-nav > .v-toolbar__extension {
+    justify-content: space-between;
+  }
+}

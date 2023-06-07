@@ -1,0 +1,18 @@
+.subject-classifiers_course svg {
+    margin-right: 20px;
+}
+
+.subject-classifiers .bullet{
+    height:14px;
+    width:14px;
+    float:left;
+    margin:0 5px 0;
+}
+
+.course_bullet {
+    min-width: 15px !important;
+    background: #b2abe3;
+}
+.course_bullet .bullet {
+    margin: 0 !important;
+}

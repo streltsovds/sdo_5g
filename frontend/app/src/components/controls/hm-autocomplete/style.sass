@@ -1,0 +1,60 @@
+
+$tag-delete-icon-size: 16px
+$tag-padding-x: 8px
+$tag-height: 27px
+
+.hm-autocomplete
+  &__list-item-add-item
+    cursor: pointer
+
+    &__error
+      border: none !important
+
+  .v-input__slot
+    margin-top: 18px
+
+  .v-text-field__details
+    margin-bottom: 0 !important
+
+  .v-select__slot input
+    margin-top: 0 !important
+
+  &__button-add-item
+    text-transform: unset
+
+  /** отображение самих тэгов */
+  .v-select__selections > .v-chip
+    background: transparent
+    border-radius: 4px
+    font-size: 13px
+    line-height: 18px
+    margin-left: 0
+    margin-right: 8px
+    padding-left: $tag-padding-x
+    padding-right: $tag-padding-x
+    height: $tag-height
+
+    .v-icon
+      height: $tag-height
+      width: $tag-height
+      max-width: $tag-height
+      max-height: $tag-height
+      /* max-height: 20px; */
+      font-size: $tag-delete-icon-size
+      border-radius: 50%
+      margin-right: -8px !important
+      margin-left: 4px
+
+      //&:hover
+      //  //background-color: #AAA
+      //  color: #E31F28
+
+    /** node_modules/@mdi/font/css/materialdesignicons.css */
+    /** .mdi-close */
+    .mdi-close-circle::before
+      content: "\F156"
+
+  //&--single
+
+.hm-autocomplete__menu
+  margin-top: 2px !important

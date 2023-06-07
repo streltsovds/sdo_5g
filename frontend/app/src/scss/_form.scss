@@ -1,0 +1,221 @@
+form .v-btn,
+form .v-btn:not(.v-btn--round).v-size--default{
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-left: 0;
+  margin-right: 0;
+  min-width: 150px;
+}
+
+form .v-btn.v-size--small, form .v-btn.v-size--default {
+  height: 40px;
+  min-width: 40px;
+  padding: unset;
+}
+
+.hm-tags,
+.hm-text,
+  //.hm-file,
+.hm-slider,
+.hm-select,
+.hm-textarea,
+.hm-multi-text,
+.hm-date-picker,
+.hm-time-picker,
+.hm-password-checkbox,
+.hm-multi-checkbox {
+  max-width: 500px;
+  margin-left: 11px;
+}
+
+.hm-form-element.hm-tiny-mce {
+  margin-left: 8px;
+}
+
+
+
+.hm-form-element {
+  position: relative;
+  margin-top: 5px;
+  &.hide {
+    display: none;
+  }
+  .required .v-label, .v-label.required  {
+    overflow: unset;
+    position: relative;
+    &:after {
+      content: "*";
+      position: absolute;
+      top: 0;
+      right: -7px;
+      color: red;
+    }
+  }
+  .v-messages.theme--light {
+    color: rgba(0,0,0,.4);
+  }
+
+  .v-text-field__details {
+    min-height: 0;
+    padding: 0 !important;
+
+    .v-messages{
+      min-height: 0;
+      margin-bottom: 14px;
+    }
+  }
+
+  .v-input--selection-controls {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+.hm-date-picker {
+  .v-input__control {
+    width: 100%;
+  }
+}
+
+
+/**
+Стили кнопок (по макету)
+ */
+
+//#fieldset-materialstab {}
+
+// кнопка сохрнить
+.hm-form-element.hm-submit.hm-form-element_submit {
+  width: 127px !important;
+  min-width: 127px !important;
+  height: 36px !important;
+  border-radius: 4px;
+  padding: 0!important;
+  margin-right: 26px !important;
+  margin-top: 16px !important;
+  > button {
+    height: 100% !important;
+    width: 100% !important;
+    min-width: 100%!important;
+    padding: 0 !important;
+    background: #FF9800 !important;
+    box-shadow: none!important;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF !important;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+  }
+}
+
+// список по выбору действия при активации кнопки
+.hm-form-element.hm-submit.hm-form-element_submit_and_redirect {
+  width: 300px !important;
+  min-width: 300px !important;
+  height: 36px !important;
+  padding: 0!important;
+  margin-right: 26px !important;
+  margin-top: 16px !important;
+  border: 1px solid #485B70;
+  border-radius: 4px;
+  transition: .2s ease-in-out;
+  > div {
+    width: 300px !important;
+    min-width: 300px !important;
+    height: 36px !important;
+    padding: 0!important;
+    margin: 0!important;
+    > div {
+      width: 300px !important;
+      min-width: 300px !important;
+      height: 36px !important;
+      > div {
+        background: none !important;
+        width: 300px !important;
+        min-width: 300px !important;
+        height: 36px !important;
+        box-shadow: none;
+        border: none !important;
+        &:before {
+          border: none;
+          content: none;
+        }
+        > div {
+          width: 300px !important;
+          min-width: 300px !important;
+          height: 36px !important;
+          padding-left: 56px!important;
+          > label {
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #1E1E1E;
+            text-transform: initial;
+          }
+          .v-select__selections {
+            > input {
+              width: 0!important;
+              height: 0!important;
+              padding: 0!important;
+              cursor: pointer;
+            }
+          }
+          .v-input__append-inner {
+            width: 36px !important;
+            height: 36px !important;
+          }
+        }
+        &:after {
+          height: 0;
+          width: 0;
+          content: none;
+        }
+      }
+      &:before {
+        height: 0;
+      }
+    }
+    &.v-select--is-menu-active {
+      background: rgba(74, 144, 226, 0.2) !important;
+    }
+  }
+}
+
+.hm-form-element.hm-submit-link.hm-form-element_cancel {
+  width: 127px !important;
+  min-width: 127px !important;
+  height: 36px!important;
+  padding: 0!important;
+  margin: 0!important;
+  margin-top: 16px !important;
+  border-radius: 4px;
+  > a {
+    height: 36px!important;
+    width: 127px!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #1E1E1E;
+    text-decoration: none;
+    box-shadow: none !important;
+  }
+}
+
+.hm-form-element_cancel > a.primary {
+  color: #FFF !important;
+}
+
+#designsettings .hm-file {
+  margin-left: 0;
+}
+
+#fieldset-classifiers,
+#fieldset-criteriaGroup {
+  margin-top: 26px;
+}

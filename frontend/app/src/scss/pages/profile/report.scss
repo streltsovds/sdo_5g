@@ -1,0 +1,12 @@
+.profile-report {
+  .v-list-item {
+    padding-left: 0;
+    padding-right: 0 !important;
+  }
+  &__wrap {
+    padding: 31px 36px;
+  }
+  .pagebreak {
+    margin-top: 26px;
+  }
+}

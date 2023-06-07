@@ -1,0 +1,8 @@
+{
+  "name": "content-modules",
+  "version": "1.0.0",
+  "scripts": {
+    "sass:compile:grid": "node-sass --output-style compressed grid.scss grid.css",
+    "sass:watch:grid": "node-sass --output-style compressed --watch grid.scss grid.css"
+  }
+}

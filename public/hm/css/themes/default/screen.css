@@ -1,0 +1,4080 @@
+@charset "UTF-8";
+/* ====================== Внимание! =============================
+ *
+ * Этот файл генерируются автоматически, все исправления
+ * необходимо вносить в файлы из папки /public/hm/src/sass
+ *
+ * В противном случае ваши изменения могут быть потёрты при
+ * следующей генерации этого файла.
+ *
+ * ============================================================== */
+/* line 5, ../../../../../../src/projects/default/master/sass/main/screen.scss */
+.hm-clear {
+  clear: both;
+}
+
+/* line 9, ../../../../../../src/projects/default/master/sass/main/screen.scss */
+.hm-clear-left {
+  clear: left;
+}
+
+/* line 13, ../../../../../../src/projects/default/master/sass/main/screen.scss */
+.hm-clear-right {
+  clear: right;
+}
+
+/* line 1, ../../../../../../src/base/core-ui/master/js/form/element/inline_editor/InlineEditor.scss */
+.hm-ui-inlineEditor {
+  cursor: pointer;
+}
+/* line 4, ../../../../../../src/base/core-ui/master/js/form/element/inline_editor/InlineEditor.scss */
+.hm-ui-inlineEditor:hover {
+  text-decoration: underline;
+}
+/* line 8, ../../../../../../src/base/core-ui/master/js/form/element/inline_editor/InlineEditor.scss */
+.hm-ui-inlineEditor:focus {
+  padding: 2px 4px;
+  outline: 1px solid silver;
+  text-decoration: none;
+  cursor: text;
+}
+
+/* line 1, ../../../../../../src/base/core-ui/master/js/form/element/AbstractElementBody.scss */
+.hm-form-element {
+  background-color: red;
+}
+
+/* line 5, ../../../../../../src/base/core-ui/master/js/form/element/AbstractElementBody.scss */
+.hm-form-element-label {
+  float: left;
+  width: 100px;
+}
+
+/* line 10, ../../../../../../src/base/core-ui/master/js/form/element/AbstractElementBody.scss */
+.hm-form-element-container {
+  min-height: 25px;
+  margin-left: 105px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  /* line 1, ../../../../../../src/base/core-ui/master/js/form/element/AbstractElementBody.scss */
+  .hm-form-element {
+    background-color: red;
+  }
+
+  /* line 5, ../../../../../../src/base/core-ui/master/js/form/element/AbstractElementBody.scss */
+  .hm-form-element-label {
+    float: left;
+    width: 100px;
+  }
+
+  /* line 10, ../../../../../../src/base/core-ui/master/js/form/element/AbstractElementBody.scss */
+  .hm-form-element-container {
+    min-height: 35px;
+    margin-left: 105px;
+  }
+}
+/* line 1, ../../../../../../src/base/core-ui/master/js/form/element/select/AbstractSelect.scss */
+.hm-form-select-button {
+  cursor: pointer;
+  background-color: #fff;
+  color: #0065b1;
+  font-size: 12px;
+  height: 28px;
+  border: 1px solid #7f97e8;
+  position: relative;
+}
+/* line 10, ../../../../../../src/base/core-ui/master/js/form/element/select/AbstractSelect.scss */
+.hm-form-select-button:hover, .hm-form-select-button.hm-form-select-button-menuOpened {
+  background-color: #e9e9e9;
+}
+
+/* line 15, ../../../../../../src/base/core-ui/master/js/form/element/select/AbstractSelect.scss */
+.hm-form-select-button_inline {
+  display: inline-block;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+/* line 21, ../../../../../../src/base/core-ui/master/js/form/element/select/AbstractSelect.scss */
+.hm-form-select-button-title {
+  padding: 0px 20px 0px 8px;
+  line-height: 28px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 29, ../../../../../../src/base/core-ui/master/js/form/element/select/AbstractSelect.scss */
+.hm-form-select-button-trigger {
+  border: 1px solid transparent;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -9px;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+}
+
+/* line 41, ../../../../../../src/base/core-ui/master/js/form/element/select/AbstractSelect.scss */
+.hm-form-select-button-opened {
+  background-color: #0065b1;
+  color: #fff;
+}
+
+/* line 16, ../../../../../../src/base/core-ui/master/js/form/element/select/list/AbstractSelectList.scss */
+.hm-form-select-list-filter-wrapper {
+  padding: 3px;
+}
+
+/* line 21, ../../../../../../src/base/core-ui/master/js/form/element/select/list/AbstractSelectList.scss */
+.hm-form-select-list-filter {
+  border: 1px solid #b7b7b7;
+  padding: 3px;
+  -moz-box-shadow: inset 1px 1px 3px 1px #e9e9e9;
+  -webkit-box-shadow: inset 1px 1px 3px 1px #e9e9e9;
+  box-shadow: inset 1px 1px 3px 1px #e9e9e9;
+  background-image: url('/hm/images/icons/search.png');
+  background-position: right 3px;
+  background-repeat: no-repeat;
+}
+/* line 29, ../../../../../../src/base/core-ui/master/js/form/element/select/list/AbstractSelectList.scss */
+.hm-form-select-list-filter > div {
+  margin-right: 16px;
+}
+/* line 32, ../../../../../../src/base/core-ui/master/js/form/element/select/list/AbstractSelectList.scss */
+.hm-form-select-list-filter > div input {
+  width: 100%;
+  height: 16px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+/* line 40, ../../../../../../src/base/core-ui/master/js/form/element/select/list/AbstractSelectList.scss */
+.hm-form-select-list-filter > div input:focus {
+  outline: none;
+}
+
+/* line 1, ../../../../../../src/base/core-ui/master/js/form/element/select/list/item/SimpleSelectItem.scss */
+.hm-form-select-list {
+  border: 1px solid #0058a4;
+  outline: 1px solid white;
+  margin-top: 1px;
+  background-color: white;
+  color: #0058a4;
+  font-size: 12px;
+}
+
+/* line 10, ../../../../../../src/base/core-ui/master/js/form/element/select/list/item/SimpleSelectItem.scss */
+.hm-form-select-list-item {
+  border-bottom: 1px solid #d0d1d1;
+  white-space: nowrap;
+}
+/* line 14, ../../../../../../src/base/core-ui/master/js/form/element/select/list/item/SimpleSelectItem.scss */
+.hm-form-select-list-item:last-child {
+  border-bottom: none;
+}
+/* line 18, ../../../../../../src/base/core-ui/master/js/form/element/select/list/item/SimpleSelectItem.scss */
+.hm-form-select-list-item:hover {
+  background-color: #e4e4e4;
+}
+/* line 22, ../../../../../../src/base/core-ui/master/js/form/element/select/list/item/SimpleSelectItem.scss */
+.hm-form-select-list-item > a {
+  line-height: 15px;
+  padding: 12px;
+  display: block;
+}
+
+/* line 2, ../../../../../../src/base/core-ui/master/js/form/element/select/list/item/MultiSelectItem.scss */
+.hm-form-select-list-item.hm-form-select-list-item-withCheckbox {
+  border-bottom: none;
+  padding: 3px;
+}
+/* line 7, ../../../../../../src/base/core-ui/master/js/form/element/select/list/item/MultiSelectItem.scss */
+.hm-form-select-list-item.hm-form-select-list-item-withCheckbox a {
+  margin: 3px 3px 3px 20px;
+  padding: 0;
+  color: #000;
+}
+/* line 14, ../../../../../../src/base/core-ui/master/js/form/element/select/list/item/MultiSelectItem.scss */
+.hm-form-select-list-item.hm-form-select-list-item-withCheckbox.hm-form-select-list-item-withCheckbox-checked .hm-form-select-list-item-checkbox {
+  background-position: 0 0;
+}
+
+/* line 21, ../../../../../../src/base/core-ui/master/js/form/element/select/list/item/MultiSelectItem.scss */
+.hm-form-select-list-item-checkbox {
+  margin: 3px;
+  width: 13px;
+  height: 14px;
+  display: inline-block;
+  float: left;
+  cursor: pointer;
+  vertical-align: baseline;
+  background-image: url('/hm/images/icons/multiselect.png');
+  background-position: 0 -14px;
+  background-repeat: no-repeat;
+}
+
+/* line 1, ../../../../../../src/base/core-ui/master/js/form/element/select/list/item/DateSelectItem.scss */
+.hm-pm-list-dateSelect-item {
+  padding: 5px;
+}
+/* line 4, ../../../../../../src/base/core-ui/master/js/form/element/select/list/item/DateSelectItem.scss */
+.hm-pm-list-dateSelect-item:hover {
+  background-color: #fff;
+}
+
+/* line 9, ../../../../../../src/base/core-ui/master/js/form/element/select/list/item/DateSelectItem.scss */
+.hm-form-select-list-dateSelect-item-input {
+  display: inline-block;
+  border: 1px solid #b5b5b5;
+  padding: 4px;
+  cursor: pointer;
+}
+/* line 15, ../../../../../../src/base/core-ui/master/js/form/element/select/list/item/DateSelectItem.scss */
+.hm-form-select-list-dateSelect-item-input:hover {
+  background-color: #f2f2f2;
+}
+/* line 19, ../../../../../../src/base/core-ui/master/js/form/element/select/list/item/DateSelectItem.scss */
+.hm-form-select-list-dateSelect-item-input input {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  width: 70px;
+}
+/* line 25, ../../../../../../src/base/core-ui/master/js/form/element/select/list/item/DateSelectItem.scss */
+.hm-form-select-list-dateSelect-item-input input[readonly] {
+  cursor: pointer;
+}
+
+/* line 31, ../../../../../../src/base/core-ui/master/js/form/element/select/list/item/DateSelectItem.scss */
+.hm-form-select-list-dateSelect-item-input-caption {
+  margin-right: 5px;
+  color: #8f8f8f;
+}
+
+/* line 36, ../../../../../../src/base/core-ui/master/js/form/element/select/list/item/DateSelectItem.scss */
+.hm-form-select-list-dateSelect-item-dash {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #000;
+}
+
+/* line 5, ../../../../../../src/base/core-ui/master/js/form/element/select/list/tooltip/DateTooltip.scss */
+.hm-pm-tooltip-dateTooltip .hm-tooltip-shadow {
+  display: none;
+}
+/* line 9, ../../../../../../src/base/core-ui/master/js/form/element/select/list/tooltip/DateTooltip.scss */
+.hm-pm-tooltip-dateTooltip .hm-tooltip-content {
+  border-color: #e64c03;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 3px 3px 6px 0px #c4c4c4;
+  -webkit-box-shadow: 3px 3px 6px 0px #c4c4c4;
+  box-shadow: 3px 3px 6px 0px #c4c4c4;
+}
+/* line 17, ../../../../../../src/base/core-ui/master/js/form/element/select/list/tooltip/DateTooltip.scss */
+.hm-pm-tooltip-dateTooltip.hm-tooltip-arrow-up .hm-tooltip-arrow:before {
+  border-color: transparent transparent #e64c03 transparent;
+}
+/* line 23, ../../../../../../src/base/core-ui/master/js/form/element/select/list/tooltip/DateTooltip.scss */
+.hm-pm-tooltip-dateTooltip .ui-datepicker {
+  background-color: #fff;
+  border: none;
+  width: 182px;
+  padding: 0 20px 10px 20px;
+}
+/* line 29, ../../../../../../src/base/core-ui/master/js/form/element/select/list/tooltip/DateTooltip.scss */
+.hm-pm-tooltip-dateTooltip .ui-datepicker .ui-datepicker-next, .hm-pm-tooltip-dateTooltip .ui-datepicker .ui-datepicker-prev {
+  top: 85px;
+  background-image: none;
+  background-color: #0065b1;
+  width: 15px;
+  height: 50px;
+  cursor: pointer;
+}
+/* line 37, ../../../../../../src/base/core-ui/master/js/form/element/select/list/tooltip/DateTooltip.scss */
+.hm-pm-tooltip-dateTooltip .ui-datepicker .ui-datepicker-next:before, .hm-pm-tooltip-dateTooltip .ui-datepicker .ui-datepicker-prev:before {
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  margin-top: -6px;
+  color: #fff;
+}
+/* line 46, ../../../../../../src/base/core-ui/master/js/form/element/select/list/tooltip/DateTooltip.scss */
+.hm-pm-tooltip-dateTooltip .ui-datepicker .ui-datepicker-next {
+  right: -27px;
+}
+/* line 49, ../../../../../../src/base/core-ui/master/js/form/element/select/list/tooltip/DateTooltip.scss */
+.hm-pm-tooltip-dateTooltip .ui-datepicker .ui-datepicker-next:before {
+  content: '\25BA';
+}
+/* line 54, ../../../../../../src/base/core-ui/master/js/form/element/select/list/tooltip/DateTooltip.scss */
+.hm-pm-tooltip-dateTooltip .ui-datepicker .ui-datepicker-prev {
+  left: -27px;
+}
+/* line 57, ../../../../../../src/base/core-ui/master/js/form/element/select/list/tooltip/DateTooltip.scss */
+.hm-pm-tooltip-dateTooltip .ui-datepicker .ui-datepicker-prev:before {
+  content: '\25C4';
+}
+/* line 63, ../../../../../../src/base/core-ui/master/js/form/element/select/list/tooltip/DateTooltip.scss */
+.hm-pm-tooltip-dateTooltip .ui-widget-header {
+  background-color: #fff;
+}
+/* line 66, ../../../../../../src/base/core-ui/master/js/form/element/select/list/tooltip/DateTooltip.scss */
+.hm-pm-tooltip-dateTooltip .ui-widget-header .ui-icon {
+  background-image: none;
+}
+/* line 72, ../../../../../../src/base/core-ui/master/js/form/element/select/list/tooltip/DateTooltip.scss */
+.hm-pm-tooltip-dateTooltip .ui-datepicker-title span {
+  cursor: default;
+}
+/* line 77, ../../../../../../src/base/core-ui/master/js/form/element/select/list/tooltip/DateTooltip.scss */
+.hm-pm-tooltip-dateTooltip th, .hm-pm-tooltip-dateTooltip td {
+  border: 1px solid #e0e1e1;
+  padding: 0;
+}
+/* line 81, ../../../../../../src/base/core-ui/master/js/form/element/select/list/tooltip/DateTooltip.scss */
+.hm-pm-tooltip-dateTooltip th span, .hm-pm-tooltip-dateTooltip th a, .hm-pm-tooltip-dateTooltip td span, .hm-pm-tooltip-dateTooltip td a {
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+/* line 89, ../../../../../../src/base/core-ui/master/js/form/element/select/list/tooltip/DateTooltip.scss */
+.hm-pm-tooltip-dateTooltip th {
+  background-color: #eceded;
+  color: #989b9c;
+  border-color: #eceded;
+  border-right-color: #fff;
+}
+/* line 95, ../../../../../../src/base/core-ui/master/js/form/element/select/list/tooltip/DateTooltip.scss */
+.hm-pm-tooltip-dateTooltip th.ui-datepicker-week-end {
+  background-color: #e64c03;
+  color: #fff;
+}
+/* line 100, ../../../../../../src/base/core-ui/master/js/form/element/select/list/tooltip/DateTooltip.scss */
+.hm-pm-tooltip-dateTooltip th span {
+  cursor: default;
+}
+/* line 108, ../../../../../../src/base/core-ui/master/js/form/element/select/list/tooltip/DateTooltip.scss */
+.hm-pm-tooltip-dateTooltip td a.ui-state-highlight {
+  border: 1px solid #e64c03;
+  color: #e64c03;
+}
+/* line 113, ../../../../../../src/base/core-ui/master/js/form/element/select/list/tooltip/DateTooltip.scss */
+.hm-pm-tooltip-dateTooltip td a:hover, .hm-pm-tooltip-dateTooltip td a.ui-state-active {
+  color: #fff;
+  background-color: #0065b1;
+}
+/* line 120, ../../../../../../src/base/core-ui/master/js/form/element/select/list/tooltip/DateTooltip.scss */
+.hm-pm-tooltip-dateTooltip td.ui-datepicker-week-end {
+  background-color: #fff;
+}
+/* line 123, ../../../../../../src/base/core-ui/master/js/form/element/select/list/tooltip/DateTooltip.scss */
+.hm-pm-tooltip-dateTooltip td.ui-datepicker-week-end a {
+  color: #e64c03;
+}
+/* line 126, ../../../../../../src/base/core-ui/master/js/form/element/select/list/tooltip/DateTooltip.scss */
+.hm-pm-tooltip-dateTooltip td.ui-datepicker-week-end a:hover {
+  color: #fff;
+}
+
+/* line 4, ../../../../../../src/base/core-ui/master/js/form/helper/imageMap/ImageMapAnswer.scss */
+.hm-form-helper-imageMapEditor-answer-isRight, .hm-form-helper-imageMapEditor-answer-switcher {
+  text-align: center;
+}
+
+/* line 9, ../../../../../../src/base/core-ui/master/js/form/helper/imageMap/ImageMapAnswer.scss */
+.hm-form-helper-imageMapEditor-answer-isRight input[type="checkbox"] {
+  cursor: pointer;
+}
+
+/* line 14, ../../../../../../src/base/core-ui/master/js/form/helper/imageMap/ImageMapAnswer.scss */
+.hm-form-helper-imageMapEditor-answer-caption {
+  padding: 3px;
+  vertical-align: middle;
+}
+/* line 18, ../../../../../../src/base/core-ui/master/js/form/helper/imageMap/ImageMapAnswer.scss */
+.hm-form-helper-imageMapEditor-answer-caption input {
+  width: 100% !important;
+}
+/* line 21, ../../../../../../src/base/core-ui/master/js/form/helper/imageMap/ImageMapAnswer.scss */
+.hm-form-helper-imageMapEditor_readOnly .hm-form-helper-imageMapEditor-answer-caption input {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+/* line 30, ../../../../../../src/base/core-ui/master/js/form/helper/imageMap/ImageMapAnswer.scss */
+.hm-form-helper-imageMapEditor-answer-actions {
+  vertical-align: middle;
+}
+
+/* line 34, ../../../../../../src/base/core-ui/master/js/form/helper/imageMap/ImageMapAnswer.scss */
+.hm-form-helper-imageMapEditor-answer-action {
+  margin-left: 5px;
+}
+
+/* line 4, ../../../../../../src/base/core-ui/master/js/form/helper/imageMap/ImageMapAnswer.scss */
+.hm-form-helper-imageMapEditor-answer-isRight, .hm-form-helper-imageMapEditor-answer-switcher {
+  text-align: center;
+}
+
+/* line 9, ../../../../../../src/base/core-ui/master/js/form/helper/imageMap/ImageMapAnswer.scss */
+.hm-form-helper-imageMapEditor-answer-isRight input[type="checkbox"] {
+  cursor: pointer;
+}
+
+/* line 14, ../../../../../../src/base/core-ui/master/js/form/helper/imageMap/ImageMapAnswer.scss */
+.hm-form-helper-imageMapEditor-answer-caption {
+  padding: 3px;
+  vertical-align: middle;
+}
+/* line 18, ../../../../../../src/base/core-ui/master/js/form/helper/imageMap/ImageMapAnswer.scss */
+.hm-form-helper-imageMapEditor-answer-caption input {
+  width: 100% !important;
+}
+/* line 21, ../../../../../../src/base/core-ui/master/js/form/helper/imageMap/ImageMapAnswer.scss */
+.hm-form-helper-imageMapEditor_readOnly .hm-form-helper-imageMapEditor-answer-caption input {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+/* line 30, ../../../../../../src/base/core-ui/master/js/form/helper/imageMap/ImageMapAnswer.scss */
+.hm-form-helper-imageMapEditor-answer-actions {
+  vertical-align: middle;
+}
+
+/* line 34, ../../../../../../src/base/core-ui/master/js/form/helper/imageMap/ImageMapAnswer.scss */
+.hm-form-helper-imageMapEditor-answer-action {
+  margin-left: 5px;
+}
+
+/* line 5, ../../../../../../src/base/core-ui/master/js/form/helper/imageMap/ImageMapEditor.scss */
+.hm-form-helper-imageMapEditor-answerList {
+  width: 100%;
+}
+
+/* line 9, ../../../../../../src/base/core-ui/master/js/form/helper/imageMap/ImageMapEditor.scss */
+.hm-form-helper-imageMapEditor-image {
+  margin-bottom: 10px;
+}
+
+/* line 3, ../../../../../../src/base/core-ui/master/js/autocomplete/Autocomplete.scss */
+.hm-autocomplete {
+  position: relative;
+  border: solid 1px #b7b7b7;
+  padding: 4px 6px;
+  line-height: normal;
+}
+/* line 9, ../../../../../../src/base/core-ui/master/js/autocomplete/Autocomplete.scss */
+.hm-autocomplete input {
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  vertical-align: top;
+  width: 100%;
+}
+
+/* line 21, ../../../../../../src/base/core-ui/master/js/autocomplete/Autocomplete.scss */
+.hm-autocomplete-ui {
+  padding: 0;
+  border-top: solid 1px #b7b7b7;
+}
+/* line 27, ../../../../../../src/base/core-ui/master/js/autocomplete/Autocomplete.scss */
+.hm-autocomplete-ui .ui-menu-item a,
+.hm-autocomplete-ui .ui-menu-item .ui-state-hover,
+.hm-autocomplete-ui .ui-menu-item .ui-state-active,
+.hm-autocomplete-ui .ui-menu-item a.ui-state-hover,
+.hm-autocomplete-ui .ui-menu-item a.ui-state-active {
+  margin: 0;
+  padding: 4px 6px;
+  color: #000000;
+  line-height: auto !important;
+  border: solid 1px #b7b7b7;
+  border-top: none;
+  cursor: pointer;
+}
+/* line 41, ../../../../../../src/base/core-ui/master/js/autocomplete/Autocomplete.scss */
+.hm-autocomplete-ui .ui-menu-item .ui-state-hover,
+.hm-autocomplete-ui .ui-menu-item a.ui-state-hover {
+  background-color: #f2f2f2;
+}
+
+/* line 1, ../../../../../../src/base/core-ui/master/js/autocomplete/search/Search.scss */
+.hm-autocomplete-search {
+  padding-right: 23px;
+}
+/* line 5, ../../../../../../src/base/core-ui/master/js/autocomplete/search/Search.scss */
+.hm-autocomplete-search .hm-autocomplete-button {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  right: 1px;
+  width: 21px;
+  height: 21px;
+  margin-top: -11px;
+  background-image: url("/images/infoblocks/trainings-calendar/autocomplete.gif");
+}
+/* line 15, ../../../../../../src/base/core-ui/master/js/autocomplete/search/Search.scss */
+.hm-autocomplete-search .hm-autocomplete-button:hover {
+  background-position: 0 -21px;
+}
+/* line 19, ../../../../../../src/base/core-ui/master/js/autocomplete/search/Search.scss */
+.hm-autocomplete-search .hm-autocomplete-button.hm-autocomplete-button-reset {
+  background-position: -21px 0;
+}
+/* line 22, ../../../../../../src/base/core-ui/master/js/autocomplete/search/Search.scss */
+.hm-autocomplete-search .hm-autocomplete-button.hm-autocomplete-button-reset:hover {
+  background-position: -21px -21px;
+}
+
+/* line 1, ../../../../../../src/base/core-ui/master/js/progressbar/Progressbar.scss */
+.hm-progressbar-wrap {
+  position: relative;
+}
+
+/* line 4, ../../../../../../src/base/core-ui/master/js/progressbar/Progressbar.scss */
+.ui-progressbar {
+  position: relative;
+  overflow: visible !important;
+}
+
+/* line 8, ../../../../../../src/base/core-ui/master/js/progressbar/Progressbar.scss */
+.ui-progressbar-label {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  margin-top: -6px;
+  font-size: 9px;
+  line-height: 11px;
+  text-shadow: 1px 1px 0 #E1E7F3;
+  z-index: 11;
+  font-weight: bold;
+  color: #1E3457;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 24, ../../../../../../src/base/core-ui/master/js/progressbar/Progressbar.scss */
+.hm-progressbar-value-label,
+.hm-progressbar-text-label {
+  position: absolute;
+  color: #b1bcca;
+  font-size: 11px;
+  line-height: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 33, ../../../../../../src/base/core-ui/master/js/progressbar/Progressbar.scss */
+.hm-progressbar-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  background-color: #b1bcca;
+  height: 100%;
+  z-index: 15;
+}
+
+/* line 43, ../../../../../../src/base/core-ui/master/js/progressbar/Progressbar.scss */
+.hm-progressbar-simple-line {
+  padding-top: 11px;
+  top: -11px;
+}
+/* line 47, ../../../../../../src/base/core-ui/master/js/progressbar/Progressbar.scss */
+.hm-progressbar-simple-line .hm-progressbar-value-label {
+  width: 30px;
+  margin-left: -15px;
+  text-align: center;
+  top: 100%;
+  left: 50%;
+  padding-top: 1px;
+}
+/* line 56, ../../../../../../src/base/core-ui/master/js/progressbar/Progressbar.scss */
+.hm-progressbar-simple-line .hm-progressbar-flag {
+  position: absolute;
+  top: 1px;
+  left: 100%;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 4px 0 4px 8px;
+  border-color: transparent transparent transparent #CD3000;
+}
+
+/* line 68, ../../../../../../src/base/core-ui/master/js/progressbar/Progressbar.scss */
+.hm-progressbar-alt-line {
+  padding: 11px 0;
+  top: -11px;
+  margin-left: -2px;
+}
+/* line 73, ../../../../../../src/base/core-ui/master/js/progressbar/Progressbar.scss */
+.hm-progressbar-alt-line .hm-progressbar-value-label {
+  padding-right: 1px;
+  bottom: -1px;
+  right: 100%;
+}
+/* line 78, ../../../../../../src/base/core-ui/master/js/progressbar/Progressbar.scss */
+.hm-progressbar-alt-line .hm-progressbar-text-label {
+  padding-left: 2px;
+  top: -1px;
+  left: 100%;
+}
+
+/* line 5, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.scss */
+.hm-calendar-dateRangeSwitcher {
+  font-size: 16px;
+  overflow: hidden;
+}
+
+/* line 14, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.scss */
+.hm-calendar-dateRangeSwitcher-prev,
+.hm-calendar-dateRangeSwitcher-next {
+  cursor: pointer;
+  float: left;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: block;
+  margin-right: 10px;
+}
+
+/* line 25, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.scss */
+.hm-calendar-dateRangeSwitcher-prev:after,
+.hm-calendar-dateRangeSwitcher-next:after {
+  content: ' ';
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-left: -7px;
+  left: 50%;
+  margin-top: -6px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+/* line 40, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.scss */
+.hm-calendar-dateRangeSwitcher-prev:after {
+  border-width: 6px 14px 6px 0;
+  border-color: transparent #3e63c6 transparent transparent;
+}
+
+/* line 44, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.scss */
+.hm-calendar-dateRangeSwitcher-next:after {
+  border-width: 6px 0 6px 14px;
+  border-color: transparent transparent transparent #3e63c6;
+}
+
+/* line 49, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.scss */
+.hm-calendar-dateRangeSwitcher-prev:hover:after {
+  border-color: transparent #e64c03 transparent transparent;
+}
+
+/* line 53, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.scss */
+.hm-calendar-dateRangeSwitcher-next:hover:after {
+  border-color: transparent transparent transparent #e64c03;
+}
+
+/* line 57, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.scss */
+.hm-calendar-dateRangeSwitcher-name {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* line 62, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.scss */
+.hm-calendar-dateRangeSwitcher-info {
+  float: left;
+  margin-top: -2px;
+  padding-bottom: 2px;
+}
+
+/* line 68, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.scss */
+.hm-calendar-dateRangeSwitcher-range {
+  font-size: 0.75em;
+  color: #e64c03;
+}
+
+/* line 73, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.scss */
+.hm-calendar-dateRangeSwitcher-from-editable,
+.hm-calendar-dateRangeSwitcher-to-editable {
+  cursor: pointer;
+  border-bottom: dotted 1px;
+}
+
+/* line 79, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.scss */
+.hm-calendar-dateRangeSwitcher-datePicker {
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  border: none;
+}
+
+/* line 1, ../../../../../../src/base/core-ui/master/js/contextmenu/ContextMenu.scss */
+.hm-context-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  border: solid 1px #aebdc7;
+  background-color: #eaeff2;
+  border-bottom: none;
+}
+/* line 15, ../../../../../../src/base/core-ui/master/js/contextmenu/ContextMenu.scss */
+.hm-context-menu li {
+  background-color: #eaeff2;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-bottom: solid 1px #dbe2e7;
+  color: #4B4B4B;
+}
+/* line 22, ../../../../../../src/base/core-ui/master/js/contextmenu/ContextMenu.scss */
+.hm-context-menu li:hover {
+  color: #ffffff;
+  background-color: #6c85ac;
+}
+/* line 28, ../../../../../../src/base/core-ui/master/js/contextmenu/ContextMenu.scss */
+.hm-context-menu li:last-child {
+  border-color: #aebdc7;
+}
+/* line 32, ../../../../../../src/base/core-ui/master/js/contextmenu/ContextMenu.scss */
+.hm-context-menu:after {
+  content: ' ';
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  background-color: #000000;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
+  opacity: 0.15;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* line 11, ../../../../../../src/base/core-ui/master/js/tooltip/Tooltip.scss */
+.hm-tooltip {
+  display: none;
+  position: absolute;
+  top: 220px;
+  left: 150px;
+  z-index: 1000;
+  border-color: #ffffff;
+}
+
+/* line 20, ../../../../../../src/base/core-ui/master/js/tooltip/Tooltip.scss */
+.hm-tooltip-content {
+  position: relative;
+  padding: 7px 8px;
+  background-color: #ffffff;
+  border: solid 1px #969696;
+}
+
+/* line 29, ../../../../../../src/base/core-ui/master/js/tooltip/Tooltip.scss */
+.hm-tooltip-shadow {
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=15);
+  -moz-opacity: 0.15;
+  -khtml-opacity: 0.15;
+  opacity: 0.15;
+}
+
+/* line 42, ../../../../../../src/base/core-ui/master/js/tooltip/Tooltip.scss */
+.hm-tooltip-shadow-arrow {
+  content: '';
+  display: none;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+}
+
+/* line 54, ../../../../../../src/base/core-ui/master/js/tooltip/Tooltip.scss */
+.hm-tooltip-arrow {
+  display: none;
+  position: absolute;
+  border-color: inherit;
+}
+
+/* line 59, ../../../../../../src/base/core-ui/master/js/tooltip/Tooltip.scss */
+.hm-tooltip-arrow:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+}
+
+/* line 67, ../../../../../../src/base/core-ui/master/js/tooltip/Tooltip.scss */
+.hm-tooltip-arrow:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+}
+
+/* line 80, ../../../../../../src/base/core-ui/master/js/tooltip/Tooltip.scss */
+.hm-tooltip-arrow-up .hm-tooltip-arrow {
+  display: block;
+  bottom: 100%;
+  left: 50%;
+  margin-bottom: -1px;
+}
+
+/* line 86, ../../../../../../src/base/core-ui/master/js/tooltip/Tooltip.scss */
+.hm-tooltip-arrow-up .hm-tooltip-arrow:after {
+  bottom: 100%;
+  left: -8px;
+  border-width: 0 8px 8px 8px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: inherit;
+}
+
+/* line 95, ../../../../../../src/base/core-ui/master/js/tooltip/Tooltip.scss */
+.hm-tooltip-arrow-up .hm-tooltip-arrow:before {
+  bottom: 100%;
+  left: -9px;
+  border-width: 0 9px 9px 9px;
+  border-color: transparent transparent #868686 transparent;
+}
+
+/* line 106, ../../../../../../src/base/core-ui/master/js/tooltip/Tooltip.scss */
+.hm-tooltip-arrow-down .hm-tooltip-arrow {
+  display: block;
+  top: 100%;
+  left: 50%;
+  margin-top: -1px;
+}
+
+/* line 112, ../../../../../../src/base/core-ui/master/js/tooltip/Tooltip.scss */
+.hm-tooltip-arrow-down .hm-tooltip-arrow:after {
+  top: 100%;
+  left: -8px;
+  border-width: 8px 8px 0 8px;
+  border-top-color: inherit;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
+/* line 121, ../../../../../../src/base/core-ui/master/js/tooltip/Tooltip.scss */
+.hm-tooltip-arrow-down .hm-tooltip-arrow:before {
+  top: 100%;
+  left: -9px;
+  border-width: 9px 9px 0 9px;
+  border-color: #868686 transparent transparent transparent;
+}
+
+/* line 127, ../../../../../../src/base/core-ui/master/js/tooltip/Tooltip.scss */
+.hm-tooltip-arrow-down .hm-tooltip-shadow-arrow {
+  display: block;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -1px;
+  border-width: 9px 9px 0 9px;
+  border-color: #000000 transparent transparent transparent;
+}
+
+/* line 141, ../../../../../../src/base/core-ui/master/js/tooltip/Tooltip.scss */
+.hm-tooltip-arrow-left .hm-tooltip-arrow {
+  display: block;
+  right: 100%;
+  top: 50%;
+  margin-right: -1px;
+}
+
+/* line 147, ../../../../../../src/base/core-ui/master/js/tooltip/Tooltip.scss */
+.hm-tooltip-arrow-left .hm-tooltip-arrow:after {
+  right: 100%;
+  top: -7px;
+  border-width: 8px 8px 8px 0;
+  border-top-color: transparent;
+  border-right-color: inherit;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
+/* line 156, ../../../../../../src/base/core-ui/master/js/tooltip/Tooltip.scss */
+.hm-tooltip-arrow-left .hm-tooltip-arrow:before {
+  right: 100%;
+  top: -8px;
+  border-width: 9px 9px 9px 0;
+  border-color: transparent #868686 transparent transparent;
+}
+
+/* line 167, ../../../../../../src/base/core-ui/master/js/tooltip/Tooltip.scss */
+.hm-tooltip-arrow-right .hm-tooltip-arrow {
+  display: block;
+  left: 100%;
+  top: 50%;
+  margin-left: -1px;
+}
+
+/* line 173, ../../../../../../src/base/core-ui/master/js/tooltip/Tooltip.scss */
+.hm-tooltip-arrow-right .hm-tooltip-arrow:after {
+  left: 100%;
+  top: -7px;
+  border-width: 8px 0 8px 8px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: inherit;
+  border-bottom-color: transparent;
+}
+
+/* line 182, ../../../../../../src/base/core-ui/master/js/tooltip/Tooltip.scss */
+.hm-tooltip-arrow-right .hm-tooltip-arrow:before {
+  left: 100%;
+  top: -8px;
+  border-width: 9px 0 9px 9px;
+  border-color: transparent transparent transparent #868686;
+}
+
+/* line 188, ../../../../../../src/base/core-ui/master/js/tooltip/Tooltip.scss */
+.hm-tooltip-arrow-right .hm-tooltip-shadow-arrow {
+  display: block;
+  left: 100%;
+  top: 50%;
+  margin-left: -2px;
+  margin-top: -7px;
+  border-width: 9px 0 9px 9px;
+  border-color: transparent transparent transparent #000000;
+}
+
+/* line 2, ../../../../../../src/base/core-ui/master/js/window/Window.scss */
+.ui-dialog .ui-dialog-content.hm-window {
+  background-color: #fff;
+  color: black;
+  overflow: auto;
+}
+/* line 7, ../../../../../../src/base/core-ui/master/js/window/Window.scss */
+.ui-dialog .ui-dialog-content.hm-window .hm-window-ajax-loader {
+  height: 100px;
+  background-image: url('/hm/images/common/hm/ajax-loader.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 1, ../../../../../../src/base/core-ui/master/js/window/dialog/Dialog.scss */
+.hm-dialog-loading {
+  text-align: center;
+  line-height: 200px;
+}
+
+/* line 9, ../../../../../../src/base/core-ui/master/js/imageMapEditor/ImageMapEditor.scss */
+.hm-imageMapEditor-imageContainer > img {
+  display: none;
+}
+
+/* line 1, ../../../../../../src/base/core-ui/master/js/select/Select.scss */
+.hm-select {
+  cursor: default;
+  position: relative;
+  color: #000000;
+  display: inline-block;
+  font-family: Verdana, Geneva, sans-serif;
+}
+/* line 8, ../../../../../../src/base/core-ui/master/js/select/Select.scss */
+.hm-select .hm-select-selected {
+  background-color: #ffffff;
+  border: solid 1px #A9A9A9;
+  border-radius: 2px;
+  padding: 1px 16px 3px 4px;
+}
+/* line 14, ../../../../../../src/base/core-ui/master/js/select/Select.scss */
+.hm-select .hm-select-selected:after {
+  content: ' ';
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  margin-top: -3px;
+  right: 5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 3px 0 3px;
+  border-color: #000000 transparent transparent transparent;
+}
+
+/* line 32, ../../../../../../src/base/core-ui/master/js/select/Select.scss */
+.hm-select-options-inside .hm-select-options {
+  position: static;
+  top: 0 !important;
+  left: 0 !important;
+}
+/* line 38, ../../../../../../src/base/core-ui/master/js/select/Select.scss */
+.hm-select-options-inside .hm-select-selected {
+  display: none !important;
+}
+
+/* line 43, ../../../../../../src/base/core-ui/master/js/select/Select.scss */
+.hm-select-options {
+  display: none;
+  z-index: 100;
+  background-color: #ffffff;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 52, ../../../../../../src/base/core-ui/master/js/select/Select.scss */
+.hm-select-options .hm-select-options-wrap {
+  border: solid 1px #7f9db9;
+}
+/* line 56, ../../../../../../src/base/core-ui/master/js/select/Select.scss */
+.hm-select-options ul {
+  display: block;
+  list-style: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+/* line 63, ../../../../../../src/base/core-ui/master/js/select/Select.scss */
+.hm-select-options .hm-select-option {
+  display: block;
+  cursor: default;
+  padding: 1px 4px 3px;
+  white-space: nowrap;
+}
+/* line 69, ../../../../../../src/base/core-ui/master/js/select/Select.scss */
+.hm-select-options .hm-select-option span {
+  display: block;
+  overflow: hidden;
+}
+/* line 74, ../../../../../../src/base/core-ui/master/js/select/Select.scss */
+.hm-select-options .hm-select-option:hover {
+  background-color: #B5DAFF;
+}
+/* line 79, ../../../../../../src/base/core-ui/master/js/select/Select.scss */
+.hm-select-options .hm-select-option-selected {
+  background-color: #1e90ff !important;
+  color: #ffffff;
+  position: relative;
+}
+/* line 84, ../../../../../../src/base/core-ui/master/js/select/Select.scss */
+.hm-select-options .hm-select-option-selected:hover {
+  background-color: #4FA8FF !important;
+}
+
+/* line 1, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-select-headSwitcher {
+  display: inline-block;
+  /* ╨б╨▓╨╕╤В╤З╨╡╤А╤Л ╤Б ╨╕╨║╨╛╨╜╨║╨░╨╝╨╕ */
+}
+/* line 5, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-select-headSwitcher .hm-select-options-wrap {
+  border: none;
+}
+/* line 9, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-select-headSwitcher .hm-select-options {
+  background-color: transparent;
+}
+/* line 13, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-select-headSwitcher .hm-select-option {
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
+  padding: 2px 5px;
+  margin-right: 2px;
+  padding-bottom: 4px;
+}
+/* line 21, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-select-headSwitcher .hm-select-option:hover {
+  color: #2d53a4;
+  border-color: #2d53a4;
+  background-color: transparent;
+}
+/* line 25, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-select-headSwitcher .hm-select-option:hover span {
+  border-color: #2d53a4;
+}
+/* line 30, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-select-headSwitcher .hm-select-option span {
+  display: inline;
+  border-bottom: dashed 1px #000000;
+}
+/* line 35, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-select-headSwitcher .hm-select-option:after {
+  visibility: hidden;
+  content: ' \00D7';
+}
+/* line 41, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-select-headSwitcher .hm-select-option-selected {
+  cursor: default;
+  color: #ffffff !important;
+  background-color: #2d53a4 !important;
+}
+/* line 46, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-select-headSwitcher .hm-select-option-selected:hover {
+  border-color: #e5e5e5;
+  background-color: #2d53a4 !important;
+  color: #ffffff;
+}
+/* line 52, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-select-headSwitcher .hm-select-option-selected span {
+  padding-bottom: 1px;
+  border-bottom: none;
+}
+/* line 57, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-select-headSwitcher .hm-select-option-selected:after {
+  visibility: visible;
+}
+/* line 63, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-select-headSwitcher .hm-select-option-icon-1,
+.hm-select-headSwitcher .hm-select-option-programm,
+.hm-select-headSwitcher .hm-select-option-icon-2,
+.hm-select-headSwitcher .hm-select-option-list,
+.hm-select-headSwitcher .hm-select-option-icon-3,
+.hm-select-headSwitcher .hm-select-option-table {
+  line-height: 16px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 6px;
+  background-color: #ffffff;
+  border: 1px #e5e5e5 solid;
+}
+/* line 76, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-select-headSwitcher .hm-select-option-icon-1:hover,
+.hm-select-headSwitcher .hm-select-option-programm:hover,
+.hm-select-headSwitcher .hm-select-option-icon-2:hover,
+.hm-select-headSwitcher .hm-select-option-list:hover,
+.hm-select-headSwitcher .hm-select-option-icon-3:hover,
+.hm-select-headSwitcher .hm-select-option-table:hover {
+  background-color: #ffffff;
+}
+/* line 80, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-select-headSwitcher .hm-select-option-icon-1:after,
+.hm-select-headSwitcher .hm-select-option-programm:after,
+.hm-select-headSwitcher .hm-select-option-icon-2:after,
+.hm-select-headSwitcher .hm-select-option-list:after,
+.hm-select-headSwitcher .hm-select-option-icon-3:after,
+.hm-select-headSwitcher .hm-select-option-table:after {
+  display: none;
+}
+/* line 84, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-select-headSwitcher .hm-select-option-icon-1:before,
+.hm-select-headSwitcher .hm-select-option-programm:before,
+.hm-select-headSwitcher .hm-select-option-icon-2:before,
+.hm-select-headSwitcher .hm-select-option-list:before,
+.hm-select-headSwitcher .hm-select-option-icon-3:before,
+.hm-select-headSwitcher .hm-select-option-table:before {
+  vertical-align: bottom;
+  margin-right: 5px;
+  display: inline-block;
+  content: ' ';
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  background-image: url("/images/icons/switcher-icon.png");
+}
+/* line 98, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-select-headSwitcher .hm-select-option-icon-1:before,
+.hm-select-headSwitcher .hm-select-option-programm:before {
+  background-position: 0 0;
+}
+/* line 101, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-select-headSwitcher .hm-select-option-icon-1.hm-select-option-selected:before,
+.hm-select-headSwitcher .hm-select-option-programm.hm-select-option-selected:before {
+  background-position: 0 -16px;
+}
+/* line 108, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-select-headSwitcher .hm-select-option-icon-2:before,
+.hm-select-headSwitcher .hm-select-option-list:before {
+  background-position: -16px 0;
+}
+/* line 111, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-select-headSwitcher .hm-select-option-icon-2.hm-select-option-selected:before,
+.hm-select-headSwitcher .hm-select-option-list.hm-select-option-selected:before {
+  background-position: -16px -16px;
+}
+/* line 118, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-select-headSwitcher .hm-select-option-icon-3:before,
+.hm-select-headSwitcher .hm-select-option-table:before {
+  background-position: -32px 0;
+}
+/* line 121, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-select-headSwitcher .hm-select-option-icon-3.hm-select-option-selected:before,
+.hm-select-headSwitcher .hm-select-option-table.hm-select-option-selected:before {
+  background-position: -32px -16px;
+}
+
+/* line 127, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-head-switcher-left,
+.hm-head-switcher-right {
+  margin-bottom: 10px;
+}
+
+/* line 132, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-head-switcher-left {
+  float: left;
+}
+
+/* line 136, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-head-switcher-right {
+  float: right;
+}
+/* line 139, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-head-switcher-right .hm-select-option {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+/* line 145, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-head-switchers {
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+/* line 149, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-head-switchers .hm-head-switcher-label {
+  vertical-align: top;
+  line-height: 1.6em;
+}
+/* line 154, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-head-switchers #hm-head-switcher-list-switcher {
+  float: left;
+}
+/* line 158, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-head-switchers #hm-head-switcher-default {
+  float: right;
+}
+/* line 161, ../../../../../../src/base/core-ui/master/js/select/custom/HeadSwitcher.scss */
+.hm-head-switchers #hm-head-switcher-default .hm-select-option {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+/* line 2, ../../../../../../src/base/core-ui/master/js/tree/Tree.scss */
+.hm-tree ul, .hm-tree li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 8, ../../../../../../src/base/core-ui/master/js/tree/Tree.scss */
+.hm-tree .ui-state-disabled.ui-draggable-disabled {
+  opacity: 1;
+}
+/* line 12, ../../../../../../src/base/core-ui/master/js/tree/Tree.scss */
+.hm-tree .hm-tree-node .hm-tree-node-children {
+  display: none;
+  margin-left: 16px;
+}
+/* line 17, ../../../../../../src/base/core-ui/master/js/tree/Tree.scss */
+.hm-tree .hm-tree-node .hm-tree-node-item {
+  margin-bottom: 1px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+}
+/* line 23, ../../../../../../src/base/core-ui/master/js/tree/Tree.scss */
+.hm-tree .hm-tree-node .hm-tree-node-item span {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 28, ../../../../../../src/base/core-ui/master/js/tree/Tree.scss */
+.hm-tree .hm-tree-node .hm-tree-node-item .hm-tree-node-icon,
+.hm-tree .hm-tree-node .hm-tree-node-item .hm-tree-node-connector {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+}
+/* line 37, ../../../../../../src/base/core-ui/master/js/tree/Tree.scss */
+.hm-tree .hm-tree-node .hm-tree-node-item .hm-tree-node-icon {
+  left: 18px;
+  background-image: url("/images/icons/tree.gif");
+}
+/* line 42, ../../../../../../src/base/core-ui/master/js/tree/Tree.scss */
+.hm-tree .hm-tree-node .hm-tree-node-item .hm-tree-node-title {
+  border: solid 0px white;
+  min-height: 16px;
+  line-height: 16px;
+  font-size: 13px;
+  padding: 1px 3px;
+  margin-left: 36px;
+}
+/* line 52, ../../../../../../src/base/core-ui/master/js/tree/Tree.scss */
+.hm-tree .hm-tree-node .hm-tree-node-item:hover .hm-tree-node-title {
+  background-color: #F2F7FD;
+  border-color: #B8D6FB;
+  border-width: 1px;
+  padding: 0 2px;
+}
+/* line 58, ../../../../../../src/base/core-ui/master/js/tree/Tree.scss */
+.hm-tree .hm-tree-node .hm-tree-node-item:hover .hm-tree-node-connector {
+  background-position: -16px -81px;
+}
+/* line 65, ../../../../../../src/base/core-ui/master/js/tree/Tree.scss */
+.hm-tree .hm-tree-node .hm-tree-node-hasChildren .hm-tree-node-connector {
+  background-image: url("/images/icons/tree.gif");
+  background-position: 0 -81px;
+}
+/* line 72, ../../../../../../src/base/core-ui/master/js/tree/Tree.scss */
+.hm-tree .hm-tree-node .hm-tree-node-expanded .hm-tree-node-connector {
+  background-position: -32px -81px;
+}
+/* line 76, ../../../../../../src/base/core-ui/master/js/tree/Tree.scss */
+.hm-tree .hm-tree-node .hm-tree-node-expanded:hover .hm-tree-node-connector {
+  background-position: -48px -81px !important;
+}
+/* line 83, ../../../../../../src/base/core-ui/master/js/tree/Tree.scss */
+.hm-tree .hm-tree-node .hm-tree-node-active .hm-tree-node-title {
+  background-color: #D8F0FA !important;
+  border-color: #99DEFD !important;
+  border-width: 1px;
+  padding: 0 2px;
+}
+/* line 90, ../../../../../../src/base/core-ui/master/js/tree/Tree.scss */
+.hm-tree .hm-tree-node .hm-tree-node-active:hover .hm-tree-node-title {
+  background-color: #F2F7FD !important;
+  border-width: 1px;
+  padding: 0 2px;
+}
+/* line 99, ../../../../../../src/base/core-ui/master/js/tree/Tree.scss */
+.hm-tree .hm-tree-node .hm-tree-node-dropIn .hm-tree-node-title {
+  border-style: dotted;
+  background-color: #D0F3C5 !important;
+  border-color: #49A02E !important;
+  border-width: 1px;
+  padding: 0 2px;
+}
+/* line 108, ../../../../../../src/base/core-ui/master/js/tree/Tree.scss */
+.hm-tree .hm-tree-node .hm-tree-node-folder .hm-tree-node-icon {
+  background-position: 0px -16px;
+}
+
+/* line 114, ../../../../../../src/base/core-ui/master/js/tree/Tree.scss */
+.hm-droppable-over {
+  background-color: red;
+}
+
+/* line 117, ../../../../../../src/base/core-ui/master/js/tree/Tree.scss */
+.hm-tree-draggable-helper {
+  height: 16px;
+  border-radius: 2px;
+  background-color: #D0F3C5;
+  border: dotted 1px #49A02E;
+  margin-bottom: 1px !important;
+  margin-left: 18px !important;
+}
+
+/* line 129, ../../../../../../src/base/core-ui/master/js/tree/Tree.scss */
+.hm-tree-draggable-arrow-helper {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-image: url("/images/icons/green-arrow-12.png");
+  position: absolute;
+  top: -2px;
+  left: 7px;
+}
+
+/** initial setup **/
+/* line 2, ../../../../../../src/base/core-ui/master/js/nanoscroller/Nanoscroller.scss */
+.nano {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 8, ../../../../../../src/base/core-ui/master/js/nanoscroller/Nanoscroller.scss */
+.nano > .nano-content {
+  position: absolute;
+  overflow: scroll;
+  overflow-x: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 17, ../../../../../../src/base/core-ui/master/js/nanoscroller/Nanoscroller.scss */
+.nano > .nano-content:focus {
+  outline: thin dotted;
+}
+
+/* line 20, ../../../../../../src/base/core-ui/master/js/nanoscroller/Nanoscroller.scss */
+.nano > .nano-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* line 23, ../../../../../../src/base/core-ui/master/js/nanoscroller/Nanoscroller.scss */
+.has-scrollbar > .nano-content::-webkit-scrollbar {
+  display: block;
+}
+
+/* line 26, ../../../../../../src/base/core-ui/master/js/nanoscroller/Nanoscroller.scss */
+.nano > .nano-pane {
+  background: #F1F1F1;
+  position: absolute;
+  width: 10px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  visibility: hidden\9;
+  /* Target only IE7 and IE8 with this hack */
+  opacity: .01;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 43, ../../../../../../src/base/core-ui/master/js/nanoscroller/Nanoscroller.scss */
+.nano > .nano-pane > .nano-slider {
+  background: #BCBCBC;
+  margin: 0 1px;
+  position: relative;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 51, ../../../../../../src/base/core-ui/master/js/nanoscroller/Nanoscroller.scss */
+.nano:hover > .nano-pane, .nano-pane.active, .nano-pane.flashed {
+  visibility: visible\9;
+  /* Target only IE7 and IE8 with this hack */
+  opacity: 0.99;
+}
+
+/* line 3, ../../../../../../src/modules/es/temocenter/js/ui/event/toolbar/EventToolbar.scss */
+.hm-es-event-toolbar {
+  font-size: 11px;
+  font-family: "PT Sans", verdana, sans-serif;
+  position: absolute;
+  display: block;
+  vertical-align: top;
+  height: 32px;
+  line-height: 32px;
+  top: 0;
+  left: 0;
+  color: #fff;
+  padding: 0 !important;
+}
+
+/*#user-block {
+    @include max-screen(1140px) {
+        .welcome-text {
+            display: none;
+        }
+    }
+
+    @include max-screen(1030px) {
+        .language-select, .ui-selectmenu {
+            display: none;
+        }
+    }
+
+    @include max-screen(900px) {
+        h3.name {
+            display: none !important;
+        }
+    }
+}
+
+.user-block-wrapper-restoreable {
+
+    #user-block {
+        @include max-screen(1190px) {
+            .welcome-text {
+                display: none;
+            }
+        }
+
+        @include max-screen(1080px) {
+            .language-select, .ui-selectmenu {
+                display: none;
+            }
+        }
+
+        @include max-screen(950px) {
+            h3.name {
+                display: none !important;
+            }
+        }
+    }
+}*/
+/* line 3, ../../../../../../src/modules/es/temocenter/js/ui/event/toolbar/button/EventToolbarButton.scss */
+.hm-es-event-toolbar-button {
+  float: right;
+  font-style: normal;
+  padding: 0 1px 0 6px !important;
+  cursor: default;
+}
+/* line 10, ../../../../../../src/modules/es/temocenter/js/ui/event/toolbar/button/EventToolbarButton.scss */
+.hm-es-event-toolbar-button.hm-es-event-toolbar-button-selected .hm-es-event-toolbar-button-icon-tab {
+  background-color: #fff;
+}
+
+/* line 17, ../../../../../../src/modules/es/temocenter/js/ui/event/toolbar/button/EventToolbarButton.scss */
+.hm-es-event-toolbar-button-icon-tab {
+  -moz-border-radius: 2px 2px 0 0;
+  -webkit-border-radius: 2px;
+  border-radius: 2px 2px 0 0;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 24, ../../../../../../src/modules/es/temocenter/js/ui/event/toolbar/button/EventToolbarButton.scss */
+.hm-es-event-toolbar-button-icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  font-size: 11px;
+  font-weight: bold;
+  background-color: #686868;
+  border: 1px solid #6e6e6e;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 35, ../../../../../../src/modules/es/temocenter/js/ui/event/toolbar/button/EventToolbarButton.scss */
+.hm-es-event-toolbar-button-icon.hm-es-event-toolbar-button-new-events {
+  background-color: #cc3c29;
+  border-color: #d03622;
+}
+
+/* line 2, ../../../../../../src/modules/es/temocenter/js/ui/event/list/EventList.scss */
+body > .hm-es-event-list {
+  max-height: 70%;
+}
+
+/* line 7, ../../../../../../src/modules/es/temocenter/js/ui/event/list/EventList.scss */
+.hm-es-event-list {
+  font-size: 12px;
+  font-family: "PT Sans", verdana, sans-serif;
+  width: 500px;
+  background: #fff;
+  z-index: 10;
+  color: black;
+  border: 1px solid #bebebe;
+  border-top-width: 0;
+  -moz-box-shadow: 0px 2px 2px 0 #dadada;
+  -webkit-box-shadow: 0px 2px 2px 0 #dadada;
+  box-shadow: 0px 2px 2px 0 #dadada;
+  overflow-y: auto;
+}
+/* line 19, ../../../../../../src/modules/es/temocenter/js/ui/event/list/EventList.scss */
+.hm-es-event-list span {
+  padding: 0;
+}
+/* line 23, ../../../../../../src/modules/es/temocenter/js/ui/event/list/EventList.scss */
+.hm-es-event-list q {
+  color: #3366cc;
+  quotes: "\00ab" "\00bb" "'" "'";
+}
+/* line 27, ../../../../../../src/modules/es/temocenter/js/ui/event/list/EventList.scss */
+.hm-es-event-list q::before {
+  content: open-quote;
+}
+/* line 31, ../../../../../../src/modules/es/temocenter/js/ui/event/list/EventList.scss */
+.hm-es-event-list q::after {
+  content: close-quote;
+}
+
+/* line 37, ../../../../../../src/modules/es/temocenter/js/ui/event/list/EventList.scss */
+.hm-es-event-list-header {
+  font-size: 15px;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #bebebe;
+  padding: 0 22px;
+}
+
+/* line 45, ../../../../../../src/modules/es/temocenter/js/ui/event/list/EventList.scss */
+.hm-es-event-list-url {
+  float: right;
+  color: #3366cc;
+}
+
+/* line 50, ../../../../../../src/modules/es/temocenter/js/ui/event/list/EventList.scss */
+.hm-es-event-list-title {
+  font-weight: bold;
+}
+
+/* line 54, ../../../../../../src/modules/es/temocenter/js/ui/event/list/EventList.scss */
+.hm-es-event-list-body {
+  padding: 0 5px;
+}
+
+/* line 58, ../../../../../../src/modules/es/temocenter/js/ui/event/list/EventList.scss */
+.hm-es-event-list-body-empty {
+  line-height: 60px;
+  color: #9d9a9a;
+  text-align: center;
+  display: none;
+}
+
+/* line 1, ../../../../../../src/modules/es/temocenter/js/ui/event/list/group/DefaultEventGroup.scss */
+.hm-es-event-list-group {
+  margin: 5px 0;
+  border: 1px solid #e1e1e1;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 8, ../../../../../../src/modules/es/temocenter/js/ui/event/list/group/DefaultEventGroup.scss */
+.hm-es-event-list-group > h3 {
+  font-size: 15px;
+  line-height: 13px;
+  padding: 0 25px 0 35px;
+  line-height: 40px;
+  background-color: #efefef;
+  border-bottom: 1px solid #e1e1e1;
+}
+/* line 18, ../../../../../../src/modules/es/temocenter/js/ui/event/list/group/DefaultEventGroup.scss */
+.hm-es-event-list-group.hm-es-event-list-group-with-new-events > h3 {
+  background-color: #c7fbcd;
+}
+/* line 23, ../../../../../../src/modules/es/temocenter/js/ui/event/list/group/DefaultEventGroup.scss */
+.hm-es-event-list-group:hover {
+  background-color: #fafafa;
+}
+/* line 29, ../../../../../../src/modules/es/temocenter/js/ui/event/list/group/DefaultEventGroup.scss */
+.hm-es-event-list-group.hm-es-event-list-group-with-avatar > h3 {
+  padding-left: 20px;
+}
+
+/* line 35, ../../../../../../src/modules/es/temocenter/js/ui/event/list/group/DefaultEventGroup.scss */
+.hm-es-event-list-group-avatar, .hm-es-event-list-group-avatar-wrapper {
+  width: 35px;
+  height: 35px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* line 43, ../../../../../../src/modules/es/temocenter/js/ui/event/list/group/DefaultEventGroup.scss */
+.hm-es-event-list-group-avatar-wrapper {
+  float: left;
+  margin-right: 5px;
+  margin-top: 3px;
+}
+
+/* line 53, ../../../../../../src/modules/es/temocenter/js/ui/event/list/group/DefaultEventGroup.scss */
+.hm-es-event-list-group-type {
+  float: right;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 11px;
+}
+
+/* line 60, ../../../../../../src/modules/es/temocenter/js/ui/event/list/group/DefaultEventGroup.scss */
+.hm-es-event-list-group-title {
+  color: #000000;
+  font-weight: normal;
+}
+
+/* line 65, ../../../../../../src/modules/es/temocenter/js/ui/event/list/group/DefaultEventGroup.scss */
+.hm-es-event-list-group-name {
+  color: #3366cc;
+  font-weight: bold;
+}
+
+/* line 70, ../../../../../../src/modules/es/temocenter/js/ui/event/list/group/DefaultEventGroup.scss */
+.hm-es-event-list-group-action {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+/* line 75, ../../../../../../src/modules/es/temocenter/js/ui/event/list/group/DefaultEventGroup.scss */
+.hm-es-event-list-group-icon-more {
+  width: 6px;
+  height: 13px;
+  background-image: url('/hm/images/common/es/event/list/group/more.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+/* line 87, ../../../../../../src/modules/es/temocenter/js/ui/event/list/group/DefaultEventGroup.scss */
+.hm-es-event-list-group-trigger {
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
+/* line 93, ../../../../../../src/modules/es/temocenter/js/ui/event/list/group/DefaultEventGroup.scss */
+.hm-es-event-list-group-trigger:hover {
+  background-color: #eeeeee;
+}
+
+/* line 1, ../../../../../../src/modules/es/temocenter/js/ui/event/list/item/EventAbstract.scss */
+.hm-es-event-list-item {
+  padding: 8px 25px;
+  font-size: 12px;
+  color: #000;
+  min-height: 35px;
+  cursor: pointer;
+  position: relative;
+}
+/* line 9, ../../../../../../src/modules/es/temocenter/js/ui/event/list/item/EventAbstract.scss */
+.hm-es-event-list-item:hover {
+  background-color: #f1f1f1;
+}
+/* line 12, ../../../../../../src/modules/es/temocenter/js/ui/event/list/item/EventAbstract.scss */
+.hm-es-event-list-item:hover .hm-es-event-list-item-new-trigger {
+  background-color: #c7fbcd;
+  background-image: url('/hm/images/common/es/event/list/item/ok.png');
+  border-right: 1px solid #e1e1e1;
+}
+/* line 17, ../../../../../../src/modules/es/temocenter/js/ui/event/list/item/EventAbstract.scss */
+.hm-es-event-list-item:hover .hm-es-event-list-item-new-trigger:hover {
+  background-color: #baeec0;
+}
+/* line 23, ../../../../../../src/modules/es/temocenter/js/ui/event/list/item/EventAbstract.scss */
+.hm-es-event-list-item.hm-es-event-list-item-new {
+  background-color: #e9fff4;
+}
+/* line 26, ../../../../../../src/modules/es/temocenter/js/ui/event/list/item/EventAbstract.scss */
+.hm-es-event-list-item.hm-es-event-list-item-new:hover {
+  background-color: #daf0e5;
+}
+
+/* line 32, ../../../../../../src/modules/es/temocenter/js/ui/event/list/item/EventAbstract.scss */
+.hm-es-event-list-item-portfolio-add {
+  float: right;
+  padding: 3px 0 0 10px;
+  text-align: center;
+  width: 95px;
+}
+
+/* line 39, ../../../../../../src/modules/es/temocenter/js/ui/event/list/item/EventAbstract.scss */
+.hm-es-event-list-item-author {
+  padding: 3px;
+  color: #3366cc;
+}
+
+/* line 44, ../../../../../../src/modules/es/temocenter/js/ui/event/list/item/EventAbstract.scss */
+.hm-es-event-list-item-desc, .hm-es-event-list-item-datetime {
+  color: #9d9a9a;
+}
+
+/* line 48, ../../../../../../src/modules/es/temocenter/js/ui/event/list/item/EventAbstract.scss */
+.hm-es-event-list-item-desc {
+  margin: 3px 70px 3px 45px;
+  font-size: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 50px;
+}
+/* line 55, ../../../../../../src/modules/es/temocenter/js/ui/event/list/item/EventAbstract.scss */
+.hm-es-event-list-item-desc q {
+  color: inherit;
+}
+
+/* line 60, ../../../../../../src/modules/es/temocenter/js/ui/event/list/item/EventAbstract.scss */
+.hm-es-event-list-item-datetime {
+  float: right;
+  text-align: center;
+  padding: 3px 0 0 10px;
+}
+
+/* line 66, ../../../../../../src/modules/es/temocenter/js/ui/event/list/item/EventAbstract.scss */
+.hm-es-event-list-item-date {
+  font-weight: bold;
+}
+
+/* line 70, ../../../../../../src/modules/es/temocenter/js/ui/event/list/item/EventAbstract.scss */
+.hm-es-event-list-item-avatar, .hm-es-event-list-item-avatar-wrapper {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+}
+
+/* line 78, ../../../../../../src/modules/es/temocenter/js/ui/event/list/item/EventAbstract.scss */
+.hm-es-event-list-item-avatar-wrapper {
+  float: left;
+  margin-right: 5px;
+}
+
+/* line 87, ../../../../../../src/modules/es/temocenter/js/ui/event/list/item/EventAbstract.scss */
+.hm-es-event-list-item-new-trigger {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 1, ../../../../../../src/modules/es/temocenter/js/ui/event/list/item/wiki/WikiPage.scss */
+.hm-es-event-list-item-wiki {
+  min-height: 17px;
+}
+
+/* line 1, ../../../../../../src/modules/es/temocenter/js/ui/event/list/item/personalMessage/PersonalMessage.scss */
+.hm-es-event-list-item-message > .hm-es-event-list-item-desc {
+  max-height: auto;
+  margin-left: 0px;
+}
+
+/* line 2, ../../../../../../src/modules/es/temocenter/js/ui/event/panel/EventListPanel.scss */
+.hm-es-event-panel .hm-es-event-toolbar {
+  position: relative;
+  right: auto;
+  border: 1px solid silver;
+  background-color: #616161;
+}
+/* line 8, ../../../../../../src/modules/es/temocenter/js/ui/event/panel/EventListPanel.scss */
+.hm-es-event-panel .hm-es-event-toolbar-button {
+  float: left;
+  /* cursor: pointer; */
+}
+/* line 12, ../../../../../../src/modules/es/temocenter/js/ui/event/panel/EventListPanel.scss */
+.hm-es-event-panel .hm-es-event-toolbar-button.hm-es-event-toolbar-button-selected {
+  background-color: #383838;
+}
+/* line 15, ../../../../../../src/modules/es/temocenter/js/ui/event/panel/EventListPanel.scss */
+.hm-es-event-panel .hm-es-event-toolbar-button.hm-es-event-toolbar-button-selected .hm-es-event-toolbar-button-icon-tab {
+  background-color: transparent;
+}
+/* line 20, ../../../../../../src/modules/es/temocenter/js/ui/event/panel/EventListPanel.scss */
+.hm-es-event-panel .hm-es-event-toolbar-button-icon-tab {
+  cursor: auto;
+}
+/* line 24, ../../../../../../src/modules/es/temocenter/js/ui/event/panel/EventListPanel.scss */
+.hm-es-event-panel .hm-es-event-list {
+  width: auto;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+}
+/* line 30, ../../../../../../src/modules/es/temocenter/js/ui/event/panel/EventListPanel.scss */
+.hm-es-event-panel .hm-es-event-list-body {
+  padding: 0;
+}
+/* line 34, ../../../../../../src/modules/es/temocenter/js/ui/event/panel/EventListPanel.scss */
+.hm-es-event-panel .hm-es-event-list-header {
+  display: none;
+}
+
+/* line 39, ../../../../../../src/modules/es/temocenter/js/ui/event/panel/EventListPanel.scss */
+.hm-es-event-panel-trigger {
+  line-height: 30px;
+  font-size: 15px;
+  text-align: center;
+  border-top-width: 0;
+  cursor: pointer;
+}
+/* line 47, ../../../../../../src/modules/es/temocenter/js/ui/event/panel/EventListPanel.scss */
+.hm-es-event-panel-trigger:hover {
+  background-color: #eeeeee;
+}
+
+/* line 13, ../../../../../../src/modules/messenger/master/js/ui/Messenger.scss */
+.hm-messenger-messages-placeholder {
+  width: 100%;
+  height: 100%;
+  font-size: 1.2em;
+  border-collapse: collapse;
+  color: #808080;
+  text-shadow: 1px 1px #FFF;
+}
+/* line 21, ../../../../../../src/modules/messenger/master/js/ui/Messenger.scss */
+.hm-messenger-messages-placeholder td {
+  vertical-align: middle;
+  background-color: #F7F7F7;
+  border: solid 1px #EAEAEA;
+}
+/* line 27, ../../../../../../src/modules/messenger/master/js/ui/Messenger.scss */
+.hm-messenger-messages-placeholder ul {
+  display: block;
+  width: 550px;
+  margin-right: 14px;
+  float: right;
+  list-style: square;
+  margin-right:  auto;
+}
+/* line 35, ../../../../../../src/modules/messenger/master/js/ui/Messenger.scss */
+.hm-messenger-messages-placeholder li {
+  margin-bottom: 5px;
+}
+
+/* line 40, ../../../../../../src/modules/messenger/master/js/ui/Messenger.scss */
+.hm-messenger {
+  /* height: 740px; */
+  font-size: 10px;
+  line-height: 1.8em;
+}
+
+/* line 46, ../../../../../../src/modules/messenger/master/js/ui/Messenger.scss */
+.hm-messenger-contacts-list-wrap {
+  height: 740px;
+  float: right;
+  width: 30%;
+  font-size: 1em;
+}
+
+/* line 53, ../../../../../../src/modules/messenger/master/js/ui/Messenger.scss */
+.hm-messenger-messages-list-wrap {
+  height: 400px;
+  float: left;
+  width: 70%;
+  font-size: 1em;
+}
+/* line 59, ../../../../../../src/modules/messenger/master/js/ui/Messenger.scss */
+.hm-messenger-messages-list-wrap .nano-pane {
+  right: auto;
+  left: 0;
+}
+
+/* line 65, ../../../../../../src/modules/messenger/master/js/ui/Messenger.scss */
+.hm-messenger-input-wrap {
+  height: 340px;
+  float: left;
+  width: 70%;
+}
+
+/* line 3, ../../../../../../src/modules/messenger/master/js/ui/message/Message.scss */
+.hm-messenger-message {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+/* line 8, ../../../../../../src/modules/messenger/master/js/ui/message/Message.scss */
+.hm-messenger-message:last-child {
+  margin-bottom: 0;
+}
+
+/* line 12, ../../../../../../src/modules/messenger/master/js/ui/message/Message.scss */
+.hm-messenger-message-delimiter,
+.hm-messenger-message-date,
+.hm-messenger-message-author {
+  float: right;
+  color: #9E9E9E;
+}
+
+/* line 19, ../../../../../../src/modules/messenger/master/js/ui/message/Message.scss */
+.hm-messenger-message-message {
+  clear: both;
+  padding: 10px;
+  font-size: 1.2em;
+  position: relative;
+  background-color: #E2ECFF;
+  border-left: none;
+  border-right: solid 2px #2D54A5;
+  margin-right: 0;
+  margin-left: 100px;
+}
+
+/* line 33, ../../../../../../src/modules/messenger/master/js/ui/message/Message.scss */
+.hm-messenger-message_isNew .hm-messenger-message-indicator {
+  display: block;
+}
+
+/* line 38, ../../../../../../src/modules/messenger/master/js/ui/message/Message.scss */
+.hm-messenger-message-indicator {
+  display: none;
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  background-color: #FF9D00;
+}
+
+/* line 52, ../../../../../../src/modules/messenger/master/js/ui/message/Message.scss */
+.hm-messenger-message_isMy .hm-messenger-message-delimiter,
+.hm-messenger-message_isMy .hm-messenger-message-date,
+.hm-messenger-message_isMy .hm-messenger-message-author {
+  float: left;
+}
+/* line 58, ../../../../../../src/modules/messenger/master/js/ui/message/Message.scss */
+.hm-messenger-message_isMy .hm-messenger-message-message {
+  background-color: #EAEAEA;
+  border-left: solid 2px #909090;
+  border-right: none;
+  margin-right: 100px;
+  margin-left: 0;
+}
+
+/* line 67, ../../../../../../src/modules/messenger/master/js/ui/message/Message.scss */
+.hm-messenger-message-img-placeholder {
+  display: inline-block;
+  cursor: pointer;
+  height: 21px;
+  line-height: 20px;
+  background-color: #FFFFFF;
+  padding-right: 6px;
+  text-decoration: underline;
+  color: #2D54A5;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+}
+/* line 81, ../../../../../../src/modules/messenger/master/js/ui/message/Message.scss */
+.hm-messenger-message-img-placeholder:before {
+  content: ' ';
+  overflow: hidden;
+  width: 21px;
+  height: 21px;
+  background: url("/js/tiny_mce/themes/advanced/img/icons.gif") no-repeat -380px 0;
+  display: block;
+  float: left;
+}
+/* line 91, ../../../../../../src/modules/messenger/master/js/ui/message/Message.scss */
+.hm-messenger-message-img-placeholder:hover {
+  color: #EC9200;
+}
+
+/* line 3, ../../../../../../src/modules/messenger/master/js/ui/message/MessagesList.scss */
+.hm-messenger-messages-list-items-container {
+  padding-left: 15px;
+}
+
+/* line 3, ../../../../../../src/modules/messenger/master/js/ui/contact/Contact.scss */
+.hm-messenger-contact {
+  background-color: #F7F7F7;
+  border: solid 1px #EAEAEA;
+  margin-bottom: 4px;
+  cursor: pointer;
+  padding: 6px;
+  font-size: 1.3em;
+  line-height: 1.2em;
+  position: relative;
+  margin-left: 20px;
+  color: #656565;
+  text-shadow: 1px 1px #FFF;
+}
+/* line 17, ../../../../../../src/modules/messenger/master/js/ui/contact/Contact.scss */
+.hm-messenger-contact table {
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+}
+/* line 23, ../../../../../../src/modules/messenger/master/js/ui/contact/Contact.scss */
+.hm-messenger-contact td {
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../../src/modules/messenger/master/js/ui/contact/Contact.scss */
+.hm-messenger-contact_selected {
+  background-color: #2D54A5;
+  border-color: #2D54A5;
+  color: white;
+  text-shadow: -1px -1px #203B73;
+}
+/* line 34, ../../../../../../src/modules/messenger/master/js/ui/contact/Contact.scss */
+.hm-messenger-contact_selected:after {
+  content: ' ';
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  margin-top: -7px;
+  right: 100%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 7px 7px 0;
+  border-color: transparent #2d53a5 transparent transparent;
+}
+
+/* line 49, ../../../../../../src/modules/messenger/master/js/ui/contact/Contact.scss */
+.hm-messenger-contact-icon {
+  border: solid 1px #EAEAEA;
+  background-color: white;
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+}
+/* line 57, ../../../../../../src/modules/messenger/master/js/ui/contact/Contact.scss */
+.hm-messenger-contact-icon img {
+  width: 32px;
+  height: 32px;
+}
+
+/* line 63, ../../../../../../src/modules/messenger/master/js/ui/contact/Contact.scss */
+.hm-messenger-contact-name {
+  padding: 2px 10px;
+}
+
+/* line 67, ../../../../../../src/modules/messenger/master/js/ui/contact/Contact.scss */
+.hm-messenger-contact-new-count {
+  display: inline-block;
+  background-color: #FF9D00;
+  color: #FFF;
+  border-radius: 4px;
+  padding: 2px;
+  text-shadow: none;
+  line-height: 11px;
+}
+
+/* line 3, ../../../../../../src/modules/messenger/master/js/ui/contact/ContactsList.scss */
+.hm-messenger-contacts-list-items-container {
+  padding-right: 12px;
+}
+
+/* line 4, ../../../../../../src/modules/messenger/master/js/ui/input/Input.scss */
+.hm-messenger-input ul.holder {
+  width: auto !important;
+}
+/* line 8, ../../../../../../src/modules/messenger/master/js/ui/input/Input.scss */
+.hm-messenger-input table {
+  width: 100% !important;
+}
+/* line 12, ../../../../../../src/modules/messenger/master/js/ui/input/Input.scss */
+.hm-messenger-input dt {
+  margin-top: 5px;
+}
+
+/* line 2, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/ResourcesSearch.scss */
+.hm-sphinx-search-trainingModulesConstructor .hm-sphinx-search-form {
+  border: solid 1px #DADADA;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+/* line 9, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/ResourcesSearch.scss */
+.hm-sphinx-search-trainingModulesConstructor .hm-sphinx-search-form .hm-sphinx-search-run-indexer {
+  float: right;
+  line-height: 19px;
+  margin-right: 4px;
+}
+/* line 15, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/ResourcesSearch.scss */
+.hm-sphinx-search-trainingModulesConstructor .hm-sphinx-search-form .hm-sphinx-search-title {
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+/* line 22, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/ResourcesSearch.scss */
+.hm-sphinx-search-trainingModulesConstructor .hm-sphinx-search-form table {
+  white-space: nowrap;
+  width: 100%;
+}
+/* line 26, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/ResourcesSearch.scss */
+.hm-sphinx-search-trainingModulesConstructor .hm-sphinx-search-form table td {
+  text-align: right;
+  padding-bottom: 2px;
+}
+/* line 31, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/ResourcesSearch.scss */
+.hm-sphinx-search-trainingModulesConstructor .hm-sphinx-search-form table .hm-sphinx-search-label {
+  width: 1%;
+  line-height: 18px;
+}
+/* line 36, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/ResourcesSearch.scss */
+.hm-sphinx-search-trainingModulesConstructor .hm-sphinx-search-form table select {
+  display: block;
+  width: 100%;
+  height: 19px;
+}
+/* line 42, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/ResourcesSearch.scss */
+.hm-sphinx-search-trainingModulesConstructor .hm-sphinx-search-form table input {
+  width: 99%;
+}
+/* line 46, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/ResourcesSearch.scss */
+.hm-sphinx-search-trainingModulesConstructor .hm-sphinx-search-form table input[type="submit"] {
+  width: auto;
+  margin: 0;
+}
+/* line 54, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/ResourcesSearch.scss */
+.hm-sphinx-search-trainingModulesConstructor .hm-sphinx-search-form .hm-sphinx-search-extended {
+  display: none;
+}
+/* line 60, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/ResourcesSearch.scss */
+.hm-sphinx-search-trainingModulesConstructor .hm-sphinx-search-form .hm-switcher {
+  text-decoration: none !important;
+}
+/* line 63, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/ResourcesSearch.scss */
+.hm-sphinx-search-trainingModulesConstructor .hm-sphinx-search-form .hm-switcher:after {
+  content: ' \25B2';
+}
+/* line 68, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/ResourcesSearch.scss */
+.hm-sphinx-search-trainingModulesConstructor .hm-sphinx-search-form .hm-switcher-active:after {
+  content: ' \25BC';
+}
+/* line 72, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/ResourcesSearch.scss */
+.hm-sphinx-search-trainingModulesConstructor .hm-sphinx-search-form input[type="submit"] {
+  float: left;
+}
+/* line 76, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/ResourcesSearch.scss */
+.hm-sphinx-search-trainingModulesConstructor .hm-sphinx-search-form .hm-sphinx-search-all {
+  width: auto;
+  float: right;
+  padding: 0.182em 0.727em;
+  margin: 0;
+}
+/* line 84, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/ResourcesSearch.scss */
+.hm-sphinx-search-trainingModulesConstructor .hm-search-result {
+  overflow: auto;
+  width: 100%;
+  margin-bottom: 15px;
+  max-height: 253px;
+}
+
+/* line 95, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/ResourcesSearch.scss */
+.hm-autocomplete-resSearch a {
+  border-radius: 0;
+}
+
+/* line 1, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/ResourceItem.scss */
+.hm-search-resource-item {
+  overflow: hidden;
+  margin-bottom: 3px;
+  line-height: 16px;
+  cursor: move;
+  padding: 1px;
+  padding-right: 4px;
+  border: solid 1px #ECECEC;
+  background-color: #FAFAFA;
+  border-radius: 2px;
+}
+/* line 13, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/ResourceItem.scss */
+.hm-search-resource-item.ui-draggable-dragging, .hm-search-resource-item:hover {
+  background-color: #F2F7FD;
+  border-color: #B8D6FB;
+}
+/* line 19, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/ResourceItem.scss */
+.hm-search-resource-item .material-icon-small {
+  cursor: pointer;
+  float: left;
+  margin-right: 4px;
+}
+
+/* line 1, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/Tree.scss */
+.hm-tree-trainingModulesConstructor {
+  border: solid 1px #DADADA;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  padding: 8px;
+  padding-bottom: 7px;
+  margin-bottom: 15px;
+}
+/* line 10, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/Tree.scss */
+.hm-tree-trainingModulesConstructor .hm-tree-node-notFound .dynatree-title {
+  color: red !important;
+}
+/* line 16, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/Tree.scss */
+.hm-tree-trainingModulesConstructor .hm-tree-node-unpublished .dynatree-title {
+  color: lightgrey !important;
+}
+/* line 21, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/Tree.scss */
+.hm-tree-trainingModulesConstructor .hm-tree-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+/* line 27, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/Tree.scss */
+.hm-tree-trainingModulesConstructor .hm-tree-container {
+  padding: 3px;
+  background-color: white;
+  border: solid 1px #DADADA;
+  border-radius: 3px;
+}
+/* line 34, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/Tree.scss */
+.hm-tree-trainingModulesConstructor .hm-tree-footer {
+  padding-top: 4px;
+}
+/* line 43, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/Tree.scss */
+.hm-tree-trainingModulesConstructor .hm-tree-node-status {
+  position: absolute;
+  top: 9px;
+  left: 28px;
+  width: 10px;
+  height: 10px;
+  display: block;
+  background-image: url("/images/icons/hm-constructor-status.png");
+}
+/* line 53, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/Tree.scss */
+.hm-tree-trainingModulesConstructor .hm-tree-node-item-unpublished .hm-tree-node-status {
+  background-position: -10px 0;
+}
+/* line 57, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/Tree.scss */
+.hm-tree-trainingModulesConstructor .hm-tree-node-item-notFound .hm-tree-node-status {
+  background-position: -20px 0;
+}
+/* line 61, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/Tree.scss */
+.hm-tree-trainingModulesConstructor .hm-tree-legend {
+  float: right;
+}
+/* line 64, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/Tree.scss */
+.hm-tree-trainingModulesConstructor .hm-tree-legend span {
+  font-size: 11px;
+  line-height: 10px;
+  display: inline-block;
+  margin-right: 10px;
+}
+/* line 70, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/Tree.scss */
+.hm-tree-trainingModulesConstructor .hm-tree-legend span span {
+  margin-right: 0;
+  width: 10px;
+  height: 10px;
+  background-image: url("/images/icons/hm-constructor-status.png");
+}
+/* line 77, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/Tree.scss */
+.hm-tree-trainingModulesConstructor .hm-tree-legend .hm-tree-legend-inDevelop span {
+  background-position: -10px 0;
+  margin-bottom: -1px;
+}
+/* line 82, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/Tree.scss */
+.hm-tree-trainingModulesConstructor .hm-tree-legend .hm-tree-legend-notFound span {
+  background-position: -20px 0;
+}
+
+/* line 1, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/TreeIcons.scss */
+.material-icon-small,
+.material-icon {
+  background-image: url(/images/material-icons.png) !important;
+}
+
+/* line 5, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/TreeIcons.scss */
+.material-icon-small {
+  width: 16px;
+  height: 16px;
+}
+
+/* line 9, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/TreeIcons.scss */
+.material-icon-small.course {
+  background-position: 0 -176px;
+}
+
+/* line 12, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/TreeIcons.scss */
+.material-icon-small.resource-0 {
+  background-position: 0 -160px;
+}
+
+/* line 15, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/TreeIcons.scss */
+.material-icon-small.resource-1 {
+  background-position: 0 -208px;
+}
+
+/* line 18, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/TreeIcons.scss */
+.material-icon-small.resource-2 {
+  background-position: 0 -16px;
+}
+
+/* line 21, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/TreeIcons.scss */
+.material-icon-small.resource-3 {
+  background-position: 0 -208px;
+}
+
+/* line 24, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/TreeIcons.scss */
+.material-icon-small.resource-4 {
+  background-position: 0 -192px;
+}
+
+/* line 27, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/TreeIcons.scss */
+.material-icon-small.resource-5 {
+  background-position: 0 0;
+  /* @todo: эрЁшёютрЄ№ яюфїюф ∙є■ шъюэъє*/
+}
+
+/* line 30, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/TreeIcons.scss */
+.material-icon-small.resource-99 {
+  background-position: 0 0;
+  /* @todo: эрЁшёютрЄ№ яюфїюф ∙є■ шъюэъє*/
+}
+
+/* line 33, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/TreeIcons.scss */
+.material-icon-small.resource-filetype-0 {
+  background-position: 0 -160px;
+}
+
+/* line 36, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/TreeIcons.scss */
+.material-icon-small.resource-filetype-1 {
+  background-position: 0 0;
+}
+
+/* line 39, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/TreeIcons.scss */
+.material-icon-small.resource-filetype-2 {
+  background-position: 0 -208px;
+}
+
+/* line 42, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/TreeIcons.scss */
+.material-icon-small.resource-filetype-3 {
+  background-position: 0 -32px;
+}
+
+/* line 45, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/TreeIcons.scss */
+.material-icon-small.resource-filetype-4 {
+  background-position: 0 -48px;
+}
+
+/* line 48, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/TreeIcons.scss */
+.material-icon-small.resource-filetype-5 {
+  background-position: 0 -64px;
+}
+
+/* line 51, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/TreeIcons.scss */
+.material-icon-small.resource-filetype-6 {
+  background-position: 0 -144px;
+}
+
+/* line 54, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/TreeIcons.scss */
+.material-icon-small.resource-filetype-7 {
+  background-position: 0 -80px;
+}
+
+/* line 57, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/TreeIcons.scss */
+.material-icon-small.resource-filetype-8 {
+  background-position: 0 -112px;
+}
+
+/* line 60, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/TreeIcons.scss */
+.material-icon-small.resource-filetype-9 {
+  background-position: 0 -128px;
+}
+
+/* line 63, ../../../../../../src/modules/trainingModules/master/js/trainingModulesConstructor/TreeIcons.scss */
+.material-icon-small.resource-filetype-10 {
+  background-position: 0 -96px;
+}
+
+/* line 5, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer {
+  height: 100%;
+  width: 100%;
+  border-collapse: collapse;
+}
+/* line 10, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer .hm-tmw-row {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/* line 15, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer .hm-tmw-row td {
+  height: 1px;
+}
+/* line 20, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer .hm-tmw-row-content td {
+  height: auto;
+}
+@-moz-document url-prefix() {
+  /* line 24, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+  .hm-training-modules-viewer .hm-tmw-row-content td {
+    height: 100%;
+  }
+}
+/* line 29, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer .hm-tmw-header,
+.hm-training-modules-viewer .hm-tmw-footer,
+.hm-training-modules-viewer .hm-tmw-content {
+  position: relative;
+}
+/* line 35, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer .hm-tmw-header,
+.hm-training-modules-viewer .hm-tmw-footer {
+  background-color: #c1cfe5;
+  border: solid 1px #9ba9c1;
+}
+/* line 40, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer .hm-tmw-content {
+  border: solid 1px #9ba9c1;
+  border-top: 0;
+  border-bottom: 0;
+  height: 100%;
+}
+/* line 47, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer .hm-tmw-header {
+  overflow: hidden;
+  border-radius: 2px 2px 0px 0px;
+}
+/* line 51, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer .hm-tmw-footer {
+  border-radius: 0px 0px 2px 2px;
+  margin-bottom: 1px;
+}
+/* line 56, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer .hm-tmw-content {
+  background-color: #ffffff;
+}
+/* line 59, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer .hm-tmw-content iframe {
+  height: 100%;
+  width: 100%;
+}
+/* line 65, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer .hm-tmw-content-title-wrap {
+  font-size: 15px;
+  line-height: 35px;
+  display: inline-block;
+  float: left;
+  margin-left: 200px;
+  margin-right: 50px;
+}
+/* line 74, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer .hm-tmw-content-edit {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: -5px;
+  margin-left: 5px;
+  overflow: hidden;
+  background-image: url("/images/wiki/article-controls.png");
+}
+/* line 84, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer .hm-tmw-navigation-button {
+  margin-right: -200px;
+  float: left;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 2px 0px 0px 0px;
+  padding: 0;
+  width: 190px;
+  text-align: center;
+  background-color: #edf1f9;
+  color: #2A446E;
+  text-shadow: 0 1px #ffffff;
+  cursor: pointer;
+}
+/* line 101, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer .hm-tmw-navigation-button:hover {
+  background-color: #e4f2af;
+}
+/* line 106, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer .hm-tmw-tree {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #edf1f9;
+}
+/* line 116, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer .hm-tmw-tree .hm-tree {
+  padding: 5px 3px;
+  float: left;
+}
+/* line 121, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer .hm-tmw-overlay {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #edf1f9;
+  opacity: 0;
+}
+/* line 132, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer .hm-tmw-loading {
+  position: absolute;
+  top: 50%;
+  margin-top: -14px;
+  line-height: 28px;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+}
+/* line 142, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer .hm-tmw-expand-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  border: 1px solid #9ba9c1;
+  background-color: #edf1f9;
+  width: 22px;
+  height: 22px;
+  background-image: url("/images/content-container/maximin.png");
+  background-position: top right;
+}
+/* line 154, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer .hm-tmw-expand-button:hover {
+  background-color: #e4f2af;
+}
+
+/* line 162, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-tmw-expanded {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 169, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-tmw-expanded .hm-tmw-expand-button {
+  background-position: top left;
+}
+
+/* line 177, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer-styles .content-container-with-course-presentation .content-here,
+.hm-training-modules-viewer-styles #hm-training-modules-viewer {
+  height: 100%;
+  min-height: 0;
+}
+/* line 180, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer-styles .content-container-expanded {
+  margin: 0 !important;
+}
+/* line 183, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer-styles .content-container-expandable {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+/* line 187, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer-styles .content-container-expandable .content-here {
+  margin: 0 !important;
+}
+/* line 191, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer-styles .content-container-expanded .content-here {
+  margin: 0 !important;
+  min-height: 0 !important;
+}
+/* line 196, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer-styles .content-container-expandable .content-size {
+  top: 7px !important;
+  right: 7px !important;
+}
+/* line 200, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Viewer.scss */
+.hm-training-modules-viewer-styles .content-container-expanded .content-size {
+  top: 6px !important;
+  right: 6px !important;
+}
+
+/* line 4, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation {
+  line-height: 28px;
+  margin: 8px 0;
+  display: table;
+  width: 100%;
+}
+/* line 10, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-navigation-cell {
+  display: table-cell;
+}
+/* line 14, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-navigation-left {
+  text-align: center;
+  white-space: nowrap;
+  padding-left: 10px;
+}
+/* line 19, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-navigation-left .hm-extra-nav-icon {
+  margin-right: 5px;
+}
+/* line 23, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-navigation-left .hm-extra-nav-counter {
+  padding-right: 5px;
+  padding-left: 1px;
+}
+/* line 29, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-navigation-right {
+  width: 1%;
+  white-space: nowrap;
+  padding-right: 10px;
+}
+/* line 34, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-navigation-right .hm-extra-nav-icon {
+  margin-left: 5px;
+}
+/* line 39, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation * {
+  vertical-align: top !important;
+}
+/* line 43, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-nav-icon {
+  cursor: pointer;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-image: url("/images/icons/extra-navigation-28x28.png");
+  text-decoration: none;
+}
+/* line 52, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-nav-button-prev,
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-nav-button-next {
+  margin-right: 5px;
+}
+/* line 57, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-nav-disabled {
+  cursor: default !important;
+}
+/* line 62, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-nav-button-prev.hm-extra-nav-disabled {
+  background-position: 0 -56px !important;
+}
+/* line 65, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-nav-button-prev:hover {
+  background-position: 0 -28px;
+}
+/* line 69, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-nav-button-next {
+  background-position: -28px 0;
+}
+/* line 70, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-nav-button-next.hm-extra-nav-disabled {
+  background-position: -28px -56px !important;
+}
+/* line 74, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-nav-button-next:hover {
+  background-position: -28px -28px;
+}
+/* line 80, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-navigation-text {
+  width: 100%;
+  font-size: 14px;
+}
+/* line 85, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-nav-button-bookmark {
+  background-position: -84px 0;
+}
+/* line 87, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-nav-button-bookmark:hover {
+  background-position: -84px -28px;
+}
+/* line 91, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-nav-button-bookmark.hm-extra-nav-button-is-bookmarked {
+  background-position: -112px 0 !important;
+}
+/* line 93, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-nav-button-bookmark.hm-extra-nav-button-is-bookmarked:hover {
+  background-position: -112px -28px !important;
+}
+/* line 100, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-nav-button-custom,
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-nav-button-file {
+  background-position: -56px 0;
+}
+/* line 103, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-nav-button-custom:hover,
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-nav-button-file:hover {
+  background-position: -56px -28px;
+}
+/* line 108, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-nav-button-6 {
+  background-position: -140px 0;
+}
+/* line 110, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-nav-button-6:hover {
+  background-position: -140px -28px;
+}
+/* line 115, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-nav-button-7 {
+  background-position: -168px 0;
+}
+/* line 117, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-nav-button-7:hover {
+  background-position: -168px -28px;
+}
+/* line 122, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-nav-button-8 {
+  background-position: -196px 0;
+}
+/* line 124, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/ExtraNavigation.scss */
+.hm-training-modules-viewer .hm-extra-navigation .hm-extra-nav-button-8:hover {
+  background-position: -196px -28px;
+}
+
+/* line 5, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Bookmarks.scss */
+.hm-tmw-bookmarks ul {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+/* line 10, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/Bookmarks.scss */
+.hm-tmw-bookmarks .hm-lesson-bookmarks-icon {
+  background-image: url("/images/icons/yellow-star-16.png") !important;
+}
+
+/* line 1, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/BookmarksList.scss */
+.hm-lesson-bookmarks-list {
+  padding: 12px 17px !important;
+  margin: 0 !important;
+  list-style: none;
+}
+/* line 6, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/BookmarksList.scss */
+.hm-lesson-bookmarks-list li {
+  border: none !important;
+  padding: 2px 0;
+}
+/* line 11, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/BookmarksList.scss */
+.hm-lesson-bookmarks-list .hm-lesson-bookmarks-icon {
+  vertical-align: top;
+  width: 16px;
+  height: 16px;
+  display: inline-block !important;
+  margin-right: 4px;
+  margin-top: -1px;
+  background-image: url("/images/icons/yellow-star-16.png");
+}
+
+/* line 3, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/node/Node.scss */
+.hm-training-modules-viewer .hm-tree .hm-tree-node .hm-tree-node-item .hm-tree-node-viewed {
+  display: none;
+  margin-left: 3px;
+  margin-top: 3px;
+  position: relative;
+  width: 1em;
+  height: 1em;
+  background-color: #48BA19;
+  font-size: 1em;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+}
+/* line 17, ../../../../../../src/modules/trainingModules/master/js/trainingModulesViewer/node/Node.scss */
+.hm-training-modules-viewer .hm-tree .hm-tree-node .hm-tree-node-item .hm-tree-node-viewed:after {
+  content: '\2713';
+  color: #FFF;
+  position: absolute;
+  top: -0.35em;
+  left: 0.1em;
+  text-shadow: 1px 0 #19370E;
+  font-size: 1.3em;
+}
+
+/* line 4, ../../../../../../src/modules/trainingModules/master/js/webinarViewer/TeacherViewer.scss */
+.hm-training-modules-viewer-teacher .hm-tmw-content-title-wrap {
+  float: none;
+  display: block;
+  margin-right: 45px;
+}
+/* line 10, ../../../../../../src/modules/trainingModules/master/js/webinarViewer/TeacherViewer.scss */
+.hm-training-modules-viewer-teacher .hm-tmw-content-title {
+  width: 99%;
+}
+/* line 14, ../../../../../../src/modules/trainingModules/master/js/webinarViewer/TeacherViewer.scss */
+.hm-training-modules-viewer-teacher .hm-tmw-content-submit-wrap {
+  float: right;
+  width: 45px;
+}
+/* line 19, ../../../../../../src/modules/trainingModules/master/js/webinarViewer/TeacherViewer.scss */
+.hm-training-modules-viewer-teacher .hm-tmw-content-submit {
+  border: none;
+  margin: 0;
+  margin-left: 4px;
+  margin-top: 8px;
+  padding: 2px 7px;
+  font-size: 15px;
+}
+
+/* line 1, ../../../../../../src/modules/trainingModules/master/js/webinarViewer/StudentViewer.scss */
+.hm-tmw-content {
+  overflow: hidden;
+}
+
+/* line 5, ../../../../../../src/modules/trainingModules/master/js/webinarViewer/StudentViewer.scss */
+.hm-tmw-overlay-transparent {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+/* line 3, ../../../../../../src/modules/trainingModules/master/js/webinarViewer/file/File.scss */
+.hm-form-file {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 13px;
+  line-height: 16px;
+  border: dashed 1px #bbbbbb;
+  overflow: hidden;
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.07);
+}
+/* line 16, ../../../../../../src/modules/trainingModules/master/js/webinarViewer/file/File.scss */
+.hm-form-file table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+}
+/* line 22, ../../../../../../src/modules/trainingModules/master/js/webinarViewer/file/File.scss */
+.hm-form-file table th, .hm-form-file table td {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 29, ../../../../../../src/modules/trainingModules/master/js/webinarViewer/file/File.scss */
+.hm-form-file-content-wrap {
+  background-color: #F1F1F1;
+  overflow: hidden;
+}
+
+/* line 34, ../../../../../../src/modules/trainingModules/master/js/webinarViewer/file/File.scss */
+.hm-form-file-link-input-wrap,
+.hm-form-file-link-input-tip,
+.hm-form-file-file-input-tip {
+  white-space: nowrap;
+  padding: 0 6px;
+  height: 24px;
+  line-height: 24px;
+  color: #A5A5A5;
+  text-shadow: 1px 1px 0px #FFFFFF;
+  font-style: italic;
+}
+/* line 46, ../../../../../../src/modules/trainingModules/master/js/webinarViewer/file/File.scss */
+.hm-form-file-link-input-wrap label,
+.hm-form-file-link-input-wrap span,
+.hm-form-file-link-input-tip label,
+.hm-form-file-link-input-tip span,
+.hm-form-file-file-input-tip label,
+.hm-form-file-file-input-tip span {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #7086B1;
+}
+/* line 53, ../../../../../../src/modules/trainingModules/master/js/webinarViewer/file/File.scss */
+.hm-form-file-link-input-wrap label:hover,
+.hm-form-file-link-input-wrap span:hover,
+.hm-form-file-link-input-tip label:hover,
+.hm-form-file-link-input-tip span:hover,
+.hm-form-file-file-input-tip label:hover,
+.hm-form-file-file-input-tip span:hover {
+  color: #668ad3;
+}
+
+/* line 59, ../../../../../../src/modules/trainingModules/master/js/webinarViewer/file/File.scss */
+.hm-form-file-link-input-wrap {
+  display: none;
+  padding: 0;
+  margin-right: 12px;
+}
+/* line 66, ../../../../../../src/modules/trainingModules/master/js/webinarViewer/file/File.scss */
+.hm-form-file-link-input-wrap input {
+  color: #939393;
+  border: none;
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0 6px;
+  height: 24px;
+  width: 100%;
+  display: block;
+  outline: none;
+}
+/* line 67, ../../../../../../src/modules/trainingModules/master/js/webinarViewer/file/File.scss */
+.hm-form-file-link-input-wrap input::selection {
+  background-color: #3399ff !important;
+}
+
+/* line 82, ../../../../../../src/modules/trainingModules/master/js/webinarViewer/file/File.scss */
+.hm-form-file-file-input {
+  position: absolute;
+  right: 105%;
+  top: 0;
+}
+
+/* line 92, ../../../../../../src/modules/trainingModules/master/js/webinarViewer/file/File.scss */
+.hm-form-file-file-input-tip {
+  overflow: hidden;
+}
+
+/* line 104, ../../../../../../src/modules/trainingModules/master/js/webinarViewer/file/File.scss */
+.hm-form-file-focus {
+  border-color: #3474CE;
+}
+/* line 107, ../../../../../../src/modules/trainingModules/master/js/webinarViewer/file/File.scss */
+.hm-form-file-focus input {
+  color: black;
+}
+
+/* line 112, ../../../../../../src/modules/trainingModules/master/js/webinarViewer/file/File.scss */
+.hm-form-file-droppable {
+  border-color: #6BC337;
+}
+/* line 115, ../../../../../../src/modules/trainingModules/master/js/webinarViewer/file/File.scss */
+.hm-form-file-droppable .hm-form-file-content-wrap {
+  background-color: #DFFFD1;
+}
+/* line 119, ../../../../../../src/modules/trainingModules/master/js/webinarViewer/file/File.scss */
+.hm-form-file-droppable .hm-form-file-link-input-tip,
+.hm-form-file-droppable .hm-form-file-file-input-tip {
+  color: #9CBD7F;
+}
+/* line 123, ../../../../../../src/modules/trainingModules/master/js/webinarViewer/file/File.scss */
+.hm-form-file-droppable .hm-form-file-link-input-tip span, .hm-form-file-droppable .hm-form-file-link-input-tip label,
+.hm-form-file-droppable .hm-form-file-file-input-tip span,
+.hm-form-file-droppable .hm-form-file-file-input-tip label {
+  color: #6FB559;
+}
+
+/* line 1, ../../../../../../src/modules/mainPageWidgets/master/js/Row.scss */
+.hm-widgets-row {
+  clear: left;
+  position: relative;
+}
+
+/* line 6, ../../../../../../src/modules/mainPageWidgets/master/js/Row.scss */
+.hm-widgets-row_empty {
+  height: 40px;
+}
+
+/* line 10, ../../../../../../src/modules/mainPageWidgets/master/js/Row.scss */
+.hm-widgets-row-content {
+  /*min-height: 80px;*/
+}
+
+/* line 3, ../../../../../../src/modules/mainPageWidgets/master/js/button/CreateWidgetButton.scss */
+.hm-widgets_sorting .hm-widgets-row-createWidgetButton, .hm-widgets-row_empty .hm-widgets-row-createWidgetButton {
+  display: none !important;
+}
+/* line 7, ../../../../../../src/modules/mainPageWidgets/master/js/button/CreateWidgetButton.scss */
+.hm-widgets-row_firstOrLast .hm-widgets-row-createWidgetButton {
+  display: block !important;
+}
+/* line 10, ../../../../../../src/modules/mainPageWidgets/master/js/button/CreateWidgetButton.scss */
+.hm-widgets_sorting .hm-widgets-row_firstOrLast .hm-widgets-row-createWidgetButton {
+  display: none !important;
+}
+/* line 15, ../../../../../../src/modules/mainPageWidgets/master/js/button/CreateWidgetButton.scss */
+.hm-widgets-row-createWidgetButton .hm-widgets-widget-content {
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #e6e6e6;
+  background-image: url('/hm/images/module/mainPageWidgets/add-icon.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 1px dotted silver;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+  overflow: visible;
+}
+/* line 28, ../../../../../../src/modules/mainPageWidgets/master/js/button/CreateWidgetButton.scss */
+.hm-widgets-resizing .hm-widgets-row-createWidgetButton .hm-widgets-widget-content {
+  cursor: w-resize;
+}
+/* line 36, ../../../../../../src/modules/mainPageWidgets/master/js/button/CreateWidgetButton.scss */
+.hm-widgets-row-createWidgetButton .hm-widgets-widget-content .hm-widgets-row-createWidgetButton-widgetsSelect {
+  visibility: hidden;
+  position: absolute;
+  padding: 5px;
+  width: 200px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  margin-left: -105px;
+  margin-top: -25px;
+  background-color: #d3d3d3;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 49, ../../../../../../src/modules/mainPageWidgets/master/js/button/CreateWidgetButton.scss */
+.hm-widgets-row-createWidgetButton .hm-widgets-widget-content .hm-widgets-row-createWidgetButton-widgetsSelect select, .hm-widgets-row-createWidgetButton .hm-widgets-widget-content .hm-widgets-row-createWidgetButton-widgetsSelect button {
+  display: block;
+  width: 100%;
+}
+/* line 55, ../../../../../../src/modules/mainPageWidgets/master/js/button/CreateWidgetButton.scss */
+.hm-widgets-row-createWidgetButton .hm-widgets-widget-content:hover, .hm-widgets-row-createWidgetButton .hm-widgets-widget-content.hm-widgets-widget-content_nowSelection {
+  background-color: #d3d3d3;
+  background-image: none;
+}
+/* line 59, ../../../../../../src/modules/mainPageWidgets/master/js/button/CreateWidgetButton.scss */
+.hm-widgets-row-createWidgetButton .hm-widgets-widget-content:hover .hm-widgets-row-createWidgetButton-widgetsSelect, .hm-widgets-row-createWidgetButton .hm-widgets-widget-content.hm-widgets-widget-content_nowSelection .hm-widgets-row-createWidgetButton-widgetsSelect {
+  visibility: visible;
+}
+
+/* line 16, ../../../../../../src/modules/mainPageWidgets/master/js/Row.scss */
+.hm-widgets-widget-placeholder {
+  float: left !important;
+  position: relative;
+}
+/* line 21, ../../../../../../src/modules/mainPageWidgets/master/js/Row.scss */
+.hm-widgets-widget-placeholder:after {
+  position: absolute;
+  content: "";
+  left: 5px;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 1px solid #a8a8a8;
+  background-color: #d8d8d8;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 1, ../../../../../../src/modules/mainPageWidgets/master/js/widget/Widget.scss */
+.hm-widgets-widget {
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 7, ../../../../../../src/modules/mainPageWidgets/master/js/widget/Widget.scss */
+.hm-widgets-widget-content {
+  margin: 5px;
+  overflow: hidden;
+}
+/* line 11, ../../../../../../src/modules/mainPageWidgets/master/js/widget/Widget.scss */
+.hm-widgets-widget-content .ui-portlet {
+  margin: 0;
+}
+
+/* line 16, ../../../../../../src/modules/mainPageWidgets/master/js/widget/Widget.scss */
+.hm-widgets-widget-overlay {
+  display: none;
+  z-index: 1;
+}
+/* line 20, ../../../../../../src/modules/mainPageWidgets/master/js/widget/Widget.scss */
+.hm-widgets-widget:hover .hm-widgets-widget-overlay, .hm-widgets-widget_colorSelection .hm-widgets-widget-overlay {
+  background-color: silver;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  cursor: pointer;
+}
+/* line 31, ../../../../../../src/modules/mainPageWidgets/master/js/widget/Widget.scss */
+.hm-widgets-resizing .hm-widgets-widget:hover .hm-widgets-widget-overlay, .hm-widgets-resizing .hm-widgets-widget_colorSelection .hm-widgets-widget-overlay {
+  display: none;
+}
+
+/* line 37, ../../../../../../src/modules/mainPageWidgets/master/js/widget/Widget.scss */
+.hm-widgets-widget-settings {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 15px;
+  left: 15px;
+}
+/* line 44, ../../../../../../src/modules/mainPageWidgets/master/js/widget/Widget.scss */
+.hm-widgets-widget:hover .hm-widgets-widget-settings, .hm-widgets-widget_colorSelection .hm-widgets-widget-settings {
+  display: block;
+}
+/* line 48, ../../../../../../src/modules/mainPageWidgets/master/js/widget/Widget.scss */
+.hm-widgets-resizing .hm-widgets-widget-settings {
+  display: none !important;
+}
+
+/* line 53, ../../../../../../src/modules/mainPageWidgets/master/js/widget/Widget.scss */
+.hm-widgets-widget-button {
+  border: none;
+  position: absolute;
+  z-index: 2;
+}
+
+/* line 59, ../../../../../../src/modules/mainPageWidgets/master/js/widget/Widget.scss */
+.hm-widgets-widget-button-delete {
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url('/hm/images/module/mainPageWidgets/toolbar/delete.png');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+/* line 69, ../../../../../../src/modules/mainPageWidgets/master/js/widget/Widget.scss */
+.hm-widgets-widget-splitter {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  cursor: w-resize;
+}
+
+/* line 4, ../../../../../../src/modules/mainPageWidgets/master/js/toolbar/Toolbar.scss */
+.hm-widgets-toolbar {
+  width: 20px;
+  line-height: 20px;
+  padding: 0;
+  position: absolute;
+  right: -18px;
+  top: -20px;
+}
+
+/* line 13, ../../../../../../src/modules/mainPageWidgets/master/js/toolbar/Toolbar.scss */
+button.hm-widgets-toolbar-editButton {
+  padding: 0 !important;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin: 0;
+  overflow: hidden;
+}
+/* line 22, ../../../../../../src/modules/mainPageWidgets/master/js/toolbar/Toolbar.scss */
+button.hm-widgets-toolbar-editButton > span {
+  display: block !important;
+  width: 20px;
+  height: 20px;
+  background-image: url('/hm/images/module/mainPageWidgets/toolbar/edit.png');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+/* line 1, ../../../../../../src/modules/mainPageWidgets/master/js/toolbar/RoleToolbar.scss */
+.hm-widgets-toolbar-roleToolbar {
+  padding: 3px;
+  margin: 5px;
+}
+/* line 5, ../../../../../../src/modules/mainPageWidgets/master/js/toolbar/RoleToolbar.scss */
+.hm-widgets-toolbar-roleToolbar select {
+  height: 30px;
+  font-size: 15px;
+}
+
+/* line 11, ../../../../../../src/modules/mainPageWidgets/master/js/toolbar/RoleToolbar.scss */
+button.hm-widgets-roleToolbar-button {
+  float: right;
+  padding: 0 !important;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 2px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 19, ../../../../../../src/modules/mainPageWidgets/master/js/toolbar/RoleToolbar.scss */
+button.hm-widgets-roleToolbar-button span {
+  display: inline-block;
+  line-height: 30px;
+  height: 30px;
+}
+
+/* line 26, ../../../../../../src/modules/mainPageWidgets/master/js/toolbar/RoleToolbar.scss */
+button.hm-widgets-roleToolbar-button_reset {
+  float: left;
+  background-image: linear-gradient(to bottom, #949498, #205451) !important;
+}
+/* line 30, ../../../../../../src/modules/mainPageWidgets/master/js/toolbar/RoleToolbar.scss */
+button.hm-widgets-roleToolbar-button_reset .hm-widgets-roleToolbar-button-icon {
+  background-image: url('/hm/images/module/mainPageWidgets/toolbar/reset.png');
+}
+
+/* line 35, ../../../../../../src/modules/mainPageWidgets/master/js/toolbar/RoleToolbar.scss */
+button.hm-widgets-roleToolbar-button_confirm {
+  background-image: linear-gradient(to bottom, #389892, #205451) !important;
+}
+/* line 38, ../../../../../../src/modules/mainPageWidgets/master/js/toolbar/RoleToolbar.scss */
+button.hm-widgets-roleToolbar-button_confirm .hm-widgets-roleToolbar-button-icon {
+  background-image: url('/hm/images/module/mainPageWidgets/toolbar/save.png');
+}
+
+/* line 43, ../../../../../../src/modules/mainPageWidgets/master/js/toolbar/RoleToolbar.scss */
+.hm-widgets-roleToolbar-button-icon {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+/* line 51, ../../../../../../src/modules/mainPageWidgets/master/js/toolbar/RoleToolbar.scss */
+.hm-widgets-roleToolbar-button-caption {
+  padding-right: 5px;
+  color: #fff;
+}
+
+/* line 13, ../../../../../../src/modules/mainPageWidgets/master/js/MainPageWidgets.scss */
+.hm-widgets-resizing {
+  cursor: w-resize !important;
+}
+
+/* line 1, ../../../../../../src/projects/default/master/js/base/ui/like/Like.scss */
+.hm-like-button-like {
+  margin-right: 10px;
+}
+
+/* line 5, ../../../../../../src/projects/default/master/js/base/ui/like/Like.scss */
+.hm-like-button-like, .hm-like-button-dislike {
+  color: #a5a5a5;
+  border-bottom: 1px dotted #a5a5a5;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* line 12, ../../../../../../src/projects/default/master/js/base/ui/like/Like.scss */
+.hm-like-button-like:hover, .hm-like-button-dislike:hover {
+  color: #858585;
+}
+
+/* line 16, ../../../../../../src/projects/default/master/js/base/ui/like/Like.scss */
+.hm-like-button-like-image, .hm-like-button-dislike-image {
+  background: transparent url('/hm/images/common/hm/like/like.png') 0 0 no-repeat;
+  width: 22px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+/* line 25, ../../../../../../src/projects/default/master/js/base/ui/like/Like.scss */
+.hm-like-button-dislike-image {
+  background-position: -19px 0;
+  top: 3px;
+}
+
+/* line 30, ../../../../../../src/projects/default/master/js/base/ui/like/Like.scss */
+.hm-like-liked .hm-like-button-like-image {
+  background-position: -38px 0;
+}
+
+/* line 34, ../../../../../../src/projects/default/master/js/base/ui/like/Like.scss */
+.hm-like-liked .hm-like-button-like {
+  color: #4a4a4a;
+}
+
+/* line 38, ../../../../../../src/projects/default/master/js/base/ui/like/Like.scss */
+.hm-like-disliked .hm-like-button-dislike-image {
+  background-position: -57px 0;
+}
+
+/* line 42, ../../../../../../src/projects/default/master/js/base/ui/like/Like.scss */
+.hm-like-disliked .hm-like-button-dislike {
+  color: #494949;
+}
+
+/* line 4, ../../../../../../src/projects/default/master/js/user/ui/role/switcher/RoleSwitcher.scss */
+.hm-user-roleSwitcher {
+  height: 27px;
+  line-height: 27px;
+  margin: -2px 5px 0 5px;
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+/* line 14, ../../../../../../src/projects/default/master/js/user/ui/role/switcher/RoleSwitcher.scss */
+.hm-user-roleSwitcher-left, .hm-user-roleSwitcher-center, .hm-user-roleSwitcher-right, .hm-user-roleSwitcher-trigger {
+  display: inline-block;
+  padding: 0;
+  height: 27px;
+  position: relative;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* line 22, ../../../../../../src/projects/default/master/js/user/ui/role/switcher/RoleSwitcher.scss */
+.hm-user-roleSwitcher-left, .hm-user-roleSwitcher-center, .hm-user-roleSwitcher-right {
+  vertical-align: middle;
+}
+
+/* line 26, ../../../../../../src/projects/default/master/js/user/ui/role/switcher/RoleSwitcher.scss */
+.hm-user-roleSwitcher-trigger {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+/* line 32, ../../../../../../src/projects/default/master/js/user/ui/role/switcher/RoleSwitcher.scss */
+.hm-user-roleSwitcher-left, .hm-user-roleSwitcher-right, .hm-user-roleSwitcher-trigger {
+  background-image: url('/hm/images/common/hm/roleswitcher/sprite.png');
+  background-repeat: no-repeat;
+}
+
+/* line 37, ../../../../../../src/projects/default/master/js/user/ui/role/switcher/RoleSwitcher.scss */
+.hm-user-roleSwitcher-left {
+  background-position: 0 0;
+  width: 27px;
+}
+
+/* line 42, ../../../../../../src/projects/default/master/js/user/ui/role/switcher/RoleSwitcher.scss */
+.hm-user-roleSwitcher-center {
+  background-image: url('/hm/images/common/hm/roleswitcher/sprite-center.png');
+  background-repeat: repeat-x;
+  background-position: 0 0;
+  padding: 0 6px;
+  line-height: 25px;
+  overflow: hidden;
+  color: #c6d2e5;
+  min-width: 150px;
+}
+
+/* line 53, ../../../../../../src/projects/default/master/js/user/ui/role/switcher/RoleSwitcher.scss */
+.hm-user-roleSwitcher-right {
+  background-position: -29px 0;
+  width: 19px;
+}
+
+/* line 58, ../../../../../../src/projects/default/master/js/user/ui/role/switcher/RoleSwitcher.scss */
+.hm-user-roleSwitcher-trigger {
+  background-position: -50px 0;
+  width: 7px;
+  height: 4px;
+  top: 50%;
+  margin-top: -2px;
+  right: 10px;
+}
+
+/* line 68, ../../../../../../src/projects/default/master/js/user/ui/role/switcher/RoleSwitcher.scss */
+.hm-user-roleSwitcher_disabled .hm-user-roleSwitcher-left {
+  background-position: 0 -27px;
+}
+/* line 71, ../../../../../../src/projects/default/master/js/user/ui/role/switcher/RoleSwitcher.scss */
+.hm-user-roleSwitcher_disabled .hm-user-roleSwitcher-center {
+  background-position: 0 -27px;
+  color: #9a9a9a;
+}
+/* line 75, ../../../../../../src/projects/default/master/js/user/ui/role/switcher/RoleSwitcher.scss */
+.hm-user-roleSwitcher_disabled .hm-user-roleSwitcher-right {
+  background-position: -29px -27px;
+  cursor: default;
+}
+/* line 79, ../../../../../../src/projects/default/master/js/user/ui/role/switcher/RoleSwitcher.scss */
+.hm-user-roleSwitcher_disabled .hm-user-roleSwitcher-trigger {
+  display: none;
+}
+
+/* line 13, ../../../../../../src/projects/default/master/js/user/ui/role/switcher/RoleSwitcherMenu.scss */
+.hm-user-roleSwitcher-menu {
+  position: absolute;
+  top: 25px;
+  min-width: 150px;
+  min-height: 5px;
+  background-color: #4b586d;
+  border: 1px solid #000;
+  cursor: pointer;
+  padding: 3px;
+  color: #c6d2e5;
+}
+/* line 24, ../../../../../../src/projects/default/master/js/user/ui/role/switcher/RoleSwitcherMenu.scss */
+.hm-user-roleSwitcher-menu > .hm-list-item {
+  padding: 5px;
+}
+/* line 27, ../../../../../../src/projects/default/master/js/user/ui/role/switcher/RoleSwitcherMenu.scss */
+.hm-user-roleSwitcher-menu > .hm-list-item:hover {
+  background-color: #566a89;
+}
+/* line 31, ../../../../../../src/projects/default/master/js/user/ui/role/switcher/RoleSwitcherMenu.scss */
+.hm-user-roleSwitcher-menu > .hm-list-item.hm-user-roleSwitcher-menu-item_enduser {
+  font-weight: 700;
+  color: #fff;
+  margin-top: 14px;
+}
+/* line 36, ../../../../../../src/projects/default/master/js/user/ui/role/switcher/RoleSwitcherMenu.scss */
+.hm-user-roleSwitcher-menu > .hm-list-item.hm-user-roleSwitcher-menu-item_enduser > .hm-user-roleSwitcher-menu-item_enduser-separator {
+  height: 0;
+  border: 1px solid #394661;
+  border-bottom-color: #6f7683;
+  padding: 0;
+  margin-top: -13px;
+  margin-bottom: 9px;
+}
+/* line 45, ../../../../../../src/projects/default/master/js/user/ui/role/switcher/RoleSwitcherMenu.scss */
+.hm-user-roleSwitcher-menu > .hm-list-item.hm-user-roleSwitcher-menu-item_enduser > .hm-user-roleSwitcher-menu-item_enduser-bottomtext {
+  font-weight: normal;
+  padding: 2px 0;
+  color: #fff;
+}
+
+/* line 6, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.ui-tabs.hm-subject-list-item-description {
+  font-family: Arial, Verdana, sans-serif;
+  background-color: transparent;
+  border: none;
+  min-width: 400px;
+}
+/* line 13, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.ui-tabs.hm-subject-list-item-description .ajax-spinner-local {
+  height: 70px;
+  position: static;
+}
+/* line 18, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.ui-tabs.hm-subject-list-item-description .ui-tabs-nav {
+  background-image: none;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  font-size: 13px;
+  color: #54778f;
+  white-space: nowrap;
+}
+/* line 28, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.ui-tabs.hm-subject-list-item-description .ui-tabs-nav li {
+  margin-right: 0px;
+  border: 1px solid #c9d5db !important;
+  border-bottom-width: 0 !important;
+  overflow: hidden;
+  z-index: 1;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px;
+  border-radius: 5px 5px 0 0;
+}
+/* line 36, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.ui-tabs.hm-subject-list-item-description .ui-tabs-nav li a {
+  padding: 0;
+}
+/* line 40, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.ui-tabs.hm-subject-list-item-description .ui-tabs-nav li span, .ui-tabs.hm-subject-list-item-description .ui-tabs-nav li a {
+  margin: 0;
+  border: none;
+}
+/* line 45, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.ui-tabs.hm-subject-list-item-description .ui-tabs-nav li.ui-state-default {
+  line-height: 21px;
+  margin-top: 0;
+}
+/* line 50, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.ui-tabs.hm-subject-list-item-description .ui-tabs-nav li.ui-state-default, .ui-tabs.hm-subject-list-item-description .ui-tabs-nav li.ui-state-default span {
+  background-color: #ebf0f2;
+}
+/* line 54, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.ui-tabs.hm-subject-list-item-description .ui-tabs-nav li.ui-state-default span {
+  border: none;
+  color: #54778f;
+}
+/* line 59, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.ui-tabs.hm-subject-list-item-description .ui-tabs-nav li.ui-state-default .gradient-me {
+  display: none;
+}
+/* line 66, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.ui-tabs.hm-subject-list-item-description .ui-tabs-nav li.ui-tabs-selected, .ui-tabs.hm-subject-list-item-description .ui-tabs-nav li.ui-state-active {
+  line-height: 29px;
+  margin-top: 0;
+  position: relative;
+  top: 1px;
+}
+/* line 72, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.ui-tabs.hm-subject-list-item-description .ui-tabs-nav li.ui-tabs-selected, .ui-tabs.hm-subject-list-item-description .ui-tabs-nav li.ui-tabs-selected span, .ui-tabs.hm-subject-list-item-description .ui-tabs-nav li.ui-state-active, .ui-tabs.hm-subject-list-item-description .ui-tabs-nav li.ui-state-active span {
+  background-color: #fff;
+}
+/* line 76, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.ui-tabs.hm-subject-list-item-description .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs.hm-subject-list-item-description .ui-tabs-nav li.ui-state-active a {
+  color: #54778f;
+  border-bottom: 0;
+  outline-color: transparent;
+}
+/* line 85, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.ui-tabs.hm-subject-list-item-description .ui-tabs-panel {
+  padding: 12px 0;
+  border: 1px solid #c9d5db;
+  background-color: #fff;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  min-height: 70px;
+  max-height: 120px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+/* line 97, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.ui-tabs.hm-subject-list-item-description .ui-tabs-panel .hm-subject-list-item-description-panel-empty {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* line 105, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.ui-tabs.hm-subject-list-item-description .ui-tabs-panel .hm-subject-list-item-description-panel-empty > div {
+  width: 200px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #6492b3;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -100px;
+  margin-top: -10px;
+}
+
+/* line 122, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-lessons {
+  background-color: #fff;
+  position: relative;
+}
+/* line 127, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-lessons ul {
+  margin: 0;
+}
+
+/* line 133, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-lesson {
+  list-style: none;
+  line-height: 21px;
+  height: 21px;
+  font-size: 13px;
+  padding: 2px 0 2px 12px;
+  overflow: hidden;
+}
+/* line 141, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-lesson a {
+  color: #5183a6;
+}
+/* line 145, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-lesson:nth-child(even) {
+  background-color: #ebf0f2;
+}
+/* line 149, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-lesson:hover {
+  background-color: #d2d7d9;
+}
+
+/* line 154, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-lesson-title {
+  margin-right: 105px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 160, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-lesson-date {
+  float: right;
+  height: 21px;
+  width: 90px;
+  background-color: #d7e8bd;
+  text-align: center;
+  line-height: 21px;
+  color: #686868;
+  font-size: 13px;
+}
+
+/* line 172, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-lesson-free .hm-subject-list-item-description-lesson-date {
+  background-color: #f6f7b1;
+  font-size: 21px;
+  font-family: "PT Sans", verdana, sans-serif;
+}
+
+/* line 180, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-lesson-expired .hm-subject-list-item-description-lesson-date {
+  background-color: #dda8a8;
+}
+
+/* line 189, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-progress-chart {
+  position: relative;
+  height: 70px;
+  margin: 0 10px;
+  overflow: hidden;
+}
+
+/* line 196, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-progress-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 17px;
+}
+/* line 202, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-progress-bar.hm-subject-list-item-description-progress-bar-best {
+  top: 0px;
+}
+/* line 205, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-progress-bar.hm-subject-list-item-description-progress-bar-best .hm-subject-list-item-description-progress-bar-rect-value {
+  background-color: #cfd957;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U2ZWJhNyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2NmZDk1NyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e6eba7), color-stop(100%, #cfd957));
+  background: -moz-linear-gradient(top, #e6eba7 0%, #cfd957 100%);
+  background: -webkit-linear-gradient(top, #e6eba7 0%, #cfd957 100%);
+  background: linear-gradient(to bottom, #e6eba7 0%, #cfd957 100%);
+}
+/* line 213, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-progress-bar.hm-subject-list-item-description-progress-bar-my {
+  top: 25px;
+}
+/* line 216, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-progress-bar.hm-subject-list-item-description-progress-bar-my .hm-subject-list-item-description-progress-bar-rect-value {
+  background-color: #7fc8fd;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2MzZTVmZSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzdmYzhmZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c3e5fe), color-stop(100%, #7fc8fd));
+  background: -moz-linear-gradient(top, #c3e5fe 0%, #7fc8fd 100%);
+  background: -webkit-linear-gradient(top, #c3e5fe 0%, #7fc8fd 100%);
+  background: linear-gradient(to bottom, #c3e5fe 0%, #7fc8fd 100%);
+}
+/* line 224, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-progress-bar.hm-subject-list-item-description-progress-bar-3 {
+  top: -5px;
+}
+/* line 227, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-progress-bar.hm-subject-list-item-description-progress-bar-3 .hm-subject-list-item-description-progress-bar-rect {
+  height: 55px;
+}
+/* line 231, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-progress-bar.hm-subject-list-item-description-progress-bar-3 .hm-subject-list-item-description-progress-bar-rect-value {
+  border-right: 3px solid #9be272;
+}
+/* line 236, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-progress-bar.hm-subject-list-item-description-progress-bar-axis {
+  top: 50px;
+}
+/* line 240, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-progress-bar.hm-subject-list-item-description-progress-bar-axis .hm-subject-list-item-description-progress-bar-rect {
+  border: 2px solid #afc8d2;
+  border-top-width: 3px;
+  border-bottom-width: 0;
+  height: 10px;
+}
+/* line 246, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-progress-bar.hm-subject-list-item-description-progress-bar-axis .hm-subject-list-item-description-progress-bar-rect:before, .hm-subject-list-item-description-progress-bar.hm-subject-list-item-description-progress-bar-axis .hm-subject-list-item-description-progress-bar-rect:after {
+  content: "0%";
+  position: absolute;
+  left: -8px;
+  top: 10px;
+  color: #4a4a4a;
+  font-size: 10px;
+}
+/* line 255, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-progress-bar.hm-subject-list-item-description-progress-bar-axis .hm-subject-list-item-description-progress-bar-rect:after {
+  content: "100%";
+  right: -8px;
+  left: auto;
+}
+
+/* line 264, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-progress-bar-caption, .hm-subject-list-item-description-progress-bar-rect {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  line-height: 17px;
+  height: 17px;
+  text-align: right;
+  color: #517e9c;
+}
+
+/* line 276, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-progress-bar-rect {
+  left: 105px;
+  right: 0;
+  width: auto;
+}
+
+/* line 283, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-progress-bar-rect-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+}
+
+/* line 293, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-events .hm-es-event-list {
+  width: auto;
+  border: none;
+  font-size: 13px;
+  margin: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 300, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-events .hm-es-event-list .hm-es-event-list-body {
+  padding: 0;
+}
+/* line 304, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-events .hm-es-event-list .hm-es-event-list-group {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  margin: 0;
+}
+/* line 310, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-events .hm-es-event-list .hm-es-event-list-group > h3 {
+  display: none;
+}
+/* line 316, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-events .hm-es-event-list-item {
+  font-size: 13px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 10px;
+  min-height: 20px;
+  color: #6492b3;
+}
+/* line 324, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-events .hm-es-event-list-item:nth-child(even) {
+  background-color: #ebf0f2;
+}
+/* line 328, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-events .hm-es-event-list-item:hover {
+  background-color: #d2d7d9;
+}
+/* line 333, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-events .hm-es-event-list-item-avatar-wrapper {
+  display: none;
+}
+/* line 337, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-events .hm-es-event-list-item-datetime {
+  font-size: 9px;
+  padding-top: 0;
+}
+/* line 342, ../../../../../../src/projects/default/master/js/course/ui/list/CourseDescriptionTabs.scss */
+.hm-subject-list-item-description-events .hm-es-event-list-item-desc {
+  margin-left: 0;
+}
+
+/*
+.ui-tabs.hm-subject-list-item-description .ui-tabs-panel.hm-subject-list-item-description-events {
+    padding: 0;
+}
+*/
+/* line 3, ../../../../../../src/projects/default/master/js/course/ui/marksheet/ScrollBar.scss */
+.hm-marksheet-scrollbar {
+  height: 20px !important;
+  position: relative;
+}
+
+/* line 8, ../../../../../../src/projects/default/master/js/course/ui/marksheet/ScrollBar.scss */
+.hm-marksheet-scrollbar-scroller {
+  position: absolute;
+  background-color: #d4d4d4;
+  border: 1px solid #a4a4a4;
+  border-radius: 2px !important;
+  height: 18px !important;
+  top: 1px;
+  left: 1px;
+  cursor: default;
+  box-sizing: border-box;
+}
+
+/* line 1, ../../../../../../src/projects/default/master/js/develop/ui/panel/DevPanel.scss */
+.hm-dev-panel {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+}
+
+/* line 8, ../../../../../../src/projects/default/master/js/develop/ui/panel/DevPanel.scss */
+.hm-dev-panel-header {
+  padding: 3px;
+  background-color: silver;
+}
+
+/* line 13, ../../../../../../src/projects/default/master/js/develop/ui/panel/DevPanel.scss */
+.hm-dev-panel-body {
+  padding: 5px;
+}
+
+/* line 17, ../../../../../../src/projects/default/master/js/develop/ui/panel/DevPanel.scss */
+.hm-dev-button-debug-switcher {
+  color: #000;
+  display: block;
+  margin: 2px;
+  border: 1px solid silver;
+  padding: 3px;
+  cursor: pointer;
+  background-color: #FFF;
+  font-weight: bold;
+}
+/* line 27, ../../../../../../src/projects/default/master/js/develop/ui/panel/DevPanel.scss */
+.hm-dev-button-debug-switcher:hover {
+  background-color: #e0e0e0;
+}
+/* line 31, ../../../../../../src/projects/default/master/js/develop/ui/panel/DevPanel.scss */
+.hm-dev-button-debug-switcher.hm-dev-button-debug-switcher-enabled {
+  background-color: #00ff28;
+}
+/* line 34, ../../../../../../src/projects/default/master/js/develop/ui/panel/DevPanel.scss */
+.hm-dev-button-debug-switcher.hm-dev-button-debug-switcher-enabled:hover {
+  background-color: #00e126;
+}
+
+/* line 3, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/Editor.scss */
+.hm-quest-samplingOfQuestionsEditor {
+  margin-bottom: 10px;
+}
+/* line 6, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/Editor.scss */
+.hm-quest-samplingOfQuestionsEditor fieldset {
+  padding-left: 15px;
+}
+
+/* line 11, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/Editor.scss */
+.hm-quest-samplingOfQuestionsEditor-categoryLimitSwitcher {
+  margin-left: 0 !important;
+}
+
+/* line 15, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/Editor.scss */
+.hm-quest-samplingOfQuestionsEditor-categoryLimitSwitcher-wrapper {
+  margin: 0 10px 10px 0;
+}
+
+/* line 19, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/Editor.scss */
+.hm-quest-samplingOfQuestionsEditor-category {
+  float: left;
+  margin-right: 10px;
+  font-size: 12px;
+}
+/* line 24, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/Editor.scss */
+.hm-quest-samplingOfQuestionsEditor-category input {
+  font-size: 12px;
+  line-height: 20px;
+  padding-left: 5px;
+}
+
+/* line 32, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/Editor.scss */
+.hm-quest-samplingOfQuestionsEditor-content table {
+  table-layout: fixed;
+  border-spacing: 0;
+}
+/* line 37, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/Editor.scss */
+.hm-quest-samplingOfQuestionsEditor-content th:nth-child(3) {
+  border-right: 0;
+}
+
+/* line 42, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/Editor.scss */
+.hm-quest-samplingOfQuestionsEditor-total {
+  padding: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* line 48, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/Editor.scss */
+.hm-quest-samplingOfQuestionsEditor-total-count {
+  color: #000;
+}
+
+/* line 52, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/Editor.scss */
+.hm-quest-samplingOfQuestionsEditor-total-count_error {
+  color: red;
+}
+
+/* line 61, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/Editor.scss */
+.hm-quest-samplingOfQuestionsEditor-footer td {
+  line-height: 25px !important;
+}
+/* line 64, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/Editor.scss */
+.hm-quest-samplingOfQuestionsEditor-footer button {
+  margin: 0 5px !important;
+}
+
+/* line 70, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/Editor.scss */
+.hm-quest-samplingOfQuestionsEditor_saving .hm-quest-samplingOfQuestionsEditor-save, .hm-quest-samplingOfQuestionsEditor_invalid .hm-quest-samplingOfQuestionsEditor-save {
+  display: none;
+}
+
+/* line 5, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/ClusterEditor.scss */
+.hm-quest-samplingOfQuestionsEditor-cluster tr.filters_tr td {
+  font-size: 12px;
+  line-height: 20px;
+}
+/* line 9, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/ClusterEditor.scss */
+.hm-quest-samplingOfQuestionsEditor-cluster tr.filters_tr input {
+  margin-left: 5px;
+  margin-top: -1px;
+  border-width: 1px;
+  line-height: 18px;
+  height: 18px;
+  width: 40px !important;
+  min-width: 40px !important;
+  padding: 0 0 0 5px;
+}
+
+/* line 22, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/ClusterEditor.scss */
+.hm-quest-samplingOfQuestionsEditor-cluster-count {
+  color: black;
+}
+
+/* line 26, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/ClusterEditor.scss */
+.hm-quest-samplingOfQuestionsEditor-cluster-count_error {
+  color: red;
+}
+
+/* line 30, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/ClusterEditor.scss */
+.hm-quest-samplingOfQuestionsEditor-cluster-count_maximum {
+  background-color: #d2d2d2 !important;
+}
+
+/* line 34, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/ClusterEditor.scss */
+.hm-quest-samplingOfQuestionsEditor-cluster-title {
+  margin-left: 5px;
+}
+
+/* line 38, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/ClusterEditor.scss */
+.hm-quest-samplingOfQuestionsEditor-cluster-info {
+  float: right;
+  margin: 0 10px;
+}
+
+/* line 43, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/ClusterEditor.scss */
+.hm-quest-samplingOfQuestionsEditor-cluster-info-count {
+  font-weight: bold;
+  color: green;
+  margin: 0 5px;
+}
+
+/* line 49, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/ClusterEditor.scss */
+.hm-quest-samplingOfQuestionsEditor-cluster-info-count_error {
+  color: red;
+}
+
+/* line 53, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/ClusterEditor.scss */
+.hm-quest-samplingOfQuestionsEditor-cluster-info-count-description {
+  margin: 0 5px 0 0;
+}
+
+/* line 57, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/ClusterEditor.scss */
+.hm-quest-samplingOfQuestionsEditor-cluster-info-fullCount {
+  margin: 0 0 0 5px;
+}
+
+/* line 61, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/ClusterEditor.scss */
+.hm-quest-samplingOfQuestionsEditor-cluster-questions {
+  padding: 0 !important;
+  border-top-width: 0 !important;
+}
+/* line 65, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/ClusterEditor.scss */
+.hm-quest-samplingOfQuestionsEditor-cluster-questions table {
+  border: 0 !important;
+}
+/* line 69, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/ClusterEditor.scss */
+.hm-quest-samplingOfQuestionsEditor-cluster-questions table tr:first-child td {
+  border-top: 0;
+}
+/* line 75, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/ClusterEditor.scss */
+.hm-quest-samplingOfQuestionsEditor-cluster-questions table tr:last-child td {
+  border-bottom: 0;
+}
+/* line 80, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/ClusterEditor.scss */
+.hm-quest-samplingOfQuestionsEditor-cluster-questions table td:last-child {
+  border-right: 0;
+}
+
+/* line 86, ../../../../../../src/projects/default/master/js/quest/ui/samplingOfQuestionsEditor/ClusterEditor.scss */
+.hm-quest-samplingOfQuestionsEditor-cluster-questions-wrapper {
+  max-height: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}

@@ -1,0 +1,224 @@
+//pl - plan lesson
+
+.pl__card {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 26px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  background: #FFFFff;
+
+  &-icons {
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+    min-height: 46px;
+    max-width: 46px;
+    max-height: 46px;
+    margin: 0 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    > img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &-info {
+    //width: 1011px;
+    width: 70%;
+
+    &__name {
+      > a {
+        text-decoration: none;
+
+        > h3 {
+          font-family: Roboto;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 24px;
+          color: #2574CF;
+          letter-spacing: 0.02em
+        }
+      }
+
+      > h3 {
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #2574CF;
+        letter-spacing: 0.02em
+      }
+    }
+
+    &__description {
+      margin-top: 16px;
+
+      > p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #1e1e1e;
+      }
+    }
+
+    &__time {
+
+      &-lead {
+        margin: 5px 0;
+        display: flex;
+
+        > div {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          width: 96px;
+
+          > span {
+            font-size: 12px;
+            line-height: 24px;
+            color: #696969;
+          }
+
+
+        }
+
+        > span {
+          font-size: 12px;
+          line-height: 18px;
+          letter-spacing: 0.15px;
+          color: #696969;
+        }
+      }
+
+      &-data {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        &__time {
+          margin-bottom: 25px;
+          display: flex;
+
+          > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            > svg {
+              margin-right: 6px;
+            }
+
+            > span {
+              font-family: Roboto;
+              font-size: 14px;
+              line-height: 21px;
+              letter-spacing: 0.02em;
+              color: #696969;
+            }
+
+          }
+
+
+        }
+
+        &__ntime {
+          margin-bottom: 8px;
+          display: flex;
+
+          > span {
+            font-family: Roboto;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 0.02em;
+            color: #696969;
+          }
+
+          &-cl {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 6px;
+
+            > svg {
+              width: 16px;
+              height: 18px;
+            }
+          }
+        }
+
+      }
+    }
+
+    &__conditions {
+      > span {
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.02em;
+        color: #70889E;
+      }
+    }
+
+  }
+
+  &-result {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 18%;
+
+    &-text {
+      margin-bottom: 12px;
+
+      > span {
+        font-family: Roboto;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #7C7C7C;
+      }
+    }
+
+
+    &-assessment {
+      width: 72px;
+      height: 72px;
+
+      &__rad {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #4A90E2;
+        box-sizing: border-box;
+        border-radius: 50%;
+      }
+    }
+
+    &-detailed {
+      margin-top: 4px;
+
+      > a {
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.02em;
+        color: #125BB5;
+        text-decoration: none;
+      }
+    }
+
+  }
+
+}

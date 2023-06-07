@@ -1,0 +1,61 @@
+{
+    "project": "default",
+    "parts": {
+        "base": [
+            {
+                "name": "core",
+                "version": "master",
+                "enabled": true
+            },
+            {
+                "name": "core-ui",
+                "version": "master",
+                "enabled": true
+            }
+        ],
+        "projects": [
+            {
+                "name": "default",
+                "version": "master",
+                "enabled": true
+            }
+        ],
+        "modules": [
+            {
+                "name": "calendar",
+                "version": "master",
+                "enabled": false
+            },
+            {
+                "name": "graph",
+                "version": "master",
+                "enabled": false
+            },
+            {
+                "name": "grid",
+                "version": "master",
+                "enabled": false
+            },
+            {
+                "name": "es",
+                "version": "temocenter",
+                "enabled": true
+            },
+            {
+                "name": "messenger",
+                "version": "master",
+                "enabled": true
+            },
+            {
+                "name": "trainingModules",
+                "version": "master",
+                "enabled": true
+            },
+            {
+                "name": "mainPageWidgets",
+                "version": "master",
+                "enabled": true
+            }
+        ]
+    }
+}

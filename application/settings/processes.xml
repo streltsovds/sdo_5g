@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ВНИМАНИЕ!!! -->
+<!-- Здесь определяются только статичные процессы - у которых фиксированное число состояний -->
+<!-- Динамические процессы создаются динамически и сохраняются в таблице process -->
+<config>
+    <order>
+        <name>Процесс управления заявкой</name>
+        <type>-1</type>
+        <minState>2</minState>
+        <states>
+            <state>
+                <id>order_1</id>
+                <class>HM_Role_State_Dean</class>
+                <name>Согласование организатором обучения</name>
+            </state>
+            <!--state>
+                <id>order_2</id>
+                <class>HM_Role_State_Chief</class>
+                <name>Согласование руководителем</name>
+            </state-->
+            <state>
+                <id>order_3</id>
+                <class>HM_Role_State_Session</class>
+                <name>Формирование учебной сессии</name>
+            </state>
+            <!--state>
+                <id>order_4</id>
+                <class>HM_Role_State_Student</class>
+                <name>Согласование участником</name>
+                <dependent>
+                    <after>
+                        <depend>
+                            <id>order_1</id>
+                            <link>hard</link>
+                        </depend>
+                        <depend>
+                            <id>order_3</id>
+                            <link>soft</link>
+                        </depend>
+                        <depend>
+                            <id>order_2</id>
+                            <link>soft</link>
+                        </depend>
+                    </after>
+                </dependent>
+            </state-->
+            <state>
+                <id>order_4</id>
+                <class>HM_Role_State_Complete</class>
+                <name>Заявка согласована</name>
+                <visible>false</visible>
+            </state>
+            <state>
+                <id>order_4</id>
+                <class>HM_Role_State_Fail</class>
+                <name>Заявка отклонена</name>
+                <visible>false</visible>
+            </state>
+        </states>
+    </order>
+	<vacancy>
+        <name>Сессия подбора пользователя на вакансию</name>
+        <type>2</type>
+        <minState>1</minState>
+		<states>
+			<state>
+                <id>vacancy_1</id>
+                <class>HM_Recruit_Vacancy_State_Open</class>
+                <name>Подготовка сессии подбора и размещение вакансии</name>
+            </state>
+			<!--state>
+                <id>vacancy_2</id>
+                <class>HM_Recruit_Vacancy_State_Search</class>
+                <name>Поиск кандидатов</name>
+            </state-->
+			<state>
+                <id>vacancy_2</id>
+                <class>HM_Recruit_Vacancy_State_Assessment</class>
+                <name>Поиск кандидатов и собеседования</name>
+            </state>
+			<state>
+                <id>vacancy_3</id>
+                <class>HM_Recruit_Vacancy_State_Hire</class>
+                <name>Завершение сессии</name>
+            </state>
+			<state>
+                <id>vacancy_4</id>
+                <class>HM_Recruit_Vacancy_State_Complete</class>
+                <name></name>
+            </state>
+		</states>
+    </vacancy>	
+	<session>
+        <name>Оценочная сессия создана</name>
+        <type>3</type>
+        <minState>1</minState>
+		<states>
+			<state>
+                <id>session_1</id>
+                <class>HM_At_Session_State_Open</class>
+                <name>Подготовка оценочной сессии</name>
+            </state>
+			<state>
+                <id>session_2</id>
+                <class>HM_At_Session_State_Publish</class>
+                <name>Проведение оценочных мероприятий</name>
+            </state>
+			<state>
+                <id>session_3</id>
+                <class>HM_At_Session_State_Complete</class>
+                <name></name>
+            </state>
+		</states>
+    </session>
+    <tcsession>
+        <name>Cессия планирования создана</name>
+        <type>10</type>
+        <minState>1</minState>
+        <states>
+            <state>
+                <id>tcsession_1</id>
+                <class>HM_Tc_Session_State_Open</class>
+                <name>Подготовка cессии планирования</name>
+            </state>
+            <state>
+                <id>tcsession_2</id>
+                <class>HM_Tc_Session_State_Publish</class>
+                <name>Определение потребности в обучении</name>
+            </state>
+            <state>
+                <id>tcsession_3</id>
+                <class>HM_Tc_Session_State_Analysis</class>
+                <name>Проверка заявок менеджером</name>
+            </state>
+            <state>
+                <id>tcsession_4</id>
+                <class>HM_Tc_Session_State_Agreement</class>
+                <name>Согласование плана обучения</name>
+            </state>
+            <state>
+                <id>tcsession_5</id>
+                <class>HM_Tc_Session_State_Complete</class>
+                <name></name>
+            </state>
+        </states>
+    </tcsession>
+    <adaptation>
+        <name>Программа адаптации</name>
+        <type>6</type>
+        <minState>1</minState>
+        <states>
+            <!--state>
+                <id>adaptation_1</id>
+                <class>HM_Recruit_Newcomer_State_Training01</class>
+                <name>Вводный инструктаж</name>              
+                <day_begin>1</day_begin>
+                <day_end>1</day_end>
+            </state>
+            <state>
+                <id>adaptation_2</id>
+                <class>HM_Recruit_Newcomer_State_Training02</class>
+                <name>Первичный инструктаж на рабочем месте</name>
+                <day_begin>1</day_begin>
+                <day_end>1</day_end>
+            </state-->
+            <!--state>
+                <id>adaptation_1</id>
+                <class>HM_Recruit_Newcomer_State_Welcome</class>
+                <name>Welcome-тренинг</name>              
+                <day_begin>1</day_begin>
+                <day_end>1</day_end>
+            </state-->
+            <state>
+                <id>adaptation_3</id>
+                <class>HM_Recruit_Newcomer_State_Open</class>
+                <name>Составление плана адаптации</name>
+                <day_begin>1</day_begin>
+                <day_end>5</day_end>
+            </state>
+            <state>
+                <id>adaptation_4</id>
+                <class>HM_Recruit_Newcomer_State_Plan</class>
+                <name>Прохождение плана</name>
+                <day_begin>6</day_begin>
+                <day_end>52</day_end>
+            </state>
+            <state>
+                <id>adaptation_5</id>
+                <class>HM_Recruit_Newcomer_State_Publish</class>
+                <name>Оценка выполнения плана</name>
+                <day_begin>52</day_begin>
+                <day_end>57</day_end>
+            </state>
+            <state>
+                <id>adaptation_6</id>
+                <class>HM_Recruit_Newcomer_State_Result</class>
+                <name>Подведение итогов</name>
+                <day_begin>58</day_begin>
+                <day_end>60</day_end>
+            </state>
+            <state>
+                <id>adaptation_7</id>
+                <class>HM_Recruit_Newcomer_State_Complete</class>
+                <name></name>
+            </state>
+        </states>
+    </adaptation>
+    <reserve>
+        <name>Программа кадрового резерва</name>
+        <type>15</type>
+        <minState>1</minState>
+        <states>
+            <state>
+                <id>reserve_1</id>
+                <class>HM_Hr_Reserve_State_Open</class>
+                <name>Составление ИПР</name>
+                <day_begin>1</day_begin>
+                <day_end>10</day_end>
+            </state>
+            <state>
+                <id>reserve_2</id>
+                <class>HM_Hr_Reserve_State_Plan</class>
+                <name>Прохождение плана</name>
+                <day_begin>11</day_begin>
+                <day_end>237</day_end>
+            </state>
+            <state>
+                <id>reserve_3</id>
+                <class>HM_Hr_Reserve_State_Publish</class>
+                <name>Оценка выполнения плана</name>
+                <day_begin>238</day_begin>
+                <day_end>242</day_end>
+            </state>
+            <state>
+                <id>reserve_4</id>
+                <class>HM_Hr_Reserve_State_Result</class>
+                <name>Подведение итогов</name>
+                <day_begin>243</day_begin>
+                <day_end>247</day_end>
+            </state>
+            <state>
+                <id>reserve_5</id>
+                <class>HM_Hr_Reserve_State_Complete</class>
+                <name></name>
+            </state>
+        </states>
+    </reserve>
+    <rotation>
+        <name>Программа ротации</name>
+        <type>14</type>
+        <minState>1</minState>
+        <states>
+            <state>
+                <id>rotation_1</id>
+                <class>HM_Hr_Rotation_State_Open</class>
+                <name>Составление плана ротации</name>
+                <day_begin>1</day_begin>
+                <day_end>5</day_end>
+            </state>
+            <state>
+                <id>rotation_2</id>
+                <class>HM_Hr_Rotation_State_Plan</class>
+                <name>Прохождение плана</name>
+                <day_begin>6</day_begin>
+                <day_end>-6</day_end>
+            </state>
+            <state>
+                <id>rotation_3</id>
+                <class>HM_Hr_Rotation_State_Publish</class>
+                <name>Оценка выполнения плана</name>
+                <day_begin>-5</day_begin>
+                <day_end>-2</day_end>
+            </state>
+            <state>
+                <id>rotation_4</id>
+                <class>HM_Hr_Rotation_State_Result</class>
+                <name>Подведение итогов</name>
+                <day_begin>-1</day_begin>
+                <day_end>0</day_end>
+            </state>
+            <state>
+                <id>rotation_5</id>
+                <class>HM_Hr_Rotation_State_Complete</class>
+                <name></name>
+            </state>
+        </states>
+    </rotation>
+    <tcsessiondepartment>
+        <name>Консолидированная заявка создана</name>
+        <type>11</type>
+        <minState>1</minState>
+        <states>
+            <state>
+                <id>tcsessiondepartment_1</id>
+                <class>HM_Tc_Session_Department_State_Open</class>
+                <name>Формирование консолидированной заявки</name>
+            </state>
+            <!--state>
+                <id>tcsessiondepartment_2</id>
+                <class>HM_Tc_Session_Department_State_AgreementStandart</class>
+                <name>Согласование с нормативными документами</name>
+            </state>
+            <state>
+                <id>tcsessiondepartment_3</id>
+                <class>HM_Tc_Session_Department_State_AssignmentCost</class>
+                <name>Назначение статей расходов</name>
+            </state-->
+            <state>
+                <id>tcsessiondepartment_4</id>
+                <class>HM_Tc_Session_Department_State_Agreement</class>
+                <name>Согласование консолидированной заявки</name>
+            </state>
+            <state>
+                <id>tcsessiondepartment_5</id>
+                <class>HM_Tc_Session_Department_State_Complete</class>
+                <name>Бизнес-процесс завершен</name>
+            </state>
+        </states>
+    </tcsessiondepartment>
+    <tcsessionquarter>
+        <name>Cессия квартального планирования создана</name>
+        <type>12</type>
+        <minState>1</minState>
+        <states>
+            <state>
+                <id>tcsession_1</id>
+                <class>HM_Tc_SessionQuarter_State_Open</class>
+                <name>Подготовка  сессии планирования </name>
+            </state>
+            <state>
+                <id>tcsession_2</id>
+                <class>HM_Tc_SessionQuarter_State_Publish</class>
+                <name>Уточнение потребности в обучении</name>
+            </state>
+            <state>
+                <id>tcsession_3</id>
+                <class>HM_Tc_SessionQuarter_State_Analysis</class>
+                <name>Проверка заявок менеджером</name>
+            </state>
+            <state>
+                <id>tcsession_4</id>
+                <class>HM_Tc_SessionQuarter_State_Agreement</class>
+                <name>Проведение обучения</name>
+            </state>
+            <state>
+                <id>tcsession_5</id>
+                <class>HM_Tc_SessionQuarter_State_Complete</class>
+                <name></name>
+            </state>
+        </states>
+    </tcsessionquarter>
+    <tcsessionquarterdepartment>
+        <name>Консолидированная заявка квартального планирования создана</name>
+        <type>13</type>
+        <minState>1</minState>
+        <states>
+            <state>
+                <id>tcsessionquarterdepartment_1</id>
+                <class>HM_Tc_SessionQuarter_Department_State_Open</class>
+                <name>Уточнение консолидированной заявки подразделения</name>
+            </state>
+            <state>
+                <id>tcsessiondepartment_2</id>
+                <class>HM_Tc_SessionQuarter_Department_State_Agreement</class>
+                <name>Согласование консолидированной заявки</name>
+            </state>			
+            <state>
+                <id>tcsessionquarterdepartment_3</id>
+                <class>HM_Tc_SessionQuarter_Department_State_Complete</class>
+                <name>Бизнес-процесс завершен</name>
+            </state>
+        </states>
+    </tcsessionquarterdepartment>
+</config>

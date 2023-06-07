@@ -1,0 +1,24 @@
+# Codeception Test Suite Configuration
+
+# suite for acceptance tests.
+# perform tests in browser using the WebDriver or PhpBrowser.
+# If you need both WebDriver and PHPBrowser tests - create a separate suite.
+
+class_name: AcceptanceTester
+modules:
+    enabled:
+        - WebDriver
+        - AcceptanceHelper
+#        - Db
+    config:
+        WebDriver:
+            url: 'http://localhost' # change here
+            browser: firefox
+            window_size: maximize
+#        Db:
+#            dsn: 'mysql:host=localhost;dbname=codeception'
+#            user: 'root'
+#            password: 'SDmBOtVP'
+#            dump: tests/_data/dump.sql # этот дамп перетрёт всю базу	
+#            populate: false
+#            cleanup: true

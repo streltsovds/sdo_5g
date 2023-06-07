@@ -1,0 +1,14 @@
+// see https://vuetifyjs.com/en/framework/breakpoints#breakpoints
+// see vuetify/src/stylus/settings/_variables.styl
+
+// xxs во vuetify нет, но используем для проверки самых старых телефонов
+$grid-breakpoint-xxs-end: 359px;
+
+$grid-breakpoint-xs-end: 599px;
+
+$grid-breakpoint-sm-end: 959px;
+$grid-breakpoint-md-start: 960px;
+$grid-breakpoint-md-end: 1263px;
+$grid-breakpoint-lg-start: 1264px;
+$grid-breakpoint-lg-end: 1903px;
+$grid-breakpoint-xl-start: 1094px;

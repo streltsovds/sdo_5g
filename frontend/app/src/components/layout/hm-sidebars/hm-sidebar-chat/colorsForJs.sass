@@ -1,0 +1,8 @@
+@import "variables"
+
+/**
+ * https://stackoverflow.com/a/56542750 used
+ */
+:export
+  @each $key, $value in $colors
+    #{unquote($key)}: $value

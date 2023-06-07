@@ -1,0 +1,53 @@
+<!doctype html>
+<title>Scheme generator</title>
+<meta charset="utf-8">
+
+<link type="text/css" rel="stylesheet" href="css/main.css">
+
+<link rel="stylesheet" href="css/codemirror.css">
+<script src="js/codemirror.js"></script>
+<script src="js/xml.js"></script>
+
+<script src="js/jquery.js"></script>
+<script src="js/tinymce.js"></script>
+
+<!-- <script src="js/prod/generator.js"></script> -->
+<script src="js/prod/gen-main.js"></script>
+<script src="js/prod/gen-format.js"></script>
+<script src="js/prod/gen-imagedrop.js"></script>
+
+<div class="dropzone">
+    <div>Перетащите изображение<br><sup>Esc — закрыть</sup></div>
+</div>
+
+<div class="af-imginfo">
+    <div class="af-progress">
+        <i></i>
+    </div>
+</div>
+
+<div class="addit-funcs">
+    <div class="af-imgupload">
+        <a href="#" title="1) Нажмите на кнопку. 2) Перетащите изображение. 3) Скопируйте в редактор ссылку из поля справа."></a>
+        <input type="text" class="image-url" title="Скопируйте ссылку в редактор для вставки изображения">
+    </div>
+
+    <div class="border-show">
+        <label for="border-show">
+            <input type="checkbox" id="border-show" checked>
+            границы элементов
+        </label>
+    </div>
+
+    <input type="text" class="coord-hint" value="0, 0" />
+</div>
+<div class="workspace">
+    <div></div>
+</div>
+<div class="output-wrap">
+    <div class="html-toggle"></div>
+    <textarea class="output" readonly="readonly"></textarea>
+    <div class="text-questions">
+    </div>
+</div>
+<iframe src="scheme/index.html" frameborder="0" id="viewbox"></iframe>

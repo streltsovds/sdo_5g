@@ -1,0 +1,15 @@
+.grid-filters-from{
+    margin-bottom: 10px;
+}
+.grid-filters-from dd,
+.grid-filters-from dt{
+    display: inline;
+}
+.grid-filters-from dd{
+    margin-right: 5px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+}

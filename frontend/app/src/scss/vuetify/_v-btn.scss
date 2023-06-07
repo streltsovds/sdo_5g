@@ -1,0 +1,11 @@
+.v-btn {
+  letter-spacing: 0.1px;
+  /* в vuetify 2 по-умолчанию было .0892857143em = 1.42857px;*/
+  text-transform: none;
+}
+
+//.v-btn-content
+
+.v-btn:not(.v-btn--round).v-size--large {
+  padding: 0 26px;
+}

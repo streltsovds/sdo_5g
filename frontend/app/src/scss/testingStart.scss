@@ -1,0 +1,53 @@
+.v-card-title__testing-start {
+  margin-bottom: 30px;
+  > span {
+    font-weight: 300;
+    font-size: 34px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: #2A2A2A;
+  }
+}
+
+/**
+Тестирование приветствие
+ */
+
+.start-testings-header {
+  padding: 10px 0 0 10px!important;
+  height: auto !important;
+  margin-bottom: 42px !important;
+}
+
+.testings {
+  > div {
+    > div {
+      padding: 0 0 0 10px!important;
+      > div {
+        display: flex;
+        flex-wrap: nowrap;
+        > div {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .testings {
+    > div {
+      > div {
+        > div {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+  .start-testings-header {
+    margin-bottom: 16px !important;
+    padding-left: 0 !important;
+  }
+}

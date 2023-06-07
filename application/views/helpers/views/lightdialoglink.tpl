@@ -1,0 +1,1 @@
+<a class="dialog-activator" href="<?php echo $this->url?>"><?php echo $this->text?></a>

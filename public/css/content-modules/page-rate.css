@@ -1,0 +1,144 @@
+.hm-page-rate {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.hm-page-rate-opened {
+    -moz-box-shadow: 0 0 20px silver;
+    -webkit-box-shadow: 0 0 20px silver;
+    box-shadow: 0 0 20px silver;
+}
+
+.hm-page-rate-header {
+    height: 33px;
+    line-height: 25px;
+    padding: 0;
+    font-size: 11px;
+    color: #fff;
+    background-color: #4f4f4f;
+}
+
+.hm-page-rate-header-rate {
+    padding: 4px;
+}
+
+.hm-page-rate-header-rate .hm-page-rate-header-img {
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
+    background: transparent url(../../images/content-modules/page-rate/rate-icon.png) 0 0 no-repeat;
+}
+
+.hm-page-rate-header-rate-unrated {
+    background-color: #d45000;
+}
+
+.hm-page-rate-header-title {
+    min-width: 200px;
+    display: inline-block;
+}
+
+.hm-page-rate-header-title > a {
+    border-bottom: 1px dotted #fff;
+    margin: 0px 11px;
+    text-decoration: none;
+}
+
+.hm-page-rate-header-title > a,
+.hm-page-rate-header-title > a:hover,
+.hm-page-rate-header-title > a:active,
+.hm-page-rate-header-title > a:visited {
+    color: #fff;
+}
+
+.hm-page-rate-header-rate-unrated .hm-page-rate-header-title {
+    min-width: 390px;
+}
+
+.hm-page-rate-header-delimeter {
+    width: 0;
+    border: 1px solid #424242;
+    border-right-color: #5d5d5d;
+    border-bottom: none;
+    border-top: none;
+    display: inline-block;
+    height: 25px;
+    cursor: default;
+    vertical-align: middle;
+}
+
+.hm-page-rate-header-userrate {
+    cursor: default;
+    margin: 0 10px;
+}
+
+.hm-page-rate-header-userrate:before, .hm-page-rate-header-userrate:after {
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 18px;
+    vertical-align: text-top;
+    background: transparent url(../../images/content-modules/page-rate/user-rate-background.png) 0 0 no-repeat;
+}
+
+.hm-page-rate-header-userrate:after {
+    background-position: -20px 0;
+}
+
+.hm-page-rate-header-stars {
+    display: inline-block;
+    width: 90px;
+    height: 25px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.hm-page-rate-header-stars-mask, .hm-page-rate-header-stars-background, .hm-page-rate-header-stars-value {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.hm-page-rate-header-stars-background {
+    background-color: #414141;
+    height: 10px;
+    width: 56px;
+    top: 50%;
+    left: 50%;
+    margin-left: -28px;
+    margin-top: -5px;
+}
+
+.hm-page-rate-header-stars-value {
+    background-color: #878787;
+    right: auto;
+    width: 0%;
+}
+
+.hm-page-rate-header-stars-mask {
+    background: transparent url(../../images/content-modules/page-rate/stars.png) center no-repeat;
+}
+
+.hm-page-rate-header-count {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 16px;
+    margin: 0 15px;
+    color: #fefefe;
+    cursor: default;
+    background: transparent url(../../images/content-modules/page-rate/people.png) 0 center no-repeat;
+}
+
+.hm-page-rate-content {
+    padding: 25px;
+    display: none;
+    width: inherit;
+    color: #000;
+}

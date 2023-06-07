@@ -1,0 +1,293 @@
+#positionsSliderBlock .ui-widget-header {
+	display: none;
+}
+
+.skin-temocenter #positionsSliderBlock .ui-widget-header {
+  display: block;
+}
+
+#positionsSliderBlock .ui-widget-content{
+	margin: 10px;
+}
+
+/*from PM*/
+
+/* line 2, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/catalog/SubjectCatalogItem.scss */
+.hm-catalog-experience-item {
+  width: 220px;
+  min-height: 247px;
+  float: left;
+  margin: 0 18px 24px 0;
+  background-color: #eceded;
+  cursor: pointer;
+/*  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;*/
+}
+
+/* line 12, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/catalog/SubjectCatalogItem.scss */
+.hm-catalog-experience-item-icon {
+  background-image: url(/images/content-modules/position/catalog/item-icon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 110px;
+  position: relative;
+/*  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;*/
+}
+
+/* line 22, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/catalog/SubjectCatalogItem.scss */
+.hm-catalog-experience-item-content {
+  padding: 13px 16px 0 16px;
+}
+
+/* line 26, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/catalog/SubjectCatalogItem.scss */
+.hm-catalog-experience-item-category {
+  color: #989b9c;
+  font-size: 10px;
+  line-height: 13px;
+  height: 22px;
+}
+
+/* line 32, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/catalog/SubjectCatalogItem.scss */
+.hm-catalog-experience-item-title {
+  min-height: 75px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+/* line 38, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/catalog/SubjectCatalogItem.scss */
+.hm-catalog-experience-item-title-text {
+  padding-right: 35px;
+  position: relative;
+  font-weight: bold;
+}
+/* line 43, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/catalog/SubjectCatalogItem.scss */
+.hm-catalog-experience-item-title-text > a {
+  border-bottom: 1px dotted #2963af;
+  color: #2963af;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+/* line 53, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/catalog/SubjectCatalogItem.scss */
+.hm-catalog-experience-item-title-icon {
+  position: absolute;
+  right: 0;
+  top: -5px;
+}
+
+/* line 59, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/catalog/SubjectCatalogItem.scss */
+.hm-catalog-icon {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  background-image: url('/images/icons/people.png?1406020428');
+  background-position: right center;
+  background-repeat: no-repeat;  
+}
+
+/* line 65, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/catalog/SubjectCatalogItem.scss */
+.hm-catalog-icon-tv {
+  background-position: 0 0;
+}
+
+/* line 69, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/catalog/SubjectCatalogItem.scss */
+.hm-catalog-icon-people {
+  background-position: 24 0;
+}
+
+/* line 73, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/catalog/SubjectCatalogItem.scss */
+.hm-catalog-experience-item-flag {
+  position: absolute;
+  top: 10px;
+  right: -2px;
+  height: 19px;
+}
+
+/* line 80, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/catalog/SubjectCatalogItem.scss */
+.hm-catalog-experience-item-flag-begin {
+  height: 1px;
+  border-width: 9px;
+  border-style: solid;
+  border-left-color: transparent !important;
+  border-right-width: 0;
+  float: left;
+}
+
+/* line 89, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/catalog/SubjectCatalogItem.scss */
+.hm-catalog-experience-item-flag-end {
+  margin-left: 9px;
+  font-size: 9px;
+  font-weight: bold;
+  line-height: 19px;
+  height: 19px;
+  padding: 0 10px;
+  color: #fff;
+  min-width: 20px;
+  cursor: default;
+}
+
+/* line 102, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/catalog/SubjectCatalogItem.scss */
+.hm-catalog-experience-item-flag-new > .hm-catalog-experience-item-flag-begin {
+  border-color: #cf1942;
+}
+/* line 106, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/catalog/SubjectCatalogItem.scss */
+.hm-catalog-experience-item-flag-new > .hm-catalog-experience-item-flag-end {
+  background-color: #cf1942;
+}
+
+/* line 112, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/catalog/SubjectCatalogItem.scss */
+.hm-catalog-experience-item-flag-checked > .hm-catalog-experience-item-flag-begin {
+  border-color: #a0cf19;
+}
+/* line 116, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/catalog/SubjectCatalogItem.scss */
+.hm-catalog-experience-item-flag-checked > .hm-catalog-experience-item-flag-end {
+  background-color: #a0cf19;
+  width: 13px;
+  min-width: 13px;
+  height: 13px;
+  border: 3px solid #a0cf19;
+  border-left-width: 12px;
+  border-right-width: 15px;
+  padding: 0;
+  background-position: -225px -197px;
+}
+
+/* line 129, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/catalog/SubjectCatalogItem.scss */
+.hm-catalog-experience-item-toolbar {
+  text-align: center;
+  padding: 5px 0 10px 0;
+}
+/* line 133, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/catalog/SubjectCatalogItem.scss */
+.hm-catalog-experience-item-toolbar button {
+  border: 1px solid #2e5c99;
+/*  border-radius: 3px;*/
+  background-color: #4078ba;
+  color: #fff;
+  padding: 4px 12px;
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: bold;
+  width: 100%;
+}
+/* line 143, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/catalog/SubjectCatalogItem.scss */
+.hm-catalog-experience-item-toolbar button:hover {
+  background-color: #4689d1;
+}
+
+/* line 5, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/SubjectCatalog.detail.scss */
+.hm-position-catalog-detail-icon {
+  float: left;
+  width: 220px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0px 20px 0 20px;
+  height: 104px;
+}
+
+/* line 14, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/SubjectCatalog.detail.scss */
+.hm-position-catalog-detail-title {
+  padding: 6px 0px 0 20px;
+  position: relative;
+  margin-left: 240px;
+  height: 104px;
+}
+/* line 20, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/SubjectCatalog.detail.scss */
+.hm-position-catalog-detail-title > h1 {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 100px 0 0;
+  height: 80px;
+  border-bottom: 2px solid #b8077d;
+}
+
+/* line 29, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/SubjectCatalog.detail.scss */
+.hm-position-catalog-detail-title-icon {
+  background-position: center 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  padding: 0;
+  right: 20px;
+  top: 26px;
+  font-size: 10px;
+  color: #989b9c;
+}
+/* line 39, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/SubjectCatalog.detail.scss */
+.hm-position-catalog-detail-title-icon > .hm-catalog-icon {
+  margin: auto;
+  background-color: transparent;
+}
+
+/* line 45, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/SubjectCatalog.detail.scss */
+.hm-position-catalog-detail-title-classifier {
+  color: #989b9c;
+  font-size: 10px;
+  line-height: 17px;
+}
+
+/* line 51, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/SubjectCatalog.detail.scss */
+.hm-position-catalog-detail-description {
+  padding: 20px 0 0 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+/* line 56, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/SubjectCatalog.detail.scss */
+.hm-position-catalog-detail-description b {
+  font-weight: bold;
+}
+
+/* line 61, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/SubjectCatalog.detail.scss */
+.hm-position-catalog-detail-sessions {
+  padding: 20px;
+  background-color: #eceded;
+}
+/* line 65, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/SubjectCatalog.detail.scss */
+.hm-position-catalog-detail-sessions h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* line 71, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/SubjectCatalog.detail.scss */
+.hm-position-catalog-detail-session-item {
+  float: left;
+  width: 80px;
+  padding: 25px;
+  text-align: center;
+}
+
+/* line 78, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/SubjectCatalog.detail.scss */
+.hm-position-catalog-detail-session-item-date {
+  background-color: #fff;
+  color: #c7c9c9;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 5px;
+}
+
+/* line 87, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/SubjectCatalog.detail.scss */
+.hm-position-catalog-detail-session-item-day {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+/* line 92, ../../../../../tools/frontend/src/pm/js/hm/pm/module/course/ui/SubjectCatalog.detail.scss */
+.hm-position-catalog-detail-session-item-city {
+  font-size: 12px;
+  color: #2963af;
+  line-height: 24px;
+}
+
+.hm-catalog-more {
+  text-align: center;
+  padding: 5px 0;
+  color: #888;
+}

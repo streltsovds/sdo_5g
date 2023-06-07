@@ -1,0 +1,1 @@
+<hm-sidebar-user :data-sidebar='<?= $this->data ?>' />

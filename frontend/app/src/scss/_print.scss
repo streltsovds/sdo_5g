@@ -1,0 +1,46 @@
+.print {
+  .container {
+    padding: 0;
+  }
+  h1 {
+    padding: 16px;
+  }
+  .v-card {
+    box-shadow: none;
+    background-color: transparent;
+  }
+  .v-list {
+    background-color: transparent;
+  }
+  table {
+    th {
+      font-size: 10px;
+    }
+    td {
+      font-size: 12px;
+    }
+    td, th {
+      padding: 0 10px;
+    }
+  }
+}
+@media print {
+  html,
+  body {
+    background: #fff !important;
+  }
+  a[href]:after {
+    content: '';
+  }
+  #ZFDebug_debug {
+    display: none;
+  }
+  .form-submit {
+    display: none;
+  }
+  .pagebreak {
+    display: block;
+    height: 0;
+    page-break-after: always;
+  }
+}

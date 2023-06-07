@@ -1,0 +1,43 @@
+/* Если есть способ лучше, чем миллион !important, то я его не знаю.
+Сейчас приоритет стилей перехватывают длинные конструкции из vuetify.css */
+.hm-alert
+{
+  .error {
+    &.hm-alert-production {
+      background-color: #b9c3d2 !important;
+      border-color: #b9c3d2 !important;
+      color: #000;
+
+      .hm-alert-report-link {
+        background-color: #3e4e6c !important;
+      }
+
+      .hm-alert-continue-link {
+        background-color: #2960a0 !important;
+        color: #fff;
+      }
+
+      .v-icon {
+        color: #3e4e6c !important;
+      }
+    }
+
+    &.hm-alert-development {
+      background-color: #b0262c !important;
+      border-color: #b0262c !important;
+
+      .hm-alert-report-link {
+        background-color: #242e42 !important;
+      }
+
+      .hm-alert-continue-link {
+        background-color: #fff !important;
+        color: #000;
+      }
+
+      .v-icon {
+
+      }
+    }
+  }
+}

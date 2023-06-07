@@ -1,0 +1,10 @@
+.reserve-block {
+    border: 4px double black; /* Параметры границы */
+    background: #fc3; /* Цвет фона */
+    padding: 10px; /* Поля вокруг текста */
+}
+
+.reserve-block span {
+    font-weight: bold;
+    color: red;
+}

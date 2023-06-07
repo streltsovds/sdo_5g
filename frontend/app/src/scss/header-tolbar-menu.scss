@@ -1,0 +1,183 @@
+.v-toolbar__title {
+  display: flex;
+  font-size: 20px;
+
+  > a {
+    width: 28px;
+  }
+
+  h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+
+span.v-tooltip {
+  margin-right: 11px !important;
+}
+
+.v-toolbar-title-v-list {
+  > .modified-list-element {
+    width: 100%;
+    padding-top: 2px;
+
+    > a {
+      display: flex;
+      min-height: 40px;
+      font-size: 13px;
+      align-items: center;
+      margin: 0;
+      padding: 0 16px;
+      text-decoration: none;
+      color: #1E1E1E;
+      transition: background .1s cubic-bezier(0.25, 0.8, 0.5, 1);
+    }
+
+    > a:hover {
+      background: #ffffff;
+      color: #4A90E2;
+    }
+  }
+}
+
+.v-menu__content--fixed {
+  min-width: 250px !important;
+  //max-height: 70%;
+  max-width: 400px;
+  border-radius: 4px;
+  overflow: hidden;
+
+  > div {
+    overflow: auto;
+    //height: 50vh;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 4px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #706e6e;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #70889E;
+  }
+
+  .modified-list-styles {
+    background: #D4E3FB;
+  }
+
+}
+
+.icon-header__v-menu {
+  margin: 3px;
+}
+
+.hm-app__btn-exit {
+  svg{
+    pointer-events: none;
+  }
+  > span {
+    > span {
+      > button:before {
+        width: 110% !important;
+        height: 110% !important;
+        top: -2px !important;
+        left: -4px !important;
+      }
+    }
+  }
+}
+
+header {
+  left: 0 !important;
+  right: 0 !important;
+}
+
+.v-navigation-drawer__content {
+  overflow: hidden;
+
+  > div {
+    .v-list {
+      padding: 0 !important;
+      .list-nav-menu:first-child {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .hm-main-nav-menu {
+    overflow: visible;
+
+    &__wrapper {
+      overflow-y: auto;
+    }
+
+    .list-nav-menu {
+      margin-bottom: 0;
+
+      > .v-list-item {
+        padding: 0;
+        height: 100%;
+
+        /**
+         * активатор tooltip по всей ширине пункта меню
+         */
+      }
+    }
+
+    &--mini {
+      //height: 100vh;
+      padding: 16px 0;
+
+      .hm-main-nav-menu__submenu-label {
+        visibility: hidden;
+      }
+    }
+
+    &--big {
+      svg {
+        pointer-events: none!important;
+
+        /** равнение начала подписей к иконкам */
+        min-width: 24px;
+      }
+      overflow: auto;
+      //height: 65vh;
+      padding: 15px 0;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 4px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #706e6e;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #70889E;
+  }
+}
+
+.hm-main-nav-menu__item__tooltip__content {
+  left: 4px !important;
+}

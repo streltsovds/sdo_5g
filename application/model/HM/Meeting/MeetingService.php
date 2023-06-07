@@ -1,0 +1,923 @@
+<?php
+class HM_Meeting_MeetingService extends HM_Service_Abstract
+{
+    public function insert($data)
+    {
+        $data = $this->_processGroupDate($data);
+        $data = $this->_processCondition($data);
+        if (!isset($data['createDate'])) {
+            $createDate = new HM_Date();
+            $data['createDate'] = $createDate->now()->toString(HM_Date::SQL);
+        }
+
+        $result = parent::insert($data);
+
+        if ($result) {
+            $this->getService('MeetingAssign')->insert(array('meeting_id' => $result->meeting_id, 'MID' => 0));
+        }
+        return $result;
+    }
+
+    protected function _processCondition($data)
+    {
+        if (isset($data['Condition'])) {
+            switch($data['Condition']) {
+                case HM_Meeting_MeetingModel::CONDITION_NONE:
+                    $data['cond_project_id'] = '';
+                    $data['cond_mark'] = '';
+                    $data['cond_progress'] = '0';
+                    $data['cond_avgbal'] = '0';
+                    $data['cond_sumbal'] = '0';
+                    break;
+                case HM_Meeting_MeetingModel::CONDITION_PROGRESS:
+                    $data['cond_project_id'] = '';
+                    $data['cond_mark'] = '';
+                    $data['cond_avgbal'] = '0';
+                    $data['cond_sumbal'] = '0';
+                    break;
+                case HM_Meeting_MeetingModel::CONDITION_AVGBAL:
+                    $data['cond_project_id'] = '';
+                    $data['cond_mark'] = '';
+                    $data['cond_progress'] = '0';
+                    $data['cond_sumbal'] = '0';
+                    break;
+                case HM_Meeting_MeetingModel::CONDITION_SUMBAL:
+                    $data['cond_project_id'] = '';
+                    $data['cond_mark'] = '';
+                    $data['cond_progress'] = '0';
+                    $data['cond_avgbal'] = '0';
+                    break;
+                case HM_Meeting_MeetingModel::CONDITION_MEETING:
+                    $data['cond_progress'] = '0';
+                    $data['cond_avgbal'] = '0';
+                    $data['cond_sumbal'] = '0';
+                    break;
+            }
+            unset($data['Condition']);
+        }
+        unset($data['Condition']);
+        return $data;
+    }
+
+    protected function _processGroupDate($data)
+    {
+        if (isset($data['GroupDate'])) {
+            $data['startday'] = '';
+            $data['stopday'] = '';
+            switch($data['GroupDate']) {
+                case HM_Meeting_MeetingModel::TIMETYPE_FREE:
+                    $data['begin'] = $this->getDateTime();
+                    $data['end'] = $data['begin'];
+                    $data['timetype'] = HM_Meeting_MeetingModel::TIMETYPE_FREE;
+                    break;
+                case HM_Meeting_MeetingModel::TIMETYPE_TIMES:
+                    try {
+                        $begin = new HM_Date($data['currentDate'].' '.$data['beginTime']);
+                    } catch(Zend_Date_Exception $e) {
+                        $begin = new HM_Date();
+                    }
+                    try {
+                        $end = new HM_Date($data['currentDate'].' '.$data['endTime']);
+                    } catch (Zend_Date_Exception $e) {
+                        $end = new HM_Date();
+                    }
+                    $data['begin'] = $begin->toString('YYYY-MM-dd HH:mm');
+                    $data['end'] = $end->toString('YYYY-MM-dd HH:mm');
+                    $data['timetype'] = HM_Meeting_MeetingModel::TIMETYPE_DATES;
+                    break;
+                case HM_Meeting_MeetingModel::TIMETYPE_RELATIVE:
+                    $data['begin'] = $this->getDateTime();
+                    $data['end'] = $this->getDateTime();
+                    $data['startday'] = $data['beginRelative']*24*60*60;
+                    $data['stopday'] = $data['endRelative']*24*60*60;
+                    $data['timetype'] = HM_Meeting_MeetingModel::TIMETYPE_RELATIVE;
+                    break;
+                default:
+                    //if (!strlen($data['beginDate']))
+                    try {
+                        $begin = new HM_Date($data['beginDate']);
+                    } catch (Zend_Date_Exception $e) {
+                        $begin = new HM_Date();
+                    }
+                    $begin->set('00:00', Zend_Date::TIMES);
+
+                    try {
+                        $end = new HM_Date($data['endDate']);
+                    } catch (Zend_Date_Exception $e) {
+                        $end = new HM_Date();
+                    }
+                    $end->set('23:59', Zend_Date::TIMES);
+                    $data['begin'] = $begin->toString('YYYY-MM-dd HH:mm');
+                    $data['end'] = $end->toString('YYYY-MM-dd HH:mm');
+                    $data['timetype'] = HM_Meeting_MeetingModel::TIMETYPE_DATES;
+            }
+
+            unset($data['GroupDate']);
+            unset($data['beginDate']);
+            unset($data['endDate']);
+            unset($data['currentDate']);
+            unset($data['beginTime']);
+            unset($data['endTime']);
+            unset($data['beginRelative']);
+            unset($data['endRelative']);
+        }
+        return $data;
+    }
+
+    public function update($data)
+    {
+        $data = $this->_processCondition($data);
+        $data = $this->_processGroupDate($data);
+        $meeting = parent::update($data);
+        return $meeting;
+    }
+
+    public function deleteFromConditions($meetingId)
+    {
+        $this->updateWhere(array('cond_project_id' => ''), $this->quoteInto('cond_project_id = ?', $meetingId));
+
+        $collection = $this->fetchAll(
+            $this->quoteInto(
+                array('cond_project_id LIKE ?', ' OR cond_project_id LIKE ?', ' OR cond_project_id LIKE ?'),
+                array("$meetingId#%", "%#$meetingId#%", "%#$meetingId")
+            )
+        );
+
+        if (count($collection)) {
+            foreach($collection as $meeting) {
+                $necessary = $meeting->getNecessaryMeetingsId();
+                if (is_array($necessary) && count($necessary)) {
+                    for($i=0; $i < count($necessary); $i++) {
+                        if ($necessary[$i] == $meetingId) {
+                            unset($necessary[$i]);
+                        }
+                    }
+                    $this->update(array('meeting_id' => $meeting->meeting_id, 'cond_project_id' => join('#', $necessary)));
+                }
+            }
+        }
+
+    }
+
+    public function delete($meetingId)
+    {
+        $meeting = $this->find($meetingId)->current();
+        $params = $meeting->getParams();
+        $typeId = $meeting->typeID;
+        $moduleId = $params['module_id'];
+
+        if ($typeId == HM_Event_EventModel::TYPE_LECTURE) {
+            $typeId = HM_Event_EventModel::TYPE_COURSE; // открываем весь модуль
+            $moduleId = $params['course_id'];
+            $siblings = $this->fetchAll($this->quoteInto(
+                array('params LIKE ?'),
+                array('%course_id='.$moduleId.';%')
+            ));
+            if (count($siblings) > 1) $moduleId = false;
+        }
+        $this->setMeetingFreeMode($moduleId, $typeId, $meeting->project_id, HM_Meeting_MeetingModel::MODE_FREE);
+
+        // Удаление назначений
+        $this->getService('MeetingAssign')->deleteBy($this->quoteInto('meeting_id = ?', $meetingId));
+
+        // Удаление тестов
+       // $this->getService('Test')->deleteBy($this->quoteInto('meeting_id = ?', $meetingId));
+
+        // Удаление из условий
+        $this->deleteFromConditions($meetingId);
+
+        return parent::delete($meetingId);
+    }
+
+    public function assignParticipants($meetingId, $participants, $unassign = true, $taskUserVars = array())
+    {
+    	$meeting = $this->getOne($this->find($meetingId));
+        $params = $meeting->getParams();
+        $participantForUpdates = array();
+        if (is_array($participants) && count($participants)) {
+            $assigns = $this->getService('MeetingAssign')->fetchAll($this->quoteInto('meeting_id = ? AND MID > 0', $meetingId));
+
+            if (count($assigns)) {
+                foreach($assigns as $assign) {
+                    if (in_array($assign->MID, $participants)) {
+                        $key = array_search($assign->MID, $participants);
+                        if (false !== $key) {
+                            $participantForUpdates[] = $participants[$key];
+                            if($this->getService('Question')->updateTask($meetingId, $participants[$key]) !== false){
+                                unset($participants[$key]);
+                            }
+                        }
+                    } else {
+                        if ($unassign) {
+                            $this->unassignParticipant($meetingId, $assign->MID);
+                        }
+                    }
+                }
+
+            }
+
+            foreach($participants as $participantId) {
+                $this->assignParticipant($meetingId, $participantId, (isset($taskUserVars[$participantId]))? $taskUserVars[$participantId] : null );
+            }
+
+            //if ( isset($params['assign_type']) && $params['assign_type'] == HM_Meeting_Task_TaskModel::ASSIGN_TYPE_MANUAL ){
+                $this->getService('Question')->updateTasks($meeting, $participantForUpdates, $taskUserVars);
+            //}
+
+            $this->updateDates($participantForUpdates, $meetingId);
+        }
+    }
+    public function updateDates($participants, $meetingId){
+        $meeting = $this->getOne($this->find($meetingId));
+
+        foreach($participants as $participantId){
+            if ($meeting->timetype == HM_Meeting_MeetingModel::TIMETYPE_RELATIVE) {
+                switch($meeting->typeID) {
+                    case HM_Event_EventModel::TYPE_CURATOR_POLL_FOR_LEADER:
+                    case HM_Event_EventModel::TYPE_CURATOR_POLL_FOR_PARTICIPANT:
+                    case HM_Event_EventModel::TYPE_CURATOR_POLL_FOR_MODERATOR:
+                        $assign = $this->getOne(
+                            $this->getService('MeetingAssign')->fetchAll(
+                                $this->quoteInto(array('meeting_id = ?', ' AND MID = ?'), array($meeting->meeting_id, $participantId))
+                            )
+                        );
+                        if ($assign) {
+                            $base = $assign->created;
+                        }
+                        break;
+                    default:
+                        $participant = $this->getOne(
+                            $this->getService('Participant')->fetchAll(
+                                $this->quoteInto(array('project_id = ?', ' AND MID = ?'), array($meeting->project_id, $participantId))
+                            )
+                        );
+                        if ($participant) {
+                            $base = (max($meeting->startday,$meeting->stopday) > 0) ? $participant->time_registered : $participant->end_personal; // если кол-во дней отрицательное, то отсчитывать от конца курса
+                        } else {
+                            return false;
+                        }
+                }
+
+                if ($meeting->startday) {
+                    $begin = HM_Date::getRelativeDate(new Zend_Date(strtotime($base)), $meeting->startday/86400);
+                    $meetingData['beginRelative'] = $begin->get('Y-M-d');
+                } else {
+                    $meetingData['beginRelative'] = null;
+                }
+                if ($meeting->stopday) {
+                    $end = HM_Date::getRelativeDate(new Zend_Date(strtotime($base)), $meeting->stopday/86400);
+                    $meetingData['endRelative'] = $end->get('Y-M-d') . ' 23:59:59';
+                } else {
+                    $meetingData['endRelative'] = null;
+                }
+
+
+                $this->getService('MeetingAssign')->updateWhere(array('beginRelative' => $meetingData['beginRelative'], 'endRelative' => $meetingData['endRelative']), array('meeting_id = ?' => $meetingId, 'MID = ?' => $participantId));
+
+            }
+        }
+    }
+
+    public function assignParticipant($meetingId, $participantId, $taskVariant = null)
+    {
+        if ($participantId === null || intval($participantId) == 0) return false;
+    	$meeting = $this->getOne($this->find($meetingId));
+
+        //if ( $meeting->moderator != $participantId ) {
+            $this->getService('Question')->createTask($meetingId, $participantId);
+        //}
+
+//        // если занятие с типом форум, то пользователя еще и подписываем на уведомления
+//        if ($meeting->typeID == HM_Activity_ActivityModel::ACTIVITY_FORUM) {
+//            $this->getService('Subscription')->subscribeUserToChannelByMeetingId($participantId,$meetingId);
+//        }
+
+        $meetingData = array(
+        		'meeting_id'      => (int) $meetingId,
+        		'MID'        => (int) $participantId,
+        		'isgroup'    => 0,
+        );
+        // вычисляем относительные даты и записываем в базу
+        if ($meeting->timetype == HM_Meeting_MeetingModel::TIMETYPE_RELATIVE) {
+
+        	switch($meeting->typeID) {
+        		case HM_Event_EventModel::TYPE_CURATOR_POLL_FOR_LEADER:
+        		case HM_Event_EventModel::TYPE_CURATOR_POLL_FOR_PARTICIPANT:
+        		case HM_Event_EventModel::TYPE_CURATOR_POLL_FOR_MODERATOR:
+        			$assign = $this->getOne(
+        			$this->getService('MeetingAssign')->fetchAll(
+        			$this->quoteInto(array('meeting_id = ?', ' AND MID = ?'), array($meeting->meeting_id, $participantId))
+        			)
+        			);
+        			if ($assign) {
+        				$base = $assign->created;
+        			} else {
+                        $base = $this->getDateTime();
+        			}
+        			break;
+        		default:
+        			$participant = $this->getOne(
+        			$this->getService('Participant')->fetchAll(
+        			     $this->quoteInto(array('project_id = ?', ' AND MID = ?'), array($meeting->project_id, $participantId))
+        			)
+        			);
+        			if ($participant) {
+                        $base = (max($meeting->startday,$meeting->stopday) > 0) ? $participant->time_registered : $participant->end_personal; // если кол-во дней отрицательное, то отсчитывать от конца курса
+        			} else {
+        			    return false;
+        			}
+        	}
+
+            if ($meeting->startday && $base) {
+                $begin = HM_Date::getRelativeDate(new Zend_Date(strtotime($base)), $meeting->startday/86400);
+                $meetingData['beginRelative'] = $begin->get('Y-M-d');
+            } else {
+                $meetingData['beginRelative'] = null;
+            }
+            if ($meeting->stopday && $base) {
+                $end = HM_Date::getRelativeDate(new Zend_Date(strtotime($base)), $meeting->stopday/86400);
+                $meetingData['endRelative'] = $end->get('Y-M-d') . ' 23:59:59';
+            } else {
+                $meetingData['endRelative'] = null;
+            }
+        	/*$begin = HM_Date::getRelativeDate(new Zend_Date(strtotime($base)), $meeting->startday/86400);
+        	$end = HM_Date::getRelativeDate(new Zend_Date(strtotime($base)), $meeting->stopday/86400);
+
+        	if ($meeting->startday) $meetingData['beginRelative'] = $begin->get('Y-M-d');
+        	if ($meeting->stopday) $meetingData['endRelative'] = $end->get('Y-M-d') . ' 23:59:59';*/
+
+        }
+
+        return $this->getService('MeetingAssign')->insert($meetingData);
+    }
+
+    public function unassignParticipant($meetingId, $participantId)
+    {
+        return $this->getService('MeetingAssign')->deleteBy(sprintf("meeting_id = '%d' AND MID = '%d'", $meetingId, $participantId));
+    }
+
+    public function isUserAssigned($meetingId, $userId)
+    {
+        $collection = $this->getService('MeetingAssign')->fetchAll($this->quoteInto(array('meeting_id = ?', ' AND MID = ?'), array($meetingId, $userId)));
+        return count($collection);
+    }
+
+    public function isLaunchConditionSatisfied($meetingId, $meeting = null, $checkRole = true)
+    {
+        if ($checkRole
+            && !$this->getService('Acl')->inheritsRole($this->getService('User')->getCurrentUserRole(), HM_Role_Abstract_RoleModel::ROLE_ENDUSER)
+            //&& !in_array($this->getService('User')->getCurrentUserRole(), array(HM_Role_Abstract_RoleModel::ROLE_PARTICIPANT))
+        ) return true;
+
+        if (null == $meeting) {
+            $meeting = $this->getOne($this->find($meetingId));
+        }
+
+        $conditionMeeting = $conditionProgress = $conditionAvg = $conditionSum = null;
+
+        if ($meeting) {
+            if ($meeting->cond_project_id && $meeting->cond_mark) {
+                $sheids = explode('#', $meeting->cond_project_id);
+                $marks  = explode('#', $meeting->cond_mark);
+                if (is_array($sheids) && count($sheids) && is_array($marks) && count($marks) && (count($sheids) == count($marks))) {
+                    $conditions = array();
+                    foreach($sheids as $index => $sheid) {
+                        $conditions[] = sprintf('(%s)', $this->quoteInto(array('meeting_id = ?', ' AND V_STATUS >= ?'), array($sheid, (float) $marks[$index])));
+                    }
+                    if (count($conditions)) {
+                        $collection = $this->getService('MeetingAssign')->fetchAll(
+                            $this->quoteInto('MID = ?', $this->getService('User')->getCurrentUserId())
+                            .' AND ('.join(' OR ', $conditions).')'
+                        );
+
+                        $conditionMeeting = (count($collection) == count($sheids));
+                    }
+                }
+            }
+            
+            if ($meeting->cond_progress || $meeting->cond_avgbal || $meeting->cond_sumbal) {
+                $collection = $this->getService('MeetingAssign')->fetchAllDependenceJoinInner(
+                    'Meeting',
+                    $this->quoteInto(
+                        array(
+                            'self.MID = ?',
+                            ' AND Meeting.project_id = ? AND Meeting.vedomost = 1',
+                            ' AND typeID NOT IN (?)',
+                            ' AND isfree = ?'
+                        ),
+                        array(
+                            $this->getService('User')->getCurrentUserId(),
+                            $meeting->project_id,
+                            array_keys(HM_Event_EventModel::getExcludedTypes()),
+                            HM_Meeting_MeetingModel::MODE_PLAN
+                        )
+                    )
+                );
+                if (count($collection)) {
+                    $meetings = array();
+                    $meetingsCompleted = $meetingsTotal = $meetingsSumBal = $meetingsProgress = $meetingsAvgBal = 0;
+                    foreach($collection as $item) {
+                        if ($item->V_STATUS > 0) {
+                            $meetingsCompleted++;
+                            $meetingsSumBal += $item->V_STATUS;
+                        }
+                        $meetings[$item->meeting_id] = 1;
+                        //$meetingsTotal++;
+                    }
+                    
+                    $meetingsTotal = count($meetings);
+
+                    if ($meetingsTotal)
+                        $meetingsProgress = floor(doubleval(($meetingsCompleted/$meetingsTotal)*100));
+                    if ($meetingsCompleted)
+                        $meetingsAvgBal = $meetingsSumBal/$meetingsCompleted;
+                    }
+
+                    if ($meeting->cond_progress) {
+                        $conditionProgress = $meeting->checkInterval($meetingsProgress, $meeting->cond_progress);
+                    }
+
+                    if ($meeting->cond_avgbal) {
+                        $conditionAvg = $meeting->checkInterval($meetingsAvgBal, $meeting->cond_avgbal);
+                    }
+
+                    if ($meeting->cond_sumbal) {
+                        $conditionSum = $meeting->checkInterval($meetingsSumBal, $meeting->cond_sumbal);
+                    }
+            }
+        }
+
+        $return = !(integer)$meeting->cond_operation;
+        foreach (array($conditionMeeting, $conditionProgress, $conditionAvg, $conditionSum) as $argument) {
+            if (null !== $argument) {
+                $return = $meeting->cond_operation ? $return || $argument : $return && $argument;
+            }
+        }
+
+        return $return;
+
+    }
+
+    protected function _isExecutableForCurator($meeting)
+    {
+        return true;
+    }
+
+    protected function _isExecutableForModerator($meeting)
+    {
+        if (!$this->getService('Project')->isModerator($meeting->project_id, $this->getService('User')->getCurrentUserId())) {
+            throw new HM_Exception(_('Вы не являетесь тьютором на курсе'));
+        }
+
+        return true;
+    }
+
+    protected function _isExecutableForParticipant($meeting)
+    {
+        $registered = null;
+        $isGraduated = $this->getService('Project')->isGraduated($meeting->project_id, $this->getService('User')->getCurrentUserId());
+        $isParticipant = $this->getService('Project')->isParticipant($meeting->project_id, $this->getService('User')->getCurrentUserId());
+        if (in_array($meeting->typeID, array_keys(HM_Event_EventModel::getCuratorPollTypes()))) {
+            if (!$isGraduated) {
+                throw new HM_Exception(_('Вы не являетесь прошедшим обучения на курсе'));
+            }
+        } else {
+            if (!$isParticipant && !$isGraduated) {
+                throw new HM_Exception(_('Вы не являетесь слушателем на курсе'));
+            } elseif (!$isParticipant && $meeting->vedomost) {
+                throw new HM_Exception(_('Вы переведены в прошедшие обучение на этом курсе; запуск занятий на оценку не разрешен.'));
+            }
+        }
+
+        if (!$this->isUserAssigned($meeting->meeting_id, $this->getService('User')->getCurrentUserId())) {
+            throw new HM_Exception(_('Вы не назначены на занятие'));
+        }
+
+        // Проверка дат (только для студентов)
+        if (!$meeting->isExecutable()) {
+            throw new HM_Exception(_('Занятие назначено на другое время'));
+        }
+
+        // Проверка условий запуска
+        if (!$this->isLaunchConditionSatisfied($meeting->meeting_id, $meeting)) {
+            throw new HM_Exception(_('Условия запуска занятия не выполнены'));
+        }
+
+        return true;
+
+    }
+
+    protected function _isExecutableForDefault($meeting)
+    {
+        throw new HM_Exception(_('Нет прав для запуска данного занятия'));
+    }
+
+    protected function _isExecutableForRole($meeting)
+    {
+
+        if ($this->getService('Acl')->inheritsRole($this->getService('User')->getCurrentUserRole(), HM_Role_Abstract_RoleModel::ROLE_ENDUSER)) {
+            $this->_isExecutableForParticipant($meeting);
+//        } elseif ($this->getService('Acl')->inheritsRole($this->getService('User')->getCurrentUserRole(), HM_Role_Abstract_RoleModel::ROLE_MODERATOR)) {
+//            $this->_isExecutableForModerator($meeting);
+        } elseif ($this->getService('Acl')->inheritsRole($this->getService('User')->getCurrentUserRole(), HM_Role_Abstract_RoleModel::ROLE_CURATOR)) {
+            $this->_isExecutableForCurator($meeting);
+        } else {
+            $this->_isExecutableForDefault($meeting);
+        }
+
+/*        switch($this->getService('User')->getCurrentUserRole()) {
+            case HM_Role_Abstract_RoleModel::ROLE_MODERATOR:
+                $this->_isExecutableForModerator($meeting);
+                break;
+            case HM_Role_Abstract_RoleModel::ROLE_PARTICIPANT:
+                $this->_isExecutableForParticipant($meeting);
+                break;
+            case HM_Role_Abstract_RoleModel::ROLE_CURATOR:
+                $this->_isExecutableForCurator($meeting);
+                break;
+            default:
+                if ($this->getService('Acl')->inheritsRole($this->getService('User')->getCurrentUserRole(), HM_Role_Abstract_RoleModel::ROLE_PARTICIPANT)) {
+                    $this->_isExecutableForParticipant($meeting);
+                } else {
+                    $this->_isExecutableForDefault($meeting);
+                }
+                break;
+        }*/
+    }
+
+    public function isExecutable($meetingId)
+    {
+        $meeting = $this->getService('Meeting')->getOne($this->getService('Meeting')->findDependence('Assign', $meetingId));
+        if ($meeting) {
+            $this->_isExecutableForRole($meeting);
+            return true;
+        } else {
+            throw new HM_Exception(_('Занятие не найдено'));
+        }
+    }
+
+    /**
+     * Возвращает project_id
+     *
+     * @author Artem Smirnov
+     * @date 19.02.2013
+     * @param $meetingID
+     * @return string
+     */
+    public function getProjectByMeeting($meetingID)
+    {
+        /** @var $meetingService HM_Meeting_MeetingService */
+        $projectRequest = $this->getSelect();
+        $projectRequest->from(
+            array('l' => 'meetings'),
+            array(
+                'l.project_id'
+            )
+        );
+        $projectRequest->where('l.meeting_id = ?', $meetingID);
+        return $projectRequest->getAdapter()->fetchOne($projectRequest);
+    }
+
+     public function getUsersScore($courseId, $fromDate = '', $toDate = '', $group = null){
+
+        if($courseId == 0){
+            return false;
+        }
+
+        $participants = $this->getService('User')->fetchAllDependenceJoinInner(
+            'Participant',
+            $this->quoteInto(
+                array('Participant.CID = ? ', 'AND Participant.project_role = ? '),
+                array($courseId, HM_Role_ParticipantModel::ROLE_PARTICIPANT)
+            )
+        );
+
+        $total = $this->getOne($this->getService('Project')->fetchAllHybrid('MarkProject', 'User', 'Participant', $this->quoteInto('projid = ?', $courseId)));
+
+        $collection = $this->getService('Meeting')->fetchAllDependenceJoinInner(
+            'Assign',
+            $this->quoteInto(array('self.project_id  = ?', ' AND self.vedomost = ?', ' AND isfree = ?'), array($courseId, 1, HM_Meeting_MeetingModel::MODE_PLAN)),
+			'self.order'
+        );
+
+        $events = $eventIdsNegative = $eventIds = array();
+        $eventIdsNegative = $collection->getList('meeting_id', 'typeID');
+        if (count($eventIdsNegative)) {
+            foreach ($eventIdsNegative as $eventId) {
+                if ($eventId < 0) {
+                    $eventIds[-$eventId] = true;
+                }
+            }
+        }
+        if (count($eventIds)) {
+            $eventsCollection = $this->getService('Event')->fetchAll(array('event_id IN (?)' => array_keys($eventIds)));
+            foreach ($eventsCollection as $event) {
+                $events[$event->event_id] = $event;
+            }
+        }
+
+        $persons = array();
+        $meetingss = array();
+        $scores = array();
+        if (count($collection)) {
+            foreach($collection as $item) {
+                $meetingss[$item->meeting_id] = $item;
+                $assigns = $item->getAssigns();
+
+                if ($item->typeID && isset($events[-$item->typeID])) {
+                    $item->setEvent($events[-$item->typeID]);
+                }
+
+                if ($assigns) {
+                    $inPeriod = false;
+
+                    foreach($assigns as $assign) {
+                        if ($assign->MID > 0) {
+                            if ($participant = $participants->exists('MID', $assign->MID)) {
+                                $persons[$participant->MID] = $participant;
+                            }
+
+                            if($fromDate != '' && $toDate != '' && $inPeriod == false){
+                                $fromDate = new Zend_Date($fromDate);
+                                $toDate = new Zend_Date($toDate);
+
+                                switch($item->timetype){
+                                    case HM_Meeting_MeetingModel::TIMETYPE_FREE:
+                                            $inPeriod = true;
+                                        break;
+                                    case HM_Meeting_MeetingModel::TIMETYPE_DATES:
+                                    case HM_Meeting_MeetingModel::TIMETYPE_TIMES:
+                                        $begin = new Zend_Date($item->begin);
+                                        $end = new Zend_Date($item->end);
+                                        if( ($begin->getTimestamp() >= $fromDate->getTimestamp() && $begin->getTimestamp() <= $toDate->getTimestamp())
+                                            || ($end->getTimestamp() >= $fromDate->getTimestamp() && $end->getTimestamp() <= $toDate->getTimestamp())
+                                            || ($end->getTimestamp() >= $toDate->getTimestamp() && $begin->getTimestamp() <= $fromDate->getTimestamp())
+                                            || ($end->getTimestamp() <= $toDate->getTimestamp() && $begin->getTimestamp() >= $fromDate->getTimestamp())){
+                                            $inPeriod = true;
+                                        }
+                                        break;
+                                    case HM_Meeting_MeetingModel::TIMETYPE_RELATIVE:
+                                        if($participant != false){
+                                            $begin = new Zend_Date($assign->beginRelative);
+                                            $end = new Zend_Date($assign->endRelative);
+
+                                            if( ($begin->getTimestamp() >= $fromDate->getTimestamp() && $begin->getTimestamp() <= $toDate->getTimestamp())
+                                                || ($end->getTimestamp() >= $fromDate->getTimestamp() && $end->getTimestamp() <= $toDate->getTimestamp())
+                                                || ($end->getTimestamp() >= $toDate->getTimestamp() && $begin->getTimestamp() <= $fromDate->getTimestamp())
+                                                || ($end->getTimestamp() <= $toDate->getTimestamp() && $begin->getTimestamp() >= $fromDate->getTimestamp())){
+                                                $inPeriod = true;
+                                            }
+                                        }
+                                        break;
+                                    default:
+                                        break;
+                                }
+                            }
+
+                            $scores[$assign->MID.'_'.$assign->meeting_id] = $assign;
+                        }
+                    }
+                    if($inPeriod == false && $fromDate != '' && $toDate != ''){
+                        unset($meetingss[$item->meeting_id]);
+                    }
+                }
+            }
+        }
+
+       // сортировка юзеров по ФИО
+       $persons = array();
+       if (count($participants)) {
+           foreach($participants as $participant) {
+               $persons[$participant->MID] = $participant;
+
+               if ($total && $total->marks) {
+                   if ($temp = $total->marks->exists('mid', $participant->MID)) {
+                       $scores[$participant->MID.'_total'] = array('mark'=>$temp->mark,'comment'=>$temp->comments);
+                       continue;
+                   }
+               }
+
+               // если итоговая оценка не выставлена
+               $scores[$participant->MID.'_total'] = HM_Scale_Value_ValueModel::VALUE_NA;
+           }
+       }
+
+         uasort($persons, function($person1, $person2) use ($scores) {
+             if (max($scores["{$person1->MID}_total"]['mark'], $scores["{$person2->MID}_total"]['mark'])) {
+                 return $scores["{$person1->MID}_total"]['mark'] < $scores["{$person2->MID}_total"]['mark'] ? -1 : 1;
+             } else {
+                 return strcmp($person1->getName(), $person2->getName());
+             }
+         });
+
+       return array($persons, $meetingss, $scores);
+    }
+
+    /**
+     * Для сортировки пользователей по ФИО
+     */
+    public function userCompare ($a,$b)
+    {
+        return strcmp($a->getName(), $b->getName());
+    }
+
+    public function isModerator($meetingId, $userId)
+    {
+        $meeting = $this->getOne($this->find($meetingId));
+        if ($meeting) {
+            return ($meeting->moderator == $userId);
+        }
+        return false;
+    }
+
+    public function getUsersStats($from, $to, $projectId)
+    {
+
+        $from = date('Y-m-d', strtotime($from));
+        $to = date('Y-m-d', strtotime($to));
+
+        $select = $this->getSelect();
+
+        $select->from(
+                   array('sc' => 'scorm_tracklog'),
+                   array('mid', 'start', 'stop')
+                 )
+                 ->joinInner(array('projects_courses'), 'projects_courses.course_id = sc.project_id', array())
+                 ->where('projects_courses.project_id  = ?', $projectId)
+                 ->where('sc.start >= ?',  $from . ' 00:00')
+                 ->where('sc.stop <= ?',  $to . ' 23:59:59');
+
+        $query = $select->query();
+
+        $fetch = $query->fetchAll();
+
+        $users = array();
+        $time = 0;
+        $count = 0;
+        foreach($fetch as $val){
+            if(!isset($users[$val['mid']]))
+            {
+                $count++;
+                $users[$val['mid']] = true;
+            }
+
+            $time = $time + (strtotime($val['stop']) - strtotime($val['start']));
+        }
+        return array('time' => $time, 'count' => $count);
+
+    }
+
+    public function getAssignedForLeader($meetingId)
+    {
+        $leaders = $this->getService('MeetingAssign')->fetchAll(array('meeting_id = ?' => $meetingId));
+        $leaders = $leaders->getList('MID', 'SSID');
+        $participant = $this->getService('MeetingCuratorPollAssign')->fetchAll(array('meeting_id = ?' => $meetingId, 'head_mid IN (?)' => array_keys($leaders)));
+
+        $participantList = $participant->getList('participant_mid', 'meeting_id');
+
+        $participants = $this->getService('User')->fetchAll(array('MID IN (?)' => array_keys($participantList)));
+
+        return $participants;
+    }
+
+    public function getAvailableParticipants($projectId)
+    {
+        return $this->getService('Project')->getAssignedUsers($projectId)->getList('MID', 'MID');
+    }
+
+
+    public function getTotalCoursePercent($meetingId, $userId, $courseId)
+    {
+
+        $items = $this->getService('CourseItem')->fetchAll(array('cid = ?' => $courseId, 'module <> ?' => 0));
+
+        $count = count($items);
+
+        $total = 0;
+
+        foreach($items as $item){
+
+            $track = $this->getService('ScormTrack')->getLastUserTrack($userId, $courseId, $item->oid, $item->module, $meetingId);
+
+            if($track){
+
+                if (empty($track->scoremax)) $track->scoremax = 100;
+
+                if( $track->status == HM_Scorm_Track_Data_DataModel::STATUS_COMPLETED ||
+                    $track->status == HM_Scorm_Track_Data_DataModel::STATUS_PASSED ) {
+                    $total += 100;
+                }elseif($track->score != 0 && $track->scoremax != 0){
+                    $total += ($track->score / $track->scoremax) * 100;
+                }
+            }
+
+        }
+        if ($count) {
+            if (100 >= $percent = ceil($total/$count)) {
+                return $percent;
+        }
+        }
+        return 0;
+    }
+
+    /**
+     *  Получаем массив результатов занятия пользователей типа 'userId' => V_STATUS для занятия по его ID
+     *  выбираются данные с V_STATUS > 0
+     *  @param int $meetingId ID занятия
+     *  @return array
+     */
+    public function getMarkedUsersId($meetingId)
+    {
+        $results             = array();
+        $meetingAssignService = $this->getService('MeetingAssign');
+        $collection          = $meetingAssignService->fetchAll($meetingAssignService->quoteInto(array('V_STATUS > ?', ' AND meeting_id = ?'),array(0,intval($meetingId))));
+
+        if ( count($collection) ) {
+            $results = $collection->getList('MID','V_STATUS');
+        }
+
+        return $results;
+    }
+
+    public function getMeeting($meetingId){
+        return $this->fetchRow(array('meeting_id = ?' => (int) $meetingId));
+    }
+    public function setMeetingFreeMode($moduleId, $typeId, $projectId, $newMode = HM_Meeting_MeetingModel::MODE_FREE)
+    {
+        if ($typeId == HM_Event_EventModel::TYPE_LECTURE) {
+            $moduleId = $this->getService('CourseItem')->getCourse($moduleId);
+        }
+
+        if ($freeMeeting = $this->getOne(
+            $this->fetchAll(array(
+                "params LIKE '%module_id=" . $moduleId . ";'",
+                'project_id = ?' => $projectId,
+                'typeID = ?' => $typeId,
+                'isfree = ?' => $newMode == HM_Meeting_MeetingModel::MODE_FREE ? HM_Meeting_MeetingModel::MODE_FREE_BLOCKED : HM_Meeting_MeetingModel::MODE_FREE,
+        )))) {
+
+            $data = $freeMeeting->getValues();
+            $data['isfree'] = $newMode;
+            $this->update($data);
+        }
+    }
+
+    function html2rgb($color)
+    {
+        if ($color[0] == '#') {
+            $color = substr($color, 1);
+        }
+
+        if (strlen($color) == 6) {
+            list($r, $g, $b) = array(
+                $color[0].$color[1],
+                $color[2].$color[3],
+                $color[4].$color[5]
+            );
+        } elseif (strlen($color) == 3) {
+            list($r, $g, $b) = array(
+                $color[0].$color[0],
+                $color[1].$color[1],
+                $color[2].$color[2]
+            );
+        } else {
+            $r = $g = $b = '00';
+        }
+
+        return array(hexdec($r), hexdec($g), hexdec($b));
+    }
+
+    function lum($color)
+    {
+        list($r, $g, $b) = $this->html2rgb($color);
+
+        return sqrt( 0.241 * pow($r, 2) + 0.691 * pow($g, 2) + 0.068 * pow($b, 2) );
+    }
+
+    public function getCalendarSource($source, $color = '0000ff', $inText = false)
+    {
+        if (!$source instanceof HM_Collection) return '';
+        $events        = array();
+        $eventsSources = array();
+
+         foreach ( $source as $event ) {
+            if (!$event || !$event->begin || !$event->end) continue;
+
+            $start   = new HM_Date($event->begin);
+            $end     = new HM_Date($event->end);
+            $data = array(
+                'id'    => $event->meeting_id,
+                'title' => $event->title,
+                'start' => ($inText)? $start->toString("YYYY-MM-dd").' 00:00:00' : 1000*$start->getTimestamp(),
+                'end'   => ($inText)? $end->toString("YYYY-MM-dd").' 23:59:59' : 1000*$end->getTimestamp(),
+                'color' => "#$color",
+                'textColor' => ($this->lum($color) < 130) ? '#fff' : '#000'
+            );
+
+
+            $events[] = $data;
+        }
+
+        return $events;
+    }
+}

@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <main>
+    <infoblock>
+         <role>guest</role>
+         <role>teacher</role>
+         <role>dean</role>
+        <role>dean_local</role>
+         <role>enduser</role>
+         <title>Обучение</title>
+         <name>courses</name>
+         <!--block>
+             <title>Расписание</title>
+             <name>scheduleBlock</name>
+             <description>Расписание</description>
+         </block-->
+         <!--block>
+             <role>enduser</role>
+             <title>Мои закладки</title>
+             <name>bookmarksManager</name>
+             <description>Представлен список информационных ресурсов, добавленных в закладки пользователем при изучении учебных модулей формата «Произвольный»</description>
+         </block-->
+         <block>
+             <role>teacher</role>
+             <role>enduser</role>
+             <title>План на сегодня</title>
+             <name>scheduleDailyBlock</name>
+             <description>Виджет отображает план занятий на текущую дату</description>
+             <!--layout>wide</layout-->
+         </block>
+          <block>
+             <role>teacher</role>
+             <title>Задания на проверку</title>
+             <name>tasksForReviewBlock</name>
+             <description>Возможность быстрого доступа к перечню заданий, выполненных слушателями и подлежащих проверке тьютором</description>
+             <layout>wide</layout>
+         </block>
+         <!--block>
+             <role>enduser</role>
+             <title>Индикатор прохождения учебных модулей</title>
+             <name>coursesProgressBlock</name>
+             <description>Представлен список учебных модулей формата «Пакет SCORM» и формата «Произвольный» с настройкой «Эмулировать интерфейс SCORM», включенных в курсы, назначенные пользователю; в записи учебного модуля присутствует индикатор прогресса прохождения</description>
+             <layout>wide</layout>
+         </block-->
+         <block>
+            <role>guest</role>
+            <role>enduser</role>
+            <title>Витрина учебных курсов</title>
+            <name>subjectsSliderBlock</name>
+            <description>Представлен список учебных курсов с возможностью подать заявку; список оформлен в виде ленты</description>
+            <layout>wide</layout>
+         </block>
+         <block>
+			 <role>guest</role>
+			 <role>enduser</role>
+             <title>Каталог учебных курсов</title>
+             <name>subjectsClassifiers</name>
+             <description>Представлен список учебных курсов с возможностью подать заявку; классифицированные курсы сгруппированы по рубрикам; курсы, которым рубрика классификатора не назначена, сгруппированы в отдельный раздел</description>
+         </block>
+         <!--block>
+             <title>Витрина учебных курсов по рубрикам</title>
+             <name>subjectsShowcaseBlock</name>
+             <description>Представлен список классификаторов учебных курсов; присутствует возможность просмотра рубрик классификаторов и списка курсов, классифицированных по данным рубрикам</description>
+         </block-->
+         <block>
+			 <role>enduser</role>
+             <title>Рекомендуемые курсы</title>
+             <name>randomSubjects</name>
+             <description>Список курсов со свободной регистрацией и близкой тематикой для данного слушателя</description>
+         </block>
+		 <block>
+             <role>enduser</role>
+             <title>Календарь мероприятий</title>
+             <name>trainingsCalendarBlock</name>
+             <description>Представлен календарь с возможностью просмотра списка мероприятий по каждой дате; по умолчанию в календаре открыт текущий месяц и выбрана текущая дата</description>
+         </block>
+        <block>
+            <role>enduser</role>
+            <role>supervisor</role>
+            <title>Календарь учебных сессий</title>
+            <name>learningSessionsCalendarBlock</name>
+            <description>Представлен календарь с возможностью просмотра учебных сессий по каждой дате; по умолчанию в календаре открыт текущий месяц и выбрана текущая дата</description>
+        </block>
+    </infoblock>
+	<infoblock>
+        <role>enduser</role>
+        <role>hr</role>
+        <role>hr_local</role>
+        <title>Оценка персонала и кадровый резерв</title>
+        <name>at</name>
+        <block>
+            <role>enduser</role>
+            <title>Мои задачи</title>
+            <name>kpiBlock</name>
+            <description>Инфоблок отображает задачи или другие показатели эффективности, назначенные пользователю в рамках процессов адаптации, кадрового резерва или регулярной оценки.</description>
+        </block>
+        <block>
+            <title>Витрина кадрового резерва</title>
+            <name>positionsSliderBlock</name>
+            <description>Предназначен для того, чтобы отображать все должности, учавствующие в кадровом резерве</description>
+            <layout>wide</layout>
+        </block>
+        <block>
+            <title>Мои мероприятия</title>
+            <name>myEventsBlock</name>
+            <description>Предназначен для того, чтобы отображать все мероприятия по сессиям подбора, на которые назначен текущий менеджер по персоналу</description>
+        </block>
+    </infoblock>
+	<infoblock>
+		 <role>admin</role>
+		 <role>manager</role>
+		 <role>dean</role>
+        <role>dean_local</role>
+		 <role>teacher</role>
+		 <role>guest</role>
+		 <role>hr</role>
+         <title>Статистика</title>
+         <name>stats</name>
+         <block>
+             <role>admin</role>
+			 <role>hr</role>
+             <title>Счетчик посетителей системы</title>
+             <name>usersSystemCounterBlock</name>
+             <description>Информация о числе посещений системы пользователями и гостями</description>
+         </block>
+         <block>
+             <role>admin</role>
+			 <role>dean</role>
+             <role>dean_local</role>
+             <title>Приём/увольнение в разрезе подразделений</title>
+             <name>hiringDismissalByDepartmentsBlock</name>
+             <description>Показывает количество 1) вновь принятых и 2) уволенных работников за период в разрезе подразделений. По оси У выводятся подразделения, непосредственно вложенные в то, которое выбрано в фильтре. Например, если выбрано «Страна Россия», то будут отображаться все дилерские центры в России. Данные фильтруются по диапазону дат включительно. Если какая-то из дат  не задана – это трактуется как «максимально широкий диапазон», т.е. с самого начала учёта / по сегодняшний день.</description>
+         </block>
+         <block>
+             <role>admin</role>
+			 <role>dean</role>
+             <role>dean_local</role>
+             <title>Приём/увольнение в разрезе должностей</title>
+             <name>hiringDismissalByPositionsBlock</name>
+             <description>Показывает количество 1) вновь принятых и 2) уволенных работников за период в разрезе профилей должности. По оси У выводятся все профили должности, которые есть в подразделении, которое выбрано в фильтре (с учётом вложенности). Например, если выбрано «Страна Россия», то будут отображаться все профили должности, которые есть в дилерских центрах в России. Соответственно, отображается количество принятых/уволенных работников, имеющих (имевших) определенный профиль должности. Данные фильтруются по диапазону дат включительно. Если какая-то из дат  не задана – это трактуется как «максимально широкий диапазон», т.е. с самого начала учёта / по сегодняшний день.</description>
+         </block>
+         <block>
+             <role>admin</role>
+			 <role>dean</role>
+             <role>dean_local</role>
+             <title>Прогресс прохождения очных курсов (тренингов)</title>
+             <name>subjectsProgressBlock</name>
+             <description>Показывает процент работников, прошедших очный курс с итоговой оценкой, относительно общего количества работников, назначенных на данный курс.</description>
+         </block>
+         <block>
+             <role>admin</role>
+			 <role>dean</role>
+             <role>dean_local</role>
+             <title>Прогресс прохождения дистанционных курсов</title>
+             <name>distanceSubjectsProgressBlock</name>
+             <description>Показывает процент работников, прошедших дистанционный курс с итоговой оценкой, относительно общего количества работников, назначенных на данный курс.</description>
+         </block>
+         <!--Протокол интеграции включается по требованию в тех конкурсах, где есть интеграция-->
+         <!--block>
+             <role>admin</role>
+             <title>Протокол интеграции</title>
+             <name>soapBlock</name>
+             <description>Лог последних 10 запросов.</description>
+         </block-->
+         <block>
+             <role>dean</role>
+             <role>dean_local</role>
+             <title>Заявки</title>
+             <name>claimsBlock</name>
+             <description>Представлена информация о количестве поданных заявок за определенный период времени (неделя, месяц, год), по умолчанию выбран период «месяц»; присутствует информация  о количестве необработанных заявок с возможностью открыть страницу со списком заявок непосредственно из виджета</description>
+         </block>
+         <block>
+			 <role>manager</role>
+			 <role>dean</role>
+             <role>dean_local</role>
+			 <role>teacher</role>
+			 <role>guest</role>
+			 <role>enduser</role>
+			 <role>supervisor</role>
+			 <role>hr</role>
+             <title>Популярные курсы</title>
+             <name>topSubjectsBlock</name>
+             <description>Представлен график, который наглядно отображает курсы, наиболее популярные у слушателей</description>
+         </block>
+         <block>
+			 <role>dean</role>
+             <role>dean_local</role>
+			 <role>teacher</role>
+			 <role>supervisor</role>
+			 <role>hr</role>
+             <title>Активность</title>
+             <name>activityBlock</name>
+             <description>Контроль посещаемости</description>
+         </block>
+         <block>
+			 <role>dean</role>
+             <role>dean_local</role>
+			 <role>teacher</role>
+			 <role>supervisor</role>
+			 <role>admin</role>
+			 <title>Распределение активности</title>
+             <name>activitydevBlock</name>
+             <description>Анализ распределения активности пользователей</description>
+         </block>
+         <block>
+			 <role>admin</role>
+			 <title>Параметры аренды</title>
+             <name>leasingBlock</name>
+             <description>Инфоблок отражает изменение основных показателей загрузки сервера в течение периода аренды</description>
+         </block>
+         <block>
+			 <role>dean</role>
+             <role>dean_local</role>
+			 <role>supervisor</role>
+			 <title>Статистика обучения на курсах</title>
+             <name>progressBlock</name>
+             <description>Инфоблок отображает статистику слушателей, зачисленных на курсы, обучающихся и закончивших обучение</description>
+             <layout>wide</layout>
+         </block>
+        <block>
+            <role>dean</role>
+            <role>dean_local</role>
+            <title>Показатели эффективности обучения</title>
+            <name>yieldBlock</name>
+            <description>Представлены количественные значения проведенных сессий и переведенных в прошедшие обучение  по месяцам за текущий год</description>
+        </block>
+      </infoblock>
+      <infoblock>
+          <role>enduser</role>
+          <role>supervisor</role>
+          <role>teacher</role>
+          <role>developer</role>
+          <role>manager</role>
+          <role>dean</role>
+          <role>dean_local</role>
+          <title>База знаний</title>
+          <block>
+              <role>enduser</role>
+              <role>supervisor</role>
+              <role>teacher</role>
+              <role>developer</role>
+              <role>manager</role>
+              <role>dean</role>
+              <role>dean_local</role>
+              <title>Рейтинг информационных ресурсов</title>
+              <name>ResourcesRatingBlock</name>
+              <description>Представлены количественные показатели рейтинга информационных ресурсов, опубликованных в базе знаний; информационные ресурсы, которым оценка не дана, в списке отсутствуют</description>
+          </block>
+          <block>
+              <role>dean</role>
+              <role>dean_local</role>
+              <role>manager</role>
+              <role>developer</role>
+              <title>Наполнение Базы знаний</title>
+              <name>resourcesBlock</name>
+              <description>Представлена информация о количестве информационных ресурсов,  опубликованных в Базе  знаний; при наличии классификации информационных ресурсов данные отображаются по рубрикам, информация по неклассифицированным ресурсам представлена в отдельном разделе</description>
+          </block>
+          <block>
+              <role>manager</role>
+              <role>dean</role>
+              <role>dean_local</role>
+              <title>Динамика создания ресурсов в Базе знаний</title>
+              <name>kbaseBlock</name>
+              <description>Общее количество ресурсов в Базе знаний (за исключением неопубликованных);данные представлены в виде графика нарастающим итогом</description>
+          </block>
+      </infoblock>
+
+    <infoblock>
+         <role>enduser</role>
+		 <title>Взаимодействие</title>
+		  <name>activities</name>
+         <block>
+             <title>Пользователи online</title>
+             <name>carouselBlock</name>
+             <description>Представлен список пользователей; возможен просмотр списка, при этом доступна информация об общих курсах, кто из однокурсников находится в режиме online; непосредственно в виджете можно пригласить однокурсника в чат</description>
+         </block>
+     </infoblock>
+    <!--infoblock>
+         <role>dean</role>
+         <role>dean_local</role>
+         <role>supervisor</role>
+         <role>enduser</role>
+		 <title>Согласования</title>
+		 <name>agreements</name>
+         <block>
+             <title>Согласование заявок на обучение</title>
+             <name>agreementBlock</name>
+             <description>Предназначен для организации согласования заявок на обучение в соответствии с программой согласования (тип согласования и программа задается в настройках курса); информация виджета доступна только для пользователей,включенных в программу согласования</description>
+         </block>
+     </infoblock-->
+     <infoblock>
+         <role>admin</role>
+         <role>manager</role>
+         <role>atmanager</role>
+         <role>developer</role>
+         <role>dean</role>
+         <role>dean_local</role>
+         <role>teacher</role>
+         <role>supervisor</role>
+         <role>enduser</role>
+         <role>supervisor</role>
+		 <role>guest</role>
+		 <role>hr</role>
+         <role>curator</role>
+         <title>Разное</title>
+         <name>others</name>
+         <block>
+             <role>guest</role>
+             <role>enduser</role>
+             <role>supervisor</role>
+             <title>Новости</title>
+             <name>newsBannerBlock</name>
+             <description>Наглядный инфоблок для просмотра новостей.</description>
+             <layout>wide</layout>
+         </block>
+         <block>
+             <role>guest</role>
+             <role>enduser</role>
+             <role>supervisor</role>
+             <title>Информационный слайдер</title>
+             <showTitle>0</showTitle>
+             <name>infosliderBlock</name>
+             <description>Блок для просмотра информационных страниц.</description>
+             <layout>full</layout>
+         </block>
+         <block>
+             <title>Интересные факты</title>
+             <name>interestingFactBlock</name>
+             <description>Инфоблок типа «А знаете ли Вы, что…», который в случайном порядке отображает интересные и занимательные факты</description>
+         </block>
+         <block>
+             <title>Рекомендуемые материалы</title>
+             <name>recommendedMaterialsBlock</name>
+             <description></description>
+         </block>
+         <!--<block>
+             <title>Новости</title>
+             <name>lastNewsBlock</name>
+             <description>Быстрый доступ к последним новостям</description>
+             <layout>full</layout>
+         </block>-->
+         <!--block>
+             <role>admin</role>
+			 <role>dean</role>
+			 <role>dean_local</role>
+			 <role>atmanager</role>
+			 <role>hr</role>
+			 <role>teacher</role>
+			 <role>enduser</role>
+			 <role>supervisor</role>
+			 <role>guest</role>
+             <title>Экспресс-опрос</title>
+             <name>quizzesBlock</name>
+             <description>Организация опросов и голосований (ответ на один вопрос)</description>
+         </block-->
+		 <block>
+			 <role>dean</role>
+             <role>dean_local</role>
+			 <role>atmanager</role>
+			 <role>hr</role>
+			 <role>teacher</role>
+			 <role>enduser</role>
+			 <role>guest</role>
+             <title>Опрос</title>
+             <name>manyQuizzesBlock</name>
+             <description>Организация опросов и голосований (ответы на несколько вопросов)</description>
+         </block>
+         <block>
+             <role>supervisor</role>
+             <role>teacher</role>
+             <role>enduser</role>
+             <role>guest</role>
+             <title>Часто задаваемые вопросы</title>
+             <name>faqBlock</name>
+             <description>Часто задаваемые вопросы</description>
+         </block>
+         <!--block>
+             <role>supervisor</role>
+             <role>teacher</role>
+             <role>developer</role>
+             <role>manager</role>
+			 <role>admin</role>
+			 <role>dean</role>
+			 <role>dean_local</role>
+             <role>chief</role>
+             <title>Видеоролики по работе с системой</title>
+             <name>screencastBlock</name>
+             <description>Короткие видеоролики, демонстрирующие основные функции системы</description>
+         </block-->
+         <block>
+             <role>admin</role>
+             <role>dean</role>
+             <role>dean_local</role>
+             <role>supervisor</role>
+             <role>user</role>
+             <role>enduser</role>
+             <role>guest</role>
+             <title>Видеоролики</title>
+             <showTitle>0</showTitle>
+             <name>videoBlock</name>
+             <description>Видеоролики Youtube</description>
+         </block>
+         <block>
+             <role>supervisor</role>
+             <role>enduser</role>
+             <title>Учёт рабочего времени</title>
+             <name>timesheetBlock</name>
+             <description>Инфоблок позволяет пользователю фиксировать временные затраты по видам деятельности.</description>
+         </block>
+     </infoblock>
+     <!--Скрыл авторизацию как виджет, т.к. есть баг; пока доступна только на отдельной странице-->
+     <!--infoblock>
+         <role>guest</role>
+		 <title>Системные</title>
+         <block>
+             <title>Авторизация</title>
+             <name>Authorization</name>
+             <description>Блок пользовательской авторизации</description>
+             <layout>wide</layout>
+         </block>
+     </infoblock-->
+  </main>
+</config>

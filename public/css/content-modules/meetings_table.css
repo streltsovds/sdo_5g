@@ -1,0 +1,380 @@
+.content-here .meeting_min .meeting_block,
+.content-here  .meeting_min .meeting_wrapper_1,
+.content-here  .meeting_min .meeting_wrapper_2{
+	min-height:140px;
+	clear:both;
+	border-top: 1px solid #D6DCE0;
+}
+.content-here  .meeting_min .meeting_wrapper_1,
+.content-here  .meeting_min .meeting_wrapper_2{
+	border-top:none;
+}
+table.progress_table {
+padding-bottom: 20px;
+}
+.ie7 table.progress_table td {
+padding-bottom: 10px;
+}
+table.progress_table td {
+vertical-align: middle;
+}
+table.progress_table td.progress_td {
+padding-right: 50px;
+}
+.progress_title {
+    margin-bottom:10px;
+    /*font-weight: bold;*/
+}
+
+.meeting {
+	overflow: hidden;
+}
+
+.meeting td, td img {
+    vertical-align: middle;
+}
+.meeting_bg img{
+    smargin-top:-5px;
+}
+.meeting_bg img.subject-icon{
+    margin-top:0;
+}
+.meeting_block {
+   width: 100%;
+   border-top: 1px solid #D6DCE0;
+   /*height:170px;*/
+   padding:0px 0px 0px 0px;
+   float:left;
+}
+
+#meeting_block_active {
+   background: #F3F6F8;
+   min-height: 140px;
+   width: 100%;
+   border-top: 1px solid #D6DCE0;
+   padding:0px 0px 0px 0px;
+   float:left;
+}
+
+.meeting_wrapper_1 {
+/*   height:170px;
+   border-top: 1px solid #D6DCE0;*/
+}
+.meeting_wrapper_2 {
+   width: 100%;
+/*   height:170px;
+   border-top: 1px solid #ffffff;*/
+}
+.meeting_table {
+margin:10px 0px 10px 0px;
+}
+table td.meeting_bg {
+vertical-align: top;
+}
+.meeting_min td.meeting_bg{
+	width:105px;
+    /*padding: 0 20px 0 5px;*/
+}
+table td.meeting_bg div#meeting_bg_img {
+background: url(../../images/content-modules/meeting_bg.png) top left no-repeat;
+width: 109px;
+height:109px;
+}
+
+div.meeting_wrapper_1 div#meeting_bg_img a img.subject-icon {
+    margin-top:7px;
+}
+
+
+table td.showscore {
+vertical-align: top;
+padding-right: 5px;
+width:115px;
+}
+
+table td.showscore .student_comment {
+vertical-align: top;
+clear: both;
+}
+
+table td.meeting_options {
+vertical-align: top;
+}
+
+table td.meeting_bg_type {
+vertical-align: middle;
+}
+
+table td.meeting_descript_td {
+vertical-align: top;
+}
+
+table td.showscore .student_comment p {
+float: left;
+}
+
+#meeting_type {
+	padding: 10px 0px 0px 0px;
+    font-weight: normal;
+    color: #888888;
+    font-size:10px;
+}
+
+#meeting_descript {
+    vertical-align: top;
+    font-weight: normal;
+    color: #888888;
+    padding: 0px 10px 0px 10px;
+}
+
+.meeting_wrapper_1 #meeting_title {
+ padding: 0px 15px 0px 15px;
+ line-height: 20px;
+}
+.meeting_min .meeting_wrapper_1 #meeting_title{
+	padding: 0px 15px 0px 5px;
+}
+.meeting_wrapper_1 #meeting_title span {
+font-weight: bold;
+font-size:1.3em;
+color: #777;
+}
+.meeting_wrapper_1 #meeting_title a {
+font-weight: bold;
+font-size:1.3em;
+display: inline;
+}
+.meeting_wrapper_1 .meeting_main_desc {
+    font-style: italic;
+    color: #888;
+}
+#meeting_descript .teacher_comment {
+margin-bottom: 8px;
+width: 190px;
+}
+.meeting_wrapper_1 #meeting_title a:hover {
+font-weight: bold;
+}
+.meeting_wrapper_1 #meeting_begin, .meeting_wrapper_1 #meeting_end {
+font-weight: normal;
+}
+
+
+
+#meeting_go {
+line-height:20px;
+padding: 0px 10px 0px 15px;
+text-align: left;
+
+}
+.meeting_min #meeting_go {
+	padding: 0px 10px 0px 5px;
+    clear: both;
+}
+.meeting_cond_sheid {
+line-height:20px;
+padding: 0px 10px 0px 5px;
+font-weight: normal;
+text-align: left;
+}
+.meeting_cond_mark {
+line-height:20px;
+padding: 0px 10px 0px 15px;
+font-weight: normal;
+text-align: left;
+}
+.meeting_teacher {
+line-height:20px;
+padding: 0px 10px 0px 15px;
+color: #888888;
+font-weight: normal;
+text-align: left;
+}
+.meeting_min .meeting_teacher {
+	padding: 0px 10px 0px 5px;
+}
+.meeting_penalty {
+text-align: left;
+line-height:20px;
+padding: 0px 10px 0px 15px;
+}
+.meeting_wrapper_1 #meeting_begin_title {
+font-weight: normal;
+}
+.meeting_wrapper_1 #meeting_end_title {
+font-weight: normal;
+}
+.meeting_wrapper_1 #meeting_begin_content {
+margin-left:18px;
+}
+.meeting_wrapper_1 #meeting_end_content {
+margin-left:24px;
+}
+#meeting_edit {
+float: right;
+margin-right:10px;
+}
+/*-------------------WITH SCORE-------------------*/
+.recomended {
+color: #888888 !important;
+}
+
+.meeting_wrapper_1_score #meeting_title {
+ padding: 0px 15px 0px 5px;
+ line-height: 20px;
+}
+.meeting_wrapper_1_score #meeting_title a {
+font-weight: bold;
+font-size:1.3em;
+}
+.meeting_wrapper_1_score #meeting_title a:hover {
+font-weight: bold;
+font-size:1.3em;
+}
+.meeting_wrapper_1_score #meeting_begin, .meeting_wrapper_1_score #meeting_end {
+font-weight: normal;
+color: #888888;
+}
+
+
+.meeting_wrapper_1_score #meeting_begin_title {
+font-weight: normal;
+color: #888888;
+}
+.meeting_wrapper_1_score #meeting_end_title {
+font-weight: normal;
+color: #888888;
+}
+.meeting_wrapper_1_score #meeting_begin_content {
+margin-left:18px;
+}
+.meeting_wrapper_1_score #meeting_end_content {
+margin-left:24px;
+}
+
+/* Minified version */
+.meeting_min .meeting_table {
+margin:10px 0px 10px 0px;
+}
+.meeting_min div.meeting_bg_img {
+width: 72px;
+height: 72px;
+background: url(../../images/content-modules/meeting_bg_min.png) top left no-repeat;
+}
+.meeting_min .meeting_block {
+width: 100%;
+border-top: 0 solid #EBEEF2;
+/*wheight:92px;*/
+padding:0px 0px 0px 0px;
+float:left;
+}
+.meeting_min .meeting_wrapper_1 {
+/*wheight:92px;*/
+overflow: hidden;
+border-top: 1px solid #D6DCE0;
+}
+.meeting_min .meeting_wrapper_2 {
+width: 100%;
+/*wheight:92px;*/
+overflow: hidden;
+border-top: 1px solid #ffffff;
+}
+.meeting_min div.meeting_bg_img img {
+margin: 4px;
+max-width: 64px; /* 72px (.meeting_min div.meeting_bg_img) - 8px  */
+max-height: 64px; /* 72px (.meeting_min div.meeting_bg_img) - 8px  */
+}
+
+
+/*--------------------------------*/
+
+#meeting_share {
+margin: 0px 0px 0px 10px;
+float: left;
+vertical-align: middle;
+width: 120px;
+height:38px;
+}
+
+#meeting_share #meeting_share_1 {
+float: left;
+width: 40px;
+height:100%;
+}
+
+#meeting_share #meeting_share_2 {
+float: left;
+width: 40px;
+height:100%;
+}
+
+#meeting_share #meeting_share_3 {
+float: left;
+width: 40px;
+height:100%;
+}
+
+div.meeting_wrapper_1 div#meeting_bg_img a {
+	font-size: 0;
+}
+div.meeting_wrapper_2 div#meeting_bg_img a{
+    font-size: 0;
+}
+div.meeting_wrapper_1 div#meeting_bg_img a img{
+    margin-top:7px;
+}
+div.meeting_wrapper_2 div#meeting_bg_img a img {
+	margin-top:2px;
+}
+div.meeting_ended {
+	color: red;
+	padding: 5px 15px;
+}
+/*sortable prepod*/
+.meeting_min div.meeting_bg_img{
+	position:relative;
+}
+.drag-handler {
+    background: url("../../images/application/report/draggie.gif") repeat scroll left top transparent;
+    cursor: move;
+    height: 72px;
+    width: 15px;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+	left: -15px;
+}
+/*end sortable prepod*/
+.meeting_main_desc{
+    display:block;
+    padding:5px;
+}
+
+#meeting_title .edit {
+    background: url("/images/wiki/article-controls.png") no-repeat scroll 0 0 transparent;
+    margin:0 0 0 10px;
+    text-decoration: none; 
+}
+#meeting_title .delete {
+    background: url("/images/wiki/article-controls.png") no-repeat scroll 0 -20px transparent;
+    text-decoration: none; 
+}
+#meeting_title a.edit:link,
+#meeting_title a.edit:hover,
+#meeting_title a.edit:active,
+#meeting_title a.edit:visited,
+#meeting_title a.delete:link,
+#meeting_title a.delete:hover,
+#meeting_title a.delete:active,
+#meeting_title a.delete:visited {
+}
+#meeting_wrapper_1 #meeting_title .edit,
+#meeting_wrapper_1 #meeting_title .delete {
+    display: inline-block;
+    position:relative;
+    bottom:-5px;
+    height: 20px;
+    width: 20px;
+}
+

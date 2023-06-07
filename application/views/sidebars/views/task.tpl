@@ -1,0 +1,1 @@
+<hm-sidebar-task :data-sidebar='<?php echo $this->data ?>'/>

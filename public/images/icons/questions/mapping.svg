@@ -1,0 +1,16 @@
+<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 0H16V3H11V0Z" fill="#4A90E2"/>
+<path d="M11 5H16V8.5H11V5Z" fill="#4A90E2"/>
+<path d="M11 11H16V14H11V11Z" fill="#4A90E2"/>
+<path d="M11 2H9V7H11" stroke="#8998AC" stroke-width="0.5"/>
+<path d="M9 7V13" stroke="#8998AC" stroke-width="0.5"/>
+<path d="M11 13H8" stroke="#8998AC" stroke-width="0.5"/>
+<path d="M5 0H0V3H5V0Z" fill="#4A90E2"/>
+<path d="M5 5.25H0V8.75H5V5.25Z" fill="#4A90E2"/>
+<path d="M5 11H0V14H5V11Z" fill="#4A90E2"/>
+<path d="M5 2H7V7H6H5" stroke="#8998AC" stroke-width="0.5"/>
+<path d="M7 7H9" stroke="#8998AC" stroke-width="0.5"/>
+<path d="M7 2H9" stroke="#8998AC" stroke-width="0.5"/>
+<path d="M7 7V13" stroke="#8998AC" stroke-width="0.5"/>
+<path d="M5 13H9" stroke="#8998AC" stroke-width="0.5"/>
+</svg>

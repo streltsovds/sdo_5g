@@ -1,0 +1,105 @@
+SetEnv APPLICATION_ENV production
+
+# Для отладки фронтэнда раскомментировать при запущенном Webpack
+# Если ваш Apache игнорирует этот .htaccess, нужно менять APPLICATION_ENV в public/index.php
+#
+#SetEnv APPLICATION_ENV development
+
+RewriteEngine On
+
+
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [QSA,L]
+
+
+RewriteRule .* - [E=HTTP_IS_AJAX_REQUEST:%{HTTP:IS_AJAX_REQUEST}]
+
+# http://projects.hypermethod.com:8080/redmine/issues/36708#note-3
+# cgi + mod_rewrite = headers loss
+#
+# https://stackoverflow.com/questions/3050444/when-setting-environment-variables-in-apache-rewriterule-directives-what-causes/10128290#10128290
+# - explanation, recipes didn't work
+#
+# TODO restore all custom headers from ajax requests
+RewriteRule .* - [E=HTTP_X_REQUESTED_WITH:%{HTTP:X_REQUESTED_WITH}]
+
+RewriteCond %{REQUEST_URI}         !webinar/.*webinar.swf
+RewriteCond %{REQUEST_URI}         !^/COURSES/.*
+RewriteCond %{REQUEST_URI}         !^/unmanaged/COURSES/.*
+RewriteRule ^[^\.]+$               /                        [NS,L]
+
+RewriteCond %{REQUEST_URI}         /report/index/view/report_id
+RewriteRule .*                     /                        [NS,L]
+
+RewriteCond %{REQUEST_URI}         /resource/index/data
+RewriteRule .*                     /                        [NS,L]
+
+RewriteCond %{REQUEST_URI}         /quest/event/stop
+RewriteRule .*                     /                        [NS,L]
+
+RewriteCond %{REQUEST_URI}         /quest/lesson/stop
+RewriteRule .*                     /                        [NS,L]
+
+RewriteCond %{REQUEST_URI}         !webinar/.*webinar.swf
+RewriteCond %{REQUEST_URI}         !webinar/.*swfobject.js
+RewriteCond %{REQUEST_URI}         !webinar/.*expressInstall.swf
+RewriteCond %{REQUEST_FILENAME} !-f [OR]
+RewriteCond %{REQUEST_URI}       .*index.php
+RewriteCond %{REQUEST_URI}         !^/js/hm/locale/([^\/]+)/translate.js(\?.*)?$
+RewriteCond %{REQUEST_URI}         !/report/index/view/report_id
+RewriteRule ^(.*\..*)$             unmanaged/$1             [NS,QSA,NC,L]
+
+RewriteCond %{REQUEST_URI}         ^/js/hm/locale/([^\/]+)/translate.js(\?.*)?$
+RewriteRule ^js/hm/locale/([^\/]+)/translate.js(\?.*)?$             /unmanaged/js_locale.php             [NS,QSA,NC,L]
+
+
+# ----------------------------------------------------------------------
+# Proper MIME type for all files
+# ----------------------------------------------------------------------
+
+# Audio
+AddType audio/ogg                      oga ogg
+AddType audio/mp4                      m4a
+AddType audio/mpeg                     mp3
+
+# Video
+AddType video/ogg                      ogv
+AddType video/mp4                      mp4 m4v f4v
+AddType video/webm                     webm
+AddType video/x-flv                    flv
+
+# Proper svg serving. Required for svg webfonts on iPad
+#   twitter.com/FontSquirrel/status/14855840545
+AddType     image/svg+xml              svg svgz
+AddEncoding gzip                       svgz
+
+# Webfonts
+AddType application/vnd.ms-fontobject  eot
+AddType font/truetype                  ttf
+AddType font/opentype                  otf
+AddType application/x-font-woff        woff
+
+# Assorted types
+AddType image/x-icon                   ico
+AddType image/webp                     webp
+AddType text/cache-manifest            appcache manifest
+AddType text/x-component               htc
+AddType application/x-chrome-extension crx
+AddType application/x-xpinstall        xpi
+AddType application/octet-stream       safariextz
+AddType text/x-vcard                   vcf
+AddType text/csv                       csv
+
+# JS, CSS, XML, RSS, JSON
+AddType text/css                       css
+AddType text/javascript                js
+AddType application/json               json
+AddType application/rss+xml            rss
+AddType application/xml                xml
+AddType application/xslt+xml           xsl
+
+<IfModule mod_expires.c>
+    ExpiresActive off
+
+    ExpiresDefault                          "access plus 0 seconds"
+</IfModule>

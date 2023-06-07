@@ -1,0 +1,164 @@
+.hm-widget-layout {
+  &:not(#{&}--full):not(#{&}--no-border) {
+    .infoblock-card > .hm-dependency__wrap {
+      padding: 0 26px 18px;
+      display: block;
+    }
+  }
+  .hm-dependency__wrap{
+    &--videoblock{
+      padding: 0!important;
+      background-color: #424242;
+      p{
+        color: #fff;
+      }
+      a{
+        color: #6aafff;
+        text-align: none;
+      }
+    }
+  }
+}
+
+.infoblock-card {
+  border-radius: 4px;
+
+  .v-subheader {
+    a {
+      text-decoration: none;
+      font-weight: 400;
+    }
+  }
+  .v-card__title {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
+  /* TODO убрать :first-child, вместо этого `> .v-card__text`, когда блоки вроде авторизации не будут оборачивать в dub */
+  .v-card__text:first-child {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
+  .hm-grid__section {
+    min-height: auto !important;
+    .elevation-6 {
+      box-shadow: none !important;
+    }
+  }
+
+  .v-card__actions {
+    .v-btn {
+      text-transform: none;
+      font-size: 16px;
+      font-weight: normal;
+      padding-right: 10px;
+      padding-left: 16px;
+    }
+    .v-btn.v-btn--text + .v-btn.v-btn--text {
+      margin-left: 0;
+    }
+  }
+}
+
+.hm-widget-quiz {
+  & .v-card__title {
+    padding: 16px 0;
+  }
+}
+
+
+
+.testings {
+  > .v-list {
+    > div:not(:last-child) {
+      margin-bottom: 12px;
+    }
+    .v-list-item__content {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+    }
+    .v-list-item__subtitle {
+      max-width: 350px !important;
+      color: #70889e;
+    }
+    .v-list-item__title {
+      color: #000000;
+    }
+  }
+}
+
+.v-card__actions-btn {
+  padding-left: 26px;
+  padding-bottom: 26px;
+  margin-top: 40px;
+}
+
+.v-card__actions-btn__close {
+  background: #E6E6E6 !important;
+  margin-left: 26px !important;
+  > div {
+    color: #1E1E1E !important;
+  }
+}
+
+@media(max-width: 767px) {
+  .testings > .v-list .v-list-item__content {
+    padding: 0;
+  }
+  .infoblock-card {
+    display: flex;
+    flex-direction: column;
+    & .v-card__title {
+      padding: 16px;
+      padding-bottom: 12px;
+      padding-right: 50px;
+    }
+    & .hm-dependency__wrap {
+      width: 100%;
+      padding: 0 !important;
+    }
+    & .v-subheader {
+      font-size: 1rem !important;
+      line-height: 1.375rem;
+      height: auto !important;
+    }
+    & .subject-classifiers_course .v-list-item {
+      min-height: auto !important;
+    }
+    & .subject-classifiers_course .v-list-item__content {
+      padding: 8px 0;
+    }
+    & .subject-classifiers_course .v-list-item__action {
+      margin: 8px 0;
+    }
+    & .subject-classifiers_course .v-list-item__title,
+    & .subject-classifiers_course .course_count {
+      font-size: 0.8125rem;
+      line-height: 1.1875rem;
+    }
+  }
+  .hm-widget-quiz {
+    & .v-card__title {
+      padding: 16px;
+      padding-bottom: 12px;
+      padding-right: 50px;
+    }
+  }
+}
+
+@media(max-width: 460px) {
+  .infoblock-card {
+
+    & .v-subheader {
+      font-size: 0.8125rem !important;
+      line-height: 1.1875rem;
+    }
+    & .subject-classifiers_course .v-list-item__title,
+    & .subject-classifiers_course .course_count {
+      font-size: 0.6875rem;
+      line-height: 1.0625rem;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "HM 5g Mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}

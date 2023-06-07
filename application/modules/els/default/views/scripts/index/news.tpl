@@ -1,0 +1,1 @@
+<hm-news-page with-image debug url="<?= $this->getUrl?>"></hm-news-page>

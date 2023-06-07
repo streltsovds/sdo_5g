@@ -1,0 +1,5833 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: eLearning Server 4g\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-19 16:28+0300\n"
+"PO-Revision-Date: 2015-10-22 13:48+0300\n"
+"Last-Translator: lex@hypermethod.ru <lex@hypermethod.ru>\n"
+"Language-Team: Hypermethod IBS <office@learnware.ru>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_n:1,2;ngettext:1,2\n"
+"X-Poedit-Basepath: ../../poEdit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SearchPath-0: ../../../../public/unmanaged\n"
+"X-Poedit-SearchPath-1: ../../../../application/settings\n"
+
+#: ../../../../public/unmanaged/1main.php:297 ../../../../public/unmanaged/1main.php:298
+#: ../../../../public/unmanaged/lib/classes/ScheduleCsv.class.php:90
+#: ../../../../public/unmanaged/lib/classes/WeekSchedule.class.php:482
+msgid "воскресенье"
+msgstr ""
+
+#: ../../../../public/unmanaged/1main.php:297
+#: ../../../../public/unmanaged/lib/classes/ScheduleCsv.class.php:72
+#: ../../../../public/unmanaged/lib/classes/WeekSchedule.class.php:464
+#, fuzzy
+msgid "понедельник"
+msgstr "Additional Information"
+
+#: ../../../../public/unmanaged/1main.php:297
+#: ../../../../public/unmanaged/lib/classes/ScheduleCsv.class.php:75
+#: ../../../../public/unmanaged/lib/classes/WeekSchedule.class.php:467
+#, fuzzy
+msgid "вторник"
+msgstr "Сreator"
+
+#: ../../../../public/unmanaged/1main.php:297
+#: ../../../../public/unmanaged/lib/classes/ScheduleCsv.class.php:78
+#: ../../../../public/unmanaged/lib/classes/WeekSchedule.class.php:470
+msgid "среда"
+msgstr ""
+
+#: ../../../../public/unmanaged/1main.php:297
+#: ../../../../public/unmanaged/lib/classes/ScheduleCsv.class.php:81
+#: ../../../../public/unmanaged/lib/classes/WeekSchedule.class.php:473
+msgid "четверг"
+msgstr ""
+
+#: ../../../../public/unmanaged/1main.php:298
+#: ../../../../public/unmanaged/lib/classes/ScheduleCsv.class.php:84
+#: ../../../../public/unmanaged/lib/classes/WeekSchedule.class.php:476
+msgid "пятница"
+msgstr ""
+
+#: ../../../../public/unmanaged/1main.php:298
+#: ../../../../public/unmanaged/lib/classes/ScheduleCsv.class.php:87
+#: ../../../../public/unmanaged/lib/classes/WeekSchedule.class.php:479
+msgid "суббота"
+msgstr ""
+
+#: ../../../../public/unmanaged/1main.php:363
+msgid "eLearning Server"
+msgstr "eLearning Server"
+
+#: ../../../../public/unmanaged/1main.php:368
+#, fuzzy
+msgid "Разработка ЗАО \"ГиперМетод\" 2007"
+msgstr "Modules Development"
+
+#: ../../../../public/unmanaged/1main.php:590
+#, fuzzy
+msgid "Не задано"
+msgstr "not defined"
+
+#: ../../../../public/unmanaged/1main.php:591
+msgid "руб"
+msgstr ""
+
+#: ../../../../public/unmanaged/1main.php:591
+msgid "Рубли/RUS"
+msgstr ""
+
+#: ../../../../public/unmanaged/1main.php:592
+msgid "Доллары/USA"
+msgstr ""
+
+#: ../../../../public/unmanaged/1main.php:593
+msgid "Евро/EUR"
+msgstr ""
+
+#: ../../../../public/unmanaged/1main.php:596
+msgid "нельзя пропускать вопросы, нельзя возвращаться назад"
+msgstr "one can not skip pages and go back"
+
+#: ../../../../public/unmanaged/1main.php:596
+#, fuzzy
+msgid "с возможностью возврата к предыдущим вопросам"
+msgstr "Go to next question"
+
+#: ../../../../public/unmanaged/1main.php:596
+#, fuzzy
+msgid "с возможностью пропускать вопросы"
+msgstr "Delete questions"
+
+#: ../../../../public/unmanaged/1main.php:624
+#, fuzzy
+msgid "евр"
+msgstr "Not choosen"
+
+#: ../../../../public/unmanaged/1main.php:624
+msgid "ЕВР"
+msgstr ""
+
+#: ../../../../public/unmanaged/1main.php:629
+msgid "долл"
+msgstr ""
+
+#: ../../../../public/unmanaged/1main.php:630
+msgid "у.е"
+msgstr ""
+
+#: ../../../../public/unmanaged/1main.php:630
+msgid "уе"
+msgstr ""
+
+#: ../../../../public/unmanaged/1main.php:644
+#, fuzzy
+msgid "Не опубликован"
+msgstr "not published"
+
+#: ../../../../public/unmanaged/1main.php:644
+#, fuzzy
+msgid "Опубликован для тьюторов"
+msgstr "Check by a teacher"
+
+#: ../../../../public/unmanaged/1main.php:644
+#, fuzzy
+msgid "Опубликован"
+msgstr "Published"
+
+#: ../../../../public/unmanaged/1main.php:652
+msgid "Свободный"
+msgstr ""
+
+#: ../../../../public/unmanaged/1main.php:656
+#, fuzzy
+msgid "Назначаемый"
+msgstr "Intramural"
+
+#: ../../../../public/unmanaged/1main.php:664
+#, fuzzy
+msgid "Цепочка согласований:"
+msgstr "Start of an attempt"
+
+#: ../../../../public/unmanaged/adodb_func.php:173
+#: ../../../../public/unmanaged/test_start.php:517
+msgid "Произошла ошибка базы данных. Обратитесь в службу технической поддержки."
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:110
+#, fuzzy
+msgid "Контактная информация"
+msgstr "The formula has been successfully removed"
+
+#: ../../../../public/unmanaged/metadata.lib.php:113
+#: ../../../../public/unmanaged/metadata_custom.lib.php:25
+#: ../../../../public/unmanaged/preferences.php:68
+msgid "Почтовый адрес"
+msgstr "Рostal address"
+
+#: ../../../../public/unmanaged/metadata.lib.php:116
+#: ../../../../public/unmanaged/metadata_custom.lib.php:26
+#: ../../../../public/unmanaged/preferences.php:68
+#, fuzzy
+msgid "Паспортные данные"
+msgstr "Data loading..."
+
+#: ../../../../public/unmanaged/metadata.lib.php:119
+msgid "Какая-то лажа"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:122
+#, fuzzy
+msgid "День рождения"
+msgstr "Date of Birth"
+
+#: ../../../../public/unmanaged/metadata.lib.php:125
+#, fuzzy
+msgid "Примечания"
+msgstr "Note 1"
+
+#: ../../../../public/unmanaged/metadata.lib.php:128
+#, fuzzy
+msgid "Категория"
+msgstr "Laboratory"
+
+#: ../../../../public/unmanaged/metadata.lib.php:131
+#, fuzzy
+msgid "Учебная группа"
+msgstr "Training Materials"
+
+#: ../../../../public/unmanaged/metadata.lib.php:134
+#, fuzzy
+msgid "Воинское звание"
+msgstr "Select a task"
+
+#: ../../../../public/unmanaged/metadata.lib.php:137
+#, fuzzy
+msgid "Национальность"
+msgstr "Duration:"
+
+#: ../../../../public/unmanaged/metadata.lib.php:137
+msgid "племенная принадлежность"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:140
+#, fuzzy
+msgid "Образование"
+msgstr "testing"
+
+#: ../../../../public/unmanaged/metadata.lib.php:143
+#, fuzzy
+msgid "Занимаемая должность"
+msgstr "Minimum password length"
+
+#: ../../../../public/unmanaged/metadata.lib.php:143
+msgid "до прибытия на учебу"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:146
+#, fuzzy
+msgid "Семейное положение"
+msgstr "Work room"
+
+#: ../../../../public/unmanaged/metadata.lib.php:146
+#, fuzzy
+msgid "количество членов семьи"
+msgstr "Number of Questions:"
+
+#: ../../../../public/unmanaged/metadata.lib.php:149
+#, fuzzy
+msgid "Специальность обучения"
+msgstr "Training Managers"
+
+#: ../../../../public/unmanaged/metadata.lib.php:152
+#, fuzzy
+msgid "Сроки обучения по директивам"
+msgstr "Time limit, min:"
+
+#: ../../../../public/unmanaged/metadata.lib.php:155
+#, fuzzy
+msgid "Дата прибытия в ВУЗ"
+msgstr "Date of an attempt"
+
+#: ../../../../public/unmanaged/metadata.lib.php:158
+#, fuzzy
+msgid "Уровень доступа"
+msgstr "Not available"
+
+#: ../../../../public/unmanaged/metadata.lib.php:161
+#, fuzzy
+msgid "Личный идентификатор"
+msgstr "Templates of Certificates"
+
+#: ../../../../public/unmanaged/metadata.lib.php:182
+#, fuzzy
+msgid "Код специальности"
+msgstr "To be appointed"
+
+#: ../../../../public/unmanaged/metadata.lib.php:188
+#, fuzzy
+msgid "Направление"
+msgstr "Update"
+
+#: ../../../../public/unmanaged/metadata.lib.php:194
+#, fuzzy
+msgid "Всего курсов"
+msgstr "Number of Questions"
+
+#: ../../../../public/unmanaged/metadata.lib.php:200
+#, fuzzy
+msgid "Всего часов"
+msgstr "Number of Questions"
+
+#: ../../../../public/unmanaged/metadata.lib.php:202
+msgid "а.ч."
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:205
+#, fuzzy
+msgid "Курсов по выбору"
+msgstr "Unselect"
+
+#: ../../../../public/unmanaged/metadata.lib.php:211
+#: ../../../../public/unmanaged/metadata.lib.php:255
+#: ../../../../public/unmanaged/metadata.lib.php:277
+#: ../../../../public/unmanaged/metadata.lib.php:365
+#, fuzzy
+msgid "Аннотация"
+msgstr "integration with at"
+
+#: ../../../../public/unmanaged/metadata.lib.php:217
+#: ../../../../public/unmanaged/metadata.lib.php:261
+#, fuzzy
+msgid "Итоговый контроль"
+msgstr "Published for teachers"
+
+#: ../../../../public/unmanaged/metadata.lib.php:218
+#: ../../../../public/unmanaged/metadata.lib.php:262
+#: ../../../../public/unmanaged/metadata.lib.php:372
+#: ../../../../public/unmanaged/test_start.php:88
+#: ../../../../public/unmanaged/lib/classes/Connect.class.php:229
+#: ../../../../public/unmanaged/lib/classes/Connect.class.php:233
+#: ../../../../public/unmanaged/teachers/organization.lib.php:578
+#, fuzzy
+msgid "нет"
+msgstr "not empty"
+
+#: ../../../../public/unmanaged/metadata.lib.php:219
+#: ../../../../public/unmanaged/metadata.lib.php:263
+msgid "нет|экзамен|тест|зачет|экзамен"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:237
+#: ../../../../public/unmanaged/metadata.lib.php:271
+#, fuzzy
+msgid "Авторы"
+msgstr "Сreator"
+
+#: ../../../../public/unmanaged/metadata.lib.php:243
+#, fuzzy
+msgid "Кол-во модулей (тем)"
+msgstr "Number of Questions:"
+
+#: ../../../../public/unmanaged/metadata.lib.php:245
+msgid "шт."
+msgstr "pieces"
+
+#: ../../../../public/unmanaged/metadata.lib.php:251
+#: ../../../../public/unmanaged/metadata.lib.php:336
+#: ../../../../public/unmanaged/metadata.lib.php:342
+#: ../../../../public/unmanaged/metadata.lib.php:348
+#: ../../../../public/unmanaged/metadata.lib.php:354
+#: ../../../../public/unmanaged/metadata.lib.php:361
+#, fuzzy
+msgid "ч."
+msgstr "h."
+
+#: ../../../../public/unmanaged/metadata.lib.php:283
+msgid "I. Цели и задачи подготовки"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:289
+msgid "II. Подготовка производится в соответствии с требованиями"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:295
+msgid "III. Учебно-материальная база подготовки"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:302
+msgid "V. Организационно-методические указания"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:320
+#: ../../../../public/unmanaged/teachers/organization.lib.php:34
+msgid "Тип занятия"
+msgstr "Lesson type"
+
+#: ../../../../public/unmanaged/metadata.lib.php:326
+#, fuzzy
+msgid "Длительность"
+msgstr "Duration:"
+
+#: ../../../../public/unmanaged/metadata.lib.php:334
+msgid "Лекции"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:340
+#, fuzzy
+msgid "Семинары"
+msgstr "Webinars"
+
+#: ../../../../public/unmanaged/metadata.lib.php:346
+#, fuzzy
+msgid "Лабораторные"
+msgstr "Laboratory"
+
+#: ../../../../public/unmanaged/metadata.lib.php:352
+msgid "КСР"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:359
+msgid "Итого"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:371
+#, fuzzy
+msgid "Текущий контроль"
+msgstr "Training Course"
+
+#: ../../../../public/unmanaged/metadata.lib.php:373
+msgid "нет|экзамен|к.р.|реферат|тест|зачет"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:381
+#, fuzzy
+msgid "аннотация"
+msgstr "integration with at"
+
+#: ../../../../public/unmanaged/metadata.lib.php:390
+#, fuzzy
+msgid "департамент"
+msgstr "Word document"
+
+#: ../../../../public/unmanaged/metadata.lib.php:398
+#: ../../../../public/unmanaged/metadata.lib.php:406
+#, fuzzy
+msgid "должность"
+msgstr "Attendance Activity"
+
+#: ../../../../public/unmanaged/metadata.lib.php:414
+msgid "место"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:422
+msgid "принят"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:424
+#, fuzzy
+msgid "дата поступления на работу"
+msgstr "Time limitation"
+
+#: ../../../../public/unmanaged/metadata.lib.php:531
+msgid "серия"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:540
+#, fuzzy
+msgid "номер"
+msgstr "No"
+
+#: ../../../../public/unmanaged/metadata.lib.php:550
+#, fuzzy
+msgid "дата выдачи"
+msgstr "Answer variant"
+
+#: ../../../../public/unmanaged/metadata.lib.php:567
+#: ../../../../public/unmanaged/metadata.lib.php:599
+#: ../../../../public/unmanaged/metadata.lib.php:784
+#: ../../../../public/unmanaged/metadata.lib.php:823
+#: ../../../../public/unmanaged/metadata.lib.php:877
+msgid "Января"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:567
+#: ../../../../public/unmanaged/metadata.lib.php:599
+#: ../../../../public/unmanaged/metadata.lib.php:784
+#: ../../../../public/unmanaged/metadata.lib.php:823
+#: ../../../../public/unmanaged/metadata.lib.php:877
+msgid "Февраля"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:567
+#: ../../../../public/unmanaged/metadata.lib.php:599
+#: ../../../../public/unmanaged/metadata.lib.php:784
+#: ../../../../public/unmanaged/metadata.lib.php:823
+#: ../../../../public/unmanaged/metadata.lib.php:877
+msgid "Марта"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:567
+#: ../../../../public/unmanaged/metadata.lib.php:599
+#: ../../../../public/unmanaged/metadata.lib.php:784
+#: ../../../../public/unmanaged/metadata.lib.php:823
+#: ../../../../public/unmanaged/metadata.lib.php:877
+msgid "Апреля"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:567
+#: ../../../../public/unmanaged/metadata.lib.php:599
+#: ../../../../public/unmanaged/metadata.lib.php:784
+#: ../../../../public/unmanaged/metadata.lib.php:823
+#: ../../../../public/unmanaged/metadata.lib.php:877
+#, fuzzy
+msgid "Мая"
+msgstr "Max"
+
+#: ../../../../public/unmanaged/metadata.lib.php:567
+#: ../../../../public/unmanaged/metadata.lib.php:599
+#: ../../../../public/unmanaged/metadata.lib.php:784
+#: ../../../../public/unmanaged/metadata.lib.php:823
+#: ../../../../public/unmanaged/metadata.lib.php:877
+msgid "Июня"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:567
+#: ../../../../public/unmanaged/metadata.lib.php:599
+#: ../../../../public/unmanaged/metadata.lib.php:784
+#: ../../../../public/unmanaged/metadata.lib.php:823
+#: ../../../../public/unmanaged/metadata.lib.php:877
+msgid "Июля"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:567
+#: ../../../../public/unmanaged/metadata.lib.php:599
+#: ../../../../public/unmanaged/metadata.lib.php:784
+#: ../../../../public/unmanaged/metadata.lib.php:823
+#: ../../../../public/unmanaged/metadata.lib.php:877
+msgid "Августа"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:567
+#: ../../../../public/unmanaged/metadata.lib.php:599
+#: ../../../../public/unmanaged/metadata.lib.php:784
+#: ../../../../public/unmanaged/metadata.lib.php:823
+#: ../../../../public/unmanaged/metadata.lib.php:877
+msgid "Сентября"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:567
+#: ../../../../public/unmanaged/metadata.lib.php:599
+#: ../../../../public/unmanaged/metadata.lib.php:784
+#: ../../../../public/unmanaged/metadata.lib.php:823
+#: ../../../../public/unmanaged/metadata.lib.php:877
+msgid "Октября"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:567
+#: ../../../../public/unmanaged/metadata.lib.php:599
+#: ../../../../public/unmanaged/metadata.lib.php:784
+#: ../../../../public/unmanaged/metadata.lib.php:823
+#: ../../../../public/unmanaged/metadata.lib.php:877
+msgid "Ноября"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:567
+#: ../../../../public/unmanaged/metadata.lib.php:599
+#: ../../../../public/unmanaged/metadata.lib.php:784
+#: ../../../../public/unmanaged/metadata.lib.php:823
+#: ../../../../public/unmanaged/metadata.lib.php:877
+#, fuzzy
+msgid "Декабря"
+msgstr "December"
+
+#: ../../../../public/unmanaged/metadata.lib.php:621
+msgid "почт. индекс"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:629
+#, fuzzy
+msgid "страна"
+msgstr "Page(s):"
+
+#: ../../../../public/unmanaged/metadata.lib.php:637
+#, fuzzy
+msgid "область, регион"
+msgstr "maps"
+
+#: ../../../../public/unmanaged/metadata.lib.php:645
+msgid "город"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:653
+msgid "улица"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:661
+#, fuzzy
+msgid "дом"
+msgstr "Code"
+
+#: ../../../../public/unmanaged/metadata.lib.php:668
+msgid "корпус/строение"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:675
+#, fuzzy
+msgid "квартира"
+msgstr "Image"
+
+#: ../../../../public/unmanaged/metadata.lib.php:684
+#, fuzzy
+msgid "телефон"
+msgstr "Material"
+
+#: ../../../../public/unmanaged/metadata.lib.php:699
+#, fuzzy
+msgid "моб. телефон"
+msgstr "Material"
+
+#: ../../../../public/unmanaged/metadata.lib.php:707
+msgid "факс"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:716
+#, fuzzy
+msgid "код группы"
+msgstr "Subgroups"
+
+#: ../../../../public/unmanaged/metadata.lib.php:721
+#, fuzzy
+msgid "старший группы"
+msgstr "Subgroups"
+
+#: ../../../../public/unmanaged/metadata.lib.php:727
+#, fuzzy
+msgid "характеристика"
+msgstr "Statistics"
+
+#: ../../../../public/unmanaged/metadata.lib.php:742
+#, fuzzy
+msgid "общее"
+msgstr "Message(s)"
+
+#: ../../../../public/unmanaged/metadata.lib.php:747
+msgid "военное"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:813
+#, fuzzy
+msgid "начало:"
+msgstr "Start:"
+
+#: ../../../../public/unmanaged/metadata.lib.php:840
+#, fuzzy
+msgid "окончание:"
+msgstr "Description"
+
+#: ../../../../public/unmanaged/metadata.lib.php:850
+msgid "Январь"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:850
+msgid "Февраль"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:850
+msgid "Март"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:850
+msgid "Апрель"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:850
+#, fuzzy
+msgid "Май"
+msgstr "Fact"
+
+#: ../../../../public/unmanaged/metadata.lib.php:850
+msgid "Июнь"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:850
+msgid "Июль"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:850
+msgid "Август"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:850
+msgid "Сентябрь"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:850
+msgid "Октябрь"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:850
+msgid "Ноябрь"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:850
+#, fuzzy
+msgid "Декабрь"
+msgstr "December"
+
+#: ../../../../public/unmanaged/metadata.lib.php:898
+#, fuzzy
+msgid "описание"
+msgstr "Description"
+
+#: ../../../../public/unmanaged/metadata.lib.php:900
+#, fuzzy
+msgid "описание без метаданных"
+msgstr "Data file (csv)"
+
+#: ../../../../public/unmanaged/metadata.lib.php:1099
+#, fuzzy
+msgid "нет данных"
+msgstr "There is no data file"
+
+#: ../../../../public/unmanaged/metadata.lib.php:1154
+#: ../../../../public/unmanaged/metadata.lib.php:1187
+#: ../../../../public/unmanaged/metadata.lib.php:1220
+#: ../../../../public/unmanaged/metadata.lib.php:1242
+#: ../../../../public/unmanaged/metadata.lib.php:1284
+msgid "помощь"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata.lib.php:1210
+#, fuzzy
+msgid "скачать"
+msgstr "with attached file"
+
+#: ../../../../public/unmanaged/metadata.lib.php:1211
+#, fuzzy
+msgid "Удалить?"
+msgstr "Delete formula"
+
+#: ../../../../public/unmanaged/metadata.lib.php:1211
+#: ../../../../public/unmanaged/lib/classes/CourseContent.class.php:1104
+#, fuzzy
+msgid "удалить"
+msgstr "Do not delete"
+
+#: ../../../../public/unmanaged/metadata.lib.php:1214
+#: ../../../../public/unmanaged/metadata.lib.php:1236
+#: ../../../../public/unmanaged/metadata.lib.php:1278
+msgid "вставить пример"
+msgstr "Insert example"
+
+#: ../../../../public/unmanaged/metadata.lib.php:1318
+#: ../../../../public/unmanaged/metadata.lib.php:1396
+#, fuzzy
+msgid "сохранить"
+msgstr "Page(s):"
+
+#: ../../../../public/unmanaged/metadata.lib.php:1450
+#, fuzzy
+msgid "не задано"
+msgstr "not defined"
+
+#: ../../../../public/unmanaged/metadata_custom.lib.php:23
+#: ../../../../public/unmanaged/preferences.php:68
+msgid "Текстовое поле"
+msgstr "Text field"
+
+#: ../../../../public/unmanaged/metadata_custom.lib.php:24
+#: ../../../../public/unmanaged/preferences.php:68
+#: ../../../../application/settings/context.php:974
+msgid "Контакты"
+msgstr ""
+
+#: ../../../../public/unmanaged/metadata_custom.lib.php:27
+#: ../../../../public/unmanaged/preferences.php:68
+msgid "Дата рождения"
+msgstr "Date of Birth"
+
+#: ../../../../public/unmanaged/people_import.php:14
+#: ../../../../public/unmanaged/preferences.php:6
+msgid "Пожалуйста, авторизуйтесь"
+msgstr "Please log in"
+
+#: ../../../../public/unmanaged/people_import.php:17
+msgid "Доступ к странице имеют представители учебной администрации, или администраторы"
+msgstr ""
+
+#: ../../../../public/unmanaged/people_import.php:43
+#: ../../../../public/unmanaged/people_import.php:44
+#: ../../../../public/unmanaged/people_import.php:87
+#: ../../../../public/unmanaged/people_import.php:90
+#: ../../../../public/unmanaged/people_import.php:94
+#: ../../../../public/unmanaged/people_import.php:95
+#: ../../../../public/unmanaged/people_import.php:235
+#: ../../../../public/unmanaged/people_import.php:237
+#: ../../../../public/unmanaged/people_import.php:240
+#: ../../../../public/unmanaged/people_import.php:242
+msgid "Импорт учётных записей из CSV-файла"
+msgstr "Import accounts from CSV"
+
+#: ../../../../public/unmanaged/people_import.php:53
+msgid "Шаг 1. Выбор файла"
+msgstr "Step 1. Choose a file"
+
+#: ../../../../public/unmanaged/people_import.php:54
+msgid "CSV-файл"
+msgstr "CSV-file"
+
+#: ../../../../public/unmanaged/people_import.php:55
+#, fuzzy
+msgid "Разделитель:"
+msgstr "Additional Information"
+
+#: ../../../../public/unmanaged/people_import.php:56
+msgid "точка с запятой"
+msgstr ""
+
+#: ../../../../public/unmanaged/people_import.php:57
+msgid "запятая"
+msgstr ""
+
+#: ../../../../public/unmanaged/people_import.php:59
+msgid "Роль"
+msgstr ""
+
+#: ../../../../public/unmanaged/people_import.php:60
+#: ../../../../application/settings/actions.php:153
+#: ../../../../application/settings/context.php:202
+#: ../../../../application/settings/context.php:245
+#, fuzzy
+msgid "Слушатели"
+msgstr "Trainee"
+
+#: ../../../../public/unmanaged/people_import.php:61
+#: ../../../../public/unmanaged/lib/classes/Forum.class.php:562
+#: ../../../../public/unmanaged/lib/classes/Forum.class.php:568
+#: ../../../../application/settings/actions.php:158
+#: ../../../../application/settings/context.php:213
+#: ../../../../application/settings/context.php:256
+#, fuzzy
+msgid "Тьюторы"
+msgstr "all of users"
+
+#: ../../../../public/unmanaged/people_import.php:67
+#, fuzzy
+msgid "Галочки по умолчанию отмечены"
+msgstr "Attempts have been successfully deleted"
+
+#: ../../../../public/unmanaged/people_import.php:78
+msgid "Вы не загрузили файл! Нажмите кнопку \"Обзор\" и выберите *.CSV файл для импорта"
+msgstr ""
+
+#: ../../../../public/unmanaged/people_import.php:98
+#: ../../../../public/unmanaged/people_import.php:115
+#, php-format
+msgid ""
+"Загружен файл размером %d байт. Выберите курс и отметьте %s, которых нужно "
+"импортировать. "
+msgstr ""
+
+#: ../../../../public/unmanaged/people_import.php:122
+#, fuzzy
+msgid "На специальность"
+msgstr "Academic Progress"
+
+#: ../../../../public/unmanaged/people_import.php:144
+#, fuzzy
+msgid "Не удалось скопировать файл, нет прав записи в"
+msgstr "Unable to copy file to %s"
+
+#: ../../../../public/unmanaged/people_import.php:147
+#, fuzzy
+msgid "Не могу открыть файл"
+msgstr "Attach file"
+
+#: ../../../../public/unmanaged/people_import.php:217
+msgid "К сожалению, не найдена информация о, учащихся в данном файле."
+msgstr ""
+
+#: ../../../../public/unmanaged/people_import.php:218
+msgid "Либо вы загрузили пустой файл, либо файл не того типа."
+msgstr ""
+
+#: ../../../../public/unmanaged/people_import.php:221
+#: ../../../../public/unmanaged/people_import.php:500
+msgid "Готово"
+msgstr ""
+
+#: ../../../../public/unmanaged/people_import.php:245
+#, fuzzy
+msgid "Ничего не было отмечено для импорта. Выберите хотя бы одного слушателя."
+msgstr "There is no elements selected to delete"
+
+#: ../../../../public/unmanaged/people_import.php:255
+#, fuzzy
+msgid "Добавлены учетные записи:"
+msgstr "All Accounts"
+
+#: ../../../../public/unmanaged/people_import.php:257
+#: ../../../../public/unmanaged/people_import.php:636
+#: ../../../../public/unmanaged/people_import.php:686
+msgid "Фамилия"
+msgstr ""
+
+#: ../../../../public/unmanaged/people_import.php:257
+#: ../../../../public/unmanaged/people_import.php:635
+#: ../../../../public/unmanaged/people_import.php:685
+msgid "Имя"
+msgstr ""
+
+#: ../../../../public/unmanaged/people_import.php:257
+#: ../../../../public/unmanaged/people_import.php:577
+#: ../../../../public/unmanaged/people_import.php:638
+#: ../../../../public/unmanaged/people_import.php:688
+msgid "Логин"
+msgstr ""
+
+#: ../../../../public/unmanaged/people_import.php:257
+#: ../../../../public/unmanaged/people_import.php:577
+#: ../../../../public/unmanaged/people_import.php:643
+#: ../../../../public/unmanaged/people_import.php:693
+#, fuzzy
+msgid "Пароль"
+msgstr "Create a derived role"
+
+#: ../../../../public/unmanaged/people_import.php:385
+#, fuzzy
+msgid "Нельзя добавить:"
+msgstr "Add"
+
+#: ../../../../public/unmanaged/people_import.php:408
+msgid "Учётные записи успешно импортированы."
+msgstr "All user accounts are imported successfully."
+
+#: ../../../../public/unmanaged/people_import.php:441
+#: ../../../../public/unmanaged/people_import.php:442
+#: ../../../../public/unmanaged/people_import.php:475
+#: ../../../../public/unmanaged/people_import.php:476
+#, fuzzy
+msgid "Импорт тьюторов из CSV файла"
+msgstr "Import accounts from CSV"
+
+#: ../../../../public/unmanaged/people_import.php:445
+#: ../../../../public/unmanaged/people_import.php:446
+#: ../../../../public/unmanaged/people_import.php:479
+#: ../../../../public/unmanaged/people_import.php:480
+#, fuzzy
+msgid "Импорт учащихся из CSV файла"
+msgstr "Import accounts from CSV"
+
+#: ../../../../public/unmanaged/people_import.php:453
+#, fuzzy
+msgid "Признаки группировки"
+msgstr "Error copying file"
+
+#: ../../../../public/unmanaged/people_import.php:486
+msgid "Все тьюторы были зачислены на курс и распределены по группам"
+msgstr ""
+
+#: ../../../../public/unmanaged/people_import.php:488
+msgid "Все слушатели были зачислены на курс и распределены по группам"
+msgstr ""
+
+#: ../../../../public/unmanaged/people_import.php:491
+#: ../../../../public/unmanaged/people_import.php:577
+#, fuzzy
+msgid "ФИО"
+msgstr "Name"
+
+#: ../../../../public/unmanaged/people_import.php:491
+#: ../../../../public/unmanaged/people_import.php:577
+msgid "Группа"
+msgstr "Group"
+
+#: ../../../../public/unmanaged/people_import.php:637
+#: ../../../../public/unmanaged/people_import.php:687
+msgid "Отчество"
+msgstr ""
+
+#: ../../../../public/unmanaged/people_import.php:645
+msgid "Метка"
+msgstr ""
+
+#: ../../../../public/unmanaged/preferences.php:16
+msgid "Настройки успешно сохранены"
+msgstr "Settings have been successfully saved"
+
+#: ../../../../public/unmanaged/preferences.php:26
+#: ../../../../public/unmanaged/lib/classes/Option.class.php:144
+#, fuzzy
+msgid "Организационная структура"
+msgstr "Operating system"
+
+#: ../../../../public/unmanaged/preferences.php:29
+#: ../../../../public/unmanaged/lib/classes/Option.class.php:145
+#, fuzzy
+msgid "Учебная структура"
+msgstr "Organization Structure"
+
+#: ../../../../public/unmanaged/rooms.php:21
+msgid "Ресурсы"
+msgstr "Resources"
+
+#: ../../../../public/unmanaged/rooms.php:26
+#, fuzzy
+msgid "Создать место проведения"
+msgstr "Editing of lesson place"
+
+#: ../../../../public/unmanaged/rooms.php:29 ../../../../public/unmanaged/rooms.php:89
+#: ../../../../public/unmanaged/teachers/organization.lib.php:31
+#, fuzzy
+msgid "Название"
+msgstr "Role name"
+
+#: ../../../../public/unmanaged/rooms.php:29 ../../../../public/unmanaged/rooms.php:95
+#, fuzzy
+msgid "Тип"
+msgstr "Type"
+
+#: ../../../../public/unmanaged/rooms.php:29 ../../../../public/unmanaged/rooms.php:119
+#, fuzzy
+msgid "Описание"
+msgstr "Description"
+
+#: ../../../../public/unmanaged/rooms.php:29 ../../../../public/unmanaged/rooms.php:92
+#, fuzzy
+msgid "Количество мест"
+msgstr "Number of Attempts:"
+
+#: ../../../../public/unmanaged/rooms.php:31
+msgid "Действия"
+msgstr ""
+
+#: ../../../../public/unmanaged/rooms.php:45
+#, fuzzy
+msgid "Редактировать место проведения"
+msgstr "Editing of lesson place"
+
+#: ../../../../public/unmanaged/rooms.php:47
+#, fuzzy
+msgid "Вы действительно желаете удалить место проведения?"
+msgstr "Do you really want to to delete question?"
+
+#: ../../../../public/unmanaged/rooms.php:47
+#, fuzzy
+msgid "Удалить место проведения"
+msgstr "Editing of lesson place"
+
+#: ../../../../public/unmanaged/rooms.php:51
+msgid "нет данных для отображения"
+msgstr "There is no data to display"
+
+#: ../../../../public/unmanaged/rooms.php:71
+msgid "Редактирование ресурса"
+msgstr "Resourse Editing"
+
+#: ../../../../public/unmanaged/rooms.php:74
+msgid "Редактирование места проведения"
+msgstr "Editing of lesson place"
+
+#: ../../../../public/unmanaged/rooms.php:107
+#, fuzzy
+msgid "Статус"
+msgstr "Status:"
+
+#: ../../../../public/unmanaged/rooms.php:129 ../../../../public/unmanaged/rooms.php:131
+msgid "Отмена"
+msgstr ""
+
+#: ../../../../public/unmanaged/rooms.php:154
+#, fuzzy
+msgid "Вы не указали название места проведения"
+msgstr "Not specified room name"
+
+#: ../../../../public/unmanaged/rooms.php:161
+#, fuzzy
+msgid "Введена некорректная вместимость места проведения"
+msgstr "Chosen an invalid action"
+
+#: ../../../../public/unmanaged/rooms.php:188
+msgid ""
+"Введённая вместимость места проведения слишком мала (В место проведения назначено "
+"обучение большего числа слушателей: "
+msgstr ""
+
+#: ../../../../public/unmanaged/rooms.php:201
+msgid "лекционная аудитория"
+msgstr "Lecture room"
+
+#: ../../../../public/unmanaged/rooms.php:202
+msgid "семинарская аудитория"
+msgstr "Seminar room"
+
+#: ../../../../public/unmanaged/rooms.php:203
+msgid "учебный класс"
+msgstr "Training class"
+
+#: ../../../../public/unmanaged/rooms.php:204
+msgid "лаборатория"
+msgstr "Laboratory"
+
+#: ../../../../public/unmanaged/rooms.php:205
+msgid "рабочее помещение"
+msgstr "Work room"
+
+#: ../../../../public/unmanaged/rooms.php:214
+msgid "недоступно"
+msgstr "unavailable"
+
+#: ../../../../public/unmanaged/rooms.php:215
+msgid "доступно"
+msgstr "available"
+
+#: ../../../../public/unmanaged/schedule.lib.php:182
+#: ../../../../public/unmanaged/schedule.lib.php:196
+#, php-format
+msgid "%d-й"
+msgstr ""
+
+#: ../../../../public/unmanaged/schedule.lib.php:191
+#: ../../../../public/unmanaged/schedule.lib.php:193
+msgid "дисциплина"
+msgstr ""
+
+#: ../../../../public/unmanaged/schedule.lib.php:191
+#, fuzzy
+msgid "мой день занятий"
+msgstr "Lesson name"
+
+#: ../../../../public/unmanaged/schedule.lib.php:191
+#: ../../../../public/unmanaged/schedule.lib.php:193
+#, fuzzy
+msgid "осталось дней"
+msgstr "to be answered"
+
+#: ../../../../public/unmanaged/schedule.lib.php:193
+#, fuzzy
+msgid "день занятий"
+msgstr "Lesson type"
+
+#: ../../../../public/unmanaged/schedule.lib.php:211
+msgid "время обучения по курсу закончилось"
+msgstr ""
+
+#: ../../../../public/unmanaged/schedule.lib.php:377
+#: ../../../../public/unmanaged/schedule.lib.php:381
+#: ../../../../public/unmanaged/schedule.lib.php:473
+#: ../../../../public/unmanaged/schedule.lib.php:478
+msgid "ЕСЛИ"
+msgstr ""
+
+#: ../../../../public/unmanaged/schedule.lib.php:377
+#: ../../../../public/unmanaged/schedule.lib.php:381
+#: ../../../../public/unmanaged/schedule.lib.php:473
+#: ../../../../public/unmanaged/schedule.lib.php:478
+msgid "сдан на"
+msgstr ""
+
+#: ../../../../public/unmanaged/schedule.lib.php:387
+msgid "-го"
+msgstr ""
+
+#: ../../../../public/unmanaged/schedule.lib.php:388
+#, fuzzy
+msgid "-й день занятий"
+msgstr "Lesson type"
+
+#: ../../../../public/unmanaged/schedule.lib.php:489
+#, fuzzy
+msgid "групповое занятие"
+msgstr "Lesson name"
+
+#: ../../../../public/unmanaged/schedule.lib.php:549
+#, fuzzy
+msgid "ежедневно"
+msgstr "Last"
+
+#: ../../../../public/unmanaged/schedule.lib.php:565
+#, fuzzy
+msgid "еженедельно"
+msgstr "False"
+
+#: ../../../../public/unmanaged/schedule.lib.php:566
+#, fuzzy
+msgid "через неделю"
+msgstr "Mark for lesson"
+
+#: ../../../../public/unmanaged/schedule.lib.php:665
+msgid "ежемесячно"
+msgstr ""
+
+#: ../../../../public/unmanaged/schedule.lib.php:1014
+#: ../../../../public/unmanaged/schedule.lib.php:1021
+#, fuzzy
+msgid "Такого занятия нет в БД"
+msgstr "Number of Seats"
+
+#: ../../../../public/unmanaged/schedule.lib.php:1019
+#: ../../../../public/unmanaged/schedule.lib.php:1028
+msgid "Данное занятие не принадлежит к списку Ваших курсов"
+msgstr ""
+
+#: ../../../../public/unmanaged/schedule.lib.php:1030
+#, fuzzy
+msgid "Занятие назначено на другое время"
+msgstr "Session is over. Thank you!"
+
+#: ../../../../public/unmanaged/schedule.lib.php:1201
+#, fuzzy
+msgid "Данное занятие не может быть запущено"
+msgstr "Number of options in task is limited"
+
+#: ../../../../public/unmanaged/schedule.lib.php:1867
+#, fuzzy
+msgid "макс."
+msgstr "max. score"
+
+#: ../../../../public/unmanaged/schedule.lib.php:1867
+msgid "чел."
+msgstr ""
+
+#: ../../../../public/unmanaged/schedule.lib.php:2033
+msgid ""
+"Время проведения одного или нескольких занятий,\n"
+"                                           не соответствует положению модулей (на "
+"которых эти занятия основаны)\n"
+"                                           в дереве курса. Для получения более подробной "
+"информации ознакомтесь\n"
+"                                           с описанием синхронного режима прохождения "
+"курса в соответствующем\n"
+"                                           разделе документации."
+msgstr ""
+
+#: ../../../../public/unmanaged/test_start.php:89
+msgid "не ограничено"
+msgstr "unlimited"
+
+#: ../../../../public/unmanaged/test_start.php:101
+#, fuzzy
+msgid "Задание"
+msgstr "Task:"
+
+#: ../../../../public/unmanaged/test_start.php:114
+#, fuzzy
+msgid " не найден"
+msgstr "Index is not found"
+
+#: ../../../../public/unmanaged/test_start.php:119
+#, fuzzy
+msgid " не прикреплен к занятию"
+msgstr "0 means never reset"
+
+#: ../../../../public/unmanaged/test_start.php:158
+#, fuzzy
+msgid "Извините, задание"
+msgstr "Select a task"
+
+#: ../../../../public/unmanaged/test_start.php:158
+msgid "не существует."
+msgstr "not exist"
+
+#: ../../../../public/unmanaged/test_start.php:163
+#, fuzzy
+msgid "Извините, это задание не опубликовано (заблокировано)"
+msgstr "There is no questions in the test"
+
+#: ../../../../public/unmanaged/test_start.php:256
+#, fuzzy
+msgid "Вы не являтесь тьютором на этом курсе."
+msgstr "You are not a teacher of the training course."
+
+#: ../../../../public/unmanaged/test_start.php:274
+msgid "Обнуление счетчика SCHEDULECOUNT:qty у юзера"
+msgstr ""
+
+#: ../../../../public/unmanaged/test_start.php:274
+#: ../../../../public/unmanaged/test_start.php:318
+#, fuzzy
+msgid "по давности."
+msgstr "To be appointed"
+
+#: ../../../../public/unmanaged/test_start.php:286
+msgid ""
+"Вы израсходовали все попытки прохожения этого занятия.<br>Для занятия было отпущено "
+"попыток:"
+msgstr "You have used all attempts. <br> You had number of attempts:"
+
+#: ../../../../public/unmanaged/test_start.php:318
+msgid "Обнуление счетчика TESTCOUNT:qty у юзера"
+msgstr ""
+
+#: ../../../../public/unmanaged/test_start.php:325
+#, fuzzy
+msgid "Вы израсходовали все попытки прохожения этого занятия.<br>Было отпущено попыток:"
+msgstr "You have used all attempts. <br> You had number of attempts:"
+
+#: ../../../../public/unmanaged/test_start.php:360
+#, php-format
+msgid "Извините, %s не содержит ни одного вопроса."
+msgstr "Sorry, %s has none of question."
+
+#: ../../../../public/unmanaged/test_start.php:403
+msgid "Вопросы для оценки отсутствуют. Все анкеты по сотрудникам заполнены."
+msgstr ""
+
+#: ../../../../public/unmanaged/test_start.php:537
+#, fuzzy
+msgid "начать тест:"
+msgstr "start test"
+
+#: ../../../../public/unmanaged/test_start.php:550
+#: ../../../../public/unmanaged/test_start.php:637
+#, fuzzy
+msgid "Невозможно прервать сеанс."
+msgstr "It is impossible to open a folder %s"
+
+#: ../../../../public/unmanaged/test_start.php:551
+#, fuzzy
+msgid "Нажмите кнопку, чтобы закончить сеанс."
+msgstr "Start typing ..."
+
+#: ../../../../public/unmanaged/test_start.php:560
+#: ../../../../public/unmanaged/test_start.php:572
+#: ../../../../public/unmanaged/test_start.php:585
+#: ../../../../public/unmanaged/test_start.php:596
+#: ../../../../public/unmanaged/test_start.php:606
+msgid "Сеанс завершен. Спасибо за уделенное время!"
+msgstr "Session is over. Thank you!"
+
+#: ../../../../public/unmanaged/test_start.php:638
+#, fuzzy
+msgid "Нажмите кнопку, чтобы прервать сеанс."
+msgstr "Start typing ..."
+
+#: ../../../../public/unmanaged/test_start.php:641
+msgid ""
+"Задание, которое вы проходите, не найдено в базе данных (только что стерто кем-то?)."
+msgstr ""
+
+#: ../../../../public/unmanaged/test_start.php:642
+msgid "Этот сеанс нельзя досрочно завершить!"
+msgstr ""
+
+#: ../../../../public/unmanaged/_def.php:32
+msgid "О СЕРВЕРЕ"
+msgstr ""
+
+#: ../../../../public/unmanaged/_def.php:33
+msgid "СТАРТОВАЯ"
+msgstr ""
+
+#: ../../../../public/unmanaged/_def.php:35
+msgid "РЕГИСТРАЦИЯ"
+msgstr ""
+
+#: ../../../../public/unmanaged/_def.php:36
+msgid "КУРСЫ"
+msgstr ""
+
+#: ../../../../public/unmanaged/_def.php:37
+msgid "БИБЛИОТЕКА"
+msgstr ""
+
+#: ../../../../public/unmanaged/_def.php:255
+#, fuzzy
+msgid "не могу создать"
+msgstr "You can not remove your own account"
+
+#: ../../../../public/unmanaged/_def.php:255 ../../../../public/unmanaged/_def.php:264
+#, fuzzy
+msgid "проверьте права на файлы"
+msgstr "Check by a teacher"
+
+#: ../../../../public/unmanaged/_def.php:264
+#, fuzzy
+msgid "не могу открыть"
+msgstr "You can not remove your own account"
+
+#: ../../../../public/unmanaged/_def.php:285 ../../../../public/unmanaged/_def.php:287
+#: ../../../../public/unmanaged/_def.php:307
+msgid "день"
+msgstr ""
+
+#: ../../../../public/unmanaged/_def.php:286
+#, fuzzy
+msgid "дн."
+msgstr "min."
+
+#: ../../../../public/unmanaged/_def.php:291 ../../../../public/unmanaged/_def.php:308
+msgid "час"
+msgstr "hour(s)"
+
+#: ../../../../public/unmanaged/_def.php:292
+msgid "ч:"
+msgstr ""
+
+#: ../../../../public/unmanaged/_def.php:296 ../../../../public/unmanaged/_def.php:309
+msgid "минута"
+msgstr ""
+
+#: ../../../../public/unmanaged/_def.php:297
+msgid "м:"
+msgstr ""
+
+#: ../../../../public/unmanaged/_def.php:300 ../../../../public/unmanaged/_def.php:310
+#, fuzzy
+msgid "секунда"
+msgstr "second(s)"
+
+#: ../../../../public/unmanaged/_def.php:301
+#, fuzzy
+msgid "с"
+msgstr "from"
+
+#: ../../../../public/unmanaged/_def.php:307
+msgid "дня"
+msgstr ""
+
+#: ../../../../public/unmanaged/_def.php:307
+msgid "дней"
+msgstr ""
+
+#: ../../../../public/unmanaged/_def.php:308
+msgid "часа"
+msgstr "hour(s)"
+
+#: ../../../../public/unmanaged/_def.php:308
+msgid "часов"
+msgstr "hour(s)"
+
+#: ../../../../public/unmanaged/_def.php:309
+msgid "минуты"
+msgstr ""
+
+#: ../../../../public/unmanaged/_def.php:309
+msgid "минут"
+msgstr ""
+
+#: ../../../../public/unmanaged/_def.php:310 ../../../../public/unmanaged/_def.php:312
+#: ../../../../public/unmanaged/_def.php:314
+#, fuzzy
+msgid "секунды"
+msgstr "second(s)"
+
+#: ../../../../public/unmanaged/_def.php:310 ../../../../public/unmanaged/_def.php:312
+#: ../../../../public/unmanaged/_def.php:314
+msgid "секунд"
+msgstr "second(s)"
+
+#: ../../../../public/unmanaged/_def.php:312
+#, fuzzy
+msgid "секунду"
+msgstr "second(s)"
+
+#: ../../../../public/unmanaged/_def.php:315
+#, fuzzy
+msgid "байта"
+msgstr "Fact"
+
+#: ../../../../public/unmanaged/_def.php:315
+#, fuzzy
+msgid "байт"
+msgstr "Fact"
+
+#: ../../../../public/unmanaged/_def.php:316
+#, fuzzy
+msgid "сообщения"
+msgstr "Messages"
+
+#: ../../../../public/unmanaged/_def.php:316
+#, fuzzy
+msgid "сообщений"
+msgstr "Message(s)"
+
+#: ../../../../public/unmanaged/_def.php:317
+msgid "смайлика"
+msgstr ""
+
+#: ../../../../public/unmanaged/_def.php:317
+#, fuzzy
+msgid "смайликов"
+msgstr "Published"
+
+#: ../../../../public/unmanaged/_def.php:1006 ../../../../public/unmanaged/_def.php:1011
+#, fuzzy
+msgid "Эта ошибка произошла в файле"
+msgstr "Fill-in-the-Blank-in-Phrase"
+
+#: ../../../../public/unmanaged/_def.php:1006 ../../../../public/unmanaged/_def.php:1011
+#, fuzzy
+msgid "на строке"
+msgstr "Settings"
+
+#: ../../../../public/unmanaged/_def.php:1018
+msgid "Детектор ошибок настройки сайта"
+msgstr ""
+
+#: ../../../../public/unmanaged/_def.php:1020
+msgid "Детектор ошибок настройки сайта."
+msgstr ""
+
+#: ../../../../public/unmanaged/_def.php:1022
+msgid "Если вы не администратор сайта, найдите его и попросите исправить"
+msgstr ""
+
+#: ../../../../public/unmanaged/_def.php:1023
+msgid "ошибки. Это сообщение он может найти в лог-файле."
+msgstr ""
+
+#: ../../../../public/unmanaged/_def.php:1039
+msgid ""
+"Нельзя использовать эту функцию, проходя тестирование. Сейчас вы перейдете на страницу "
+"тестирования."
+msgstr ""
+
+#: ../../../../public/unmanaged/_def.php:1074
+msgid ""
+"Нельзя использовать эту функцию, проходя тестирование. Сейчас вы перейдете на страницу "
+"тестирования"
+msgstr ""
+
+#: ../../../../public/unmanaged/_def.php:1172
+#, fuzzy
+msgid "Вернуться назад"
+msgstr "Will be added %d question(s)"
+
+#: ../../../../public/unmanaged/_def.php:1173
+msgid "На главную"
+msgstr "Home"
+
+#: ../../../../public/unmanaged/_def.php:1174
+#, fuzzy
+msgid "Закрыть окно"
+msgstr "Open a question"
+
+#: ../../../../public/unmanaged/_def.php:1206
+#, fuzzy
+msgid "Редактировать"
+msgstr "Edit"
+
+#: ../../../../public/unmanaged/_def.php:1211
+#, fuzzy
+msgid "Заблокировать"
+msgstr "Edit"
+
+#: ../../../../public/unmanaged/_def.php:1216
+#, fuzzy
+msgid "Разблокировать"
+msgstr "Edit"
+
+#: ../../../../public/unmanaged/_def.php:1222
+msgid "Удалить сообщение"
+msgstr "Delete message"
+
+#: ../../../../public/unmanaged/_def.php:1321
+#, fuzzy
+msgid "Импортировать курс"
+msgstr "Course Title"
+
+#: ../../../../public/unmanaged/_def.php:1353
+msgid "Ответить на сообщение"
+msgstr "Answer the  message"
+
+#: ../../../../public/unmanaged/admin/check_db_advanced.php:4
+msgid "Данная функция доступна только с базой данных MySQL"
+msgstr ""
+
+#: ../../../../public/unmanaged/admin/check_db_advanced.php:12
+msgid "Для выполнения данной операции необходим статус администратора"
+msgstr ""
+
+#: ../../../../public/unmanaged/admin/check_db_advanced.php:33
+#, fuzzy
+msgid "Структура БД"
+msgstr "Organization Structure"
+
+#: ../../../../public/unmanaged/admin/check_db_advanced.php:48
+#, fuzzy
+msgid "Структура"
+msgstr "Organization Structure"
+
+#: ../../../../public/unmanaged/admin/check_db_advanced.php:49
+#, fuzzy
+msgid "Отметить все"
+msgstr "Move field up"
+
+#: ../../../../public/unmanaged/admin/check_db_advanced.php:69
+msgid "Таблица"
+msgstr ""
+
+#: ../../../../public/unmanaged/admin/check_db_advanced.php:89
+#: ../../../../public/unmanaged/admin/check_db_advanced.php:374
+#, fuzzy
+msgid "ошибка"
+msgstr "Application Error"
+
+#: ../../../../public/unmanaged/admin/check_db_advanced.php:124
+msgid "Данные"
+msgstr ""
+
+#: ../../../../public/unmanaged/admin/check_db_advanced.php:125
+msgid "Внимание!"
+msgstr "Attention!"
+
+#: ../../../../public/unmanaged/admin/check_db_advanced.php:125
+msgid "Следует быть особо внимательным в случаях, когда 1-е поле таблицы не AUTO_INCREMENT"
+msgstr ""
+
+#: ../../../../public/unmanaged/admin/check_db_advanced.php:274
+#, fuzzy
+msgid "Таблица People успешно обоновлена"
+msgstr "Test has been successfully added!"
+
+#: ../../../../public/unmanaged/admin/check_db_advanced.php:288
+#, fuzzy
+msgid "Файл структуры"
+msgstr "automatic group creation"
+
+#: ../../../../public/unmanaged/admin/check_db_advanced.php:291
+msgid "СУБД работает на Windows-платформе&nbsp;&nbsp;"
+msgstr ""
+
+#: ../../../../public/unmanaged/admin/check_db_advanced.php:379
+msgid "поле"
+msgstr ""
+
+#: ../../../../public/unmanaged/lib/aicc/aicc.class.php:135
+#: ../../../../public/unmanaged/lib/aicc/aicc.class.php:253
+#: ../../../../public/unmanaged/teachers/organization_exp.php:88
+#: ../../../../public/unmanaged/teachers/organization_exp.php:293
+#: ../../../../public/unmanaged/teachers/organization_exp.php:568
+#, fuzzy
+msgid "Обработка файлов курса"
+msgstr "All  course trainees"
+
+#: ../../../../public/unmanaged/lib/aicc/aicc.class.php:402
+#: ../../../../public/unmanaged/teachers/organization_exp.php:78
+#: ../../../../public/unmanaged/teachers/organization_exp.php:274
+#: ../../../../public/unmanaged/teachers/organization_exp.php:556
+#, fuzzy
+msgid "Распаковка архива курса"
+msgstr "All  course trainees"
+
+#: ../../../../public/unmanaged/lib/classes/ActiveDirectory.class.php:154
+#, fuzzy
+msgid "Не найдено ни одного пользователя в Active Directory"
+msgstr "Sorry, none of question is found."
+
+#: ../../../../public/unmanaged/lib/classes/Chain.class.php:246
+#: ../../../../public/unmanaged/lib/classes/Chain.class.php:271
+#, fuzzy
+msgid "начальник"
+msgstr "Course begins"
+
+#: ../../../../public/unmanaged/lib/classes/Chain.class.php:249
+#: ../../../../public/unmanaged/lib/classes/Chain.class.php:274
+#: ../../../../public/unmanaged/lib/classes/Chain.class.php:338
+#: ../../../../public/unmanaged/lib/classes/Chain.class.php:344
+#, fuzzy
+msgid "куратор"
+msgstr "Laboratory"
+
+#: ../../../../public/unmanaged/lib/classes/Chain.class.php:252
+#: ../../../../public/unmanaged/lib/classes/Chain.class.php:277
+#: ../../../../public/unmanaged/lib/classes/Chain.class.php:339
+#: ../../../../public/unmanaged/lib/classes/Chain.class.php:345
+#, fuzzy
+msgid "тьютор"
+msgstr "Training Courses for Teachers"
+
+#: ../../../../public/unmanaged/lib/classes/Chain.class.php:292
+#: ../../../../public/unmanaged/lib/classes/Chain.class.php:301
+msgid "неизвестно"
+msgstr ""
+
+#: ../../../../public/unmanaged/lib/classes/Chain.class.php:373
+#, fuzzy
+msgid "без согласования"
+msgstr "Nameless"
+
+#: ../../../../public/unmanaged/lib/classes/Chain.class.php:383
+#, fuzzy
+msgid "цепочка согласований"
+msgstr "List of tasks"
+
+#: ../../../../public/unmanaged/lib/classes/Chat.class.php:139
+#, fuzzy
+msgid "Сказать"
+msgstr "Open brief report"
+
+#: ../../../../public/unmanaged/lib/classes/CompetenceRole.class.php:225
+msgid "Выберите необходимые компетенции"
+msgstr ""
+
+#: ../../../../public/unmanaged/lib/classes/Connect.class.php:51
+#: ../../../../public/unmanaged/lib/classes/Connect.class.php:72
+msgid "Ответ от сервера Acrobat Connect Pro не был получен"
+msgstr ""
+
+#: ../../../../public/unmanaged/lib/classes/Connect.class.php:56
+msgid "Невозможно залогиниться в Acrobat Connect Pro"
+msgstr ""
+
+#: ../../../../public/unmanaged/lib/classes/Connect.class.php:59
+#, fuzzy
+msgid "Ошибка разбора ответа Acrobat Connect Pro"
+msgstr "Error copying file %s."
+
+#: ../../../../public/unmanaged/lib/classes/Connect.class.php:261
+#: ../../../../public/unmanaged/lib/classes/Connect.class.php:299
+#: ../../../../public/unmanaged/lib/classes/CourseImport.class.php:557
+#: ../../../../public/unmanaged/lib/classes/CourseImport.class.php:560
+#: ../../../../public/unmanaged/lib/classes/CourseImport.class.php:1066
+#: ../../../../public/unmanaged/teachers/organization_exp.php:1164
+msgid "Без названия"
+msgstr "Nameless"
+
+#: ../../../../public/unmanaged/lib/classes/Connect.class.php:370
+#, fuzzy
+msgid "Невозможно назначить занятие пользователю"
+msgstr "Assign role to users"
+
+#: ../../../../public/unmanaged/lib/classes/CourseContent.class.php:1097
+msgid "подключить текущий элемент из дерева ресурсов"
+msgstr ""
+
+#: ../../../../public/unmanaged/lib/classes/CourseContent.class.php:1098
+#, fuzzy
+msgid "добавить новый элемент"
+msgstr "Add a provider"
+
+#: ../../../../public/unmanaged/lib/classes/CourseContent.class.php:1099
+#: ../../../../public/unmanaged/teachers/organization.lib.php:365
+#, fuzzy
+msgid "переместить вверх"
+msgstr "Move field up"
+
+#: ../../../../public/unmanaged/lib/classes/CourseContent.class.php:1100
+#: ../../../../public/unmanaged/teachers/organization.lib.php:364
+#, fuzzy
+msgid "на уровень ниже"
+msgstr "Mark for a lesson"
+
+#: ../../../../public/unmanaged/lib/classes/CourseContent.class.php:1101
+#: ../../../../public/unmanaged/teachers/organization.lib.php:366
+#, fuzzy
+msgid "переместить вниз"
+msgstr "Move field down"
+
+#: ../../../../public/unmanaged/lib/classes/CourseContent.class.php:1102
+#, fuzzy
+msgid "на уровень выше"
+msgstr "Mark for a lesson"
+
+#: ../../../../public/unmanaged/lib/classes/CourseContent.class.php:1103
+#: ../../../../public/unmanaged/template_test/7-v.php:41
+#, fuzzy
+msgid "редактировать"
+msgstr "Edit"
+
+#: ../../../../public/unmanaged/lib/classes/CourseContent.class.php:1468
+#, fuzzy
+msgid "Запустить программу"
+msgstr "It is impossible to run the lesson"
+
+#: ../../../../public/unmanaged/lib/classes/CourseContent.class.php:1498
+#, fuzzy
+msgid "Выполнить задания"
+msgstr "Select a task"
+
+#: ../../../../public/unmanaged/lib/classes/CourseContent.class.php:1526
+#, fuzzy
+msgid "Изучить материал"
+msgstr "Used in the training courses"
+
+#: ../../../../public/unmanaged/lib/classes/CourseContent.class.php:1578
+#, fuzzy
+msgid "Все модули данного курса"
+msgstr "You are not a teacher of this course"
+
+#: ../../../../public/unmanaged/lib/classes/CourseContent.class.php:1578
+#, fuzzy
+msgid "Модули вне структуры"
+msgstr "automatic group creation"
+
+#: ../../../../public/unmanaged/lib/classes/CourseContent.class.php:1659
+#: ../../../../public/unmanaged/lib/classes/CourseContent.class.php:1675
+#, fuzzy
+msgid "Контрольные вопросы"
+msgstr "Questions have been successfully published"
+
+#: ../../../../public/unmanaged/lib/classes/CourseContent.class.php:1664
+#: ../../../../public/unmanaged/lib/classes/CourseContent.class.php:1749
+msgid "Для изучения этого модуля необходимо пройти предыдущие"
+msgstr ""
+
+#: ../../../../public/unmanaged/lib/classes/CourseImport.class.php:63
+#, fuzzy, php-format
+msgid "Нет файла данных курса (%s)"
+msgstr "There is no data file"
+
+#: ../../../../public/unmanaged/lib/classes/CourseImport.class.php:70
+#, fuzzy, php-format
+msgid "Неверный формат файла данных курса (%s)"
+msgstr "All  course trainees"
+
+#: ../../../../public/unmanaged/lib/classes/CourseImport.class.php:295
+#: ../../../../public/unmanaged/lib/classes/CourseImport.class.php:332
+#: ../../../../public/unmanaged/lib/classes/CourseImport.class.php:423
+#: ../../../../public/unmanaged/teachers/organization_exp.php:1196
+msgid "Нет заголовка"
+msgstr "No headline"
+
+#: ../../../../public/unmanaged/lib/classes/CourseImport.class.php:319
+#: ../../../../public/unmanaged/lib/classes/CourseImport.class.php:362
+#: ../../../../public/unmanaged/lib/classes/CourseImport.class.php:393
+#, fuzzy
+msgid "Ошибка при создании оглавления курса"
+msgstr "All  course trainees"
+
+#: ../../../../public/unmanaged/lib/classes/CourseImport.class.php:539
+#: ../../../../public/unmanaged/lib/classes/CourseImport.class.php:605
+#, fuzzy, php-format
+msgid "Ошибка при создании теста (%s)"
+msgstr "There is an error during the module publication"
+
+#: ../../../../public/unmanaged/lib/classes/CourseImport.class.php:674
+#, fuzzy
+msgid "Нет текста"
+msgstr "There is no question text"
+
+#: ../../../../public/unmanaged/lib/classes/CourseImport.class.php:865
+#, php-format
+msgid "Ошибка при создании вопроса \"%s\"<br>(не поддерживается тип вопроса)"
+msgstr ""
+
+#: ../../../../public/unmanaged/lib/classes/CourseImport.class.php:1047
+#, fuzzy, php-format
+msgid "Ошибка при создании вопроса (%s)"
+msgstr "%d questions have been added "
+
+#: ../../../../public/unmanaged/lib/classes/define.inc.php:64
+#, fuzzy
+msgid "все"
+msgstr "total"
+
+#: ../../../../public/unmanaged/lib/classes/define.inc.php:65
+#, fuzzy
+msgid "необходимо выбрать элемент"
+msgstr "It is impossible to open a folder %s"
+
+#: ../../../../public/unmanaged/lib/classes/define.inc.php:84
+#, fuzzy
+msgid "Гость"
+msgstr "Attendance Activity"
+
+#: ../../../../public/unmanaged/lib/classes/define.inc.php:85
+#: ../../../../public/unmanaged/lib/classes/define.inc.php:86
+#, fuzzy
+msgid "Пользователь"
+msgstr "To be appointed"
+
+#: ../../../../public/unmanaged/lib/classes/define.inc.php:87
+msgid "Сотрудник"
+msgstr ""
+
+#: ../../../../public/unmanaged/lib/classes/define.inc.php:88
+#, fuzzy
+msgid "Слушатель"
+msgstr "Trainee"
+
+#: ../../../../public/unmanaged/lib/classes/define.inc.php:89
+msgid "Супервайзер"
+msgstr ""
+
+#: ../../../../public/unmanaged/lib/classes/define.inc.php:90
+#, fuzzy
+msgid "Тьютор"
+msgstr "Training Courses for Teachers"
+
+#: ../../../../public/unmanaged/lib/classes/define.inc.php:91
+#, fuzzy
+msgid "Менеджер по обучению"
+msgstr "Training Providers"
+
+#: ../../../../public/unmanaged/lib/classes/define.inc.php:92
+#, fuzzy
+msgid "Разработчик ресурсов"
+msgstr "Developers"
+
+#: ../../../../public/unmanaged/lib/classes/define.inc.php:93
+#, fuzzy
+msgid "Менеджер базы знаний"
+msgstr "View of  Knowledge Base"
+
+#: ../../../../public/unmanaged/lib/classes/define.inc.php:94
+#, fuzzy
+msgid "Администратор"
+msgstr "Login of Administrator"
+
+#: ../../../../public/unmanaged/lib/classes/Forum.class.php:30
+msgid "Редактирование темы"
+msgstr "Topic Editing"
+
+#: ../../../../public/unmanaged/lib/classes/Forum.class.php:32
+msgid "Создание темы"
+msgstr "Topic Creating"
+
+#: ../../../../public/unmanaged/lib/classes/Forum.class.php:170
+#: ../../../../public/unmanaged/lib/classes/Forum.class.php:179
+#, fuzzy
+msgid "Необходимо ввести текст сообщения"
+msgstr "Required version"
+
+#: ../../../../public/unmanaged/lib/classes/Forum.class.php:212
+#: ../../../../public/unmanaged/lib/classes/Forum.class.php:232
+msgid "Необходимо ввести название темы и текст сообщения"
+msgstr ""
+
+#: ../../../../public/unmanaged/lib/classes/Forum.class.php:259
+#, fuzzy
+msgid "Необходимо ввести название категории"
+msgstr "Not specified room name"
+
+#: ../../../../public/unmanaged/lib/classes/Forum.class.php:267
+#, fuzzy
+msgid "Создание категории"
+msgstr "Topic Creating"
+
+#: ../../../../public/unmanaged/lib/classes/Forum.class.php:297
+#, fuzzy
+msgid "Редактирование категории"
+msgstr "Classroom Properties Editing"
+
+#: ../../../../public/unmanaged/lib/classes/Forum.class.php:560
+#, fuzzy
+msgid "Одногруппники"
+msgstr "My Course Mate"
+
+#: ../../../../public/unmanaged/lib/classes/Forum.class.php:561
+#, fuzzy
+msgid "Однокурсники"
+msgstr "My Course Mate"
+
+#: ../../../../public/unmanaged/lib/classes/Forum.class.php:563
+#, fuzzy
+msgid "Кураторы"
+msgstr "Laboratory"
+
+#: ../../../../public/unmanaged/lib/classes/Forum.class.php:566
+#, fuzzy
+msgid "Все"
+msgstr "Number of questions"
+
+#: ../../../../public/unmanaged/lib/classes/Forum.class.php:573
+#, fuzzy
+msgid "все пользователи"
+msgstr "all of users"
+
+#: ../../../../public/unmanaged/lib/classes/Forum.class.php:576
+#, fuzzy
+msgid "учебная администрация"
+msgstr "Password of Administrator"
+
+#: ../../../../public/unmanaged/lib/classes/Forum.class.php:577
+#, fuzzy
+msgid "конкретый представитель учебной администрации"
+msgstr "Formation of training session"
+
+#: ../../../../public/unmanaged/lib/classes/Forum.class.php:663
+msgid "Все темы"
+msgstr "All topics"
+
+#: ../../../../public/unmanaged/lib/classes/Forum.class.php:1033
+#, fuzzy
+msgid "Тема &quot;"
+msgstr "Topic"
+
+#: ../../../../public/unmanaged/lib/classes/Forum.class.php:1033
+msgid "&quot; была перемещёна.<br>Новый адрес темы: <a href=\""
+msgstr ""
+
+#: ../../../../public/unmanaged/lib/classes/Forum.class.php:1033
+#, fuzzy
+msgid "ссылка"
+msgstr "Link"
+
+#: ../../../../public/unmanaged/lib/classes/Forum.class.php:1065
+#, fuzzy
+msgid "Данная тема уже существует в категории"
+msgstr "You have no permission to delete tests"
+
+#: ../../../../public/unmanaged/lib/classes/Glossary.class.php:115
+#, fuzzy
+msgid "Введите термин и его описание"
+msgstr "Type a part of name or login"
+
+#: ../../../../public/unmanaged/lib/classes/Glossary.class.php:137
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:34
+#, fuzzy, php-format
+msgid "Курс"
+msgstr "Course:"
+
+#: ../../../../public/unmanaged/lib/classes/Model.class.php:232
+#, fuzzy
+msgid "имя не задано"
+msgstr "not defined"
+
+#: ../../../../public/unmanaged/lib/classes/Orgstructure.class.php:232
+#, fuzzy
+msgid "Ничего не найдено"
+msgstr "Nothing is selected"
+
+#: ../../../../public/unmanaged/lib/classes/Poll.class.php:149
+#: ../../../../public/unmanaged/lib/classes/Poll.class.php:195
+#, fuzzy, php-format
+msgid "Опрос для %s"
+msgstr "Task name"
+
+#: ../../../../public/unmanaged/lib/classes/Positions.class.php:42
+#, fuzzy
+msgid "Анализ структуры организации"
+msgstr "Synchronize organization structure"
+
+#: ../../../../public/unmanaged/lib/classes/Positions.class.php:45
+#: ../../../../public/unmanaged/lib/classes/Positions.class.php:162
+#: ../../../../application/settings/actions.php:83
+msgid "Синхронизация структуры организации"
+msgstr "Synchronize organization structure"
+
+#: ../../../../public/unmanaged/lib/classes/Positions.class.php:48
+#: ../../../../public/unmanaged/lib/classes/Track.class.php:680
+#, fuzzy
+msgid "Обработка данных"
+msgstr "There is no data file"
+
+#: ../../../../public/unmanaged/lib/classes/Positions.class.php:114
+#, fuzzy
+msgid "Анализ"
+msgstr "Number of questions recieved"
+
+#: ../../../../public/unmanaged/lib/classes/Positions.class.php:150
+#: ../../../../public/unmanaged/teachers/organization_exp.php:57
+#: ../../../../public/unmanaged/teachers/organization_exp.php:214
+#: ../../../../public/unmanaged/teachers/organization_exp.php:268
+#: ../../../../public/unmanaged/teachers/organization_exp.php:554
+msgid "Инициализация"
+msgstr "Authorization"
+
+#: ../../../../public/unmanaged/lib/classes/Question.class.php:57
+msgid ""
+"Извините, невозможно автоматически сгенерировать ни одного нового номера, т.к. все они "
+"оказываются занятыми!"
+msgstr ""
+
+#: ../../../../public/unmanaged/lib/classes/Roles.class.php:13
+#, fuzzy
+msgid "Главная страница"
+msgstr "Questions per page:"
+
+#: ../../../../public/unmanaged/lib/classes/SoidInfo.class.php:8
+#, fuzzy
+msgid "Организационная единица"
+msgstr "Training Managers"
+
+#: ../../../../public/unmanaged/lib/classes/SoidInfo.class.php:151
+#, fuzzy
+msgid "Нет фотографии"
+msgstr "List of tasks"
+
+#: ../../../../public/unmanaged/lib/classes/State.class.php:275
+#: ../../../../public/unmanaged/lib/classes/State.class.php:278
+#: ../../../../public/unmanaged/lib/classes/State.class.php:318
+#: ../../../../public/unmanaged/lib/classes/State.class.php:321
+#, fuzzy
+msgid "просмотреть анкету"
+msgstr "View the question"
+
+#: ../../../../public/unmanaged/lib/classes/State.class.php:282
+#: ../../../../public/unmanaged/lib/classes/State.class.php:316
+#: ../../../../public/unmanaged/lib/classes/State.class.php:326
+#, fuzzy
+msgid "Вы действительно желаете освободить этого сотрудника от прохождения аттестации?"
+msgstr "Do you really want to to delete question?"
+
+#: ../../../../public/unmanaged/lib/classes/State.class.php:282
+#: ../../../../public/unmanaged/lib/classes/State.class.php:316
+#: ../../../../public/unmanaged/lib/classes/State.class.php:326
+#, fuzzy
+msgid "освободить от аттестации"
+msgstr "Add supplier"
+
+#: ../../../../public/unmanaged/lib/classes/State.class.php:291
+#: ../../../../public/unmanaged/lib/classes/State.class.php:328
+#, fuzzy
+msgid "назначить собеседование"
+msgstr "Assign role to users"
+
+#: ../../../../public/unmanaged/lib/classes/State.class.php:292
+#: ../../../../public/unmanaged/lib/classes/State.class.php:327
+#: ../../../../public/unmanaged/lib/classes/State.class.php:329
+#, fuzzy
+msgid "заполнить анкету"
+msgstr "Select a task"
+
+#: ../../../../public/unmanaged/lib/classes/State.class.php:293
+#: ../../../../public/unmanaged/lib/classes/State.class.php:330
+#, fuzzy
+msgid ""
+"Вы действительно желаете зафиксировать результаты сотрудника в рамках данной аттестации? "
+"Дальнейшее изменение данных будет невозможно."
+msgstr "Are you sure you want to delete derived role? Recovery is impossible!"
+
+#: ../../../../public/unmanaged/lib/classes/State.class.php:293
+#: ../../../../public/unmanaged/lib/classes/State.class.php:330
+#, fuzzy
+msgid "зафиксировать результаты аттестации"
+msgstr "Tasks have been successfully removed"
+
+#: ../../../../public/unmanaged/lib/classes/Track.class.php:212
+#, fuzzy
+msgid "Создание модулей и тестов курса"
+msgstr "Select e-course"
+
+#: ../../../../public/unmanaged/lib/classes/Track.class.php:419
+#, fuzzy
+msgid "Создание расписания"
+msgstr "Task name"
+
+#: ../../../../public/unmanaged/lib/classes/Track.class.php:679
+#, fuzzy
+msgid "Создание оффлайн версии"
+msgstr "Creating of Derived Role"
+
+#: ../../../../public/unmanaged/lib/classes/Track.class.php:823
+#, fuzzy
+msgid "Инициализация структуры"
+msgstr "Authorization"
+
+#: ../../../../public/unmanaged/lib/classes/Track.class.php:869
+#, fuzzy
+msgid "Cоздание структуры"
+msgstr "automatic group creation"
+
+#: ../../../../public/unmanaged/lib/classes/Track.class.php:1796
+#, fuzzy
+msgid "Архивирование оффлайн-версий"
+msgstr "Formation of training session"
+
+#: ../../../../public/unmanaged/lib/classes/Util.class.php:203
+#: ../../../../public/unmanaged/lib/classes/Util.class.php:223
+#, fuzzy
+msgid "Открыть программу курса"
+msgstr "All  course trainees"
+
+#: ../../../../public/unmanaged/lib/library_cms/book.class.php:19
+#: ../../../../public/unmanaged/teachers/organization_exp.php:450
+#, fuzzy
+msgid "Материал"
+msgstr "Training Materials"
+
+#: ../../../../public/unmanaged/lib/library_cms/book.class.php:38
+#, fuzzy
+msgid "без имени"
+msgstr "Create or change"
+
+#: ../../../../public/unmanaged/lib/library_cms/category.class.php:14
+msgid "Все рубрики"
+msgstr ""
+
+#: ../../../../public/unmanaged/lib/library_cms/index.class.php:35
+#, fuzzy
+msgid "Нет файла для индексации"
+msgstr "There is no data file"
+
+#: ../../../../public/unmanaged/lib/library_cms/library.class.php:26
+#, fuzzy
+msgid "Копия: "
+msgstr "End"
+
+#: ../../../../public/unmanaged/lib/library_cms/library.lib.php:7
+#, fuzzy
+msgid "Электронное издание"
+msgstr "Task Editing"
+
+#: ../../../../public/unmanaged/lib/library_cms/library.lib.php:8
+#, fuzzy
+msgid "Печатное издание"
+msgstr "Select a task"
+
+#: ../../../../public/unmanaged/teachers/organization.lib.php:37
+msgid "Длительность (академ. час)"
+msgstr "Duration (in hours)"
+
+#: ../../../../public/unmanaged/teachers/organization.lib.php:39
+msgid "применить"
+msgstr "Apply"
+
+#: ../../../../public/unmanaged/teachers/organization.lib.php:40
+#, fuzzy
+msgid "свернуть"
+msgstr "Turn"
+
+#: ../../../../public/unmanaged/teachers/organization.lib.php:227
+#, fuzzy
+msgid "Перемещать сразу на несколько позиций"
+msgstr "Change course module title"
+
+#: ../../../../public/unmanaged/teachers/organization.lib.php:227
+#, fuzzy
+msgid "позиций"
+msgstr "поиск."
+
+#: ../../../../public/unmanaged/teachers/organization.lib.php:228
+#, fuzzy
+msgid "Перемещать все подэлементы"
+msgstr "All trained"
+
+#: ../../../../public/unmanaged/teachers/organization.lib.php:229
+#, fuzzy
+msgid "Очистить программу курса"
+msgstr "All  course trainees"
+
+#: ../../../../public/unmanaged/teachers/organization.lib.php:246
+#, fuzzy
+msgid "Редактирование содержания курса:"
+msgstr "All  course trainees"
+
+#: ../../../../public/unmanaged/teachers/organization.lib.php:249
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:38
+#, fuzzy, php-format
+msgid "содержание"
+msgstr "Content"
+
+#: ../../../../public/unmanaged/teachers/organization.lib.php:260
+#: ../../../../public/unmanaged/teachers/organization.lib.php:858
+#, fuzzy
+msgid "править"
+msgstr "Edit module properties"
+
+#: ../../../../public/unmanaged/teachers/organization.lib.php:363
+#, fuzzy
+msgid "на уровнь выше"
+msgstr "Mark for a lesson"
+
+#: ../../../../public/unmanaged/teachers/organization.lib.php:367
+#, fuzzy
+msgid "удалить пункт"
+msgstr "Delete All"
+
+#: ../../../../public/unmanaged/teachers/organization.lib.php:579
+msgid "создать блок материалов"
+msgstr "Create a block of materials"
+
+#: ../../../../public/unmanaged/teachers/organization.lib.php:600
+msgid "пустой элемент"
+msgstr "Empty element"
+
+#: ../../../../public/unmanaged/teachers/organization.lib.php:663
+#, fuzzy
+msgid "&lt;пустой элемент&gt;"
+msgstr "Empty item"
+
+#: ../../../../public/unmanaged/teachers/organization.lib.php:790
+#, fuzzy
+msgid "ак.час."
+msgstr "Hour of day"
+
+#: ../../../../public/unmanaged/teachers/organization.lib.php:847
+#: ../../../../public/unmanaged/teachers/organization.lib.php:852
+#, fuzzy
+msgid "добавить"
+msgstr "Add"
+
+#: ../../../../public/unmanaged/teachers/organization.lib.php:847
+#, fuzzy
+msgid "заменить"
+msgstr "Apply"
+
+#: ../../../../public/unmanaged/teachers/organization.lib.php:926
+msgid "Несколько элементов структуры курса были повреждены и не пожлежат восстановлению"
+msgstr ""
+
+#: ../../../../public/unmanaged/teachers/organization.lib.php:931
+msgid ""
+"Отсутствует корневой элемент структуры курсов! Восстановление невозможно, очистить "
+"структуру курса?"
+msgstr ""
+
+#: ../../../../public/unmanaged/teachers/organization_exp.php:71
+#: ../../../../public/unmanaged/teachers/organization_exp.php:283
+msgid "Нет файла данных"
+msgstr "There is no data file"
+
+#: ../../../../public/unmanaged/teachers/organization_exp.php:99
+#: ../../../../public/unmanaged/teachers/organization_exp.php:297
+#, fuzzy
+msgid "Нет файла структуры"
+msgstr "automatic group creation"
+
+#: ../../../../public/unmanaged/teachers/organization_exp.php:130
+msgid "Ошибка копирования"
+msgstr "Error copying file"
+
+#: ../../../../public/unmanaged/teachers/organization_exp.php:146
+#: ../../../../public/unmanaged/teachers/organization_exp.php:329
+#, fuzzy
+msgid "Ошибки в вопросах"
+msgstr "Error text"
+
+#: ../../../../public/unmanaged/teachers/organization_exp.php:146
+#, fuzzy
+msgid "Лог-файл"
+msgstr "Download file"
+
+#: ../../../../public/unmanaged/teachers/organization_exp.php:183
+#: ../../../../public/unmanaged/teachers/organization_exp.php:223
+#: ../../../../public/unmanaged/teachers/organization_exp.php:368
+#: ../../../../public/unmanaged/teachers/organization_exp.php:442
+msgid "Данные успешно загружены"
+msgstr "Data is successfully downloaded"
+
+#: ../../../../public/unmanaged/teachers/organization_exp.php:332
+#, fuzzy
+msgid "Ошибка копирования данных"
+msgstr "Error copying file %s."
+
+#: ../../../../public/unmanaged/teachers/organization_exp.php:411
+#: ../../../../public/unmanaged/teachers/organization_exp.php:458
+#, fuzzy
+msgid "Невозможно разархивировать файлы"
+msgstr "It is impossible to open a folder %s"
+
+#: ../../../../public/unmanaged/teachers/organization_exp.php:583
+#: ../../../../public/unmanaged/teachers/organization_exp.php:585
+msgid "Данные успешно загружены."
+msgstr "Data is successfully downloaded"
+
+#: ../../../../public/unmanaged/teachers/organization_exp.php:1349
+msgid "Нет текста вопроса"
+msgstr "There is no question text"
+
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:17
+msgid "Импорт вопросов из текстового файла"
+msgstr "Import questions from a text file"
+
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:21
+#, fuzzy
+msgid "Импорт вопросов"
+msgstr "Export of questions"
+
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:34
+#, fuzzy, php-format
+msgid "сохранен в файлах:"
+msgstr "Sertificate templates have been saved"
+
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:36
+#, fuzzy, php-format
+msgid "структура"
+msgstr "Organization Structure"
+
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:36
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:38
+#, fuzzy, php-format
+msgid "загрузить"
+msgstr "Download file"
+
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:55
+msgid "Только проверка формата входных данных!"
+msgstr ""
+
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:62
+#, fuzzy
+msgid "Нет файла тестов"
+msgstr "Error copying file %s."
+
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:68
+#, fuzzy
+msgid "Ошибка записи вопросов"
+msgstr "%d questions have been added "
+
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:70
+#, fuzzy
+msgid "Вопросы импортированы успешно"
+msgstr "Questions have been successfully published"
+
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:80
+#, fuzzy
+msgid "Введите файлы для загрузки на курс"
+msgstr "Select e-course"
+
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:81
+msgid "Файл тестов"
+msgstr "Test import"
+
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:85
+#, fuzzy
+msgid "Только проверить"
+msgstr "Confirm"
+
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:89
+msgid "Тема"
+msgstr "Topic"
+
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:102
+msgid "Подготовить дистрибутив курсов специальности"
+msgstr ""
+
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:287
+msgid "Найдено вопросов"
+msgstr "Number of Questions"
+
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:289
+#, fuzzy
+msgid "Ответов в вопросах"
+msgstr "Number of questions recieved"
+
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:312
+#, fuzzy
+msgid "Ошибка импорта тестов"
+msgstr "Error copying file %s."
+
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:385
+#, fuzzy, php-format
+msgid "НАЙДЕНО %s ВОПРОСОВ В ФАЙЛЕ %s<br><br>"
+msgstr "Selection of questions"
+
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:443
+#, fuzzy
+msgid "НАЙДЕНО"
+msgstr "Number of Questions"
+
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:443
+#, fuzzy
+msgid "ВОПРОСОВ В ФАЙЛЕ"
+msgstr "Selection of questions"
+
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:485
+msgid "Тема:"
+msgstr "Topic:"
+
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:489
+#, fuzzy
+msgid "ВОПРОС:"
+msgstr "Question"
+
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:508
+msgid ""
+"Вы ввели слишком длинную тему. Максимальная длина 255 символов. Тема укорочена до этой "
+"границы."
+msgstr ""
+
+#: ../../../../public/unmanaged/teachers/xml_exp_imp.php:578
+#, fuzzy
+msgid "Ошибка в вопросе или ответе под номером"
+msgstr "Time to answer is over"
+
+#: ../../../../public/unmanaged/template_test/1-v.php:26
+#, fuzzy
+msgid "одиночный выбор"
+msgstr "Answer variant"
+
+#: ../../../../public/unmanaged/template_test/1-v.php:27
+msgid ""
+"Вопрос может содержать несколько вариантов ответа, среди которых\n"
+"выбрать можно только один. При редактировании вопроса отметьте\n"
+"правильный вариант галочкой."
+msgstr ""
+
+#: ../../../../public/unmanaged/template_test/1-v.php:34
+#: ../../../../public/unmanaged/template_test/10-v.php:40
+#: ../../../../public/unmanaged/template_test/11-v.php:9
+#: ../../../../public/unmanaged/template_test/12-v.php:37
+#: ../../../../public/unmanaged/template_test/13-v.php:37
+#: ../../../../public/unmanaged/template_test/2-v.php:46
+#: ../../../../public/unmanaged/template_test/2-v_.php:46
+#: ../../../../public/unmanaged/template_test/2-v_old.php:46
+#: ../../../../public/unmanaged/template_test/3-v.php:43
+#: ../../../../public/unmanaged/template_test/4-v.php:31
+#: ../../../../public/unmanaged/template_test/5-v.php:57
+#: ../../../../public/unmanaged/template_test/6-v.php:29
+#: ../../../../public/unmanaged/template_test/7-v.php:39
+#: ../../../../public/unmanaged/template_test/8-v.php:15
+#: ../../../../public/unmanaged/template_test/9-v.php:48
+#: ../../../../public/unmanaged/template_test/leader1-v.php:9
+#: ../../../../public/unmanaged/template_test/leader2-v.php:9
+#: ../../../../public/unmanaged/template_test/leader6-v.php:9
+#, fuzzy
+msgid "Формулировка вопроса"
+msgstr "Text of question:"
+
+#: ../../../../public/unmanaged/template_test/1-v.php:35
+#: ../../../../public/unmanaged/template_test/7-v.php:40
+#: ../../../../public/unmanaged/template_test/8-v.php:16
+#, fuzzy
+msgid "Верный вариант"
+msgstr "Answer variant"
+
+#: ../../../../public/unmanaged/template_test/1-v.php:38
+#: ../../../../public/unmanaged/template_test/2-v.php:49
+#: ../../../../public/unmanaged/template_test/2-v_.php:49
+#: ../../../../public/unmanaged/template_test/2-v_old.php:49
+#: ../../../../public/unmanaged/template_test/7-v.php:45
+#: ../../../../public/unmanaged/template_test/8-v.php:19
+msgid "Правильный вариант"
+msgstr "True variant(s)"
+
+#: ../../../../public/unmanaged/template_test/1-v.php:39
+#: ../../../../public/unmanaged/template_test/2-v.php:50
+#: ../../../../public/unmanaged/template_test/2-v_.php:50
+#: ../../../../public/unmanaged/template_test/2-v_old.php:50
+#: ../../../../public/unmanaged/template_test/7-v.php:46
+#: ../../../../public/unmanaged/template_test/8-v.php:20
+#, fuzzy
+msgid "Вариант ответа"
+msgstr "Answer variant"
+
+#: ../../../../public/unmanaged/template_test/1-v.php:184
+#: ../../../../public/unmanaged/template_test/7-v.php:240
+#: ../../../../public/unmanaged/template_test/8-v.php:156
+#, fuzzy
+msgid "Ответ на вопрос не получен"
+msgstr "Variant hasn't been deleted!"
+
+#: ../../../../public/unmanaged/template_test/1-v.php:185
+#: ../../../../application/settings/infoblocks.php:191
+#, fuzzy
+msgid "Опрос"
+msgstr "Question"
+
+#: ../../../../public/unmanaged/template_test/1-v.php:186
+#, fuzzy, php-format
+msgid "Ответ на вопрос N %s не получен."
+msgstr "Variant hasn't been deleted!"
+
+#: ../../../../public/unmanaged/template_test/1-v.php:188
+#: ../../../../public/unmanaged/template_test/7-v.php:241
+#: ../../../../public/unmanaged/template_test/8-v.php:157
+#, php-format
+msgid "Ответ на вопрос N %s не получен. За этот вопрос зачисляю баллов: %s."
+msgstr "Answer to the question N %s isn't resieved. Answer to the question scores to: %s."
+
+#: ../../../../public/unmanaged/template_test/1-v.php:197
+#: ../../../../public/unmanaged/template_test/1-v.php:198
+msgid "попытка передать неверный код ответа"
+msgstr ""
+
+#: ../../../../public/unmanaged/template_test/1-v.php:199
+#, fuzzy
+msgid "За этот вопрос зачисляю баллов"
+msgstr "Score:"
+
+#: ../../../../public/unmanaged/template_test/1-v.php:207
+#: ../../../../public/unmanaged/template_test/7-v.php:259
+#: ../../../../public/unmanaged/template_test/8-v.php:175
+msgid "Выбран вариант"
+msgstr "Selected variant"
+
+#: ../../../../public/unmanaged/template_test/1-v.php:211
+#: ../../../../public/unmanaged/template_test/12-v.php:182
+#: ../../../../public/unmanaged/template_test/13-v.php:220
+#: ../../../../public/unmanaged/template_test/14-v.php:108
+#: ../../../../public/unmanaged/template_test/14-v.php:126
+#: ../../../../public/unmanaged/template_test/14-v.php:150
+#: ../../../../public/unmanaged/template_test/2-v_.php:190
+#: ../../../../public/unmanaged/template_test/2-v_old.php:190
+#: ../../../../public/unmanaged/template_test/3-v.php:221
+#: ../../../../public/unmanaged/template_test/5-v.php:278
+#: ../../../../public/unmanaged/template_test/7-v.php:263
+#: ../../../../public/unmanaged/template_test/8-v.php:179
+msgid "Правильно"
+msgstr "True"
+
+#: ../../../../public/unmanaged/template_test/1-v.php:217
+#: ../../../../public/unmanaged/template_test/12-v.php:187
+#: ../../../../public/unmanaged/template_test/13-v.php:225
+#: ../../../../public/unmanaged/template_test/14-v.php:114
+#: ../../../../public/unmanaged/template_test/14-v.php:132
+#: ../../../../public/unmanaged/template_test/14-v.php:156
+#: ../../../../public/unmanaged/template_test/2-v_.php:194
+#: ../../../../public/unmanaged/template_test/2-v_old.php:194
+#: ../../../../public/unmanaged/template_test/3-v.php:226
+#: ../../../../public/unmanaged/template_test/5-v.php:286
+#: ../../../../public/unmanaged/template_test/7-v.php:269
+#: ../../../../public/unmanaged/template_test/8-v.php:185
+msgid "Неправильно"
+msgstr "False"
+
+#: ../../../../public/unmanaged/template_test/10-v.php:35
+#, fuzzy
+msgid "тренажер"
+msgstr "Simulator"
+
+#: ../../../../public/unmanaged/template_test/10-v.php:36
+msgid ""
+"Этот тип вопроса предназначен для создания СПЕЦИАЛИЗИРОВАННЫХ тестов, связанных с "
+"запуском внешней программы-тренажера."
+msgstr ""
+
+#: ../../../../public/unmanaged/template_test/10-v.php:43
+#, fuzzy
+msgid "Параметры вызова"
+msgstr "Input parameters"
+
+#: ../../../../public/unmanaged/template_test/10-v.php:58
+#: ../../../../public/unmanaged/template_test/11-v.php:33
+#: ../../../../public/unmanaged/template_test/12-v.php:63
+#: ../../../../public/unmanaged/template_test/13-v.php:64
+#: ../../../../public/unmanaged/template_test/2-v.php:79
+#: ../../../../public/unmanaged/template_test/2-v_.php:79
+#: ../../../../public/unmanaged/template_test/2-v_old.php:79
+#: ../../../../public/unmanaged/template_test/3-v.php:71
+#: ../../../../public/unmanaged/template_test/5-v.php:82
+#: ../../../../public/unmanaged/template_test/9-v.php:70
+#: ../../../../public/unmanaged/template_test/leader1-v.php:35
+#: ../../../../public/unmanaged/template_test/leader2-v.php:35
+#: ../../../../public/unmanaged/template_test/leader6-v.php:35
+#, fuzzy
+msgid "Ошибка структуры данных в вопросе:"
+msgstr "%d questions have been added "
+
+#: ../../../../public/unmanaged/template_test/10-v.php:65
+#: ../../../../public/unmanaged/template_test/9-v.php:77
+#, fuzzy
+msgid "параметр"
+msgstr "Semester"
+
+#: ../../../../public/unmanaged/template_test/10-v.php:243
+#: ../../../../public/unmanaged/template_test/10-v.php:244
+#, fuzzy
+msgid "Задание выполнено"
+msgstr "Select a task"
+
+#: ../../../../public/unmanaged/template_test/11-v.php:4
+#: ../../../../public/unmanaged/template_test/11-v.php:22
+#: ../../../../public/unmanaged/template_test/leader1-v.php:4
+#: ../../../../public/unmanaged/template_test/leader1-v.php:22
+#: ../../../../public/unmanaged/template_test/leader2-v.php:4
+#: ../../../../public/unmanaged/template_test/leader2-v.php:22
+#: ../../../../public/unmanaged/template_test/leader6-v.php:4
+#: ../../../../public/unmanaged/template_test/leader6-v.php:22
+#, fuzzy
+msgid "табличный ввод"
+msgstr "One True Choice"
+
+#: ../../../../public/unmanaged/template_test/11-v.php:5
+#: ../../../../public/unmanaged/template_test/leader1-v.php:5
+#: ../../../../public/unmanaged/template_test/leader2-v.php:5
+#: ../../../../public/unmanaged/template_test/leader6-v.php:5
+msgid ""
+"Вопрос на поиск соответствий столбцов таблицы ее строкам. Каждой строке может "
+"соответствовать только один столбец, при этом один столбец может быть поставлен в "
+"соответствие произвольному числу строк."
+msgstr ""
+
+#: ../../../../public/unmanaged/template_test/11-v.php:12
+#: ../../../../public/unmanaged/template_test/leader1-v.php:12
+#: ../../../../public/unmanaged/template_test/leader2-v.php:12
+#: ../../../../public/unmanaged/template_test/leader6-v.php:12
+#, fuzzy
+msgid "Строки"
+msgstr "Fixing lines"
+
+#: ../../../../public/unmanaged/template_test/11-v.php:13
+#: ../../../../public/unmanaged/template_test/leader1-v.php:13
+#: ../../../../public/unmanaged/template_test/leader2-v.php:13
+#: ../../../../public/unmanaged/template_test/leader6-v.php:13
+#, fuzzy
+msgid "Столбцы"
+msgstr "Became"
+
+#: ../../../../public/unmanaged/template_test/11-v.php:139
+#: ../../../../public/unmanaged/template_test/12-v.php:165
+#: ../../../../public/unmanaged/template_test/13-v.php:193
+#: ../../../../public/unmanaged/template_test/3-v.php:197
+#: ../../../../public/unmanaged/template_test/leader1-v.php:158
+#: ../../../../public/unmanaged/template_test/leader6-v.php:159
+#, fuzzy
+msgid "Не передан ответ на вариант"
+msgstr "several true variant"
+
+#: ../../../../public/unmanaged/template_test/11-v.php:147
+#: ../../../../public/unmanaged/template_test/leader1-v.php:166
+#: ../../../../public/unmanaged/template_test/leader2-v.php:167
+#, fuzzy
+msgid "Недопустимый ответ на вариант"
+msgstr "Time to answer (min.):"
+
+#: ../../../../public/unmanaged/template_test/11-v.php:155
+#: ../../../../public/unmanaged/template_test/13-v.php:218
+#: ../../../../public/unmanaged/template_test/3-v.php:219
+#, fuzzy, php-format
+msgid "К варианту N%s [%s] выбрано [%s]"
+msgstr "elements selected"
+
+#: ../../../../public/unmanaged/template_test/12-v.php:32
+#, fuzzy
+msgid "на упорядочивание"
+msgstr "Mark for a lesson"
+
+#: ../../../../public/unmanaged/template_test/12-v.php:33
+#, fuzzy
+msgid "Вопрос для упорядочивания списка выражений в определённом порядке."
+msgstr "Import classification of training courses from csv"
+
+#: ../../../../public/unmanaged/template_test/12-v.php:40
+#: ../../../../public/unmanaged/template_test/13-v.php:40
+msgid "Выражение"
+msgstr "Terms"
+
+#: ../../../../public/unmanaged/template_test/12-v.php:48
+msgid "Упорядочивание списка выражений"
+msgstr "Term List Ordering"
+
+#: ../../../../public/unmanaged/template_test/12-v.php:166
+#: ../../../../public/unmanaged/template_test/13-v.php:194
+#: ../../../../public/unmanaged/template_test/3-v.php:198
+#, fuzzy
+msgid "Не передан один из вариантов ответа на вопрос"
+msgstr "Appointment of task variants "
+
+#: ../../../../public/unmanaged/template_test/12-v.php:166
+#: ../../../../public/unmanaged/template_test/13-v.php:194
+#: ../../../../public/unmanaged/template_test/3-v.php:198
+#, fuzzy, php-format
+msgid "Зачисляю за весь вопрос %s баллов."
+msgstr "Score:"
+
+#: ../../../../public/unmanaged/template_test/12-v.php:172
+#: ../../../../public/unmanaged/template_test/13-v.php:200
+#: ../../../../public/unmanaged/template_test/3-v.php:204
+#, fuzzy
+msgid "Ничего не выбрано на вариант"
+msgstr "Appointment of task variants "
+
+#: ../../../../public/unmanaged/template_test/12-v.php:173
+#: ../../../../public/unmanaged/template_test/13-v.php:201
+#: ../../../../public/unmanaged/template_test/3-v.php:205
+#, fuzzy
+msgid "Вариант пропущен"
+msgstr "Answer variant"
+
+#: ../../../../public/unmanaged/template_test/12-v.php:180
+#, fuzzy, php-format
+msgid "Варианту N%s [%s] выбран порядок [%s]"
+msgstr "elements selected"
+
+#: ../../../../public/unmanaged/template_test/13-v.php:32
+#, fuzzy
+msgid "на классификацию"
+msgstr "Create a classifier"
+
+#: ../../../../public/unmanaged/template_test/13-v.php:33
+#, fuzzy
+msgid "Вопрос для классификации списка выражений."
+msgstr "Import classification of training courses from csv"
+
+#: ../../../../public/unmanaged/template_test/13-v.php:41
+msgid "Класс"
+msgstr "Classroom"
+
+#: ../../../../public/unmanaged/template_test/13-v.php:49
+#, fuzzy
+msgid "Классификация списка выражений"
+msgstr "Classifiers have been successfully deleted"
+
+#: ../../../../public/unmanaged/template_test/13-v.php:209
+#: ../../../../public/unmanaged/template_test/3-v.php:212
+#, fuzzy
+msgid "Ошибочный вариант"
+msgstr "Answer variant"
+
+#: ../../../../public/unmanaged/template_test/13-v.php:210
+#: ../../../../public/unmanaged/template_test/3-v.php:213
+#, fuzzy
+msgid "Ошибочный вариант ответа на вопрос"
+msgstr "Time to answer is over"
+
+#: ../../../../public/unmanaged/template_test/13-v.php:210
+#: ../../../../public/unmanaged/template_test/3-v.php:213
+#, fuzzy, php-format
+msgid "Зачисляю %s баллов"
+msgstr "Score:"
+
+#: ../../../../public/unmanaged/template_test/14-v.php:4
+#: ../../../../public/unmanaged/template_test/14-v.php:5
+#, fuzzy
+msgid "заполнение пропусков"
+msgstr "Fill-in-the-Blank-in-Phrase"
+
+#: ../../../../public/unmanaged/template_test/14-v.php:107
+#: ../../../../public/unmanaged/template_test/14-v.php:113
+#: ../../../../public/unmanaged/template_test/14-v.php:125
+#: ../../../../public/unmanaged/template_test/14-v.php:131
+#: ../../../../public/unmanaged/template_test/14-v.php:149
+#: ../../../../public/unmanaged/template_test/14-v.php:155
+#: ../../../../public/unmanaged/template_test/5-v.php:277
+#: ../../../../public/unmanaged/template_test/5-v.php:285
+#, fuzzy
+msgid "Введено:"
+msgstr "passed"
+
+#: ../../../../public/unmanaged/template_test/2-v.php:36
+#, fuzzy
+msgid "множественный выбор"
+msgstr "Essay"
+
+#: ../../../../public/unmanaged/template_test/2-v.php:37
+#: ../../../../public/unmanaged/template_test/2-v_.php:37
+#: ../../../../public/unmanaged/template_test/2-v_old.php:37
+msgid ""
+"Вопрос может содержать несколько верных вариантов ответа.\n"
+"Ответ считается правильным только в том случае, если учащийся отметил галочками все\n"
+"верные варианты. Если учащийся не отметит хотя бы один из указанных тьютором\n"
+"вариантов  или отметит не все  верные варианты, то вопрос в целом не заcчитывается, т."
+"е.\n"
+"зачисляется минимальное количество баллов. Если учащийся отмечает галочками только\n"
+"варианты с правильными ответами, то он получает максимальное  количество баллов."
+msgstr ""
+
+#: ../../../../public/unmanaged/template_test/2-v.php:89
+#: ../../../../public/unmanaged/template_test/2-v_.php:89
+#: ../../../../public/unmanaged/template_test/2-v_old.php:89
+msgid ""
+"Ни один ответ не помечен как правильный (это нормальная ситуация). Чтобы ответить на "
+"этот вопрос правильно (и заработать максимальный балл), учащийся во время тестировании "
+"должен снять все галочки (вернее, ни одну не ставить)."
+msgstr ""
+
+#: ../../../../public/unmanaged/template_test/2-v.php:200
+#: ../../../../public/unmanaged/template_test/2-v_.php:188
+#: ../../../../public/unmanaged/template_test/2-v_old.php:188
+#, fuzzy
+msgid "отмечен"
+msgstr "Cancel"
+
+#: ../../../../public/unmanaged/template_test/2-v.php:200
+#: ../../../../public/unmanaged/template_test/2-v_.php:188
+#: ../../../../public/unmanaged/template_test/2-v_old.php:188
+msgid "не отмечен"
+msgstr "not selected"
+
+#: ../../../../public/unmanaged/template_test/2-v.php:200
+#: ../../../../public/unmanaged/template_test/2-v_.php:188
+#: ../../../../public/unmanaged/template_test/2-v_old.php:188
+msgid "вариант"
+msgstr "variant"
+
+#: ../../../../public/unmanaged/template_test/2-v.php:202
+#, fuzzy, php-format
+msgid "Верно %s из %s"
+msgstr "log out"
+
+#: ../../../../public/unmanaged/template_test/2-v.php:206
+#, fuzzy, php-format
+msgid "Неверно %s из %s"
+msgstr "log out"
+
+#: ../../../../public/unmanaged/template_test/2-v_.php:36
+#: ../../../../public/unmanaged/template_test/2-v_old.php:36
+msgid "несколько верных вариантов"
+msgstr "several true variants"
+
+#: ../../../../public/unmanaged/template_test/2-v_old.php:218
+#, fuzzy
+msgid "БАЛЛ"
+msgstr "Score"
+
+#: ../../../../public/unmanaged/template_test/3-v.php:32
+#, fuzzy
+msgid "на соответствие"
+msgstr "Matching"
+
+#: ../../../../public/unmanaged/template_test/3-v.php:33
+msgid ""
+"Вопрос для поиска соответствий между 2-мя списками выражений.\n"
+"Например, можно осуществить поиск соответствий между названиями 5-ти стран \n"
+"и 5-ти столиц. Каждому варианту из одного списка должен соответствовать \n"
+"один и только один вариант из другого списка. Если хоть одно соответствие \n"
+"найдено неправильно или сопоставлены не все выражения, начисляется \n"
+"минимальное количество баллов. Если все соответствия найдены верно, учащийся \n"
+"получает максимальное количество баллов."
+msgstr ""
+
+#: ../../../../public/unmanaged/template_test/3-v.php:46
+msgid "Фраза"
+msgstr "Phrase"
+
+#: ../../../../public/unmanaged/template_test/3-v.php:47
+msgid "Соответствие"
+msgstr "Matching"
+
+#: ../../../../public/unmanaged/template_test/3-v.php:56
+msgid "Заполнение пропусков в фразе"
+msgstr "Fill-in-the-Blank-in-Phrase"
+
+#: ../../../../public/unmanaged/template_test/4-v.php:19
+#, fuzzy
+msgid "с прикрепленным файлом"
+msgstr "with attached file"
+
+#: ../../../../public/unmanaged/template_test/4-v.php:21
+msgid ""
+"Вопрос служит только для возможности скачать учащимся присоединенного\n"
+"файла или ознакомиться с текстом вопроса. Данный вопрос никак не \n"
+"оценивается, зачисляется 0 баллов и 100% правильности. Вопрос полезен,\n"
+"если нужно создать ознакомительный вопрос, на который не требуется\n"
+"отвечать учащемуся."
+msgstr ""
+
+#: ../../../../public/unmanaged/template_test/4-v.php:44
+msgid ""
+"Правильных ответов в таком типе вопросов не бывает, т.к. вопрос не содержит возможность "
+"ввода ответа, а служит только для показа текста вопроса или прикрепленного файла(ов)."
+msgstr ""
+
+#: ../../../../public/unmanaged/template_test/5-v.php:37
+#, fuzzy
+msgid "заполнение формы"
+msgstr "Formula Creating"
+
+#: ../../../../public/unmanaged/template_test/5-v.php:38
+msgid ""
+"Составьте какой-либо текст с одним или несколькими  пропущенными словами,\n"
+"значениями или диапазонами значений.\n"
+"Эти пропущенные слова и должны будут ввести учащиеся. Сначала введите\n"
+"параметры 'основной вопрос' и 'начальный текст', затем -  любое количество\n"
+"параметров 'пропущенное слово' и 'последующий текст'. Чтобы закодировать\n"
+"фразу 'Каждый _____ желает знать, где ______ фазан', нужно вписать слова\n"
+"до первого пропуска ('Каждый') в поле 'начальный текст', далее слово 'охотник'\n"
+"в первую строку колонки 'пропущенное слово' и затем последующий текст\n"
+"('желает знать, где') в поле 'последующий текст' первой строки вариантов. Слова\n"
+"('сидит' и 'фазан.')нужно ввести аналогичным образом во вторую строку. Если\n"
+"учащийся введет все пропущенные слова верно, то начисляется максимальное\n"
+"количество баллов, иначе минимальное баллов. Если ответ частично верен, то\n"
+"начисляется часть от максимального балла.\n"
+"Слова можно вводить в любом регистре, пробелы по краям слов не обрабатываются.\n"
+"Для савнения значений как чисел, заключите значения в квадратные скобки - [5.0].\n"
+"Для указания диапазона укажите границы через двоеточие [1.1:7.77]"
+msgstr ""
+
+#: ../../../../public/unmanaged/template_test/5-v.php:58
+msgid "Начало&nbsp;фразы"
+msgstr "Beginning of Phrase"
+
+#: ../../../../public/unmanaged/template_test/5-v.php:61
+#: ../../../../public/unmanaged/template_test/9-v.php:52
+msgid "Вариант заполнения пропуска (через \";\")"
+msgstr "Variants to fill in (separate with  \";\")"
+
+#: ../../../../public/unmanaged/template_test/5-v.php:62
+msgid "Последующий текст"
+msgstr "Further text"
+
+#: ../../../../public/unmanaged/template_test/5-v.php:89
+msgid "слово"
+msgstr "word"
+
+#: ../../../../public/unmanaged/template_test/6-v.php:19
+#: ../../../../public/unmanaged/template_test/leader6-v.php:61
+#, fuzzy
+msgid "свободный ответ"
+msgstr "Essay"
+
+#: ../../../../public/unmanaged/template_test/6-v.php:20
+msgid ""
+"Данный тип вопроса требует проверки ответов непосредственно тьютором.\n"
+"В поле 'вопрос' введите формулировку вопроса. Учащийся сможет разместить свой ответ  в \n"
+"большом текстовом поле, либо в прикрепленном файле, либо использовать оба этих "
+"варианта.\n"
+"Далее  ответ в виде текста и файла попадает в список вопросов, отложеннных для "
+"проверки.\n"
+"Рассматривая ответы, тьютор сам оценивает правильность каждого из них."
+msgstr ""
+
+#: ../../../../public/unmanaged/template_test/6-v.php:42
+msgid ""
+"Правильных ответов в таком вопросе не бывает, т.к. этот вопрос с ручной обработкой "
+"ответов. Правильность ответов и прикрепленных файлов проверяют тьюторы курса."
+msgstr ""
+
+#: ../../../../public/unmanaged/template_test/6-v.php:133
+msgid "Нельзя загружать файлы более 2Мб."
+msgstr ""
+
+#: ../../../../public/unmanaged/template_test/6-v.php:139
+#, fuzzy
+msgid "не могу удалить"
+msgstr "You can not remove your own account"
+
+#: ../../../../public/unmanaged/template_test/6-v.php:206
+#, fuzzy, php-format
+msgid "Приложен файл %s байт, имя: %s; "
+msgstr "Start typing ..."
+
+#: ../../../../public/unmanaged/template_test/6-v.php:212
+#, fuzzy, php-format
+msgid "приложен текст %s байт"
+msgstr "Start typing ..."
+
+#: ../../../../public/unmanaged/template_test/6-v.php:217
+#, php-format
+msgid "Ни текста, ни аттач-файла не было передано, начисляю %s баллов."
+msgstr ""
+
+#: ../../../../public/unmanaged/template_test/7-v.php:29
+#, fuzzy
+msgid "выбор по карте на картинке"
+msgstr "Editing of image  map"
+
+#: ../../../../public/unmanaged/template_test/7-v.php:30
+msgid ""
+"Вопрос содержит несколько вариантов ответа, среди которых\n"
+"выбрать можно только один. К вопросу обязательно должна прилагаться картинка\n"
+"для выбора нужного варианта ответа на ней. При редактировании вопроса отметьте\n"
+"правильный вариант галочкой, загрузите картинку для вопросу и задайте\n"
+"карту - координатные области на картинке, относящиеся к каждому из вариантов ответа."
+msgstr ""
+
+#: ../../../../public/unmanaged/template_test/7-v.php:41
+msgid "Карта: список координат для областей ответа"
+msgstr "Map: list of coordinates for answer areas"
+
+#: ../../../../public/unmanaged/template_test/7-v.php:42
+msgid "Показывать варианты ответа (иначе только картинку)"
+msgstr "Display variants of answer (otherwise only pictures)"
+
+#: ../../../../public/unmanaged/template_test/7-v.php:249
+#: ../../../../public/unmanaged/template_test/8-v.php:165
+msgid "попытка передать неверный код ответа."
+msgstr ""
+
+#: ../../../../public/unmanaged/template_test/7-v.php:250
+#: ../../../../public/unmanaged/template_test/8-v.php:166
+msgid "попытка передать неверный код ответа:"
+msgstr ""
+
+#: ../../../../public/unmanaged/template_test/7-v.php:251
+#: ../../../../public/unmanaged/template_test/8-v.php:167
+#, fuzzy
+msgid "За этот вопрос зачисляю баллов:"
+msgstr "Score:"
+
+#: ../../../../public/unmanaged/template_test/8-v.php:7
+msgid "выбор из набора картинок"
+msgstr ""
+
+#: ../../../../public/unmanaged/template_test/8-v.php:8
+msgid ""
+"Вопрос может содержать несколько вариантов ответа, среди которых\n"
+"выбрать можно только один. При редактировании вопроса отметьте\n"
+"правильный вариант галочкой. Обязательно "
+msgstr ""
+
+#: ../../../../public/unmanaged/template_test/9-v.php:37
+#, fuzzy
+msgid "внешний объект"
+msgstr "External Supplier"
+
+#: ../../../../public/unmanaged/template_test/9-v.php:38
+msgid ""
+"Этот тип вопроса предназначен для создания СПЕЦИАЛИЗИРОВАННЫХ тестов. Для этого сам "
+"тест\n"
+"   можно оформить, к примеру, как FLASH объект, который работает как черный ящик для "
+"eLearning Server.\n"
+"   В этом случае FLASH объект передает набор параметров - результатов тестирования, а "
+"eLearning Server\n"
+"   их принимает, обрабатывает и записывает в БД. Для корректной работы имена параметров, "
+"передаваемых\n"
+"   из ОБЪЕКТА должны соответсвовать полям в правой колонке ввода (при формировании "
+"вопроса).\n"
+"   Значения переданных параметров будут проверяться по шаблонам в левой колонке ввода.\n"
+msgstr ""
+
+#: ../../../../public/unmanaged/template_test/9-v.php:49
+msgid "Подпись"
+msgstr "Signature"
+
+#: ../../../../public/unmanaged/template_test/9-v.php:53
+msgid "Имя параметра"
+msgstr "Parameter name"
+
+#: ../../../../public/unmanaged/template_test/leader1-v.php:174
+#: ../../../../public/unmanaged/template_test/leader2-v.php:179
+#: ../../../../public/unmanaged/template_test/leader6-v.php:167
+#, fuzzy, php-format
+msgid "По слушателю %s выбран вариант %s"
+msgstr "Set task variants every trainees personally"
+
+#: ../../../../application/settings/actions.php:87
+#: ../../../../application/settings/actions.php:85
+msgid "Домой"
+msgstr ""
+
+#: ../../../../application/settings/actions.php:92
+#, fuzzy
+msgid "Все учетные записи"
+msgstr "Answer the  message"
+
+#: ../../../../application/settings/actions.php:93
+msgid "Создать учетную запись"
+msgstr "Create an account"
+
+#: ../../../../application/settings/actions.php:94
+msgid "Сгенерировать учетные записи "
+msgstr "Generate accounts"
+
+#: ../../../../application/settings/actions.php:95
+#: ../../../../application/settings/actions.php:163
+msgid "Импортировать учетные записи из CSV"
+msgstr "Import accounts from CSV"
+
+#: ../../../../application/settings/actions.php:96
+#, fuzzy
+msgid "Импортировать учетные записи из Active Directory"
+msgstr "Import accounts from CSV"
+
+#: ../../../../application/settings/actions.php:97
+#, fuzzy
+msgid "Импортировать учетные записи из SAP"
+msgstr "Import accounts from CSV"
+
+#: ../../../../application/settings/actions.php:101
+msgid "Методисты"
+msgstr ""
+
+#: ../../../../application/settings/actions.php:102
+#, fuzzy
+msgid "Диспетчеры расписания"
+msgstr "Task name"
+
+#: ../../../../application/settings/actions.php:103
+msgid "Супервайзеры"
+msgstr ""
+
+#: ../../../../application/settings/actions.php:104
+#, fuzzy
+msgid "Менеджеры по обучению"
+msgstr "Training Providers"
+
+#: ../../../../application/settings/actions.php:105
+#, fuzzy
+msgid "Администраторы"
+msgstr "Login of Administrator"
+
+#: ../../../../application/settings/actions.php:110
+#: ../../../../application/settings/actions.php:111
+#, fuzzy
+msgid "Информационные блоки"
+msgstr "Additional information"
+
+#: ../../../../application/settings/actions.php:112
+#, fuzzy
+msgid "Информационные страницы"
+msgstr "Select page versions"
+
+#: ../../../../application/settings/actions.php:113
+#, fuzzy
+msgid "Создать страницу"
+msgstr "Create a position"
+
+#: ../../../../application/settings/actions.php:117
+#, fuzzy
+msgid "Главная страница Портала"
+msgstr "Questions per page:"
+
+#: ../../../../application/settings/actions.php:118
+msgid "Сервисы информационного взаимодействия Портала"
+msgstr "Activities"
+
+#: ../../../../application/settings/actions.php:123
+#, fuzzy
+msgid "Учебные курсы"
+msgstr "Course Programs"
+
+#: ../../../../application/settings/actions.php:124
+msgid "Создать учебный курс"
+msgstr "Create a training course"
+
+#: ../../../../application/settings/actions.php:125
+msgid "Импортировать классификацию из csv"
+msgstr "Import classification from CSV"
+
+#: ../../../../application/settings/actions.php:127
+#, fuzzy
+msgid "Учебные сессии"
+msgstr "Course Programs"
+
+#: ../../../../application/settings/actions.php:128
+msgid "Мои курсы"
+msgstr "My Courses"
+
+#: ../../../../application/settings/actions.php:129
+msgid "Учебные программы"
+msgstr "Course Programs"
+
+#: ../../../../application/settings/actions.php:130
+#, fuzzy
+msgid "Создать программу"
+msgstr "It is impossible to run the lesson"
+
+#: ../../../../application/settings/actions.php:135
+#, fuzzy
+msgid "Общее расписание"
+msgstr "Task name"
+
+#: ../../../../application/settings/actions.php:136
+msgid "Места проведения обучения"
+msgstr "Lesson Places"
+
+#: ../../../../application/settings/actions.php:137
+#, fuzzy
+msgid "Провайдеры обучения"
+msgstr "Traineds"
+
+#: ../../../../application/settings/actions.php:138
+#, fuzzy
+msgid "Добавить провайдера"
+msgstr "Add a variant"
+
+#: ../../../../application/settings/actions.php:142
+#: ../../../../application/settings/infoblocks.php:135
+msgid "Сбор обратной связи"
+msgstr "Getting Feedback"
+
+#: ../../../../application/settings/actions.php:145
+#: ../../../../application/settings/actions.php:121
+#: ../../../../application/settings/infoblocks.php:8
+msgid "Обучение"
+msgstr "Training"
+
+#: ../../../../application/settings/actions.php:148
+#, fuzzy
+msgid "Мероприятия"
+msgstr "Lesson type"
+
+#: ../../../../application/settings/actions.php:154
+#: ../../../../application/settings/actions.php:168
+msgid "Заявки на обучение"
+msgstr "Requests"
+
+#: ../../../../application/settings/actions.php:155
+msgid "Прошедшие обучения"
+msgstr "Traineds"
+
+#: ../../../../application/settings/actions.php:161
+#, fuzzy
+msgid "Учебные группы"
+msgstr "Training Materials"
+
+#: ../../../../application/settings/actions.php:162
+#, fuzzy
+msgid "Создать учебную группу"
+msgstr "Create an account"
+
+#: ../../../../application/settings/actions.php:170
+#, fuzzy
+msgid "Мои заявки"
+msgstr "Requests"
+
+#: ../../../../application/settings/actions.php:173
+#: ../../../../application/settings/infoblocks.php:37
+msgid "Каталог учебных курсов"
+msgstr "Training Course Catalog"
+
+#: ../../../../application/settings/actions.php:174
+#: ../../../../application/settings/infoblocks.php:55
+msgid "Календарь учебных сессий"
+msgstr "Calendar of Training Session"
+
+#: ../../../../application/settings/actions.php:179
+#, fuzzy
+msgid "Сводные отчеты"
+msgstr "Essay"
+
+#: ../../../../application/settings/actions.php:180
+#, fuzzy
+msgid "Банк отчетов"
+msgstr "Report Template"
+
+#: ../../../../application/settings/actions.php:183
+msgid "Приказы"
+msgstr ""
+
+#: ../../../../application/settings/actions.php:184
+#, fuzzy
+msgid "Сертификаты"
+msgstr "Create a classifier"
+
+#: ../../../../application/settings/actions.php:188
+#: ../../../../application/settings/actions.php:187
+#, fuzzy
+msgid "Оргструктура"
+msgstr "Organization Structure"
+
+#: ../../../../application/settings/actions.php:189
+msgid "Создать подразделение"
+msgstr "Create an element of structure"
+
+#: ../../../../application/settings/actions.php:190
+msgid "Создать штатную единицу"
+msgstr "Create a position"
+
+#: ../../../../application/settings/actions.php:191
+#, fuzzy
+msgid "Импортировать структуру организации"
+msgstr "Synchronize organization structure"
+
+#: ../../../../application/settings/actions.php:192
+#, fuzzy
+msgid "Восстановить структуру"
+msgstr "automatic group creation"
+
+#: ../../../../application/settings/actions.php:197
+#: ../../../../application/settings/actions.php:195
+#, fuzzy
+msgid "База знаний"
+msgstr "Knowledge Base Search"
+
+#: ../../../../application/settings/actions.php:200
+#: ../../../../application/settings/context.php:340
+#, fuzzy
+msgid "Информационные ресурсы"
+msgstr "Resourse Editing"
+
+#: ../../../../application/settings/actions.php:202
+#, fuzzy
+msgid "Импортировать информационные ресурсы"
+msgstr "Course Title"
+
+#: ../../../../application/settings/actions.php:204
+#: ../../../../application/settings/context.php:389
+#: ../../../../application/settings/context.php:402
+#: ../../../../application/settings/context.php:410
+#, fuzzy
+msgid "Учебные модули"
+msgstr "Course Programs"
+
+#: ../../../../application/settings/actions.php:205
+#: ../../../../application/settings/actions.php:232
+#, fuzzy
+msgid "Создать учебный модуль"
+msgstr "Create a training course"
+
+#: ../../../../application/settings/actions.php:209
+#: ../../../../application/settings/context.php:716
+msgid "Тесты"
+msgstr ""
+
+#: ../../../../application/settings/actions.php:212
+#: ../../../../application/settings/actions.php:218
+#: ../../../../application/settings/context.php:796
+#: ../../../../application/settings/context.php:809
+#: ../../../../application/settings/context.php:820
+#: ../../../../application/settings/context.php:831
+#: ../../../../application/settings/context.php:842
+#: ../../../../application/settings/context.php:853
+#: ../../../../application/settings/context.php:864
+#: ../../../../application/settings/context.php:1304
+#, fuzzy
+msgid "Опросы"
+msgstr "Question"
+
+#: ../../../../application/settings/actions.php:215
+#, fuzzy
+msgid "Упражнения"
+msgstr "Date of Birth"
+
+#: ../../../../application/settings/actions.php:221
+#: ../../../../application/settings/context.php:727
+#: ../../../../application/settings/context.php:738
+#: ../../../../application/settings/context.php:749
+#: ../../../../application/settings/context.php:760
+#: ../../../../application/settings/context.php:771
+#: ../../../../application/settings/context.php:782
+#, fuzzy
+msgid "Задания"
+msgstr "Task:"
+
+#: ../../../../application/settings/actions.php:226
+#, fuzzy
+msgid "Ресурсы на основе сервисов взаимодействия"
+msgstr "Activities"
+
+#: ../../../../application/settings/actions.php:231
+msgid "Учебные модули в разработке"
+msgstr "Modules in Development"
+
+#: ../../../../application/settings/actions.php:234
+msgid "Архив учебных модулей"
+msgstr "Modules Archive"
+
+#: ../../../../application/settings/actions.php:235
+#, fuzzy
+msgid "Создать электронный курс"
+msgstr "Create a training course"
+
+#: ../../../../application/settings/actions.php:239
+msgid "Поставщики"
+msgstr "External Suppliers"
+
+#: ../../../../application/settings/actions.php:240
+#, fuzzy
+msgid "Добавить поставщика"
+msgstr "Add a variant"
+
+#: ../../../../application/settings/actions.php:246
+#: ../../../../application/settings/actions.php:244
+msgid "Отчёты"
+msgstr "Reports"
+
+#: ../../../../application/settings/actions.php:247
+msgid "Архив отчетов"
+msgstr "Reports Archive"
+
+#: ../../../../application/settings/actions.php:250
+msgid "Конструктор отчетных форм"
+msgstr "Reports Form Constructor"
+
+#: ../../../../application/settings/actions.php:253
+#, fuzzy
+msgid "Шаблон отчетов"
+msgstr "Report Template"
+
+#: ../../../../application/settings/actions.php:258
+msgid "Параметры системы"
+msgstr "System Parameters"
+
+#: ../../../../application/settings/actions.php:259
+#, fuzzy
+msgid "Регистрационные требования"
+msgstr "Results of Testing"
+
+#: ../../../../application/settings/actions.php:260
+msgid "Парольная политика"
+msgstr "Password Policy"
+
+#: ../../../../application/settings/actions.php:263
+msgid "Шаблоны cистемных сообщений"
+msgstr "Templates of System Messages"
+
+#: ../../../../application/settings/actions.php:266
+msgid "Выходные и праздничные дни"
+msgstr ""
+
+#: ../../../../application/settings/actions.php:267
+#, fuzzy
+msgid "Создать выходной день"
+msgstr "Editing of lesson place"
+
+#: ../../../../application/settings/actions.php:268
+#, fuzzy
+msgid "Создать периодические выходные дни недели"
+msgstr "Create an element of structure"
+
+#: ../../../../application/settings/actions.php:272
+#, fuzzy
+msgid "Типы занятий"
+msgstr "Lesson type"
+
+#: ../../../../application/settings/actions.php:273
+#, fuzzy
+msgid "Создать тип занятия"
+msgstr "Lesson type"
+
+#: ../../../../application/settings/actions.php:277
+#: ../../../../application/settings/context.php:696
+#, fuzzy
+msgid "Формулы"
+msgstr "Formula"
+
+#: ../../../../application/settings/actions.php:278
+#, fuzzy
+msgid "Шкалы оценивания"
+msgstr "0 - no limit"
+
+#: ../../../../application/settings/actions.php:279
+#, fuzzy
+msgid "Создать шкалу оценивания"
+msgstr "Create a position"
+
+#: ../../../../application/settings/actions.php:283
+#, fuzzy
+msgid "Шаблон приказов"
+msgstr "Templates of Orders"
+
+#: ../../../../application/settings/actions.php:284
+#, fuzzy
+msgid "Шаблон сертификатов"
+msgstr "Templates of Orders"
+
+#: ../../../../application/settings/actions.php:287
+#, fuzzy
+msgid "Классификаторы"
+msgstr "Create a classifier"
+
+#: ../../../../application/settings/actions.php:288
+#, fuzzy
+msgid "Создать классификатор"
+msgstr "Create a classifier"
+
+#: ../../../../application/settings/actions.php:292
+#, fuzzy
+msgid "Установка обновлений"
+msgstr "Installed version"
+
+#: ../../../../application/settings/actions.php:293
+#, fuzzy
+msgid "Установить обновление"
+msgstr "It is impossible to set rights for folder %s"
+
+#: ../../../../application/settings/actions.php:298
+#: ../../../../application/settings/actions.php:297
+msgid "Сервисы"
+msgstr ""
+
+#: ../../../../application/settings/actions.php:256
+#, fuzzy
+msgid "Настройки"
+msgstr "Settings"
+
+#: ../../../../application/settings/actions.php:251
+msgid "Создать отчетную форму"
+msgstr "Create a report form"
+
+#: ../../../../application/settings/actions.php:229
+#, fuzzy
+msgid "Разработка учебных модулей"
+msgstr "Modules Archive"
+
+#: ../../../../application/settings/actions.php:222
+#, fuzzy
+msgid "Создать задание"
+msgstr "Select a task"
+
+#: ../../../../application/settings/actions.php:219
+#: ../../../../application/settings/actions.php:213
+#, fuzzy
+msgid "Создать опрос"
+msgstr "Delete questions"
+
+#: ../../../../application/settings/actions.php:216
+#, fuzzy
+msgid "Создать упражнение"
+msgstr "Create an element of structure"
+
+#: ../../../../application/settings/actions.php:210
+#, fuzzy
+msgid "Создать тест"
+msgstr "Create a topic"
+
+#: ../../../../application/settings/actions.php:201
+#, fuzzy
+msgid "Создать информационный ресурс"
+msgstr "Create a training course"
+
+#: ../../../../application/settings/actions.php:177
+#, fuzzy
+msgid "Документы"
+msgstr "Excel document"
+
+#: ../../../../application/settings/actions.php:151
+#, fuzzy
+msgid "Пользователи"
+msgstr "To be appointed"
+
+#: ../../../../application/settings/actions.php:108
+msgid "Портал"
+msgstr "Portal"
+
+#: ../../../../application/settings/actions.php:90
+msgid "Администрирование"
+msgstr "Administration"
+
+#: ../../../../application/settings/actions.php:84
+msgid "Уведомление по Email об отсутствиях на занятиях"
+msgstr "Lessons absence notification by E-mail"
+
+#: ../../../../application/settings/actions.php:82
+msgid "интеграция с sis"
+msgstr "integration with sis"
+
+#: ../../../../application/settings/actions.php:81
+msgid "интеграция с cms"
+msgstr "integration with cms"
+
+#: ../../../../application/settings/actions.php:80
+#, fuzzy
+msgid "интеграция с at"
+msgstr "integration with cms"
+
+#: ../../../../application/settings/actions.php:79
+msgid "connect pro"
+msgstr "Connect Pro"
+
+#: ../../../../application/settings/actions.php:78
+msgid "вебинар"
+msgstr "Webinar"
+
+#: ../../../../application/settings/actions.php:77
+msgid "болонская система"
+msgstr "Bologna system"
+
+#: ../../../../application/settings/context.php:9
+#: ../../../../application/settings/context.php:351
+#: ../../../../application/settings/context.php:1044
+msgid "Просмотр"
+msgstr "View"
+
+#: ../../../../application/settings/context.php:29
+msgid "Импорт"
+msgstr "Import of Module"
+
+#: ../../../../application/settings/context.php:40
+#, fuzzy
+msgid "Конструктор"
+msgstr "Organization Structure"
+
+#: ../../../../application/settings/context.php:51
+#: ../../../../application/settings/context.php:418
+msgid "Создание учебного модуля"
+msgstr "Module Creating"
+
+#: ../../../../application/settings/context.php:62
+#: ../../../../application/settings/context.php:429
+msgid "Редактирование учебного модуля"
+msgstr "Module Properties Editing"
+
+#: ../../../../application/settings/context.php:73
+#: ../../../../application/settings/context.php:440
+msgid "Редактирование содержания учебного модуля"
+msgstr "Content Editing"
+
+#: ../../../../application/settings/context.php:84
+#: ../../../../application/settings/context.php:451
+#, fuzzy
+msgid "Создать раздел"
+msgstr "Create an element of structure"
+
+#: ../../../../application/settings/context.php:95
+#: ../../../../application/settings/context.php:462
+msgid "Редактировать раздел"
+msgstr "Section Editing"
+
+#: ../../../../application/settings/context.php:106
+#: ../../../../application/settings/context.php:473
+#, fuzzy
+msgid "Создать ресурс"
+msgstr "Create a topic"
+
+#: ../../../../application/settings/context.php:117
+#: ../../../../application/settings/context.php:484
+#, fuzzy
+msgid "Подключить раздел"
+msgstr "Section Editing"
+
+#: ../../../../application/settings/context.php:128
+#: ../../../../application/settings/context.php:495
+#, fuzzy
+msgid "Подключить ресурс"
+msgstr "Resource Viewing"
+
+#: ../../../../application/settings/context.php:139
+#: ../../../../application/settings/context.php:506
+msgid "Просмотр ресурса"
+msgstr "Resource Viewing"
+
+#: ../../../../application/settings/context.php:152
+msgid "Календарный план"
+msgstr "Calendar"
+
+#: ../../../../application/settings/context.php:170
+#: ../../../../application/settings/context.php:1055
+#: ../../../../application/settings/context.php:1283
+#: ../../../../application/settings/context.php:1336
+msgid "Редактирование свойств"
+msgstr "Properties Editing"
+
+#: ../../../../application/settings/context.php:191
+#: ../../../../application/settings/infoblocks.php:83
+#, fuzzy
+msgid "Заявки"
+msgstr "Requests"
+
+#: ../../../../application/settings/context.php:224
+#: ../../../../application/settings/context.php:267
+#, fuzzy
+msgid "Прошедшие обучение"
+msgstr "Traineds"
+
+#: ../../../../application/settings/context.php:286
+#: ../../../../application/settings/context.php:298
+#, fuzzy
+msgid "Группы"
+msgstr "Group"
+
+#: ../../../../application/settings/context.php:308
+#: ../../../../application/settings/context.php:320
+#, fuzzy
+msgid "Подгруппы"
+msgstr "Subgroups"
+
+#: ../../../../application/settings/context.php:363
+msgid "Редактирование"
+msgstr "Editing"
+
+#: ../../../../application/settings/context.php:375
+#: ../../../../application/settings/context.php:517
+#, fuzzy
+msgid "Все материалы"
+msgstr "Training Materials"
+
+#: ../../../../application/settings/context.php:538
+#, fuzzy
+msgid "Статистика изучения материалов"
+msgstr "Statistics of testings"
+
+#: ../../../../application/settings/context.php:560
+#: ../../../../application/settings/context.php:627
+#: ../../../../application/settings/context.php:638
+#: ../../../../application/settings/context.php:651
+msgid "План"
+msgstr ""
+
+#: ../../../../application/settings/context.php:572
+#: ../../../../application/settings/context.php:583
+#: ../../../../application/settings/context.php:594
+#: ../../../../application/settings/context.php:605
+#: ../../../../application/settings/context.php:616
+#, fuzzy
+msgid "Подробная статистика"
+msgstr "Detailed statistics"
+
+#: ../../../../application/settings/context.php:663
+#, fuzzy
+msgid "Результаты"
+msgstr "Result:"
+
+#: ../../../../application/settings/context.php:675
+msgid "Ведомость успеваемости"
+msgstr "Academic Progress"
+
+#: ../../../../application/settings/context.php:888
+#, fuzzy
+msgid "Материалы вебинаров"
+msgstr "Adress of webinar publication point"
+
+#: ../../../../application/settings/context.php:908
+#: ../../../../application/settings/infoblocks.php:169
+#, fuzzy
+msgid "Новости"
+msgstr "all news"
+
+#: ../../../../application/settings/context.php:922
+msgid "Форум"
+msgstr ""
+
+#: ../../../../application/settings/context.php:935
+msgid "Блог"
+msgstr ""
+
+#: ../../../../application/settings/context.php:948
+msgid "Wiki"
+msgstr ""
+
+#: ../../../../application/settings/context.php:961
+#, fuzzy
+msgid "Чат"
+msgstr "Fact"
+
+#: ../../../../application/settings/context.php:987
+#, fuzzy
+msgid "Сообщения"
+msgstr "Messages"
+
+#: ../../../../application/settings/context.php:1000
+#, fuzzy
+msgid "Файловое хранилище"
+msgstr "Number of completed polls"
+
+#: ../../../../application/settings/context.php:1021
+#, fuzzy
+msgid "Настроить сервисы взаимодействия"
+msgstr "Activities"
+
+#: ../../../../application/settings/context.php:1067
+msgid "Редактирование содержимого"
+msgstr "Content Editing"
+
+#: ../../../../application/settings/context.php:1087
+#, fuzzy
+msgid "Используемые сервисы взаимодействия"
+msgstr "Activities"
+
+#: ../../../../application/settings/context.php:1108
+msgid "Редактирование учетной записи"
+msgstr "Account Editing"
+
+#: ../../../../application/settings/context.php:1127
+msgid "Войти от имени пользователя"
+msgstr "Enter in the name of user"
+
+#: ../../../../application/settings/context.php:1146
+#: ../../../../application/settings/context.php:1157
+msgid "История обучения"
+msgstr "Training History"
+
+#: ../../../../application/settings/context.php:1167
+msgid "История опросов"
+msgstr "Poll History"
+
+#: ../../../../application/settings/context.php:1186
+#, fuzzy
+msgid "Назначение области ответственности"
+msgstr "Assigning role to user"
+
+#: ../../../../application/settings/context.php:1199
+#, fuzzy
+msgid "Назначение курсов тьютору"
+msgstr "Assigning role to user"
+
+#: ../../../../application/settings/context.php:1211
+#, fuzzy
+msgid "Назначение курсов слушателю"
+msgstr "Assigning role to user"
+
+#: ../../../../application/settings/context.php:1231
+#: ../../../../application/settings/infoblocks.php:227
+#, fuzzy
+msgid "Проверка установленного ПО"
+msgstr "Check by a teacher"
+
+#: ../../../../application/settings/context.php:1249
+#, fuzzy
+msgid "Настрока ленты активности"
+msgstr "Activity Distribution"
+
+#: ../../../../application/settings/context.php:1270
+msgid "Результаты опросов"
+msgstr "Poll Results"
+
+#: ../../../../application/settings/context.php:1325
+msgid "Карточка"
+msgstr ""
+
+#: ../../../../application/settings/context.php:1346
+#, fuzzy
+msgid "Предварительный просмотр"
+msgstr "View"
+
+#: ../../../../application/settings/context.php:1365
+#, fuzzy
+msgid "Список вопросов"
+msgstr "All questions list"
+
+#: ../../../../application/settings/context.php:1376
+#, fuzzy
+msgid "Список блоков"
+msgstr "All questions list"
+
+#: ../../../../application/settings/context.php:1395
+#, fuzzy
+msgid "Категории психологического опроса"
+msgstr "Question(s) Editing"
+
+#: ../../../../application/settings/infoblocks.php:11
+#, fuzzy
+msgid "Расписание"
+msgstr "Description"
+
+#: ../../../../application/settings/infoblocks.php:18
+msgid "План занятий на сегодня"
+msgstr "Current Lesson Plan"
+
+#: ../../../../application/settings/infoblocks.php:24
+#, fuzzy
+msgid "Задания на проверку "
+msgstr "Software"
+
+#: ../../../../application/settings/infoblocks.php:30
+msgid "Индикатор прохождения учебных модулей"
+msgstr "Indicator of Modules Studying"
+
+#: ../../../../application/settings/infoblocks.php:44
+msgid "Витрина учебных курсов"
+msgstr "Display of Training Courses"
+
+#: ../../../../application/settings/infoblocks.php:50
+msgid "Рекомендуемые курсы"
+msgstr "Recommended Courses"
+
+#: ../../../../application/settings/infoblocks.php:66
+#, fuzzy
+msgid "Статистика"
+msgstr "Statistics"
+
+#: ../../../../application/settings/infoblocks.php:70
+msgid "Счетчик посетителей системы"
+msgstr "Visitors Counter"
+
+#: ../../../../application/settings/infoblocks.php:77
+msgid "Протокол интеграции"
+msgstr "Integration Report"
+
+#: ../../../../application/settings/infoblocks.php:93
+msgid "Популярные курсы"
+msgstr "Popular Training Courses"
+
+#: ../../../../application/settings/infoblocks.php:100
+#, fuzzy
+msgid "Наполнение Базы знаний"
+msgstr "View of  Knowledge Base"
+
+#: ../../../../application/settings/infoblocks.php:108
+#, fuzzy
+msgid "Активность"
+msgstr "Attendance Activity"
+
+#: ../../../../application/settings/infoblocks.php:117
+msgid "Распределение активности"
+msgstr "Activity Distribution"
+
+#: ../../../../application/settings/infoblocks.php:124
+msgid "Статистика обучаемых на курсах"
+msgstr "Statistics of Trainees in Courses"
+
+#: ../../../../application/settings/infoblocks.php:132
+#, fuzzy
+msgid "Обратная связь"
+msgstr "Getting Feedback"
+
+#: ../../../../application/settings/infoblocks.php:143
+#, fuzzy
+msgid "Взаимодействие"
+msgstr "Take action"
+
+#: ../../../../application/settings/infoblocks.php:146
+#, fuzzy
+msgid "Мои однокурсники"
+msgstr "My Course Mate"
+
+#: ../../../../application/settings/infoblocks.php:161
+msgid "Разное"
+msgstr "Miscellanea"
+
+#: ../../../../application/settings/infoblocks.php:164
+msgid "Интересные факты"
+msgstr "Interesting Facts"
+
+#: ../../../../application/settings/infoblocks.php:180
+msgid "Экспресс-опрос"
+msgstr "Express-poll"
+
+#: ../../../../application/settings/infoblocks.php:200
+msgid "Часто задаваемые вопросы"
+msgstr "Frequently Asked Questions"
+
+#: ../../../../application/settings/infoblocks.php:212
+msgid "Видеоролики по работе с системой"
+msgstr "System Video Tutorials"
+
+#: ../../../../application/settings/infoblocks.php:222
+msgid "Видеоролики"
+msgstr ""
+
+#: ../../../../application/settings/infoblocks.php:234
+msgid "Системные"
+msgstr ""
+
+#: ../../../../application/settings/infoblocks.php:236
+#, fuzzy
+msgid "Авторизация"
+msgstr "integration with at"
+
+msgid "Истекло время выполнения: сохранены только ответы, полученные до истечения времени."
+msgstr "Time is up. Only answers received before the expiration time was saved."
+
+#~ msgid "Файл '%value%' имеет недопустимое расширение"
+#~ msgstr "File '%value%' has a false extension"
+
+#~ msgid "Значение обязательно для заполнения и не может быть пустым"
+#~ msgstr "Value is required and can't be empty"
+
+#~ msgid "Новая папка"
+#~ msgstr "New folder"
+
+#~ msgid " Тема"
+#~ msgstr "Topic"
+
+#~ msgid "Bремя не ограничено"
+#~ msgstr "Time is unlimited"
+
+#~ msgid "Вы не ответили на вопрос"
+#~ msgstr "You have not answered question"
+
+#~ msgid "из %d возможных"
+#~ msgstr "of %d possible"
+
+#~ msgid "в"
+#~ msgstr "at"
+
+#, fuzzy
+#~ msgid "У вас нет соответствующего уровня доступа"
+#~ msgstr "Responsibility areas for the org. structure"
+
+#~ msgid " оценка за задание"
+#~ msgstr "mark for lesson"
+
+#~ msgid " автоматическое формирование групп"
+#~ msgstr "automatic group creation"
+
+#~ msgid " штраф за несвоевременное выполнение занятия"
+#~ msgstr "penalty for failure to complete the task"
+
+#~ msgid "создать формулу"
+#~ msgstr "Create a formula"
+
+#~ msgid "Область"
+#~ msgstr "Area of application"
+
+#~ msgid "Редактировать формулу"
+#~ msgstr "Edit formula"
+
+#~ msgid "Вы действительно желаете удалить формулу?"
+#~ msgstr "Do you really want to delete formula?"
+
+#~ msgid "не создано ни одной формулы"
+#~ msgstr "There is no formula to display"
+
+#, fuzzy
+#~ msgid "не создано ни одной глобальной формулы"
+#~ msgstr "Chosen none of columns"
+
+#~ msgid "Нет такой формулы"
+#~ msgstr "There is no such formula"
+
+#~ msgid "Редактирование формулы"
+#~ msgstr "Formula Editing"
+
+#~ msgid "Плохо"
+#~ msgstr "Low mark"
+
+#~ msgid "плохие"
+#~ msgstr "Beginner trainees"
+
+#~ msgid "хорошие"
+#~ msgstr "Advanced trainees"
+
+#~ msgid "Удовлетворительно"
+#~ msgstr "Satisfactory"
+
+#~ msgid "Отлично"
+#~ msgstr "Excellent"
+
+#~ msgid "Блестяще"
+#~ msgstr "Perfect"
+
+#, fuzzy
+#~ msgid "Выбор курса для редактирования формул"
+#~ msgstr "Classroom hasbeen successfully edited"
+
+#~ msgid "Выберите курс:"
+#~ msgstr "Select a training course"
+
+#, fuzzy
+#~ msgid "нет прав перейти на чужой курс"
+#~ msgstr "You have no permission to assign in the course"
+
+#~ msgid "дней до окончания"
+#~ msgstr "days to the end"
+
+#, fuzzy
+#~ msgid "выполненого"
+#~ msgstr "Not filled"
+
+#, fuzzy
+#~ msgid "суммарно набрано"
+#~ msgstr "Score:"
+
+#~ msgid "ср. оценка"
+#~ msgstr "average mark"
+
+#~ msgid "менее"
+#~ msgstr "less"
+
+#~ msgid "более"
+#~ msgstr "more"
+
+#, fuzzy
+#~ msgid "ТО"
+#~ msgstr "Type"
+
+#~ msgid "Не указано название новой роли"
+#~ msgstr "Not specified a new role name"
+
+#~ msgid "Не выбраны базовые действия для роли"
+#~ msgstr "Chosen no action with role"
+
+#~ msgid "Не выбраны разрешенные действия для роли"
+#~ msgstr "Chosen no action with role"
+
+# msgid "Шаг 1. Выбор базовой роли"
+# msgstr "Selection of a base role "
+# msgid "Шаг 2. Выбор функций"
+# msgstr "Change function"
+#~ msgid "Шаг 3. Детализация функций"
+#~ msgstr "Select functions"
+
+#~ msgid "Редактировать аудиторию"
+#~ msgstr "Edit classroom"
+
+#~ msgid "Вы действительно желаете удалить аудиторию?"
+#~ msgstr "Do you really want to delete classroom?"
+
+#~ msgid "Удалить аудиторию"
+#~ msgstr "Delete classroom"
+
+#~ msgid "доступна"
+#~ msgstr "Available"
+
+#~ msgid "только текст"
+#~ msgstr "Only  text"
+
+#~ msgid "HTML-файл"
+#~ msgstr "HTML-file"
+
+#~ msgid "GIF картинка"
+#~ msgstr "GIF image"
+
+#~ msgid "JPG картинка"
+#~ msgstr "JPG image"
+
+#~ msgid "PNG картинка"
+#~ msgstr "PNG image"
+
+#~ msgid "BMP картинка"
+#~ msgstr "BMP image"
+
+#~ msgid "Flash-ролик"
+#~ msgstr "Flash"
+
+#~ msgid "другие данные"
+#~ msgstr "Other Data"
+
+#~ msgid "сейчас идет"
+#~ msgstr "now in progress"
+
+#~ msgid "В данный момент тестирование еще не закончено"
+#~ msgstr "At this moment testing hasn't been finished."
+
+#~ msgid "Тестирование успешно и полностью выполнено"
+#~ msgstr "Testing has been successfully and fully completed"
+
+#~ msgid "Тестирование было брошено, учащийся покинул сервер и закрыл браузер"
+#~ msgstr "Testing was dropped, trainee logged out and closed browser"
+
+#~ msgid "Тестирование было превано по команде пользователя"
+#~ msgstr "Test has been interrupted by user"
+
+#~ msgid "досрочно завершен"
+#~ msgstr "completed early"
+
+#~ msgid "Тестирование было досрочно завершено, не на все вопросы отвечено"
+#~ msgstr "Testing was finished ahead of time, not all of questions was answered."
+
+#~ msgid ""
+#~ "Тестирование было прервано из-за лимита времени, учащийся не успел ответить на все "
+#~ "вопросы"
+#~ msgstr ""
+#~ "Testing was interrupted because of time limit, trainee had no time to answer all of "
+#~ "questions"
+
+#, fuzzy
+#~ msgid "неправильный вызов"
+#~ msgstr "Multiple Choice"
+
+#, fuzzy
+#~ msgid "неправильный вызов, массив"
+#~ msgstr "Converting is not possible. File format is invalid."
+
+#, fuzzy
+#~ msgid "ИМЯ:"
+#~ msgstr "Name"
+
+#, fuzzy
+#~ msgid "РАЗМЕР:"
+#~ msgstr "Size"
+
+#, fuzzy
+#~ msgid "Приложение"
+#~ msgstr "Table of contents"
+
+#~ msgid "открыть"
+#~ msgstr "Open"
+
+#~ msgid "Открыть это приложение в новом окне"
+#~ msgstr "Open course in a new window"
+
+#~ msgid "Такого теста нет"
+#~ msgstr "Test doesn't exist"
+
+#~ msgid "Занятие:"
+#~ msgstr "Lesson:"
+
+#, fuzzy
+#~ msgid "ВОПРОСОВ С ПРОВЕРКОЙ ПРЕПОДАВАТЕЛЕМ:"
+#~ msgstr "%d questions have been added "
+
+#~ msgid "Статистика ответов на вопрос"
+#~ msgstr "Answer Statistics"
+
+#~ msgid "всего ответов"
+#~ msgstr "number of answers"
+
+#~ msgid "верных"
+#~ msgstr "true"
+
+#~ msgid "неверных"
+#~ msgstr "faulse"
+
+#~ msgid "ответы"
+#~ msgstr "Answers"
+
+#~ msgid "по данному вопросу нет статистики (еще никто не отвечал)"
+#~ msgstr "No statistics on the question (nobody answered)"
+
+#~ msgid "изменен"
+#~ msgstr "changed"
+
+#, fuzzy
+#~ msgid "Команды"
+#~ msgstr "Contacts"
+
+#~ msgid "в это задание еще не включено ни одного вопроса!"
+#~ msgstr "There is no questions in the test!"
+
+#~ msgid "Вопрос не найден в базе данных"
+#~ msgstr "Questions have not been deleted!"
+
+#, fuzzy
+#~ msgid "выборка вопросов по коду вопроса"
+#~ msgstr "Selection of questions"
+
+#~ msgid "Добавить вопрос"
+#~ msgstr "Add a question"
+
+#~ msgid "Тип вопроса"
+#~ msgstr "Type of question"
+
+#, fuzzy
+#~ msgid "---без темы---"
+#~ msgstr "No Subject"
+
+#, fuzzy
+#~ msgid "--- все ---"
+#~ msgstr "All"
+
+#, fuzzy
+#~ msgid "ошибочная ссылка"
+#~ msgstr "External link"
+
+#~ msgid "Этот файл не найден"
+#~ msgstr "The  file is not found"
+
+#, fuzzy
+#~ msgid "Запуск"
+#~ msgstr "Entry"
+
+#, fuzzy
+#~ msgid "завершение"
+#~ msgstr "completed"
+
+#, fuzzy
+#~ msgid "Сеанс не завершен."
+#~ msgstr "The session is not yet checked by the teacher"
+
+#~ msgid ""
+#~ "Пожалуйста, поставьте галочку в checkbox для подтверждения ознакомления с результатми "
+#~ "и еще раз нажмите на кнопку"
+#~ msgstr "Check the box and press the key once more"
+
+#, fuzzy
+#~ msgid "Выполнение задания завершено!"
+#~ msgstr "Penalty for failure to complete the task"
+
+#~ msgid "мин.балл"
+#~ msgstr "min"
+
+#~ msgid "Все вопросы курса"
+#~ msgstr "All  questions of the course"
+
+#, fuzzy
+#~ msgid "внешняя программа"
+#~ msgstr "School program"
+
+#~ msgid "Все вопросы по курсу"
+#~ msgstr "All questions of the course"
+
+#~ msgid "Выделить/убрать все"
+#~ msgstr "Select all"
+
+#, fuzzy
+#~ msgid "сортировка по кодам вопросов"
+#~ msgstr "Poll block settings"
+
+#, fuzzy
+#~ msgid "сортировка по типам вопросов"
+#~ msgstr "Poll block settings"
+
+#, fuzzy
+#~ msgid "сортировка по теме"
+#~ msgstr "Time limitation"
+
+#~ msgid "Мин"
+#~ msgstr "Min"
+
+#~ msgid "Редактировать вопрос"
+#~ msgstr "Edit a question"
+
+#~ msgid "Экспортировать"
+#~ msgstr "Export "
+
+#~ msgid "Добавить в курс"
+#~ msgstr "Add a training courses"
+
+#, fuzzy
+#~ msgid "Фильтр времени:"
+#~ msgstr "Time Range"
+
+#, fuzzy
+#~ msgid "сбросить"
+#~ msgstr "Reset filter"
+
+#, fuzzy
+#~ msgid "Фильтр кода"
+#~ msgstr "Reset filter"
+
+#~ msgid "шт"
+#~ msgstr "pieces"
+
+#~ msgid "Режим редактирования:"
+#~ msgstr "Edit Mode"
+
+#~ msgid "базовый"
+#~ msgstr "base"
+
+#~ msgid "расширенный"
+#~ msgstr "extanded"
+
+#, fuzzy
+#~ msgid "только для опытных пользователей!"
+#~ msgstr "Display only users that role"
+
+#~ msgid "Экспортирование выбранных вопросов"
+#~ msgstr "Number of Completed Polls"
+
+#~ msgid "Действительно удалить вопросы?"
+#~ msgstr "Do you really want to to delete questions?"
+
+#~ msgid "Удалить вопросы"
+#~ msgstr "Delete questions"
+
+#~ msgid "Вы действительно желаете удалить"
+#~ msgstr "Do you really want to delete it?"
+
+#~ msgid "вопросов?"
+#~ msgstr "question(s)?"
+
+#~ msgid "Чтобы отказаться нажмите"
+#~ msgstr "Press to cancel"
+
+#, fuzzy
+#~ msgid "здесь"
+#~ msgstr "Adress"
+
+#, fuzzy
+#~ msgid "не был добавлен"
+#~ msgstr "Variant hasn't been deleted!"
+
+#~ msgid "Вопросы добавлены успешно"
+#~ msgstr "Questios have been successfully added"
+
+#, fuzzy
+#~ msgid "Не выбран курс для добавления помеченных галочками вопросов."
+#~ msgstr "You have no permission to add questions"
+
+#, fuzzy
+#~ msgid "Отсутствуют права доступа к курсу"
+#~ msgstr "There is no data to display"
+
+#, fuzzy
+#~ msgid "Такого курса не существует"
+#~ msgstr "There is no course title"
+
+#~ msgid "Редактирование вопроса(ов)"
+#~ msgstr "Question(s) Editing"
+
+#, fuzzy
+#~ msgid "пропущен, код ошибочен."
+#~ msgstr "Password has been successfully updated."
+
+#, fuzzy
+#~ msgid "не найден в базе данных"
+#~ msgstr "Questions have not been deleted!"
+
+#~ msgid "Вопрос добавлен успешно"
+#~ msgstr "The question has been successfully added!"
+
+#, fuzzy
+#~ msgid "Хотите добавить ещё вопрос?"
+#~ msgstr "%d questions have been added "
+
+#~ msgid "Вопрос успешно сохранен"
+#~ msgstr "The question has been successfully saved"
+
+#, fuzzy
+#~ msgid "Выбран некорректный номер курса"
+#~ msgstr "Chosen an invalid action"
+
+#, fuzzy
+#~ msgid "Ограничение времени при просмотре вопросов"
+#~ msgstr "Time course limiting"
+
+#~ msgid "назад"
+#~ msgstr "Back"
+
+#, fuzzy
+#~ msgid "Снять ограничение по дате"
+#~ msgstr "Time limit, min:"
+
+#, fuzzy
+#~ msgid "За последний час"
+#~ msgstr "hour,hours,hours"
+
+#, fuzzy
+#~ msgid "За последний день"
+#~ msgstr "day,days,days"
+
+#, fuzzy
+#~ msgid "За последний месяц"
+#~ msgstr "Mark for lesson"
+
+#, fuzzy
+#~ msgid "Произвольный выбор времени"
+#~ msgstr "Limiting the time of run"
+
+#, fuzzy
+#~ msgid "Установить"
+#~ msgstr "Restore"
+
+#, fuzzy
+#~ msgid "Фильтр кодов при просмотре вопросов"
+#~ msgstr "You have no permission to add questions"
+
+#, fuzzy
+#~ msgid "Выберите другой курс:"
+#~ msgstr "Select users and specify the course"
+
+#, fuzzy
+#~ msgid "не удален, вы не владеете этим курсом"
+#~ msgstr "There is no course title"
+
+#, fuzzy
+#~ msgid "Вопрос %s не удалён. У вас не хватает привилегий"
+#~ msgstr "You have no permission to delete the poll"
+
+#, fuzzy
+#~ msgid "К сожалению, вопрос с кодом"
+#~ msgstr "The question has been successfully added!"
+
+#~ msgid "Выбор модуля"
+#~ msgstr "Module selection"
+
+#, fuzzy
+#~ msgid "Показать форму редактирования для вопроса"
+#~ msgstr "Account has been successfully edited!"
+
+#, fuzzy
+#~ msgid "невозможно."
+#~ msgstr "Unable to rename %s"
+
+#~ msgid "Редактирование вопроса"
+#~ msgstr "Question Editing"
+
+#~ msgid "Редактирование варианта задания"
+#~ msgstr "Task Variant Editing "
+
+#~ msgid "Формулировка вопроса:"
+#~ msgstr "Text of question:"
+
+#~ msgid "Формулировка варианта задания:"
+#~ msgstr "Text of task variant"
+
+#~ msgid "Время на ответ (в мин.):"
+#~ msgstr "Time to answer (min.):"
+
+#~ msgid "Время на решение (в мин.):"
+#~ msgstr "Time of performance (min.):"
+
+#~ msgid "без ограничения"
+#~ msgstr "no limit"
+
+#~ msgid "Обзор"
+#~ msgstr "Browse"
+
+#~ msgid "Обзор.."
+#~ msgstr "Browse.."
+
+#~ msgid "с весами ответа"
+#~ msgstr "Answers with weights"
+
+#~ msgid "с правильным ответом"
+#~ msgstr "Answers with true variants"
+
+#~ msgid "Диапазон баллов:"
+#~ msgstr "Point range:"
+
+#, fuzzy
+#~ msgid "автоподсчет"
+#~ msgstr "Poll date"
+
+#~ msgid "Перемешивать ответы на вопрос"
+#~ msgstr "Shuffle variants of answer"
+
+#~ msgid "Варианты ответов на вопрос"
+#~ msgstr "Answer variants"
+
+#~ msgid "Используйте синтаксис"
+#~ msgstr "Used syntax"
+
+#, fuzzy
+#~ msgid "для задания идентификатора пользователя"
+#~ msgstr "Limiting the time in minutes for testing (min.)"
+
+#, fuzzy
+#~ msgid "варианта"
+#~ msgstr "Task Variant Editing "
+
+#~ msgid "Вес ответа"
+#~ msgstr "Answer weight"
+
+#~ msgid "Вкл./выкл."
+#~ msgstr "On/Off"
+
+#~ msgid "Присоединенные файлы"
+#~ msgstr "Attached file"
+
+#~ msgid "Имя файла"
+#~ msgstr "File name"
+
+#~ msgid "Размер"
+#~ msgstr "Size"
+
+#~ msgid "Изменен"
+#~ msgstr "changed"
+
+#~ msgid "карту"
+#~ msgstr "map"
+
+#~ msgid "Действительно удалить файл из вопроса?"
+#~ msgstr "Do you really want to to delete file?"
+
+#~ msgid "Выбрано:"
+#~ msgstr "Selected:"
+
+#~ msgid "Статистика и отчеты"
+#~ msgstr "Statistics and reports"
+
+#, fuzzy
+#~ msgid "Информация по логину учащегося:"
+#~ msgstr "Error information"
+
+#, fuzzy
+#~ msgid "Результаты всех тестов"
+#~ msgstr "All of Training Manageres"
+
+#, fuzzy
+#~ msgid "Детальный отчет о сеансах тестирования:"
+#~ msgstr "Display resuls at the end of the test"
+
+#, fuzzy
+#~ msgid "сеанса"
+#~ msgstr "download"
+
+#, fuzzy
+#~ msgid "Отчет доступен только тьютору."
+#~ msgstr "Teacher's comment"
+
+#~ msgid "Номер сеанса"
+#~ msgstr "Number of session"
+
+#~ msgid "Баллов"
+#~ msgstr "Point(s)"
+
+#~ msgid "Мин/Макс балл"
+#~ msgstr "min/max score"
+
+#~ msgid "Мин/Макс балл с учетом проверяемых вопросов"
+#~ msgstr "Min/Max"
+
+#, fuzzy
+#~ msgid "Продолж."
+#~ msgstr "Lower part of template"
+
+#, fuzzy
+#~ msgid "Проверка"
+#~ msgstr "Check by a teacher"
+
+#, fuzzy
+#~ msgid "Смотреть отчет:"
+#~ msgstr "Open detailed report"
+
+#, fuzzy
+#~ msgid "Проверен:"
+#~ msgstr "dropped"
+
+#~ msgid "идет тестирование"
+#~ msgstr "Testing is in process"
+
+#~ msgid "прерван по команде"
+#~ msgstr "interupted by command"
+
+#~ msgid "прерван лимитом времени"
+#~ msgstr "interrpted of time limit"
+
+#, fuzzy
+#~ msgid "Ошибочный номер курса"
+#~ msgstr "All  course trainees"
+
+#, fuzzy
+#~ msgid "Выставление оценок за задания"
+#~ msgstr "Penalty for failure to complete the task"
+
+#, fuzzy
+#~ msgid "Выставление оценок за задание"
+#~ msgstr "Appointment of task variants "
+
+#, fuzzy
+#~ msgid "К началу статистики и отчетов"
+#~ msgstr "Number of answers"
+
+#, fuzzy
+#~ msgid "ФИО, отчет"
+#~ msgstr "Open detailed report"
+
+#, fuzzy
+#~ msgid "Вопросов Ответил"
+#~ msgstr "Questions Answered / Total"
+
+#, fuzzy
+#~ msgid "затрачено"
+#~ msgstr "Spent"
+
+#~ msgid "Очистить статистику тестирования %s %s %s %s?"
+#~ msgstr "Do you want to clear test statistics %s%s%s%s"
+
+#, fuzzy
+#~ msgid "по курсу "
+#~ msgstr "Average score on the training course"
+
+#, fuzzy
+#~ msgid "по всем курсам"
+#~ msgstr "Responsibility areas for training courses"
+
+#, fuzzy
+#~ msgid "по заданию "
+#~ msgstr "To be appointed"
+
+#, fuzzy
+#~ msgid "по всем заданиям"
+#~ msgstr "Time limitation"
+
+#, fuzzy
+#~ msgid "по всем пользователям"
+#~ msgstr "Назначить роль пользователям."
+
+#, fuzzy
+#~ msgid "по дате прохождения заданий в период"
+#~ msgstr "Travel time tasks is limited (Min.)"
+
+#, fuzzy
+#~ msgid " по "
+#~ msgstr "%s from %s to %s"
+
+#, fuzzy
+#~ msgid "по всем датам прохождения заданий"
+#~ msgstr "Shuffle questions by passing tasks"
+
+#, fuzzy
+#~ msgid "Статистика о пройденных заданиях"
+#~ msgstr "Detailed statistics Skillsoft"
+
+#, fuzzy
+#~ msgid "Любой курс"
+#~ msgstr "Training Course"
+
+#~ msgid "Фильтр пользователей"
+#~ msgstr "all of users"
+
+#, fuzzy
+#~ msgid "Дата прохождения с"
+#~ msgstr "Test performance mode"
+
+#, fuzzy
+#~ msgid "Проверка препода-<br>вателем"
+#~ msgstr "Check by a teacher"
+
+#, fuzzy
+#~ msgid "Открыть краткий отчет"
+#~ msgstr "Open detailed report"
+
+#~ msgid "Открыть подробный отчет"
+#~ msgstr "Open detailed report"
+
+#, fuzzy
+#~ msgid "Отчет о сеансе тестирования"
+#~ msgstr "Do you want to clear test statistics %s%s%s%s"
+
+#, fuzzy
+#~ msgid "Тьюторы (в пределах своего курса)"
+#~ msgstr "All of this course teachers"
+
+#, fuzzy
+#~ msgid "Такого сеанса не существует:"
+#~ msgstr "Page %s does not exist."
+
+#, fuzzy
+#~ msgid "курс:"
+#~ msgstr "%s course"
+
+#, fuzzy
+#~ msgid "адрес:"
+#~ msgstr "Adress"
+
+#~ msgid "набрано баллов:"
+#~ msgstr "Score:"
+
+#, fuzzy
+#~ msgid "максимально возможное:"
+#~ msgstr "Maximum validity"
+
+#, fuzzy
+#~ msgid "всего вопросов:"
+#~ msgstr "Number of questions"
+
+#, fuzzy
+#~ msgid "завершение сеанса:"
+#~ msgstr "completed"
+
+#, fuzzy
+#~ msgid "Это задание, требующее проверки тьютором."
+#~ msgstr "The session is not yet checked by the teacher"
+
+#, fuzzy
+#~ msgid "Сеанс еще не проверен тьютором."
+#~ msgstr "The session is not yet checked by the teacher"
+
+#, fuzzy
+#~ msgid "Неизвестный статус завершенности тестирования! Необходимо добавить описание."
+#~ msgstr "Allow an early end testing and recieve a mark"
+
+#, fuzzy
+#~ msgid "Правильность ответа:"
+#~ msgstr "Answer variant"
+
+#~ msgid "Набрано баллов:"
+#~ msgstr "Points recieved:"
+
+#, fuzzy
+#~ msgid "диапазон: от"
+#~ msgstr "Point range: from"
+
+#, fuzzy
+#~ msgid "ВОПРОС С ПРОВЕРКОЙ ПРЕПОДАВАТЕЛЕМ"
+#~ msgstr "The question has been successfully added!"
+
+#, fuzzy
+#~ msgid "Ошибка в ответе:"
+#~ msgstr "Application Error"
+
+#~ msgid "Что выбрал тестируемый при ответе"
+#~ msgstr "Trainee's answer"
+
+#, fuzzy
+#~ msgid "Правильно ли это"
+#~ msgstr "Average number of users at the time"
+
+#~ msgid "Протокол выполнения:"
+#~ msgstr "Performanse protocol:"
+
+#~ msgid "Закончил:"
+#~ msgstr "Finish:"
+
+#~ msgid "Задано"
+#~ msgstr "Number questions to answer"
+
+#~ msgid "вопросов, отвечено на"
+#~ msgstr "question(s), answered "
+
+#~ msgid "Вопрос:"
+#~ msgstr "Question:"
+
+#~ msgid "балл."
+#~ msgstr "point(s)"
+
+#~ msgid "Ответ:"
+#~ msgstr "Answer:"
+
+#~ msgid "Верно"
+#~ msgstr "True"
+
+#, fuzzy
+#~ msgid "Текст ответа:"
+#~ msgstr "Answer variant"
+
+#, fuzzy
+#~ msgid "Комментарий тьютора:"
+#~ msgstr "Add a comment"
+
+#~ msgid "Скачать рецензию тьютора:"
+#~ msgstr "Download teacher's comment"
+
+#, fuzzy
+#~ msgid "Хоть вы и тьютор, но в данное время не владеете ни одним курсом."
+#~ msgstr "You are not a teacher of the training course."
+
+#, fuzzy
+#~ msgid "нет прав редактировать данный вопрос"
+#~ msgstr "You have no permission to add questions"
+
+#~ msgid "загрузка..."
+#~ msgstr "Loading..."
+
+#, fuzzy
+#~ msgid "такого вопроса нет"
+#~ msgstr "Number of Seats"
+
+#, fuzzy
+#~ msgid "Укажите области для вариантов:"
+#~ msgstr "Limitation of responsibility area"
+
+#~ msgid "Вставить прямоугольник (требует 4 координаты: x1:y1 и x2:y2)"
+#~ msgstr "Add rectangle (required 2 coordinates: x1:y1 и x2:y2)"
+
+#~ msgid "Вставить полигон (требует набор пар координат: x1:y1, x2:y2, x3:y3, ...)"
+#~ msgstr "Add polygon (required set of coordinates: x1:y1, x2:y2, x3:y3, ...)"
+
+#~ msgid "Вставить круг (требует координаты ценрта и радиус: x:y и radius)"
+#~ msgstr "Add circle (requied center coordinate and radius: x:y и radius)"
+
+#~ msgid "Двойной щелчок (double click) на изображении - вставка координат в строку ввода"
+#~ msgstr "Double click on the image will enter coordinates in the text field"
+
+#~ msgid "нет ни одного вопроса на проверку"
+#~ msgstr "There is no questions to check"
+
+#~ msgid "сохранить результаты"
+#~ msgstr "Save results"
+
+#, fuzzy
+#~ msgid "удалить обработанные вопросы"
+#~ msgstr "Do you really want to to delete questions?"
+
+#, fuzzy
+#~ msgid "удалить выделенные вопросы"
+#~ msgstr "Do you really want to to delete questions?"
+
+#~ msgid "сеанс"
+#~ msgstr "session"
+
+#, fuzzy
+#~ msgid "Проверка вопросов со свободным ответом"
+#~ msgstr "Include questions in a random way"
+
+#~ msgid "Больше вопросов для проверки нет."
+#~ msgstr "Number of questions"
+
+#, fuzzy
+#~ msgid "Вы не можете обращаться к временным вопросам чужих курсов"
+#~ msgstr "You have no permission to add questions to global polls"
+
+#, fuzzy
+#~ msgid "Оценка отложенных на проверку ответов"
+#~ msgstr "There is no unprocessed application"
+
+#, fuzzy
+#~ msgid "к началу проверки"
+#~ msgstr "Number of questions to include to the test"
+
+#, fuzzy
+#~ msgid "Код вопроса:"
+#~ msgstr "Question text"
+
+#, fuzzy
+#~ msgid " Дан ответ:"
+#~ msgstr "Essay"
+
+#, fuzzy
+#~ msgid "Студент:"
+#~ msgstr "Tool"
+
+#~ msgid "сеанса:"
+#~ msgstr "session:"
+
+#, fuzzy
+#~ msgid "Текстовый ответ:"
+#~ msgstr "Essay"
+
+#, fuzzy
+#~ msgid "Скачать ответ целиком"
+#~ msgstr "with attached file"
+
+#, fuzzy
+#~ msgid "Открыть ответ в новом окне"
+#~ msgstr "Forced to open module in a new window"
+
+#~ msgid "Присоединенный файл"
+#~ msgstr "with attached file"
+
+#~ msgid "Скачать прикрепленный файл целиком"
+#~ msgstr "with attached file"
+
+#, fuzzy
+#~ msgid "Открыть прикрепленный файл в новом окне"
+#~ msgstr "with attached file"
+
+#, fuzzy
+#~ msgid "Возможный диапазон баллов:от"
+#~ msgstr "Relative range"
+
+#, fuzzy
+#~ msgid "Вопрос уже имеет оценку в баллах:"
+#~ msgstr "Question has been successfully updated"
+
+#, fuzzy
+#~ msgid "Далее перейти:"
+#~ msgstr "Work room"
+
+#~ msgid "к списку вопросов для проверки"
+#~ msgstr "Number of questions"
+
+#, fuzzy
+#~ msgid "Записать вашу оценку в базу данных"
+#~ msgstr "Entries have been successfully deleted"
+
+#, fuzzy
+#~ msgid "ДАЛЕЕ"
+#~ msgstr "Next"
+
+#, fuzzy
+#~ msgid "Вы не можете начислить за этот вопрос более, чем"
+#~ msgstr "You have no permission to edit questions in global test"
+
+#, fuzzy
+#~ msgid "Вы не можете начислить за этот вопрос менее, чем"
+#~ msgstr "You have no permission to edit questions in global test"
+
+#, fuzzy
+#~ msgid "Студент"
+#~ msgstr "Tool"
+
+#, fuzzy
+#~ msgid "Полученный ответ:"
+#~ msgstr "Essay"
+
+#, fuzzy
+#~ msgid "Комментарий:"
+#~ msgstr "Comment"
+
+#, fuzzy
+#~ msgid "Рецензия:"
+#~ msgstr "Messages"
+
+#, fuzzy
+#~ msgid "открыть файл с рецензией"
+#~ msgstr "Unable to copy file to %s"
+
+#, fuzzy
+#~ msgid "приложен"
+#~ msgstr "Denied"
+
+#, fuzzy
+#~ msgid "длиной"
+#~ msgstr "Public"
+
+#, fuzzy
+#~ msgid "приложен текст"
+#~ msgstr "Question text"
+
+#, fuzzy
+#~ msgid "См. общую оценку"
+#~ msgstr "Mark for a lesson"
+
+#, fuzzy
+#~ msgid "Удалены вопросы по следующим сеансам:"
+#~ msgstr "Transfer to the next semester"
+
+#, fuzzy
+#~ msgid "Нет целиком обработанных сеансов."
+#~ msgstr "There is no unprocessed application"
+
+#~ msgid "Сеанс тестирования закончен. Не нажимайте кнопку BACK (Назад) в вашем браузере!"
+#~ msgstr "Test is in progress. Do not press BACK button."
+
+#, fuzzy
+#~ msgid "Сеанс тестирования закончен или не начинался."
+#~ msgstr "Print graduation order"
+
+#~ msgid ""
+#~ "Не нажимайте кнопки REFRESH (Обновить) или BACK (Назад), иначе вы можете случайно "
+#~ "отключиться от сеанса тестирования. Если вы намеренно хотите прервать тест, "
+#~ "воспользуйтесь кнопкой 'ПРЕРВАТЬ ТЕСТИРОВАНИЕ' внизу страницы."
+#~ msgstr "Do not press REFRESH or BACK buttons"
+
+#, fuzzy
+#~ msgid "Не найдена функция для ответа типа"
+#~ msgstr "Webinar material is not found "
+
+#~ msgid ""
+#~ "К сожалению, закончилось время, отпущеное на решение данного вопроса. Ответ не "
+#~ "засчитан."
+#~ msgstr ""
+#~ "Unfortunately, time for this question is over. Answer to this question is ignored."
+
+#~ msgid "Закончилось время"
+#~ msgstr "Time is over"
+
+#~ msgid "Закончилось время, отпущеное на решение данного вопроса."
+#~ msgstr "Time for the question is over."
+
+#~ msgid ""
+#~ "К сожалению, закончилось время, отпущенное на решение задания. Сейчас вы перейдете на "
+#~ "страницу результатов. В ведомость записывается результат тестирования 'прервано по "
+#~ "лимиту времени' и оценка только тех вопросов, которые вы уже успели решить."
+#~ msgstr ""
+#~ "Unfortunately, time for this test is over. You receive the mark only for answered "
+#~ "questions."
+
+#, fuzzy
+#~ msgid "Переменная"
+#~ msgstr "First"
+
+#, fuzzy
+#~ msgid "и исправить баг!"
+#~ msgstr "Send to archive"
+
+#~ msgid "Статистика заданий"
+#~ msgstr "Statistics of tasks"
+
+#, fuzzy
+#~ msgid "Открыть задание"
+#~ msgstr "Select a task"
+
+#, fuzzy
+#~ msgid "Копировать задание"
+#~ msgstr "Select a task"
+
+#, fuzzy
+#~ msgid "Скопировать тест?"
+#~ msgstr "Do you want to copy test"
+
+#, fuzzy
+#~ msgid "Редактировать задание"
+#~ msgstr "Select a task"
+
+#, fuzzy
+#~ msgid "Скопировать задание?"
+#~ msgstr "Select a task"
+
+#~ msgid "Все курсы"
+#~ msgstr "All courses"
+
+#, fuzzy
+#~ msgid "Отчеты о тестированиях"
+#~ msgstr "Peer reviewed"
+
+#~ msgid "Статистика вопросов"
+#~ msgstr "Statistics of questions"
+
+#~ msgid "СТАТИСТИКА по"
+#~ msgstr "Statictics of"
+
+#, fuzzy
+#~ msgid "У вас не хватает привилегий"
+#~ msgstr "You have no permission to access."
+
+#, fuzzy
+#~ msgid "Перейти к другому заданию"
+#~ msgstr "Execution of another lesson"
+
+#, fuzzy
+#~ msgid "Обязат. вопрос"
+#~ msgstr "Select a question"
+
+#, fuzzy
+#~ msgid "маски не отображаются"
+#~ msgstr "0 means never reset"
+
+#, fuzzy
+#~ msgid "Править"
+#~ msgstr "Edit module properties"
+
+#, fuzzy
+#~ msgid "маска:"
+#~ msgstr "Footnote"
+
+#, fuzzy
+#~ msgid "Выполнить это задание"
+#~ msgstr "Do you really want to perform the task?"
+
+#~ msgid "Добавить из всех вопросов"
+#~ msgstr "Add"
+
+#, fuzzy
+#~ msgid ""
+#~ "Вы не можете редактировать вопросы, т.к. этот тест создан\n"
+#~ "         на другом курсе"
+#~ msgstr "You have no permission to edit questions in global poll"
+
+#, fuzzy
+#~ msgid "Справка"
+#~ msgstr "Line"
+
+#, fuzzy
+#~ msgid "Управление кол-вом попыток тестирований"
+#~ msgstr "Limitation of unsuccessful attempts to authorize"
+
+#, fuzzy
+#~ msgid "Отчеты о тестированиях на этом задании"
+#~ msgstr "Limit the number of questions in task until"
+
+#, fuzzy
+#~ msgid "расширенный]"
+#~ msgstr "Archived"
+
+#, fuzzy
+#~ msgid "Вернуться к предыдущему сеансу тестирования"
+#~ msgstr "Transfer to the last semester"
+
+#~ msgid "Добавление задания"
+#~ msgstr "Task Adding"
+
+#, fuzzy
+#~ msgid "Задание опубликовано"
+#~ msgstr "Select a task"
+
+#, fuzzy
+#~ msgid "доступно слушателю для выполнения"
+#~ msgstr "Recommended runtime"
+
+#~ msgid "Способ выбора вопросов"
+#~ msgstr "Question selection mode"
+
+#~ msgid "Одинаковое из каждой темы"
+#~ msgstr "Equal number of questions from each topic"
+
+#~ msgid "Задать из каждой темы"
+#~ msgstr "Choose questions from each topic"
+
+#~ msgid "Ограничить количество вопросов в задании до"
+#~ msgstr "Limit the number of questions in test to"
+
+#, fuzzy
+#~ msgid "показывать все"
+#~ msgstr "0 - show all of questions"
+
+#, fuzzy
+#~ msgid "Ограничить количество вопросов из темы"
+#~ msgstr "equal number of questions from each topic"
+
+#, fuzzy
+#~ msgid "Нет тем вопросов в задании"
+#~ msgstr "Limit the number of questions in task until"
+
+#, fuzzy
+#~ msgid "Количество вопросов на страницу"
+#~ msgstr "Number of questions in the test is limited"
+
+#~ msgid "Перемешивать вопросы при прохождении задания"
+#~ msgstr "Shuffle questions by passing tasks"
+
+#, fuzzy
+#~ msgid "Выполнение задания"
+#~ msgstr "Task name"
+
+#~ msgid "Сколько раз учащийся может выполнять это задание"
+#~ msgstr "How many times a student can perform this task"
+
+#~ msgid "Через сколько дней сбрасывать данный счетчик прохождений"
+#~ msgstr "How many days reset this passes counter "
+
+#, fuzzy
+#~ msgid "никогда не сбрасывать"
+#~ msgstr "0 - never reset"
+
+#~ msgid "Ограничение времени в минутах для прохождения задания"
+#~ msgstr "Limiting the time in minutes for testing (min.)"
+
+#, fuzzy
+#~ msgid "мин"
+#~ msgstr "Min/Max"
+
+#~ msgid "без ограничений"
+#~ msgstr "no limit"
+
+#~ msgid ""
+#~ "Показывать страницу промежуточных результатов учащегося, по итогам последних вопросов"
+#~ msgstr "Show page interim results of a student on the basis of past questions"
+
+#~ msgid "Там же показывать ссылку"
+#~ msgstr "In the same showing link"
+
+#~ msgid "Показывать результаты тестирования в конце задания (общие результаты)"
+#~ msgstr "Show the results at the end of testing (total results)"
+
+#, fuzzy
+#~ msgid "Комментарий к заданию"
+#~ msgstr "Add a comment"
+
+#, fuzzy
+#~ msgid "нет прав редактировать данный тест"
+#~ msgstr "Preformatted text"
+
+#~ msgid "Курс заблокирован. Данная операция невозможна"
+#~ msgstr "The course is blocked."
+
+#, fuzzy
+#~ msgid "Задание удалено"
+#~ msgstr "Message has been successfully deleted"
+
+#, fuzzy
+#~ msgid "Укажите учебный курс"
+#~ msgstr "There is no formula to display"
+
+#, fuzzy
+#~ msgid "Перенос теста"
+#~ msgstr "Number of Seats"
+
+#, fuzzy
+#~ msgid "Перенести!"
+#~ msgstr "Accepted"
+
+#, fuzzy
+#~ msgid "нет прав перенести этот тест на чужой курс"
+#~ msgstr "You have no permission to enroll in the training course"
+
+#, fuzzy
+#~ msgid "нет прав просматривать данный тест"
+#~ msgstr "Preformatted text"
+
+#, fuzzy
+#~ msgid "копия от"
+#~ msgstr "From / To"
+
+#, fuzzy
+#~ msgid "Новый тест с"
+#~ msgstr "Select a text"
+
+#~ msgid "Список вопросов, выбранные маской теста"
+#~ msgstr "Number of questions"
+
+#, fuzzy
+#~ msgid "Не переданы коды для удаления"
+#~ msgstr "You have no permission to delete tasks"
+
+#, fuzzy
+#~ msgid "Попытки выполнения задания"
+#~ msgstr "Tasks have been successfully removed"
+
+#, fuzzy
+#~ msgid "Вы не зарегистрированы ни на одном из курсов"
+#~ msgstr "You have been successfully registered for the training course \"%s\""
+
+#, fuzzy
+#~ msgid "Вы не зарегистрированы ни на одном из курсов."
+#~ msgstr "You have been successfully registered for the training course \"%s\""
+
+#~ msgid "Набранный балл"
+#~ msgstr "Number of Points"
+
+#, fuzzy
+#~ msgid "Отчет о прохождении"
+#~ msgstr "Open detailed report"
+
+#~ msgid "Действительно хотите пройти это задание?"
+#~ msgstr "Do you really want to perform the task?"
+
+#, fuzzy
+#~ msgid "Внимание! У вас осталось попыток для прохождения:"
+#~ msgstr "Attention! Not all fields are filled in correctly!"
+
+#~ msgid "Оценка:"
+#~ msgstr "Mark:"
+
+#~ msgid "Осталось попыток:"
+#~ msgstr "Not used attempts:"
+
+#~ msgid "Попытки не лимитированы"
+#~ msgstr "Attempts have been successfully deleted"
+
+#, fuzzy
+#~ msgid "еще не сдан"
+#~ msgstr "The session is not yet checked by the teacher"
+
+#, fuzzy
+#~ msgid "отключен тьютором"
+#~ msgstr "Check by a teacher"
+
+#, fuzzy
+#~ msgid "Очистка/управление кол-вом попыток тестирований"
+#~ msgstr "Limitation of unsuccessful attempts to authorize"
+
+#, fuzzy
+#~ msgid "Кол-во"
+#~ msgstr "Number of respondents"
+
+#, fuzzy
+#~ msgid "попыток"
+#~ msgstr "Number of attempts:"
+
+#, fuzzy
+#~ msgid "Осталось"
+#~ msgstr "Not used attempts:"
+
+#, fuzzy
+#~ msgid "это задание было удалено"
+#~ msgstr "Do you really want to perform the task?"
+
+#, fuzzy
+#~ msgid "снять"
+#~ msgstr "Unselect"
+
+#, fuzzy
+#~ msgid "Просмотр вопроса"
+#~ msgstr "Question text"
+
+#~ msgid ""
+#~ "К сожалениею, закончилось время, отпущенное на решение задания. Сейчас вы перейдете "
+#~ "на страницу результатов. В ведомость записывается результат тестирования 'прервано по "
+#~ "лимиту времени' и оценка только тех вопросов, которые вы уже успели решить."
+#~ msgstr "Unfortunately, your time for test has ended."
+
+#~ msgid "Промежуточные результаты"
+#~ msgstr "Intermediate result"
+
+#~ msgid "Данные по вопросу(ам), которые были вам заданы только на предыдущей странице:"
+#~ msgstr "Results on question(s) of previous page:"
+
+#~ msgid "Минимальный балл:"
+#~ msgstr "Minimum number of points:"
+
+#~ msgid "Максимальный балл:"
+#~ msgstr "Maximum number of points:"
+
+#~ msgid "Данные по всем вопросам, на которые вы отвечали в этом задании:"
+#~ msgstr "Results on all questions that have been answered before:"
+
+#~ msgid "Набранно баллов всего:"
+#~ msgstr "Total number of points:"
+
+#~ msgid "Кол-во пройденных вопросов:"
+#~ msgstr "Number of answered questions:"
+
+#, fuzzy
+#~ msgid "Ссылки к заданным вопросам:"
+#~ msgstr "one can return to previous questions"
+
+#~ msgid "Не показывать промежуточные результаты (только для текущего задания)"
+#~ msgstr "Do not show this page of results (only for current session)"
+
+#, fuzzy
+#~ msgid "ошибочный метод вызова данного файла"
+#~ msgstr "Error copying file %s."
+
+#, fuzzy
+#~ msgid "Не найдена функция для вопроса типа"
+#~ msgstr "Webinar material is not found "
+
+#, fuzzy
+#~ msgid "Комментарии:"
+#~ msgstr "Comments to answer:"
+
+#~ msgid "Комментарии к ответу:"
+#~ msgstr "Comments to answer:"
+
+#~ msgid "Вес:"
+#~ msgstr "Weight:"
+
+#, fuzzy
+#~ msgid "Правильный ответ(ы):"
+#~ msgstr "Essay"
+
+#, fuzzy
+#~ msgid "Отсутствуют варианты ответа на вопрос."
+#~ msgstr "Time to answer is over"
+
+#, fuzzy
+#~ msgid "Введите один или более вариантов ответа."
+#~ msgstr "Enter the name of the report"
+
+#, fuzzy
+#~ msgid "Ни один вариант ответа не является правильным."
+#~ msgstr "You have no permission to delete tests"
+
+#, fuzzy
+#~ msgid "Отметьте один/несколько вариантов как правильные."
+#~ msgstr "Number of options in task is limited"
+
+#, fuzzy
+#~ msgid "Устранить ошибку этого вопроса можно на странице его редактирования так:"
+#~ msgstr "Number of questions per page is limited"
+
+#~ msgid "Импорт курса"
+#~ msgstr "Course import"
+
+#, fuzzy
+#~ msgid "Загрузка и обработка файлов курса"
+#~ msgstr "E-course card"
+
+#, fuzzy
+#~ msgid "Выберите тип загружаемого курса"
+#~ msgstr "Select  format of the course"
+
+#, fuzzy
+#~ msgid "НЕ ОПРЕДЕЛЕН ИДЕНТИФИКАТОР КУРСА !!!"
+#~ msgstr "There is no course title"
+
+#, fuzzy
+#~ msgid "Описание сохранено"
+#~ msgstr "Short description"
+
+#, fuzzy
+#~ msgid "Редактировать описание курса:"
+#~ msgstr "There is no course description"
+
+#~ msgid "<пустой элемент>"
+#~ msgstr "<empty element>"
+
+#, fuzzy
+#~ msgid "Локальные копии курсов"
+#~ msgstr "Unassign trainees from courses"
+
+#, fuzzy
+#~ msgid "Пути к локальным версиям курсов сохранены"
+#~ msgstr "Orders Templates  have been saved"
+
+#, fuzzy
+#~ msgid "использовать локальные копии курсов"
+#~ msgstr "Use in this course"
+
+#, fuzzy
+#~ msgid "Выбран каталог:"
+#~ msgstr "Variant selected"
+
+#~ msgid "Править свойства модуля"
+#~ msgstr "Edit module properties"
+
+#~ msgid "Название модуля"
+#~ msgstr "Module name"
+
+#~ msgid "Статус модуля"
+#~ msgstr "Module Status"
+
+#~ msgid "Описание модуля"
+#~ msgstr "Module description"
+
+#~ msgid "Вы уверены, что хотите удалить?"
+#~ msgstr "Do you really want to delete it?"
+
+#, fuzzy
+#~ msgid "развернуть"
+#~ msgstr "Turn"
+
+#, fuzzy
+#~ msgid "Изучить"
+#~ msgstr "Lower"
+
+#, fuzzy
+#~ msgid "Глоссарий"
+#~ msgstr "Supplier"
+
+#, fuzzy
+#~ msgid "удалить задание из модуля"
+#~ msgstr "Change course module title"
+
+#~ msgid "тема:"
+#~ msgstr "topic:"
+
+#, fuzzy
+#~ msgid "ОБУЧЕНИЕ"
+#~ msgstr "Latinic alphabet"
+
+#~ msgid "Выйти из системы"
+#~ msgstr "Log out"
+
+#~ msgid "поиск"
+#~ msgstr "search"
+
+#~ msgid "Общие настройки"
+#~ msgstr "Preferencies"
+
+#~ msgid "Название Системы"
+#~ msgstr "System name"
+
+#~ msgid "E-mail администрации Портала"
+#~ msgstr "Portal administration E-mail "
+
+#~ msgid "Количество строк в таблице"
+#~ msgstr "Number of lines in the table"
+
+#~ msgid "Количество сообщений, отображаемых в рабочей области канала чата"
+#~ msgstr "Number of posts to display on active chat area"
+
+#~ msgid "Интеграция с iWebinar"
+#~ msgstr "Integration with iWebinar"
+
+#~ msgid "Приступить к выполнению?"
+#~ msgstr "Do you want to start?"
+
+#~ msgid "Темы"
+#~ msgstr "Topics"
+
+#~ msgid "Базовая роль"
+#~ msgstr "Base role"
+
+#~ msgid "Доступные функции"
+#~ msgstr "Available functions"
+
+#~ msgid "нет существующих ролей"
+#~ msgstr "There are no derived roles"
+
+#~ msgid "Шаг 1. Выбор базовой роли"
+#~ msgstr "Select base role"
+
+#~ msgid "всем новым"
+#~ msgstr "for all of new users"
+
+#~ msgid "Шаг 2. Выбор функций"
+#~ msgstr "Select functions"
+
+#~ msgid "Функции, доступные базовой роли"
+#~ msgstr "Functions available for base role"
+
+#~ msgid "Функции, доступные производной роли"
+#~ msgstr "Functions available for derived role"
+
+#~ msgid "Вперед"
+#~ msgstr "Next"
+
+#~ msgid "Редактировать роль"
+#~ msgstr "Edit role"
+
+#~ msgid "Создать руководство пользователя"
+#~ msgstr "Create manuals"
+
+#~ msgid "Пользователи, которым назначена данная роль"
+#~ msgstr "Users assigned to the role"
+
+#~ msgid ""
+#~ "Внимание! Сеанс запущен в режиме просмотра. Используются настройки по умолчанию, "
+#~ "оценка не выставляется. "
+#~ msgstr ""
+#~ "Attention! The session runs in a view mode with default settings. No mark to recieve."
+
+#~ msgid ""
+#~ "Внимание! Осталось 5 минут до завершения тестирования.\n"
+#~ "По истечении этого времени сеанс тестирования принудительно завершится."
+#~ msgstr ""
+#~ "Attention! You have only 5 minutes until the test end.\n"
+#~ "After it the test will be closed automatically"
+
+#~ msgid ""
+#~ "Внимание! Осталась 1 минута до перехода к следующему вопросу.\n"
+#~ "По истечении этого времени переход будет осуществлен принудительно."
+#~ msgstr ""
+#~ "Attention! You have only 1 minute for the answer.\n"
+#~ "After it the question will be closed automatically"
+
+#~ msgid "Время ответа на вопрос вышло."
+#~ msgstr "Time to answer is over"
+
+#~ msgid "Диапазон баллов: от"
+#~ msgstr "Point range: from"
+
+#~ msgid "Сохранить и закончить"
+#~ msgstr "Save and finish"
+
+#~ msgid "Вопросов:"
+#~ msgstr "Questions:"
+
+#, fuzzy
+#~ msgid "всего "
+#~ msgstr "Number of questions"
+
+#~ msgid "баллов"
+#~ msgstr "point(s)"
+
+#~ msgid "Получено ответов"
+#~ msgstr "Number of questions recieved"
+
+#~ msgid "Начало тестирования"
+#~ msgstr "Testing start"
+
+#~ msgid "сегодня в "
+#~ msgstr "today at "
+
+#~ msgid "Окончание тестирования"
+#~ msgstr "Testing finish"
+
+#~ msgid "Потрачено времени"
+#~ msgstr "Hourage (min)"
+
+#~ msgid "сек."
+#~ msgstr "sec."
+
+#~ msgid "Я подтверждаю, что ознакомился с результатами"
+#~ msgstr "I confirm having had a look at the results"
+
+#~ msgid "Закончить просмотр"
+#~ msgstr "Finish viewing"
+
+#~ msgid "Тест не найден"
+#~ msgstr "Test is not found"
+
+#~ msgid "Иконка"
+#~ msgstr "Icon"
+
+#~ msgid "человек"
+#~ msgstr "people"
+
+#~ msgid "человека"
+#~ msgstr "people"
+
+#~ msgid "Редактирование роли"
+#~ msgstr "Derived Role Editing"
+
+#~ msgid "Закрыть список функций"
+#~ msgstr "Close function list"
+
+#~ msgid "Открыть список функций"
+#~ msgstr "Open function list"
+
+#, fuzzy
+#~ msgid "Просмотр новости запрещён"
+#~ msgstr "News has been successfully removed"
+
+#~ msgid "Название администрации Портала (поле 'От' в письмах, рассылаемых Системой)"
+#~ msgstr "Portal administration name (field 'From' in letters sent by System)"
+
+#~ msgid "Домен"
+#~ msgstr "Domain"
+
+#~ msgid "Хост"
+#~ msgstr "Host"
+
+#~ msgid "Адрес контроллера домена"
+#~ msgstr "Webinar publication point"
+
+#~ msgid "Имя пользователя"
+#~ msgstr "User Name"
+
+#~ msgid "Интеграция с Connect Pro"
+#~ msgstr "Intergation at Connect Pro"
+
+#~ msgid "Пароль по умолчанию для новых пользователей"
+#~ msgstr "Default Password for New Users"
+
+#~ msgid "высылать сообщения по email"
+#~ msgstr "send e-mail messages"
+
+#~ msgid "Произвольный"
+#~ msgstr "Arbitrary"
+
+#~ msgid "Анализ распределения активности пользователей"
+#~ msgstr "Activity Distribution Analysis"
+
+#~ msgid ""
+#~ "Инфоблок типа «А знаете ли Вы, что…», который в случайном порядке отображает "
+#~ "интересные и занимательные факты"
+#~ msgstr ""
+#~ "Information block is of Do you know type, it displays interesting and amusing facts"
+
+#~ msgid "Расписание на сегодня"
+#~ msgstr "Today's Schedule"
+
+#~ msgid "Настройка ролей"
+#~ msgstr "Derived Roles"
+
+#~ msgid "Генерация отчета"
+#~ msgstr "Report Generation"
+
+#~ msgid "Конструктор уч. модуля"
+#~ msgstr "Module Constructor"
+
+#~ msgid "Область ответственности организатора обучения"
+#~ msgstr "Training Manager Responsibility Areas"
+
+#~ msgid "Курсы слушателю"
+#~ msgstr "Training Courses for Trainees"
+
+#~ msgid "Выйти из режима"
+#~ msgstr "Quit mode"
+
+#~ msgid "от имени пользователя"
+#~ msgstr "in the name of"
+
+#~ msgid ""
+#~ "Инфоблок отображает статистику слушателей, зачисленных на курсы, обучающихся и "
+#~ "закончивших обучение"
+#~ msgstr ""
+#~ "Information block diplays statistics of users who are assigned in courses, trainees "
+#~ "and traindes"
+
+#~ msgid "Нет данных для отображения"
+#~ msgstr "There is no data to display"
+
+#~ msgid "Выход"
+#~ msgstr "Log out"
+
+#~ msgid "Вы действительно хотите выйти из системы?"
+#~ msgstr "Do you really want to quit?"
+
+#~ msgid "Выйти"
+#~ msgstr "Quit"
+
+#~ msgid "Остаться"
+#~ msgstr "Cancel"
+
+#~ msgid "Быстрый доступ к последним новостям"
+#~ msgstr "Quick access to last news"
+
+#~ msgid "голосов:"
+#~ msgstr "votes:"
+
+#~ msgid "Режим управления"
+#~ msgstr "Control Mode"
+
+#~ msgid ""
+#~ "Контроль заявок на обучение для своевременного реагирования организатора обучения"
+#~ msgstr "Request control for timely respond by training manager"
+
+#~ msgid "График, который наглядно отображает курсы, наиболее популярные у слушателей"
+#~ msgstr "Diagram to display the most popular courses among trainees"
+
+#~ msgid "Контроль посещаемости СДО пользователями"
+#~ msgstr "Trainees' attendance control"
+
+#~ msgid "Организация опросов и голосований (ответ на один вопрос)"
+#~ msgstr "Poll and voting organization (one question)"
+
+#~ msgid "Организация опросов и голосований (ответы на нескольких вопросов)"
+#~ msgstr "Poll and voting organization (several questions)"
+
+#~ msgid "Информация о числе посещений системы пользователями и гостями"
+#~ msgstr "Information on number of user and guest visits"
+
+#~ msgid "Короткие видеоролики, демонстрирующие основные функции системы"
+#~ msgstr "Short video to demonstate system main functions"
+
+#~ msgid ""
+#~ "Инфоблок позволяет просмотреть, кто из однокурсников сейчас online, и пригласить их "
+#~ "пообщаться в чате"
+#~ msgstr "Infomation block displayed online course mate whom may be invited to chat"
+
+#~ msgid ""
+#~ "Наглядный инфоблок для просматра рубрикатора учебных курсов и подачи заявок на "
+#~ "обучение"
+#~ msgstr "Information block for training course rubrics and requests"
+
+#~ msgid ""
+#~ "Список курсов со свободной регистрацией и близкой тематикой для данного слушателя"
+#~ msgstr "Free courses and courses with similar subjects"
+
+#~ msgid "Перечень учебных курсов с возможностью подать заявку"
+#~ msgstr "Catalog of training courses which allow to submit a request"
+
+#~ msgid "Инфоблок отображает план занятий на текущую дату"
+#~ msgstr "Information block displays the lesson plan at a current date"
+
+#~ msgid "Индикатор отображает процент прохождения учебных модулей"
+#~ msgstr "Indicator displays the procentage of modules studying"
+
+#~ msgid "Сбор обратной связи от слушателей, прошедших обучение"
+#~ msgstr "Feedback from the traineds"
+
+#~ msgid "Блок пользовательской авторизации"
+#~ msgstr "User autorization block"
+
+#~ msgid "Время не ограничено"
+#~ msgstr "Time is unlimited"
+
+#~ msgid "Пропущено вопросов"
+#~ msgstr "Questions missed"
+
+#~ msgid "Вопрос"
+#~ msgstr "Question"
+
+#~ msgid "Правильный"
+#~ msgstr "True"
+
+#~ msgid "Количество ресурсов"
+#~ msgstr "Number of resourses"
+
+#~ msgid "заявок"
+#~ msgstr "requests"
+
+#~ msgid "Примечание 2"
+#~ msgstr "Note 2"
+
+#~ msgid "Общий канал"
+#~ msgstr "Public channel"
+
+#~ msgid "итоговая оценка за курс"
+#~ msgstr "final mark for the course"
+
+#~ msgid ""
+#~ "Ваша система не содержит всех необходимых компонент для корректного отображения "
+#~ "содержимого."
+#~ msgstr "Your System Doesn't Comprises All Required Components"
+
+#~ msgid ""
+#~ "Курсы, сделанные в eAuthor 3.1, работают только в Microsoft Internet Explorer версии "
+#~ "5.5 или старше."
+#~ msgstr ""
+#~ "Courses made by eAuthor 3.1 are available only with Microsoft Internet Explorer "
+#~ "version 5.5 or later"
+
+#~ msgid "Ваш браузер не поддерживается"
+#~ msgstr "Your browser are not supported"
+
+#~ msgid "В браузере отключена поддержка выполнения сценариев JavaScript."
+#~ msgstr "JavaScript is disable in your browser"
+
+#~ msgid ""
+#~ "Вы действительно хотите прервать тестирование? При этом будет создана запись в "
+#~ "журнале тестирований и попыка тестирования будет засчитана, но оценка за занятие "
+#~ "выставлена не будет."
+#~ msgstr ""
+#~ "Do you really want to interrupt the testing? In this case the record in the test "
+#~ "register is made, attempt is counted but without the mark for the lesson."
+
+#~ msgid ""
+#~ "Вы действительно хотите досрочно завершить тестирование? При этом будет выставлена "
+#~ "оценка только за те вопросы, на которые Вы успели ответить. Данный вид завершения "
+#~ "задания является нормальным и допустимым."
+#~ msgstr "Do you really want to complete the testing?"
+
+#~ msgid "Результаты по темам"
+#~ msgstr "Results on topics"
+
+#~ msgid "Разрешение экрана"
+#~ msgstr "Screen resolution"
+
+#~ msgid "Наличие cookie"
+#~ msgstr "Cookies"

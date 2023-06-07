@@ -1,0 +1,58 @@
+<?php
+class HM_Form_Skills extends HM_Form {
+
+    public function init() 
+    {
+        $this->setMethod(Zend_Form::METHOD_POST);
+        $this->setName('skills');
+        
+        if ($profileId = $this->getParam('profile_id', 0)) {
+            $profile = Zend_Registry::get('serviceContainer')->getService('AtProfile')->find($profileId)->current();
+        } 
+
+        $this->addElement('hidden',
+            'cancelUrl',
+            array(
+                'Required' => false,
+                'Value' => $this->getView()->url(array('controller' => 'report', 'action' => 'index'))
+            )
+        );
+        
+        $this->addElement('hidden',
+            'profile_id',
+            array(
+                'Required' => true,
+                'Validators' => array('Int'),
+                'Filters' => array('Int')
+            )
+        );   
+
+        foreach (HM_At_Profile_Skill_SkillModel::getTypes() as $typeId => $title) {
+            
+            $this->addElement('multiSet', 'skills_' . $typeId, array(
+                'Required' => false,
+                'dependences' => array(
+                    new Zend_Form_Element_Text(
+                        'skill',
+                        array(
+                        	'Label' => _('№ п/п'),
+                        	'class' => 'wide multiset-trigger',
+                        )
+                    ), 
+                )                
+            ));     
+
+            $this->addDisplayGroup(array(
+                'cancelUrl',
+                'skills_' . $typeId,
+            ),
+                'group_' . $typeId,
+                array('legend' => $title)
+            );             
+        }
+
+        $this->addElement('Submit', 'submit', array('Label' => _('Сохранить')));
+
+        parent::init(); // required!
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "appId": "ru.hypermethod",
+  "appName": "HM 5g Mobile",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "distMobile"
+}

@@ -1,0 +1,17 @@
+#fieldset-contact .multiset .multiset-cell.multiset-type-text {
+    border: 1px solid transparent;
+    padding: 5px;
+    width: 18%;
+}
+
+#fieldset-contact .multiset .multiset-cell.multiset-type-text:first-child {
+    width: 35%;
+}
+
+#fieldset-contact .multiset .multiset-header .multiset-cell.multiset-type-text {
+    padding: 0 5px;
+}
+
+#fieldset-contact input[type="text"] {
+    width: 100%;
+}

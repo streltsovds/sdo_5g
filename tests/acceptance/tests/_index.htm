@@ -1,0 +1,111 @@
+<HTML>
+<HEAD>
+<META http-equiv="content-type" content="text/html; charset=UTF-8">
+<Title>Тестовые сценарии</Title>
+<Style type="text/css">
+  BODY { background: #FFFFFF; color: #000000;
+         font-family: Arial;
+  }
+  A:link { color: #FF0000 }
+  A:visited { color: #800080 }
+  A:active { color: #0000FF }
+  .ThRows { 
+            background-color: #000000;
+            color: #FFFFFF;
+            font-weight: bold; text-align: center;
+            font-family: Arial;
+  }
+  .TrRows {
+            background-color: #FFFFFF;
+            color: #000000;
+            font-family: Arial;
+  }
+  .TrOdd  {
+            background-color: #F3F3F3;
+            color: #000000;
+            font-family: Arial;
+  }
+</STYLE>
+</HEAD>
+<BODY>
+<h1>Assessment Tools 3.0</h1>
+<Table Border="1" Cellpadding="4" Cellspacing="1" width="100%">
+  <tr>
+    <td class="ThRows">Имя файла</td>
+    <td class="ThRows">Описание</td>
+    <td class="ThRows">Pre-requisites</td>
+    <td class="ThRows">Requisites</td>
+  </tr>
+  <tr>
+    <td class="TrOdd" align=Left>AtPrepare01</td>
+    <td class="TrOdd" align=Left>Начальное наполнение: создание учётных записей actor'ов, импорт оргструктуры</td>
+    <td class="TrOdd" align=Left>-</td>
+    <td class="TrOdd" align=Left>
+		<li>user1</li>
+		<li>user2</li>
+		<li>orgstructure</li>
+	</td>
+  </tr>
+  <tr>
+    <td class="TrRows" align=Left>AtPrepare02</td>
+    <td class="TrRows" align=Left>Назначение ролей менеджер/специалист по оценке; назначение области ответственности</td>
+    <td class="TrRows" align=Left>
+		<li>user1</li>
+		<li>user2</li>
+		<li>structure</li>
+	</td>
+    <td class="TrRows" align=Left>
+		<li>user1:atmanager</li>
+		<li>user2:atspecialist</li>
+	</td>
+  </tr>  
+  <tr>
+    <td class="TrOdd" align=Left>TcPrepare01</td>
+    <td class="TrOdd" align=Left>Создание провайдера</td>
+    <td class="TrOdd" align=Left>
+		-
+	</td>
+    <td class="TrOdd" align=Left>
+		<li>provider</li>
+	</td>
+  </tr>
+</Table>
+
+<h1>eLearning Server 4.4</h1>
+<Table Border="1" Cellpadding="4" Cellspacing="1">
+  <tr>
+    <td class="ThRows">Имя файла</td>
+    <td class="ThRows">Описание</td>
+    <td class="ThRows">Pre-requisites</td>
+	<td class="ThRows">Requisites</td>  </tr>
+  <tr>
+    <td class="TrOdd" align=Left>Sample01</td>
+    <td class="TrOdd" align=Left>Тестовый сценарий: создание уч.записи, курса, назначение на курс</td>
+    <td class="TrOdd" align=Left>-</td>
+    <td class="TrOdd" align=Left>-</td>
+  </tr>
+  <tr>
+    <td class="TrRows" align=Left>LMSScenario01</td>
+    <td class="TrRows" align=Left>Подготовка дистанционного обучения; \\server\projects\2_Серверные продукты\ИР740_eLearning Server\!Документация\Тестовая\</td>
+    <td class="TrRows" align=Left>-</td>
+    <td class="TrRows" align=Left>
+
+	<li>$subject - уч. курс	
+	<li>$teacherUser - тьютор (назначен на курс)
+	<li>$scale - шкала оценивания (для опросов)
+	<li>$poll - опрос
+	<li>$module - уч.модуль (в курсе)
+	<li>$resource1 - инфоресурс (html, в курсе)
+	<li>$resource2 - инфоресурс (файл, в курсе)
+	<li>$formula - формула для оценки тестов (в курсе)
+	<li>$test - тест (в курсе)
+	<li>$task - задание (в курсе)
+	<li>$lesson1 - занятие с типом "модуль"
+	<li>$lesson2 - занятие с типом "тест"
+	<li>$lesson3 - занятие с типом "задание"
+	</td>
+  </tr>
+</Table>
+
+</BODY>
+</HTML>

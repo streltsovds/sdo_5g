@@ -1,0 +1,21 @@
+{
+  "balloon" : {
+    "color" : "#000000",
+    "cornerRadius" : 4,
+    "borderWidth" : 3,
+    "borderAlpha" : 0.5,
+    "borderColor" : "#DFCA51",
+    "alpha" : 0.8
+  },
+  "graphs" : {
+    "graph" : {
+      "color" : "#0F5BF1",
+      "lineWidth" : 2,
+      "fillAlphas" : 0.5,
+      "negativeFillAlphas" : 0.5,
+      "bullet"      : "round",
+      "bulletSize"  : 8,
+      "bulletAlpha" : 1
+    }
+  }
+}

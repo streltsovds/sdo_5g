@@ -1,0 +1,34 @@
+.header__headline-3 {
+  font-size: 34px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  color: #2A2A2A;
+  // todo: мб для headline-2 и headline-1 тоже надо будет убрать?
+  padding: 0;
+}
+.header__headline-2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #000000;
+  padding: 0 8px;
+}
+
+.header__headline-1 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  padding: 0 8px 0;
+}
+
+@media(max-width: 440px) {
+  .header__headline-3 {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

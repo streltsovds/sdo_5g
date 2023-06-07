@@ -1,0 +1,29 @@
+﻿#agreement  { color: #333333; }
+#agreement .card_photo { float: left; }
+#agreement .card_photo img { border: 1px solid white; border-radius: 3px; }
+#agreement .card_content { padding-left: 140px; padding-top: 5px; }
+#agreement .card_content .tooltip { position: absolute; left: -22px; top: -2px; }
+#agreement .card_content .tooltip_wrapper { position: relative; margin: 0; }
+#agreement .card_content h6 { font-size: 1.5em; margin-top: 0.2em; margin-bottom: 1em; line-height: 1em; }
+#agreement hr { border-width: 0; margin: 0; }
+#agreement .card { padding: 0; font-size: 1.1em; }
+#agreement .card div { margin-top: 2px; }
+#agreement .card_subject {
+	margin: 10px 0; 
+	padding: 10px 0; 
+	border-top: 1px solid #bbb;
+	border-bottom: 1px solid #bbb;
+}
+#agreement .card_subject h6 {
+    color: #3f5c6e;
+    font-size: 1.636em;
+	display: block;
+	float: left;
+}
+
+#agreement .card_subject p {
+	display: block;
+	float: right;
+	font-style: italic;
+	padding: 0 2px;
+}

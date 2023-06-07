@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Не используется, изменять application/settings/navigation/main.php -->
+<!-- edited with XML Spy v4.3 U (http://www.xmlspy.com) by lex (hypermethod) -->
+<!DOCTYPE actions [
+    <!ELEMENT actions (preference*, crontask*, group*)>
+    <!ATTLIST actions
+    branch CDATA #REQUIRED
+>
+    <!ELEMENT group (page*, custom*, subgroup*)>
+    <!ATTLIST group
+    id ID #REQUIRED
+        name CDATA #REQUIRED
+        icon CDATA #IMPLIED
+        order CDATA #IMPLIED
+        profiles CDATA #IMPLIED
+        hide (false | true) #IMPLIED
+>
+    <!ELEMENT subgroup (page*)>
+    <!ELEMENT custom (tab*, link*, option*)>
+    <!ATTLIST custom
+    id ID #REQUIRED
+        profiles CDATA #IMPLIED
+        name CDATA #IMPLIED
+        name_full CDATA #IMPLIED
+>
+    <!ELEMENT page (tab*, link*, option*)>
+    <!ATTLIST page
+    id ID #REQUIRED
+        name CDATA #REQUIRED
+        name_full CDATA #IMPLIED
+        url CDATA #IMPLIED
+        order CDATA #IMPLIED
+        profiles CDATA #IMPLIED
+>
+    <!ELEMENT tab EMPTY>
+    <!ATTLIST tab
+    id ID #REQUIRED
+        name CDATA #REQUIRED
+        name_full CDATA #IMPLIED
+        order CDATA #IMPLIED
+        profiles CDATA #IMPLIED
+>
+    <!ELEMENT link EMPTY>
+    <!ATTLIST link
+    id ID #REQUIRED
+        name CDATA #REQUIRED
+        url CDATA #REQUIRED
+        alt CDATA #IMPLIED
+        target CDATA #IMPLIED
+        params CDATA #IMPLIED
+        order CDATA #IMPLIED
+        profiles CDATA #IMPLIED
+        hide (false | true) #IMPLIED
+        confirm CDATA #IMPLIED
+        anchor CDATA #IMPLIED
+>
+    <!ELEMENT option EMPTY>
+    <!ATTLIST option
+    id ID #REQUIRED
+        name CDATA #REQUIRED
+        profiles CDATA #IMPLIED
+>
+    <!ELEMENT preference EMPTY>
+    <!ATTLIST preference
+    id ID #REQUIRED
+        name CDATA #REQUIRED
+        value CDATA #IMPLIED
+>
+    <!ELEMENT crontask EMPTY>
+    <!ATTLIST crontask
+    id ID #REQUIRED
+        name CDATA #IMPLIED
+        launch (false | true) #IMPLIED
+        runperiod CDATA #IMPLIED
+>
+]>
+<actions branch="corporate">
+    <preference id="use_bologna_system" name="болонская система" value="0"/>
+    <preference id="use_webinar" name="вебинар" value="1"/>
+    <preference id="use_connect_pro" name="connect pro" value="0"/>
+    <preference id="use_at_integration" name="интеграция с at" value="0"/>
+    <preference id="use_cms_integration" name="интеграция с cms" value="0"/>
+    <preference id="use_sis_integration" name="интеграция с sis" value="0"/>
+    <crontask id="synchronize_positions" name="Синхронизация структуры организации" launch="false"/>
+    <crontask id="email_absences" name="Уведомление по Email об отсутствиях на занятиях" launch="false"/>
+    <group id="m88" name="Домой" profiles="guest,enduser,teacher,dean,admin,simple_admin,developer,manager,supervisor,atmanager,recruiter,atmanager_local,recruiter_local,curator,moderator,labor_safety,labor_safety_local" order="1">
+        <subgroup>
+            <page id="m8801" name="Домой" url=""/>
+        </subgroup>
+    </group>
+    <group id="m02" name="Администрирование" profiles="admin,simple_admin">
+        <subgroup>
+            <page id="m0201" name="Все учетные записи" url="user/list">
+                <link name="Создать учетную запись" url="user/list/new" id="m020101"/>
+                <link name="Сгенерировать учетные записи " url="user/list/generate" id="m020102"/>
+                <link name="Импортировать учетные записи из CSV" url="user/import/index/source/csv" id="m020103"/>
+                <!--link name="Импортировать учетные записи из Active Directory" url="user/import/index/source/ad" id="m020104"/-->
+                <!--link name="Импортировать учетные записи из SAP" url="user/import/sap" id="m020104" /-->
+            </page>
+        </subgroup>
+        <subgroup>
+            <page id="m0207" name="Супервайзеры" url="assign/supervisor" profiles="~simple_admin"/>
+            <page id="m0206" name="Менеджеры и специалисты по оценке" url="assign/atmanager"  profiles="~simple_admin"/>
+            <page id="m0205" name="Менеджеры и специалисты по персоналу" url="assign/recruiter"  profiles="~simple_admin"/>
+            <!--page id="m0208" name="Менеджеры и специалисты по персоналу" url="assign/hr" /-->
+            <page id="m0209" name="Менеджеры и специалисты по охране труда" url="assign/labor-safety"  profiles="~simple_admin"/>
+            <page id="m0202" name="Менеджеры и специалисты по обучению" url="assign/dean"  profiles="~simple_admin"/>
+            <page id="m0221" name="Менеджеры конкурсов" url="assign/curator"  profiles="~simple_admin"/>
+            <page id="m0204" name="Администраторы" url="assign/admin"  profiles="~simple_admin"/>
+        </subgroup>
+    </group>
+    <group id="m03" name="Портал" profiles="admin,simple_admin">
+        <subgroup>
+            <!--page id="m0301" name="Информационные блоки" url="about.php"/-->
+            <page id="m0301" name="Информационные блоки" url="info/list"  profiles="~simple_admin"/>
+            <page id="m0302" name="Информационные страницы" url="htmlpage/list">
+                <link id="m030201" name="Создать страницу" url="htmlpage/list/new"/>
+            </page>
+        </subgroup>
+        <subgroup>
+            <page id="m0303" name="Главная страница" url="interface/edit"  profiles="~simple_admin"/>
+            <page id="m0304" name="Сервисы информационного взаимодействия" url="activity/edit"  profiles="~simple_admin"/>
+            <page id="m0305" name="Тема оформления" url="interface/edit/design-settings"  profiles="~simple_admin"/>
+        </subgroup>
+    </group>
+    <group id="m15" name="Планирование" profiles="dean,dean_local">
+        <subgroup>
+            <page id="m1501" name="Сессии годового планирования" url="tc/session/list" profiles="~dean_local"/>
+            <page id="m1511" name="Сессии квартального планирования" url="tc/session-quarter/list" profiles="~dean_local"/>
+        </subgroup>
+        <subgroup>
+            <page id="m1531" name="Сроки сертификатов" url="certificates/list/index" profiles="dean_local" />
+        </subgroup>
+        <subgroup>
+            <page id="m1521" name="Фактические затраты на обучение" url="tc/subject-costs/actual-costs/index" profiles="~dean_local">
+                <link name="Создать запись" url="tc/subject-costs/actual-costs/new" id="m152101"/>
+            </page>
+        </subgroup>
+    </group>
+    <group id="m06" name="Обучение" profiles="supervisor,dean,dean_local">
+        <subgroup>
+            <page id="m0601" name="Учебные курсы" url="subject/list" profiles="~teacher,~supervisor,~enduser">
+                <link name="Создать учебный курс" url="subject/list/new" id="m060101"/>
+            </page>
+            <page id="m0607" name="Учебные сессии" url="subject/list/index/base/2/" profiles="~teacher,~supervisor,~enduser" />
+        </subgroup>
+        <subgroup>
+            <page id="m0612" name="Внешние курсы" url="tc/subject/fulltime" profiles="~teacher,~supervisor,~enduser">
+                <link name="Создать внешний курс" url="tc/subject/fulltime/new" id="m140101"/>
+            </page>
+            <page id="m0613" name="Сессии внешних курсов" url="tc/subject/fulltime/index/base/2/" profiles="~teacher,~supervisor,~enduser"/>
+        </subgroup>
+        <subgroup>
+            <page id="m0623" name="Учебные программы" url="programm/list" profiles="~enduser,~supervisor,~teacher">
+                 <link name="Создать программу" url="programm/list/new" id="m062301" profiles="~dean_local"/>
+            </page>
+        </subgroup>
+        <subgroup>
+             <page id="m0627" name="Обратная связь" url="feedback/list" profiles="~enduser,~supervisor,~teacher">
+                <link id="m062701" name="Создать мероприятие по сбору обратной связи" url="feedback/list/new"/>
+            </page>
+        </subgroup>
+        <subgroup>
+            <page id="m0628" name="Результаты обучения по курсам" url="recruit/newcomer/learn-ot/index/ordergrid/end_DESC">
+                <link name="Импортировать историю обучения из CSV" url="user/import/index/source/study-history-csv" id="m062801"/>
+            </page>
+        </subgroup>
+        <subgroup>
+            <page id="m0622" name="Обучение пользователей подразделения" url="assign/staff" profiles="~enduser,~teacher,~dean,~dean_local"/>
+        </subgroup>
+        <subgroup>
+            <page id="m0608" name="Годовое планирование" url="tc/session/list" profiles="~enduser,~teacher,~dean,~dean_local" />
+            <page id="m0609" name="Квартальное планирование" url="tc/session-quarter/list" profiles="~enduser,~teacher,~dean,~dean_local" />
+        </subgroup>
+    </group>
+    <group id="m13" name="Пользователи" profiles="dean,dean_local">
+        <subgroup>
+            <page id="m1302" name="Слушатели" url="assign/student"/>
+            <page id="m1305" name="Заявки на обучение" url="order/list"/>
+            <page id="m1303" name="Прошедшие обучение" url="assign/graduated"/>
+        </subgroup>
+        <subgroup>
+            <page id="m1304" name="Тьюторы" url="assign/teacher"  profiles="~dean_local"/>
+        </subgroup>
+        <subgroup>
+            <page id="m1306" name="Учебные группы" url="study-groups/list" profiles="~enduser,~supervisor,~teacher,~enduser,~expert,~head1,~head2,~head3,~head4">
+                <link name="Создать учебную группу" url="study-groups/list/new" id="m130601"/>
+                <link name="Импортировать учетные записи из CSV" url="user/import/index/source/csv" id="m130602"/>
+            </page>
+        </subgroup>
+    </group>
+    <group id="m11" name="Обучение" profiles="enduser,teacher">
+        <subgroup>
+            <page id="m1101" name="Мои курсы" url="subject/list/index/switcher/list"/>
+        </subgroup>
+        <subgroup>
+            <page id="m1108" name="Мои заявки" url="order/list"  profiles="~teacher"/>
+        </subgroup>
+        <subgroup>
+            <page id="m1121" name="Каталог учебных курсов" url="subject/catalog" profiles="~teacher"/>
+            <page id="m1122" name="Календарь учебных сессий" url="subject/list/calendar/base/2/switcher/calendar" profiles="~teacher"/>
+        </subgroup>
+    </group>
+    <group id="m68" name="Подбор" profiles="recruiter,recruiter_local,supervisor">
+        <subgroup>
+            <page id="m6801" name="Сессии подбора" url="recruit/vacancy/list" profiles="~supervisor">
+                <link id="m680101" url="recruit/vacancy/list/load-new-vacancies" name="Загрузить новые вакансии в базу"/>
+            </page>
+            <page id="m6805" name="Заявки на подбор" url="recruit/application/list" />
+            <page id="m6810" name="Вакантные должности" url="recruit/vacancy/vacancy" />
+        </subgroup>
+        <subgroup>
+            <page id="m6802" name="База резюме" url="recruit/candidate/list" profiles="~supervisor">
+                <!--link id="m680201" url="user/list/new" name="Создать учетную запись кандидата"/-->
+                <link id="m680202" url="recruit/candidate/list/load-new-resumes" name="Загрузить новые резюме в базу"/>
+            </page>
+            <page id="m6804" name="Провайдеры подбора" url="recruit/provider/list" profiles="~supervisor">
+                <link id="m680401" url="recruit/provider/list/new" name="Создать нового провайдера"/>
+            </page>
+        </subgroup>
+        <subgroup>
+            <page id="m6806" name="Планируемые затраты" url="recruit/costs/planned-costs" profiles="~supervisor">
+                <link id="m680601" url="recruit/costs/planned-costs/new" name="Создать запись" profiles="~recruiter_local" />
+            </page>
+            <page id="m6807" name="Фактические затраты" url="recruit/costs/actual-costs" profiles="~supervisor">
+                <link id="m680701" url="recruit/costs/actual-costs/new" name="Создать запись" profiles="~recruiter_local"/>
+            </page>
+        </subgroup>
+        <subgroup>
+            <page id="m6808" name="Внешний кадровый резерв" url="recruit/reservist/list" profiles="~recruiter_local,~supervisor">
+                <link id="m680801" url="recruit/reservist/import/index/source/template" name="Импорт данных кандидатов внешнего кадрового резерва"/>
+            </page>
+        </subgroup>
+    </group>
+    <group id="m36" name="Обучение" profiles="labor_safety,labor_safety_local">
+        <subgroup>
+            <page id="m3601" name="Курсы по ОТ" url="subject/list">
+                <link name="Создать учебный курс" url="subject/list/new" id="m360101"/>
+            </page>
+            <page id="m3607" name="Учебные сессии по ОТ" url="subject/list/index/base/2/" />
+        </subgroup>
+        <subgroup>
+            <page id="m3602" name="Обучение пользователей подразделения" url="assign/staff"  profiles="~labor_safety,~labor_safety_local"/>
+        </subgroup>
+        <subgroup>
+            <page id="m3603" name="Результаты обучения по курсам" url="recruit/newcomer/learn-ot/index/ordergrid/end_DESC" >
+                <link name="Импортировать историю обучения из CSV" url="user/import/index/source/study-history-csv" id="m360301"/>
+            </page>
+        </subgroup>
+    </group>
+    <group id="m67" name="Адаптация" profiles="dean,dean_local,recruiter,recruiter_local,supervisor,labor_safety,labor_safety_local">
+        <subgroup>
+            <page id="m6702" name="Сессии адаптации" url="recruit/newcomer/list" />
+        </subgroup>
+        <subgroup>
+            <page id="m6701" name="Новые назначения" url="recruit/newcomer/new-assignments" profiles="~supervisor" />
+        </subgroup>
+    </group>
+    <group id="m69" name="Оценка персонала" profiles="enduser, atmanager, atmanager_local">
+        <subgroup>
+            <page id="m6903" name="Оценка персонала" url="at/session/list/my" profiles="~atmanager, ~atmanager_local" />
+            <page id="m6901" name="Оценочные сессии" url="at/session/list" profiles="~enduser">
+                <link name="Создать оценочную сессию" url="at/session/list/new" id="m690101"/>
+            </page>
+        </subgroup>
+        <subgroup>
+            <page id="m6904" name="Участники оценочных сессий" url="at/session/users/list" profiles="~enduser" />
+        </subgroup>
+        <!--subgroup>
+            <page id="m6902" name="Показатели эффективности пользователей" url="at/kpi/user" profiles="~enduser,~supervisor,~atmanager">
+                <link name="Создать показатель эффективности пользователя" url="at/kpi/user/new" id="m690201"/>
+                <link name="Импортировать показатели эффективности пользователей" url="at/kpi/user/import" id="m690202"/>
+            </page>
+        </subgroup-->
+    </group>
+    <group id="m37" name="Кадровый резерв" profiles="atmanager,atmanager_local,dean,dean_local,recruiter,recruiter_local">
+        <subgroup>
+            <page id="m3701" name="Сессии кадрового резерва" url="hr/reserve/list" >
+                <link name="Создать сессию КР" url="hr/reserve/list/new" id="m370101"/>
+            </page>
+            <page id="m3703" name="Заявки на участие в сессиях кадрового резерва" url="hr/reserve-request/list"  profiles="~supervisor,~atmanager,~atmanager_local,~dean,~dean_local" />
+        </subgroup>
+        <subgroup>
+            <page id="m3702" name="Должности кадрового резерва" url="hr/reserve/position">
+                <link name="Создать должность кадрового резерва" url="hr/reserve/position/new" id="m370201"/>
+            </page>
+        </subgroup>
+    </group>
+    <group id="m70" name="Ротация" profiles="recruiter,recruiter_local">
+        <subgroup>
+            <page id="m7001" name="Ротация" url="hr/rotation/list" >
+                <link name="Создать сессию ротации" url="hr/rotation/list/new" id="m700101"/>
+            </page>
+        </subgroup>
+    </group>
+    <group id="m08" name="Оргструктура" profiles="supervisor,recruiter,recruiter_local,atmanager,atmanager_local,labor_safety,labor_safety_local,dean,dean_local,admin">
+        <subgroup>
+            <page id="m0801" name="Оргструктура" url="orgstructure/list">
+                <link id="m080102" name="Создать подразделение" url="orgstructure/list/new/item/department/parent/%parent%" profiles="admin,simple_admin"/>
+                <link id="m080103" name="Создать штатную единицу" url="orgstructure/list/new/item/position/parent/%parent%" profiles="admin,simple_admin"/>
+                <!--link id="m080101" name="Импортировать структуру организации" url="orgstructure/import/index/source/csv" profiles="admin"/-->
+                <link id="m080104" name="Восстановить структуру" url="orgstructure/index/repair" profiles="~labor_safety,~labor_safety_local"/>
+            </page>
+        </subgroup>
+        <subgroup>
+            <page id="m0802" name="Категории должностей" url="at/category/list" profiles="~supervisor,~admin,~simple_admin">
+                <link name="Создать категорию должности" url="at/category/list/new" id="m080201"/>
+            </page>
+            <page id="m0803" name="Профили должностей" url="at/profile/list" profiles="~supervisor,~admin,~simple_admin">
+                <link name="Создать профиль должности" url="at/profile/list/new" id="m080301"/>
+            </page>
+        </subgroup>
+    </group>
+    <group id="m26" name="Конкурсы" profiles="curator,moderator">
+        <subgroup>
+            <page id="m2601" name="Конкурсы" url="project/list" profiles="~moderator">
+                <link name="Создать конкурс" url="project/list/new" id="m260101"/>
+            </page>
+            <page id="m2602" name="Конкурсы" url="project/list" profiles="~curator"/>
+        </subgroup>
+        <subgroup>
+            <page id="m2604" name="Участники конкурсов" url="assign/participant" profiles="~moderator"/>
+        </subgroup>
+    </group>
+    <group id="m10" name="База знаний" profiles="enduser,supervisor,teacher,dean,dean_local,developer,manager,atmanager,atmanager_local,recruiter,recruiter_local,curator,moderator">
+        <subgroup>
+            <page id="m1008" name="База знаний" url="kbase"/>
+        </subgroup>
+        <subgroup>
+            <page id="m1002" name="Информационные ресурсы" url="resource/list" profiles="~enduser,~teacher,~supervisor,~recruiter,~recruiter_local,~curator,~moderator">
+                <link id="m100201" url="resource/list/new" name="Создать информационный ресурс"/>
+                <link id="m100202" name="Импортировать информационные ресурсы" url="resource/import/index/source/csv" />
+                <!--<link id="m100203" name="Импортировать информационные ресурсы с привязкой к медиа-контенту" url="resource/import/index/source/csv_media" />-->
+                <link id="m100204" name="Сгенерировать информационные ресурсы" url="resource/generate/index" />
+            </page>
+            <page id="m1001" name="Учебные модули" url="course/list/" profiles="~enduser,~teacher,~supervisor,~recruiter,~recruiter_local,~curator,~moderator">
+                <link id="m100101" name="Создать учебный модуль" url="course/list/new"/>
+                <link id="m100102" name="Импортировать учебный модуль" url="course/import/subject" />
+            </page>
+        </subgroup>
+        <subgroup>
+            <page id="m1011" name="Тесты" url="quest/list/index/only-type/test" profiles="~teacher,~enduser,~supervisor,~moderator">
+                <link id="m101101" url="quest/list/new/type/test" name="Создать тест"/>
+                <link id="m101102" url="quest/import/index/source/eau2" name="Импортировать тесты из eAuthor2"/>
+                <link id="m101103" url="quest/import/index/source/eau3" name="Импортировать тесты из eAuthor3"/>
+            </page>
+            <page id="m1013" name="Опросы" url="quest/list/index/only-type/poll" profiles="~teacher,~enduser,~supervisor,~moderator">
+                <link id="m101301" url="quest/list/new/type/poll" name="Создать опрос"/>
+            </page>
+            <page id="m1012" name="Психологические опросы" url="quest/list/index/only-type/psycho" profiles="~enduser,~teacher,~manager,~dean,~dean_local,~supervisor,~curator,~moderator">
+                <link id="m101201" url="quest/list/new/type/psycho" name="Создать психологический опрос"/>
+            </page>
+        </subgroup>
+        <subgroup>
+            <page id="m1007" name="Задания" url="task/list" profiles="~enduser,~teacher,~supervisor,~recruiter,~recruiter_local,~curator,~moderator">
+                <link id="m100701" url="task/list/new" name="Создать задание"/>
+            </page>
+        </subgroup>
+        <subgroup>
+            <page id="m1009" name="Ресурсы на основе сервисов взаимодействия" url="activity/list" profiles="~enduser,~teacher,~dean,~dean_local,~supervisor,~atmanager,~atmanager_local,~recruiter,~recruiter_local,~curator,~moderator"/>
+        </subgroup>
+    </group>
+    <group id="m09" name="Разработка учебных модулей" profiles="developer,manager">
+        <subgroup>
+            <page id="m0901" name="Учебные модули в разработке" url="course/list/developed">
+                <link id="m090102" name="Создать учебный модуль" url="course/list/new"/>
+            </page>
+            <page id="m0902" name="Архив учебных модулей" url="course/list/archived" profiles="~enduser,~teacher">
+                <!--link id="m090201" name="Создать электронный курс" url="course/list/new"/-->
+            </page>
+        </subgroup>
+        <subgroup>
+            <page id="m0903" name="Поставщики" url="provider/list" profiles="~developer">
+                <link id="m090301" name="Добавить поставщика" url="provider/list/new"/>
+            </page>
+        </subgroup>
+    </group>
+    <group id="m105" name="Отчёты" profiles="recruiter_local,admin,atmanager,atmanager_local,recruiter,manager,dean,dean_local,developer,supervisor,teacher,enduser">
+        <subgroup>
+            <page id="m10501" name="Отчёты" url="report/list/tree" profiles="recruiter_local,admin,atmanager,atmanager_local,recruiter,manager,dean,developer,supervisor,teacher,enduser"/>
+            <!--<page id="m10502" name="Архив отчетов" url="" profiles="admin,dean,manager,supervisor,enduser"/>
+            <page id="m10508" name="Аналитика" url="tc/report/index/analitics" profiles="~admin,~atmanager,~atmanager_local,~recruiter_local,~recruiter,dean,dean_local,~developer,~manager,~supervisor,~teacher,~enduser"/>
+            <page id="m10502" name="Заявки на обучение" url="tc/report/index/application" profiles="~admin,~atmanager,~atmanager_local,~recruiter_local,~recruiter,dean,dean_local,~developer,~manager,~supervisor,~teacher,~enduser"/>
+            <page id="m10510" name="Планируемое обучение" url="tc/report/index/application/planning/1" profiles="~admin,~atmanager,~atmanager_local,~recruiter_local,~recruiter,dean,dean_local,~developer,~manager,~supervisor,~teacher,~enduser"/>
+            <page id="m10507" name="Обязательное обучение" url="tc/report/index/expire" profiles="~admin,~atmanager,~atmanager_local,~recruiter_local,~recruiter,dean,dean_local,~developer,~manager,~supervisor,~teacher,~enduser"/>
+            <page id="m10509" name="Форма бизнес плана" url="tc/report/index/bp" profiles="~admin,~atmanager,~atmanager_local,~recruiter_local,~recruiter,dean,dean_local,~developer,~manager,~supervisor,~teacher,~enduser"/-->
+        </subgroup>
+        <subgroup>
+            <page id="m10503" name="Конструктор отчётов" url="report/list" profiles="~atmanager_local,~recruiter_local,~supervisor,~teacher,~enduser,~developer,~dean_local">
+                <link id="m1050301" url="report/list/edit" name="Создать отчетную форму"/>
+            </page>
+        </subgroup>
+        <subgroup>
+            <page id="m10504" name="Шаблон отчетов" url="template/report" profiles="~atmanager_local,~recruiter_local,~supervisor,~teacher,~enduser,~developer,~dean_local"/>
+        </subgroup>
+        <subgroup>
+            <page id="m10505" name="План-факт по затратам на поиск и подбор" url="recruit/report/planned-actual-costs/index" profiles="~admin,~simple_admin,~atmanager,~atmanager_local,~dean,~dean_local,~developer,~manager,~supervisor,~teacher,~enduser"/>
+            <page id="m10506" name="Стоимость закрытой вакансии по каналам поиска" url="recruit/report/closed-vacancy-cost/index" profiles="~admin,~simple_admin,~atmanager,~atmanager_local,~dean,~dean_local,~developer,~manager,~supervisor,~teacher,~enduser"/>
+        </subgroup>
+    </group>
+    <group id="m14" name="Справочники" profiles="manager,dean,dean_local,atmanager,atmanager_local,recruiter,recruiter_local,labor_safety,labor_safety_local">
+        <subgroup>
+            <page id="m1406" name="Классификаторы" url="classifier/list-types" profiles="~atmanager,~atmanager_local,~recruiter,~recruiter_local">
+                <link id="m040601" name="Создать классификатор" url="classifier/list-types/new"/>
+            </page>
+        </subgroup>
+        <subgroup>
+            <page id="m1402" name="Провайдеры обучения" url="tc/provider/list" profiles="~manager,~atmanager,~atmanager_local,~recruiter,~labor_safety,~labor_safety_local"/>
+        </subgroup>
+        <subgroup>
+            <page id="m1411" name="Места проведения внутреннего обучения" url="room" profiles="~manager,~atmanager,~atmanager_local,~recruiter_local"/>
+        </subgroup>
+        <subgroup>
+            <page id="m1426" name="Компетенции" url="at/criterion/competence" profiles="~manager,~labor_safety,~labor_safety_local">
+                <link name="Создать компетенцию" url="at/criterion/competence/new" id="m142601"/>
+            </page>
+            <page id="m1429" name="Квалификации" url="at/criterion/test" profiles="~manager,~labor_safety,~labor_safety_local">
+                <link name="Создать квалификацию" url="at/criterion/test/new/parent/%parent%" id="m142901"/>
+            </page>
+            <page id="m1430" name="Личностные характеристики" url="at/criterion/personal" profiles="~dean,~dean_local,~manager,~labor_safety,~labor_safety_local">
+                <link name="Создать личностную характеристику" url="at/criterion/personal/new" id="m143001"/>
+            </page>
+        </subgroup>
+        <subgroup>
+            <page id="m1433" name="Произвольные оценочные формы" url="quest/list/index/only-type/form" profiles="~dean,~dean_local,~manager,~labor_safety,~labor_safety_local">
+                <link id="m143301" url="quest/list/new/type/form" name="Создать оценочную форму"/>
+            </page>
+        </subgroup>
+        <subgroup>
+            <page id="m1427" name="Дополнительные критерии оценки выполнения задач" url="at/criterion/kpi" profiles="~dean,~dean_local,~manager,~labor_safety,~labor_safety_local">
+                <link name="Создать критерий" url="at/criterion/kpi/new" id="m142701"/>
+            </page>
+        </subgroup>
+        <subgroup>
+            <page id="m1405" name="Периоды" url="cycle/list"  profiles="~dean,~dean_local,~manager,~recruiter,~labor_safety,~labor_safety_local"/>
+        </subgroup>
+        <subgroup>
+            <page id="m1455" name="Профстандарты" url="at/standard/list" profiles="~dean,~dean_local,~manager,~labor_safety,~labor_safety_local">
+                <link name="Создать профстандарт" url="at/standard/list/new" id="m145501"/>
+            </page>
+        </subgroup>
+    </group>
+    <group id="m04" name="Настройки" profiles="curator,teacher,dean,dean_local,atmanager,atmanager_local,recruiter,recruiter_local,admin,simple_admin">
+        <subgroup>
+            <page id="m0401" name="Параметры системы" url="preferences.php" profiles="~curator,~teacher,~dean,~dean_local,~manager,~recruiter,~atmanager,~atmanager_local,~recruiter_local,~simple_admin"/>
+            <page id="m0404" name="Регистрационные требования" url="contract/" profiles="~curator,~teacher,~dean,~dean_local,~manager,~recruiter,~atmanager,~atmanager_local,~recruiter_local,~simple_admin"/>
+            <page id="m0403" name="Парольная политика" url="password/setup" profiles="~curator,~teacher,~dean,~dean_local,~manager,~recruiter,~atmanager,~atmanager_local,~recruiter_local,~simple_admin"/>
+            <!--<page id="m0405" name="Интеграция с AD" url="option/ad" profiles="~curator,~teacher,~dean,~dean_local,~manager,~recruiter,~atmanager,~atmanager_local,~recruiter_local,~simple_admin"/>-->
+        </subgroup>
+        <subgroup>
+            <page id="m0420" name="Выходные и праздничные дни" url="holiday" profiles="~simple_admin,~curator,~teacher,~dean,~dean_local,~manager,~recruiter,~atmanager,~atmanager_local,~recruiter_local">
+                <link name="Создать выходной день" url="holiday/index/edit" id="m042001"/>
+                <link name="Создать периодические выходные дни недели" url="holiday/index/edit-periodic" id="m042002"/>
+            </page>
+        </subgroup>
+        <subgroup>
+            <page id="m0422" name="Типы занятий" url="event/list" profiles="~admin,~simple_admin,~manager,~recruiter,~atmanager,~atmanager_local,~recruiter_local">
+                <link name="Создать тип занятия" url="event/list/new" id="m042201"/>
+            </page>
+        </subgroup>
+        <subgroup>
+            <page id="m0402" name="Формулы" url="formula/list" profiles="~admin,~simple_admin,~manager,~recruiter,~atmanager,~atmanager_local,~recruiter_local">
+                <link name="Создать формулу" url="formula/list/new" id="m040201"/>
+            </page>
+            <page id="m0424" name="Шкалы оценивания" url="scale/list" profiles="~curator,~teacher,~manager,~admin,~simple_admin">
+                <link name="Создать шкалу оценивания" url="scale/list/new" id="m042401"/>
+            </page>
+        </subgroup>
+        <subgroup>
+            <page id="m0414" name="Шаблоны cистемных сообщений" url="notice" profiles="~teacher,~manager,~hr_local,~atmanager_local,~recruiter_local"/>
+        </subgroup>
+        <subgroup>
+            <page id="m0416" name="Установка обновлений" url="update/list" profiles="~curator,~teacher,~dean,~dean_local,~atmanager,~atmanager_local,~recruiter,~recruiter_local,~simple_admin">
+                <link id="m041601" name="Установить обновление" url="update/list/install"/>
+            </page>
+        </subgroup>
+        <subgroup>
+            <page id="m0434" name="Настройки публикации вакансий" url="recruit/option/index/publication" profiles="~curator,~atmanager, ~atmanager_local,~teacher,~dean,~dean_local,~manager,~admin,~simple_admin,~recruiter_local"/>
+            <page id="m0431" name="Настройки методик оценки" url="recruit/option/index/index" profiles="~curator,~atmanager, ~atmanager_local,~teacher,~dean,~dean_local,~manager,~admin,~simple_admin,~recruiter_local"/>
+            <page id="m0432" name="Настройки методик оценки" url="at/option/index/index" profiles="~curator,~recruiter,~recruiter_local,~teacher,~dean,~dean_local,~manager,~admin,~simple_admin,~hr,~hr-Local,~recruiter_local"/>
+        </subgroup>
+        <subgroup>
+            <page id="m0405" name="Интеграция" url="default/integration" profiles="~curator,~teacher,~dean,~dean_local,~atmanager,~atmanager_local,~recruiter,~recruiter_local,~simple_admin"/>
+        </subgroup>
+    </group>
+    <group id="m71" name="Настройки" profiles="labor_safety,labor_safety_local">
+        <subgroup>
+            <page id="m7101" name="Шаблоны документов" url="option/upload-templates"/>
+        </subgroup>
+        <subgroup>
+            <page id="m7102" name="Шаблоны cистемных сообщений" url="notice"/>
+        </subgroup>
+    </group>
+    <group id="m20" name="Техподдержка" profiles="admin">
+        <subgroup>
+            <page id="m2001" name="Техподдержка" url="techsupport/list/index"/>
+        </subgroup>
+    </group>
+    <group id="m99" name="Сервисы" profiles="enduser,supervisor,teacher,dean,dean_local,admin,developer,manager,atmanager,recruiter,atmanager_local,recruiter_local,curator,moderator,labor_safety,labor_safety_local" order="10000">
+        <custom id="m990" name="Сервисы"/>
+    </group>
+</actions>

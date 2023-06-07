@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/* ====================== Внимание! =============================
+ *
+ * Этот файл генерируются автоматически, все исправления
+ * необходимо вносить в файлы из папки /public/hm/src/sass
+ *
+ * В противном случае ваши изменения могут быть потёрты при
+ * следующей генерации этого файла.
+ *
+ * ============================================================== */
+/* line 1, ../../../../../../src/base/core-ui/master/js/window/dialog/Dialog.print.scss */
+.ui-dialog {
+  border-radius: 0 !important;
+  -webkit-box-shadow: none !important;
+}
+/* line 3, ../../../../../../src/base/core-ui/master/js/window/dialog/Dialog.print.scss */
+.ui-dialog .ui-dialog-titlebar-close span {
+  display: none;
+}
+
+/* line 5, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.scss */
+.hm-calendar-dateRangeSwitcher {
+  font-size: 16px;
+  overflow: hidden;
+}
+
+/* line 14, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.scss */
+.hm-calendar-dateRangeSwitcher-prev,
+.hm-calendar-dateRangeSwitcher-next {
+  cursor: pointer;
+  float: left;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: block;
+  margin-right: 10px;
+}
+
+/* line 25, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.scss */
+.hm-calendar-dateRangeSwitcher-prev:after,
+.hm-calendar-dateRangeSwitcher-next:after {
+  content: ' ';
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-left: -7px;
+  left: 50%;
+  margin-top: -6px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+/* line 40, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.scss */
+.hm-calendar-dateRangeSwitcher-prev:after {
+  border-width: 6px 14px 6px 0;
+  border-color: transparent #3e63c6 transparent transparent;
+}
+
+/* line 44, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.scss */
+.hm-calendar-dateRangeSwitcher-next:after {
+  border-width: 6px 0 6px 14px;
+  border-color: transparent transparent transparent #3e63c6;
+}
+
+/* line 49, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.scss */
+.hm-calendar-dateRangeSwitcher-prev:hover:after {
+  border-color: transparent #e64c03 transparent transparent;
+}
+
+/* line 53, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.scss */
+.hm-calendar-dateRangeSwitcher-next:hover:after {
+  border-color: transparent transparent transparent #e64c03;
+}
+
+/* line 57, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.scss */
+.hm-calendar-dateRangeSwitcher-name {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* line 62, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.scss */
+.hm-calendar-dateRangeSwitcher-info {
+  float: left;
+  margin-top: -2px;
+  padding-bottom: 2px;
+}
+
+/* line 68, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.scss */
+.hm-calendar-dateRangeSwitcher-range {
+  font-size: 0.75em;
+  color: #e64c03;
+}
+
+/* line 73, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.scss */
+.hm-calendar-dateRangeSwitcher-from-editable,
+.hm-calendar-dateRangeSwitcher-to-editable {
+  cursor: pointer;
+  border-bottom: dotted 1px;
+}
+
+/* line 79, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.scss */
+.hm-calendar-dateRangeSwitcher-datePicker {
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  border: none;
+}
+
+/* line 3, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.print.scss */
+.hm-calendar-dateRangeSwitcher-prev,
+.hm-calendar-dateRangeSwitcher-next {
+  display: none;
+}
+
+/* line 8, ../../../../../../src/base/core-ui/master/js/calendar/DateRangeSwitcher.print.scss */
+.hm-calendar-dateRangeSwitcher-from-editable,
+.hm-calendar-dateRangeSwitcher-to-editable {
+  border-bottom: none;
+}
+
+/* line 3, ../../../../../../src/projects/default/master/js/_init.print.scss */
+.hm-hidden-if-print {
+  display: none !important;
+}
+
+/* line 1, ../../../../../../src/projects/default/master/js/base/ui/ajax/AjaxSpinner.print.scss */
+.ajax-spinner-global {
+  display: none !important;
+}
+
+/* line 4, ../../../../../../src/projects/default/master/js/base/ui/Document.print.scss */
+.hm-document_printable .help-activator {
+  display: none !important;
+}
+/* line 8, ../../../../../../src/projects/default/master/js/base/ui/Document.print.scss */
+.hm-document_printable #error-box {
+  display: none !important;
+}
+
+/* line 14, ../../../../../../src/projects/default/master/js/base/ui/Document.print.scss */
+.hm-document_printable_noUserBlock #user-block-wrapper {
+  display: none !important;
+}
+
+/* line 20, ../../../../../../src/projects/default/master/js/base/ui/Document.print.scss */
+.hm-document_printable_noLogo #logo {
+  display: none !important;
+}
+
+/* line 26, ../../../../../../src/projects/default/master/js/base/ui/Document.print.scss */
+.hm-document_printable_noMenu #main .tab-bar {
+  display: none !important;
+}
+
+/* line 32, ../../../../../../src/projects/default/master/js/base/ui/Document.print.scss */
+.hm-document_printable_noBreadCrumbs #main .els-body .els-box .breadcrumbs {
+  display: none !important;
+}
+
+/* line 38, ../../../../../../src/projects/default/master/js/base/ui/Document.print.scss */
+.hm-document_printable_noTitle #page-title {
+  display: none !important;
+}
+
+/* line 44, ../../../../../../src/projects/default/master/js/base/ui/Document.print.scss */
+.hm-document_printable_noFooter #footer {
+  display: none !important;
+}

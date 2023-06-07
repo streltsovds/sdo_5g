@@ -1,0 +1,1 @@
+<hm-kbase-block url="/infoblock/kbase/get-data/format/json"></hm-kbase-block>

@@ -1,0 +1,123 @@
+.hm-hh-candidate {
+    padding: 10px;
+    margin: 2px 2px 2px 20px;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    border-top: 1px solid #dfdfdf;
+}
+
+.hm-hh-candidate-checkbox, .hm-candidate-checkbox {
+    width: 20px;
+    float: left;
+    margin-top: 15px;
+}
+.hm-hh-candidate-description-checkbox {
+    display: none;
+}
+
+.hm-hh-candidate-photo {
+    width: 120px;
+    float: left;
+}
+
+.hm-hh-candidate-photo-blank {
+    background: url(http://i.hh.ru/css/ambient/blocks/output/photo.png) 2px 8px no-repeat;
+    height: 90px;
+}
+
+.hm-hh-candidate .output__photo img {
+    max-height: 100%;
+    max-width: 100%;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.hm-hh-candidate-description {
+    margin-left: 120px;
+}
+
+.hm-hh-candidate .output__info {
+    white-space: nowrap;
+    text-align: right;
+    float: right;
+    width: 180px;
+    padding-top: 1px;
+    margin-right: 20px;
+}
+
+.hm-hh-candidate .output__name {
+    font-weight: bold;
+    line-height: 22px;
+}
+
+.hm-hh-candidate .output__main {
+    margin-right: 35%;
+    line-height: 20px;
+}
+
+.hm-hh-candidate .output__compensation, .hm-hh-candidate .output__nocompensation, .hm-hh-candidate .output__age {
+    font-weight: bold;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: right;
+}
+
+.hm-hh-candidate .output__compensation {
+    float: left;
+}
+
+.hm-hh-candidate .output__title {
+    font-family: verdana,arial,sans-serif;
+    color: #666;
+    font-size: 11px;
+    padding: 6px 0 1px;
+    line-height: 14px;
+    margin-top: 4px;
+}
+
+.hm-hh-candidate .output__indent {
+    padding: 0 0 2px 20px;
+}
+
+.hm-hh-candidate .g-switcher {
+    border-bottom: 1px dotted #076cc7;
+    text-decoration: none;
+    color: #076cc7;
+    cursor: pointer;
+}
+
+.hm-hh-candidate .g-switcher-000, .m-switcher_000 {
+    border-bottom-color: #000;
+    color: #000;
+}
+
+.hm-hh-candidate .output__indent .output__small {
+    font-family: verdana,arial,sans-serif;
+    font-size: 11px;
+    color: #999;
+    text-transform: lowercase;
+}
+
+.hm-hh-candidate .output__lastexp {
+    font-size: 12px;
+    padding: 2px 0 6px;
+    line-height: 18px;
+}
+
+.hm-hh-candidate .g-expandable {
+    display: none;
+}
+
+.hm-hh-candidate .b-v-responses-list-phone {
+    white-space: nowrap;
+    color: #444;
+    margin-right: 10px;
+}
+
+.hm-hh-candidate .output__indent .b-v-responses-list-phone, .hm-hh-candidate .output__indent .b-v-responses-list-phoneblock {
+    font-weight: normal;
+    color: #000;
+    line-height: 20px;
+}

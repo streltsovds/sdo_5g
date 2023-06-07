@@ -1,0 +1,275 @@
+.clearfix,
+.cf {
+  zoom: 1;
+}
+.clearfix:before,
+.cf:before,
+.clearfix:after,
+.cf:after {
+  content: '';
+  display: table;
+}
+.clearfix:after,
+.cf:after {
+  clear: both;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font: 15px tahoma;
+}
+.hidden-form {
+  width: 300px;
+  float: left;
+}
+.dnd {
+  width: 100%;
+  position: relative;
+}
+.dnd * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.dnd + .legend {
+  width: 659px;
+}
+.dnd-workspace {
+  width: 659px;
+  height: 437.00000096px;
+  margin: 0 auto;
+  outline: 1px solid #999;
+  position: relative;
+  background: url(../img/1.png) 50% 50% no-repeat;
+  background-size: contain;
+  padding: 0;
+  list-style: none;
+}
+.dnd-workspace .dnd-dropbox {
+  border: 4px dashed #ccc;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  font-size: 55px;
+  color: #61b28f;
+  float: left;
+  border-radius: 20px;
+  position: absolute;
+  background: #fff;
+  box-shadow: 0 0 30px transparent;
+  -webkit-transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition-property: border, box-shadow;
+  transition-property: border, box-shadow;
+  will-change: border, box-shadow;
+}
+.dnd-workspace .dnd-dropbox.no-drop,
+.dnd-workspace .dnd-dropbox.no-drop * {
+  cursor: no-drop !important;
+}
+.dnd-workspace .dnd-dropbox.ondrophover:not(.no-drop) {
+  border-color: lightblue;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.45);
+  z-index: 33;
+}
+.dnd-workspace .dnd-dropbox.true-drop {
+  border-color: #78e800;
+}
+.dnd-workspace .dnd-dropbox.false-drop {
+  border-color: #ff3000;
+}
+.dnd-list {
+  width: 659px;
+  height: auto;
+  margin: 0 auto;
+  outline: 1px solid #999;
+}
+.dnd-list .dnd-dragbox {
+  width: 110px;
+  height: 110px;
+  text-align: center;
+  font-size: 15px;
+  background: #61b28f;
+  color: #fff;
+  float: left;
+  margin: 0 0 15px;
+  cursor: move;
+  border-radius: 13px;
+  position: relative;
+  will-change: transform;
+  opacity: .77;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
+  -webkit-transition: 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.dnd-list .dnd-dragbox-offset {
+  position: relative;
+}
+.dnd-list .dnd-dragbox span {
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 5px;
+  text-align: center;
+}
+.dnd-list .dnd-dragbox.no-drop {
+  cursor: no-drop;
+}
+.dnd-list .dnd-dragbox:not(.static):not(.fixed) {
+  pointer-events: none;
+  z-index: 131;
+}
+.dnd-list .dnd-dragbox.static {
+  opacity: 1;
+  -webkit-transition-property: -webkit-transform, opacity;
+  transition-property: transform, opacity;
+}
+.dnd-list .dnd-dragbox.static:nth-child(1) {
+  z-index: 129;
+}
+.dnd-list .dnd-dragbox.static:nth-child(2) {
+  z-index: 128;
+}
+.dnd-list .dnd-dragbox.static:nth-child(3) {
+  z-index: 127;
+}
+.dnd-list .dnd-dragbox.static:nth-child(4) {
+  z-index: 126;
+}
+.dnd-list .dnd-dragbox.static:nth-child(5) {
+  z-index: 125;
+}
+.dnd-list .dnd-dragbox.static:nth-child(6) {
+  z-index: 124;
+}
+.dnd-list .dnd-dragbox.static:nth-child(7) {
+  z-index: 123;
+}
+.dnd-list .dnd-dragbox.static:nth-child(8) {
+  z-index: 122;
+}
+.dnd-list .dnd-dragbox.static:nth-child(9) {
+  z-index: 121;
+}
+.dnd-list .dnd-dragbox.static:nth-child(10) {
+  z-index: 120;
+}
+.dnd-list .dnd-dragbox.static:nth-child(11) {
+  z-index: 119;
+}
+.dnd-list .dnd-dragbox.static:nth-child(12) {
+  z-index: 118;
+}
+.dnd-list .dnd-dragbox.static:nth-child(13) {
+  z-index: 117;
+}
+.dnd-list .dnd-dragbox.static:nth-child(14) {
+  z-index: 116;
+}
+.dnd-list .dnd-dragbox.static:nth-child(15) {
+  z-index: 115;
+}
+.dnd-list .dnd-dragbox.static:nth-child(16) {
+  z-index: 114;
+}
+.dnd-list .dnd-dragbox.static:nth-child(17) {
+  z-index: 113;
+}
+.dnd-list .dnd-dragbox.static:nth-child(18) {
+  z-index: 112;
+}
+.dnd-list .dnd-dragbox.static:nth-child(19) {
+  z-index: 111;
+}
+.dnd-list .dnd-dragbox.static:nth-child(20) {
+  z-index: 110;
+}
+.dnd-list .dnd-dragbox.static:nth-child(21) {
+  z-index: 109;
+}
+.dnd-list .dnd-dragbox.static:nth-child(22) {
+  z-index: 108;
+}
+.dnd-list .dnd-dragbox.static:nth-child(23) {
+  z-index: 107;
+}
+.dnd-list .dnd-dragbox.static:nth-child(24) {
+  z-index: 106;
+}
+.dnd-list .dnd-dragbox.static:nth-child(25) {
+  z-index: 105;
+}
+.dnd-list .dnd-dragbox.static:nth-child(26) {
+  z-index: 104;
+}
+.dnd-list .dnd-dragbox.static:nth-child(27) {
+  z-index: 103;
+}
+.dnd-list .dnd-dragbox.static:nth-child(28) {
+  z-index: 102;
+}
+.dnd-list .dnd-dragbox.static:nth-child(29) {
+  z-index: 101;
+}
+.dnd-list .dnd-dragbox.static:nth-child(30) {
+  z-index: 100;
+}
+.dnd-list .dnd-dragbox.static:hover {
+  z-index: 131;
+}
+.dnd-list .dnd-dragbox.static.fixed {
+  -webkit-transform: translate(0, 0) !important;
+  transform: translate(0, 0) !important;
+}
+.dnd > table {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin: 0 auto;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 659px;
+  height: 437.00000096px;
+  border-collapse: collapse;
+}
+.dnd > table td {
+  border: 1px solid #ccc;
+}
+
+html {
+  font-size: 14px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+}
+body.block{
+  background:#ddd;
+}
+main.block{
+  width:600px;
+  height:500px;
+  margin:30px auto;
+  overflow:hidden;
+  background:#fff;
+}

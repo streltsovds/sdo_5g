@@ -1,0 +1,60 @@
+.primary.ts-end__header {
+  background: none !important;
+  font-family: Roboto;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  color: #2a2a2a !important;
+  padding-left: 0 !important;
+  padding-bottom: 26px !important;
+
+
+}
+
+.title.ts-end__result {
+  font-size: 20px !important;
+  color: #1e1e1e !important;
+  padding: 0 0 0 10px !important;
+}
+
+.ts-end__result-info {
+  margin-bottom: 100px;
+  > div {
+    > div {
+      padding: 0 0 0 10px!important;
+      > div {display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+         > div:first-child {
+            max-width: 280px!important;
+           font-weight: normal;
+           font-size: 16px;
+           line-height: 24px;
+           letter-spacing: 0.02em;
+           color: #70889E;
+         }
+        > div:last-child {
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.02em;
+          color: #000000;
+
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .ts-end__result-info {
+    > div {
+      > div {
+        > div {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}

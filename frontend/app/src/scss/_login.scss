@@ -1,0 +1,56 @@
+.hm-login #submit {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.v-card.login-card {
+  display: flex;
+  background: rgba(0, 0, 0, 0) !important;
+  border-radius: 16px !important;
+  max-width: 850px !important;
+  margin: 0 auto !important;
+  box-shadow: 0px 24px 38px rgba(0, 0, 0, 0.14), 0px 9px 46px rgba(0, 0, 0, 0.12), 0px 11px 15px rgba(0, 0, 0, 0.2) !important;
+
+}
+.login-card {
+  &__wrapper {
+    width:calc(100% - 360px);
+    background: #FFFFFF;
+    border-radius: 0px 16px 16px 0px !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    border-radius: 0px 16px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .login-card {
+    flex-direction: column;
+    max-width: 343px !important;
+
+    &__wrapper {
+      width: 100%;
+      border-radius: 0px 0px 16px 16px !important;
+    }
+
+    &__title {
+      border-radius: 0;
+    }
+  }
+
+  .hm-login__subheading {
+    display: none;
+  }
+
+  .hm-login #submit {
+    width: 100%;
+  }
+
+  .hm-login__button {
+    font-size: 13px !important;
+    line-height: 21px !important;
+  }
+}

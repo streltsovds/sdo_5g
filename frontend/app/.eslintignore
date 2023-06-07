@@ -1,0 +1,9 @@
+dist/*
+node_modules/*
+**/node_modules/*
+.eslintrc
+.prettierrc
+.postcssrc.js
+vue.config.js
+babel.config.js
+src/vuetify/*

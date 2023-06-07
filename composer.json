@@ -1,0 +1,25 @@
+{
+    "config": {
+        "disable-tls": true,
+        "secure-http": false
+    },
+    "name": "hypermethod/elearning-5g",
+    "description": "eLearning Server 5G",
+    "license": "proprietary",
+    "require": {
+        "php": ">=7.2.0",
+        "ext-json": "*",
+        "ext-SimpleXML": "*",
+        "studio-42/elfinder": "2.1.49",
+        "ext-curl": "*",
+        "ext-iconv": "*",
+        "ext-fileinfo": "*",
+        "ramsey/uuid": "^3.9",
+        "robmorgan/phinx": "0.11.4",
+        "colinmollenhour/cache-backend-redis": "1.14.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8",
+        "odan/phinx-migrations-generator": "^4.6"
+    }
+}

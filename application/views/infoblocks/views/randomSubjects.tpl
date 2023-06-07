@@ -1,0 +1,15 @@
+<hm-random-subjects
+    apply-label='<?php echo $this->subject->claimant_process_id == HM_Subject_SubjectModel::APPROVE_NONE ? _('Начать обучение') : _('Подать заявку'); ?>'
+    :title='<?php echo HM_Json::encodeErrorSkip($this->subject->name); ?>'
+    :description='<?php echo HM_Json::encodeErrorSkip($this->subject->description); ?>'
+    :apply-url='<?php echo HM_Json::encodeErrorSkip($this->url(array("module" => "user", "controller" => "reg", "action" => "subject", "subid" => $this->subject->subid))); ?>'
+    :refresh-url='<?php echo HM_Json::encodeErrorSkip($this->url(array("module" => "infoblock", "controller" => "random-subjects", "action" => "next"))); ?>'
+    classifier-type='<?php echo $this->classifier_type?>'
+    classifiers='<?php HM_Json::encodeErrorSkip($this->classifiers) ?>'
+    teacher-url='<?php HM_Json::encodeErrorSkip($this->teacherUrl) ?>'
+    teacher-photo='<?php HM_Json::encodeErrorSkip($this->teacherPhoto) ?>'
+    begin='<?php HM_Json::encodeErrorSkip($this->begin) ?>'
+    end='<?php HM_Json::encodeErrorSkip($this->end) ?>'
+    user-icon='<?php HM_Json::encodeErrorSkip($this->userIcon) ?>'
+    default-icon='<?php HM_Json::encodeErrorSkip($this->defaultIcon) ?>'
+></hm-random-subjects>

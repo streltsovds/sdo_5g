@@ -1,0 +1,857 @@
+<template>
+  <div class="statement-performance">
+<!--    <div class="statement-performance__filters-names">-->
+<!--        <p>Фильтр по дате начала/конца занятия</p>-->
+<!--    </div>-->
+
+    <!-- TODO заменить на hm-date-range-field -->
+    <div class="statement-performance__filters">
+      <hm-date-range-field
+        class="statement-performance__filter-date"
+        v-model="filterDateRangeString"
+        :label="_('Фильтр по дате')"
+      />
+      <v-select
+        class="statement-performance__filter-group"
+        v-model="chosenGroupName"
+        :items="studyGroupsSelectItems"
+        label="Фильтр по группе/подгруппе"
+      ></v-select>
+    </div>
+
+
+    <v-layout row wrap class="statement-performance__table">
+      <v-flex xs12>
+        <v-data-table
+          v-model="selectedUsers"
+          :headers="filteredHeaders"
+          :items="filteredUsers"
+          show-select
+          class="elevation-1"
+        >
+          <template v-slot:headers="props">
+            <tr>
+              <th>
+                <v-checkbox
+                  :input-value="props.all"
+                  :indeterminate="props.indeterminate"
+                  primary
+                  hide-details
+                  @click.stop="toggleAll"
+                ></v-checkbox>
+              </th>
+              <th
+                v-for="header in props.headers"
+                :key="header.text"
+                class="column"
+              >
+                <a v-if="header.id" :href="createSubjectLink(header.id)">{{
+                  header.text
+                }}</a>
+                <template v-else>{{ header.text }}</template>
+              </th>
+            </tr>
+          </template>
+
+          <template
+            v-slot:item="{
+              item: gridItem,
+              selected: gridItemSelected,
+              headers: gridHeaders,
+            }"
+          >
+            <tr>
+              <template
+                v-for="cell in cellsData(gridHeaders, gridItem)"
+              >
+                <td
+                  v-if="cell.valuePath == 'data-table-select'"
+                  key="data-table-select"
+                >
+                  <v-checkbox
+                    v-model="gridItemSelected"
+                    primary
+                    hide-details
+                  ></v-checkbox>
+                </td>
+
+                <td v-else-if="cell.displayType = 'gradeInput' && cell.value">
+                  <v-dialog
+                    v-model="cell.dialog"
+                    width="500"
+                  >
+                    <v-card>
+                      <v-card-title class="headline grey lighten-2" primary-title>
+                        Напишите комментарий к
+                        {{
+                          cell.header.text
+                            ? cell.header.text
+                            : "[index " + index + "]"
+                        }}
+                      </v-card-title>
+
+                      <v-card-text>
+                        <v-textarea
+                          v-model="cell.value.comments"
+                          outlined
+                          label="Введите здесь ваш комментарий"
+                        ></v-textarea>
+                      </v-card-text>
+
+                      <v-divider></v-divider>
+
+                      <v-card-actions>
+                        <v-spacer></v-spacer>
+                        <v-btn color="primary" @click="cell.value.dialog = false">
+                          Готово
+                        </v-btn>
+                      </v-card-actions>
+                    </v-card>
+                  </v-dialog>
+
+                  <hm-grade-input
+                    :grade-scale-type="cell.value.type"
+                    :input-value.sync="cell.value.value"
+                  ></hm-grade-input>
+                </td>
+
+                <td v-else>
+                  <pre>
+                    {{ JSON.stringify(cell, null, 2) }}
+                  </pre>
+                </td>
+
+
+<!--                <td-->
+<!--                  v-else-->
+<!--                  :key="cell.valuePath"-->
+<!--                >-->
+<!--                  <v-dialog-->
+<!--                    v-if="false && cell.displayType === 'gradeInput'"-->
+<!--                    v-model="cell.dialog"-->
+<!--                    width="500"-->
+<!--                  >-->
+<!--                    <v-card>-->
+<!--                      <v-card-title class="headline grey lighten-2" primary-title>-->
+<!--                        Напишите комментарий к-->
+<!--                        {{-->
+<!--                          cell.header.text-->
+<!--                            ? cell.header.text-->
+<!--                            : "[index " + index + "]"-->
+<!--                        }}-->
+<!--                      </v-card-title>-->
+
+<!--                      <v-card-text>-->
+<!--                        <v-textarea-->
+<!--                          v-model="cell.value.comments"-->
+<!--                          outlined-->
+<!--                          label="Введите здесь ваш комментарий"-->
+<!--                        ></v-textarea>-->
+<!--                      </v-card-text>-->
+
+<!--                      <v-divider></v-divider>-->
+
+<!--                      <v-card-actions>-->
+<!--                        <v-spacer></v-spacer>-->
+<!--                        <v-btn color="primary" @click="cell.value.dialog = false">-->
+<!--                          Готово-->
+<!--                        </v-btn>-->
+<!--                      </v-card-actions>-->
+<!--                    </v-card>-->
+<!--                  </v-dialog>-->
+
+<!--                  <hm-grade-input-->
+<!--                    v-if="cell.displayType === 'gradeInput'"-->
+<!--                    :grade-scale-type="grid.value.type"-->
+<!--                    :input-value.sync="grid.value.value"-->
+<!--                  ></hm-grade-input>-->
+
+<!--                  <div>-->
+<!--                    {{JSON.stringify( cell.value) }}-->
+<!--                    <hr />-->
+<!--                    {{ cell.headerId }}-->
+<!--                    {{ JSON.stringify(cell.header)}}-->
+<!--                    {{ /*userItem.name*/ }}-->
+<!--                  </div>-->
+<!--                </td>-->
+              </template>
+
+<!--              <td-->
+<!--                v-for="(schedule, index) in userItem.filteredSchedules"-->
+<!--                :key="index"-->
+<!--                class="cell"-->
+<!--              >-->
+<!--                <v-dialog v-model="schedule.dialog" width="500">-->
+<!--                  <v-card>-->
+<!--                    <v-card-title class="headline grey lighten-2" primary-title>-->
+<!--                      Напишите комментарий к-->
+<!--                      {{-->
+<!--                        filteredHeadersIndexed[index]-->
+<!--                          ? filteredHeadersIndexed[index].text-->
+<!--                          : "index " + index-->
+<!--                      }}-->
+<!--                    </v-card-title>-->
+
+<!--                    <v-card-text>-->
+<!--                      <v-textarea-->
+<!--                        v-model="schedule.comments"-->
+<!--                        outlined-->
+<!--                        label="Введите здесь ваш комментарий"-->
+<!--                      ></v-textarea>-->
+<!--                    </v-card-text>-->
+
+<!--                    <v-divider></v-divider>-->
+
+<!--                    <v-card-actions>-->
+<!--                      <v-spacer></v-spacer>-->
+<!--                      <v-btn color="primary" @click="schedule.dialog = false">-->
+<!--                        Готово-->
+<!--                      </v-btn>-->
+<!--                    </v-card-actions>-->
+<!--                  </v-card>-->
+<!--                </v-dialog>-->
+
+<!--                <v-icon-->
+<!--                  class="cell__comment-icon"-->
+<!--                  :class="[-->
+<!--                    { 'cell__comment-icon&#45;&#45;commented': schedule.comments }-->
+<!--                  ]"-->
+<!--                  size="24"-->
+<!--                  @click.self="schedule.dialog = true"-->
+<!--                  >comment-->
+<!--                </v-icon>-->
+<!--                <v-layout v-if="schedule.type === 'binary'" justify-center>-->
+<!--                  <v-flex xs5>-->
+<!--                    <hm-grade-input-->
+<!--                      type-binary-->
+<!--                      :input-value.sync="schedule.value"-->
+<!--                    ></hm-grade-input>-->
+<!--                  </v-flex>-->
+<!--                </v-layout>-->
+<!--                <v-layout-->
+<!--                  v-else-if="schedule.type === 'ternary'"-->
+<!--                  justify-center-->
+<!--                >-->
+<!--                  <hm-grade-input-->
+<!--                    type-ternary-->
+<!--                    :input-value.sync="schedule.value"-->
+<!--                  ></hm-grade-input>-->
+<!--                </v-layout>-->
+<!--                <v-layout v-else-if="schedule.type === 'continuous'">-->
+<!--                  <v-flex xs12>-->
+<!--                    <hm-grade-input-->
+<!--                      type-text-input-->
+<!--                      :input-value.sync="schedule.value"-->
+<!--                    ></hm-grade-input>-->
+<!--                  </v-flex>-->
+<!--                </v-layout>-->
+<!--              </td>-->
+
+<!--              <td class="text-xs-center cell">-->
+<!--                <v-dialog v-model="userItem.total.dialog" width="500">-->
+<!--                  <v-card>-->
+<!--                    <v-card-title class="headline grey lighten-2" primary-title>-->
+<!--                      Напишите комментарий к итоговой оценке-->
+<!--                    </v-card-title>-->
+
+<!--                    <v-card-text>-->
+<!--                      <v-textarea-->
+<!--                        v-model="userItem.total.comments"-->
+<!--                        outlined-->
+<!--                        label="Введите здесь ваш комментарий"-->
+<!--                      ></v-textarea>-->
+<!--                    </v-card-text>-->
+
+<!--                    <v-divider></v-divider>-->
+
+<!--                    <v-card-actions>-->
+<!--                      <v-spacer></v-spacer>-->
+<!--                      <v-btn-->
+<!--                        color="primary"-->
+<!--                        @click="userItem.total.dialog = false"-->
+<!--                      >-->
+<!--                        Готово-->
+<!--                      </v-btn>-->
+<!--                    </v-card-actions>-->
+<!--                  </v-card>-->
+<!--                </v-dialog>-->
+<!--                <v-icon-->
+<!--                  class="cell__comment-icon"-->
+<!--                  :class="[-->
+<!--                    {-->
+<!--                      'cell__comment-icon&#45;&#45;commented': userItem.total.comments-->
+<!--                    }-->
+<!--                  ]"-->
+<!--                  size="24"-->
+<!--                  @click.self="userItem.total.dialog = true"-->
+<!--                  >comment-->
+<!--                </v-icon>-->
+<!--                {{ userItem.total.value === -1 ? "" : userItem.total.value }}-->
+<!--              </td>-->
+
+<!--              <td class="text-xs-center cell">-->
+<!--                <v-dialog v-model="userItem.certificate.dialog" width="500">-->
+<!--                  <v-card>-->
+<!--                    <v-card-title class="headline grey lighten-2" primary-title>-->
+<!--                      Напишите комментарий к сроку действия сертификата-->
+<!--                    </v-card-title>-->
+
+<!--                    <v-card-text>-->
+<!--                      <v-textarea-->
+<!--                        v-model="userItem.certificate.comments"-->
+<!--                        outlined-->
+<!--                        label="Введите здесь ваш комментарий"-->
+<!--                      ></v-textarea>-->
+<!--                    </v-card-text>-->
+
+<!--                    <v-divider></v-divider>-->
+
+<!--                    <v-card-actions>-->
+<!--                      <v-spacer></v-spacer>-->
+<!--                      <v-btn-->
+<!--                        color="primary"-->
+<!--                        @click="userItem.certificate.dialog = false"-->
+<!--                      >-->
+<!--                        Готово-->
+<!--                      </v-btn>-->
+<!--                    </v-card-actions>-->
+<!--                  </v-card>-->
+<!--                </v-dialog>-->
+<!--                <v-icon-->
+<!--                  class="cell__comment-icon"-->
+<!--                  :class="[-->
+<!--                    {-->
+<!--                      'cell__comment-icon&#45;&#45;commented':-->
+<!--                        userItem.certificate.comments-->
+<!--                    }-->
+<!--                  ]"-->
+<!--                  size="24"-->
+<!--                  @click.self="userItem.certificate.dialog = true"-->
+<!--                  >comment-->
+<!--                </v-icon>-->
+<!--                {{-->
+<!--                  userItem.certificate.value === -1-->
+<!--                    ? ""-->
+<!--                    : userItem.certificate.value-->
+<!--                }}-->
+<!--              </td>-->
+
+            </tr>
+          </template>
+        </v-data-table>
+      </v-flex>
+      <v-flex xs12 row class="table-actions">
+        <v-layout row>
+          <v-flex xs3>
+            <v-select
+              v-model="chosenAction"
+              :items="userActions"
+              label="Действия с выбранными слушателями:"
+            ></v-select>
+          </v-flex>
+          <v-flex xs2>
+            <v-btn
+              :disabled="!(chosenAction && selectedUsers.length > 0)"
+              @click="actionWithSelectedUsers"
+            >
+              Выполнить
+            </v-btn>
+          </v-flex>
+          <v-spacer></v-spacer>
+          <v-btn :disabled="filteredUsers.length < 1" @click="printTable"
+            >Распечатать</v-btn
+          >
+          <v-btn :disabled="filteredUsers.length < 1" @click="downloadExcelFile"
+            >Excel</v-btn
+          >
+          <v-btn :disabled="filteredUsers.length < 1" @click="downloadWordFile"
+            >Word</v-btn
+          >
+        </v-layout>
+      </v-flex>
+    </v-layout>
+  </div>
+</template>
+
+<script lang="ts">
+import axios from "axios";
+import Vue from "vue";
+
+import XlsxFileMixin from "@/utilities/mixins/XlsxFileMixin.js";
+import DocFileMixin from "@/utilities/mixins/DocFileMixin.js";
+import NativePrintMixin from "@/utilities/mixins/NativePrintMixin";
+
+import hmGradeInput from "@/components/els/marksheet/hm-grade-input";
+import HmDateRangeField from "@/components/forms/hm-date-range-field";
+
+import {
+  clone as cloneShallow,
+  cloneDeep,
+  forOwn,
+  get as getByPath,
+  // mapValues,
+  // pickBy,
+  random,
+  // transform,
+  values,
+} from "lodash"
+
+const HmStatementPerformanceTable = Vue.extend({
+  components: {HmDateRangeField, hmGradeInput },
+  mixins: [XlsxFileMixin, DocFileMixin, NativePrintMixin],
+  props: {
+    persons: {
+      type: Object,
+      default: () => ({})
+    },
+    schedules: {
+      type: Object,
+      default: () => ({})
+    },
+    scores: {
+      type: Object,
+      default: () => ({})
+    },
+    subject: {
+      type: Object,
+      default: () => ({})
+    },
+    trainedEndpoint: {
+      type: String,
+      default: () => ""
+    },
+    rateEndpoint: {
+      type: String,
+      default: () => ""
+    }
+  },
+  data() {
+    return {
+      users: [],
+      // filteredUsers: [],
+      // studyGroups: ["-Группы-"],
+      headers: [
+        {
+          cellDisplayType: "simpleValue",
+          text: "ФИО",
+          value: 'name',
+          align: "center",
+          sortable: false,
+          id: undefined,
+          beginTime: undefined,
+          endTime: undefined,
+          timeType: undefined
+        },
+        {
+          cellDisplayType: "gradeInput",
+          text: "Итог",
+          value: 'total.value',
+          align: "center",
+          sortable: false,
+          id: undefined,
+          beginTime: undefined,
+          endTime: undefined,
+          timeType: undefined
+        },
+        {
+          cellDisplayType: "simpleValue",
+          text: "Срок действия сертификата",
+          value: 'certificate.value',
+          align: "center",
+          sortable: false,
+          id: undefined,
+          beginTime: undefined,
+          endTime: undefined,
+          timeType: undefined
+        }
+      ],
+      // filteredHeaders: [],
+      selectedUsers: [],
+      filterDateRangeString: null,
+      // dateTo: "",
+      // datePickerFrom: false,
+      // dateFrom: "",
+      // datePickerTo: false,
+      chosenGroupName: null,
+      userActions: [
+        "Перевести в прошедшие обучение",
+        "Выставить оценку за курс"
+      ],
+      chosenAction: ""
+    };
+  },
+  watch: {
+    dateTo: function() {
+      this.filterTableHeadersByDate();
+    },
+    dateFrom: function() {
+      this.filterTableHeadersByDate();
+    }
+  },
+  created() {
+    let users = values(this.$props.persons);
+    let schedules = values(cloneDeep(this.$props.schedules));
+    schedules = schedules.map(schedule => {
+      let type = { type: this.randomCellType() };
+      Object.assign(schedule, type);
+      return schedule;
+    });
+
+    this.users = users.map(user => {
+
+      // user.studyGroups.map(studyGroup => {
+      //   this.studyGroups.push(studyGroup.name);
+      // });
+      //
+      // this.studyGroups = [...new Set(this.studyGroups)];
+
+      let userObject = {
+        name: user.FirstName + " " + user.LastName + " " + user.Patronymic,
+        id: user.MID,
+        total: {
+          value: this.$props.scores[user.MID + "_total"].mark,
+          dialog: false,
+          comments: this.$props.scores[user.MID + "_total"].comment
+        },
+        certificate: {
+          value: this.$props.scores[user.MID + "_certificate"],
+          dialog: false,
+          comments: ""
+        },
+        studyGroups: user.studyGroups,
+        schedules: {},
+        filteredSchedules: []
+      };
+
+      for (let schedule of schedules) {
+        let scheduleStatus = this.$props.scores[user.MID + "_" + schedule.SHEID]
+          .V_STATUS;
+        let scheduleComment = this.$props.scores[
+          user.MID + "_" + schedule.SHEID
+        ].comments;
+        let scheduleId = schedule.SHEID;
+        userObject.schedules[scheduleId] = {
+          status: scheduleStatus === -1 ? "" : scheduleStatus,
+          type: schedule.type,
+          comments: scheduleComment,
+          dialog: false,
+          id: scheduleId
+        };
+      }
+
+      forOwn(userObject.schedules, (userSchedule) => {
+        let type = userSchedule.type;
+        if (type === "binary" || type === "ternary") {
+          let binaryValue = { value: this.randomBinaryValue() };
+          Object.assign(userSchedule, binaryValue);
+        } else {
+          let continuousValue = { value: this.randomContiniousValue() };
+          Object.assign(userSchedule, continuousValue);
+        }
+      });
+
+      userObject.filteredSchedules = {...userObject.schedules};
+      return userObject;
+    });
+
+    // this.filteredUsers = this.users;
+
+    schedules.forEach(schedule => {
+      let header = {
+        cellDisplayType: "gradeInput",
+        text: schedule.title,
+        id: schedule.SHEID,
+        beginTime: schedule.begin,
+        // TODO fn
+        value: 'schedules[' + schedule.SHEID + ']',
+        endTime: schedule.end,
+        timeType: schedule.timetype,
+        sortable: false,
+        align: "center"
+      };
+      this.headers.splice(1, 0, header);
+    });
+    // this.filteredHeaders = this.headers;
+  },
+  computed: {
+    filterDateRange() {
+      if (!this.filterDateRangeString) {
+        return [];
+      }
+      return this.filterDateRangeString
+        .split(",")
+        .map(date => {
+          return this.parseRuDate(date)
+        });
+    },
+    filteredHeaders() {
+      return this.filterTableHeadersByDate(this.headers, this.filterDateRange)
+    },
+    // filteredHeadersIndexed() {
+    //   return transform(
+    //     this.filteredHeaders,
+    //     (result, header) => {
+    //       result[header.id] = header;
+    //     }
+    //   , {})
+    // },
+    // filteredHeadersIds() {
+    //   return this.filteredHeaders.map(h => h.id);
+    // },
+    studyGroups() {
+      let result = [];
+
+      for (let user of this.users) {
+        user.studyGroups.map(g => {
+          result.push(g.name);
+        });
+      }
+      return [...new Set(result)]
+    },
+    studyGroupsSelectItems() {
+      return [{text: '- Группы -', value: null}].concat(
+        this.studyGroups.map(g => {
+          return {text: g, value: g,}
+        })
+      );
+    },
+    filteredUsers() {
+      let users = cloneShallow(this.users); // copy
+
+      let result = users.filter(user => {
+        if (!this.chosenGroupName) {
+          return true;
+        }
+
+        return user.studyGroups.find(
+          g => g.name === this.chosenGroupName
+        );
+      });
+
+      // for (let user of result) {
+      //   user.filteredSchedules = pickBy(
+      //     user.schedules,
+      //     userSchedule => {
+      //       return this.filteredHeadersIds.includes(userSchedule.id);
+      //     }
+      //   );
+      // }
+
+      return result;
+    },
+    // usersDatagridItems() {
+    //   return this.filteredUsers.map(user => {
+    //     user.filteredSchedules = values(user.schedules).filter(userSchedule => {
+    //       return this.filteredHeadersIds.includes(userSchedule.id);
+    //     });
+    //   });
+    // }
+  },
+  methods: {
+    getByPath,
+    // "20.03.2019" -> "2019-03-20"
+    parseRuDate(ruDate) {
+      if (!ruDate) return null;
+
+      const [day, month, year] = ruDate.split(".");
+      return `${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`;
+    },
+    toggleAll() {
+      if (this.selectedUsers.length) this.selectedUsers = [];
+      else this.selectedUsers = this.filteredUsers.slice();
+
+    },
+
+    /*
+      random* - временный код для генерации данных
+      TODO - удалить, принимать значения с бекэнда
+    */
+    randomCellType() {
+      let cellTypes = ['continuous', 'binary', 'ternary'];
+      let index = cellTypes.length - 1;
+      return cellTypes[random(index)];
+    },
+    randomBinaryValue() {
+      return !!random();
+    },
+    randomContiniousValue() {
+      if (random(1, 3) !== 1) {
+        return "";
+      }
+
+      return random(2, 5);
+    },
+
+    filterTableHeadersByDate(headers, dateRange) {
+      let filterDateBegin = dateRange[0];
+      let filterDateEnd = dateRange[1];
+
+      // let schedulesIDs = [];
+      return headers.filter(header => {
+        if (header.id === undefined) {
+          // не событие, служебный заголовок
+          return header;
+        }
+
+        let headerDateBegin = header.beginTime.split(" ")[0];
+        let headerDateEnd = header.endTime.split(" ")[0];
+
+        if (
+          (filterDateBegin && filterDateBegin > headerDateEnd) ||
+          (filterDateEnd && filterDateEnd < headerDateBegin)
+        ) {
+           return;
+        }
+
+        return header;
+      });
+    },
+    actionWithSelectedUsers() {
+      let usersId = this.selectedUsers.map(user => user.id);
+      let trainedEndpoint = this.$props.trainedEndpoint;
+      let rateEndpoint = this.$props.rateEndpoint;
+      /* TODO посылать выбранных юзеров по нужным эндпоинтам */
+      if (this.chosenAction === "Перевести в прошедшие обучение") {
+        axios
+          .post(trainedEndpoint, usersId)
+          .then(response => {
+            console.log(response);
+          })
+          .catch(error => {
+            console.error(error);
+          });
+      } else {
+        axios
+          .post(rateEndpoint, usersId)
+          .then(response => {
+            console.log(response);
+          })
+          .catch(error => {
+            console.error(error);
+          });
+      }
+    },
+    printTable() {
+      let usersTableData = this.createUsersTableData();
+      this.createPrintWindow(usersTableData, "table");
+    },
+    downloadExcelFile() {
+      let usersTableData = this.createUsersTableData();
+      let blob = this.createXlsx(usersTableData, "table");
+      this.downloadXlsx(blob);
+    },
+    downloadWordFile() {
+      let usersTableData = this.createUsersTableData();
+      let doc = this.createDoc(usersTableData, "table");
+      this.downloadDoc(doc);
+    },
+    createUsersTableData() {
+      let usersTableData = {
+        headers: [],
+        data: []
+      };
+      usersTableData.headers = this.filteredHeaders.map(header => header.text);
+      usersTableData.data = this.filteredUsers.map(user => {
+        let userData = [];
+        userData.push(user.name);
+        for (let schedule of user.schedules) {
+          userData.push(schedule.value ? "1" : "0");
+        }
+        userData.push(user.total.value === -1 ? "" : user.total.value);
+        userData.push(
+          user.certificate.value === -1 ? "" : user.certificate.value
+        );
+        return userData;
+      });
+      return usersTableData;
+    },
+    createSubjectLink(lessonId) {
+      let splittedPathname = window.location.pathname.split("/");
+      let origin = window.location.origin;
+      let subjectLink = "";
+      subjectLink =
+        origin +
+        "/lesson/result/index/lesson_id/" +
+        lessonId +
+        "/" +
+        splittedPathname[4] +
+        "/" +
+        splittedPathname[5];
+      return subjectLink;
+    },
+    cellsData(headers, gridItem) {
+      return headers.map(
+        (header) => {
+          let valuePath = header.value;
+          let value = getByPath(gridItem, valuePath);
+
+          return {
+            // gridItem,
+            header,
+            headerId: header.id,
+            value,
+            valuePath,
+            displayType: header.cellDisplayType,
+          }
+        },
+      );
+    },
+  }
+});
+
+export default HmStatementPerformanceTable;
+</script>
+
+<style lang="scss" scoped>
+.statement-performance {
+  &__filter {
+    &s {
+      display: flex;
+      align-items: flex-end;
+
+      > * + * {
+        margin-left: 32px;
+      }
+      margin-left: 60px;
+    }
+
+    &-group {
+      max-width: 320px;
+    }
+  }
+
+  &__table {
+    .cell {
+      position: relative;
+      padding-top: 20px;
+
+      &:last-child .cell__comment-icon {
+        right: 10px;
+      }
+
+      &:hover .cell__comment-icon {
+        display: block;
+      }
+
+      &__comment-icon {
+        display: none;
+        position: absolute;
+        top: 5px;
+        right: 0;
+
+        &--commented {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__filters-names {
+    margin-bottom: -30px !important;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+</style>

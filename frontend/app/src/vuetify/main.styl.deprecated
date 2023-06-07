@@ -1,0 +1,33 @@
+// deprecated after move to vuetify 2.0
+
+// Updates to new Material Design specs
+$button-border-radius = 4px
+$card-border-radius = 4px
+$sheet-border-radius = 4px
+
+@import '~vuetify/src/stylus/main'
+
+// Updates to new Material Design specs
+.v-btn
+  &.v-btn--outline
+    border: 2px solid currentColor
+
+.v-chip
+  &\&.v-chip--outline
+    border: 2px solid currentColor
+
+// Unfortunately outline label notch can be safely appointed
+// only with white background and light theme
+.v-text-field
+  &.v-text-field--outline
+    &.theme--light
+      input
+        margin-top: 12px
+      .v-label
+          top: 18px
+
+          &--active
+            transform: translateY(-6px) scale(.75)
+            top: -2px
+            background-color: $material-light.background
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modules>
+    <module name="Learning"      remover="HM_Extension_Remover_LearningRemover"      enable="true"/>
+    <module name="KnowledgeBase" remover="HM_Extension_Remover_KnowledgeBaseRemover" enable="true"/>
+    <module name="Orgstructure"  remover="HM_Extension_Remover_OrgstructureRemover"  enable="true"/>
+    <module name="Eclass"        remover="HM_Extension_Remover_EclassRemover"        enable="true"/>
+    <module name="Idea"          remover="HM_Extension_Remover_IdeaRemover"          enable="false"/>
+
+    <module name="At"               remover="HM_Extension_Remover_AtRemover"              enable="false"/>
+    <module name="AtCompetence"     remover="HM_Extension_Remover_AtCompetenceRemover"    enable="false"/>
+    <module name="AtCompetencePair" remover="HM_Extension_Remover_AtCompetencePairRemover" enable="false"/>
+	<module name="AtKpi"            remover="HM_Extension_Remover_AtKpiRemover"           enable="false"/>
+	<module name="AtTest"           remover="HM_Extension_Remover_AtTestRemover"          enable="false"/>
+	<module name="AtPsycho"         remover="HM_Extension_Remover_AtPsychoRemover"        enable="false"/>
+	<module name="AtForm"           remover="HM_Extension_Remover_AtFormRemover"          enable="false"/>
+
+    <module name="Recruit"       remover="HM_Extension_Remover_RecruitRemover"       enable="false"/>
+    <module name="Adapting"      remover="HM_Extension_Remover_AdaptingRemover"      enable="false"/>
+    <module name="Reserve"       remover="HM_Extension_Remover_ReserveRemover"       enable="false"/>
+    <module name="Rotation"      remover="HM_Extension_Remover_RotationRemover"      enable="false"/>
+    <module name="Tc"            remover="HM_Extension_Remover_TcRemover"            enable="false"/>
+    <module name="Mobile"        remover="HM_Extension_Remover_MobileRemover"        enable="false"/>
+    <module name="LaborSafety"   remover="HM_Extension_Remover_LaborSafetyRemover"   enable="false"/>
+    <module name="Project"       remover="HM_Extension_Remover_ProjectRemover"       enable="false"/>
+
+    <module name="Leasing"       remover="HM_Extension_Remover_LeasingRemover"       enable="false"/>
+    <module name="Offline"       remover="HM_Extension_Remover_OfflineRemover"       enable="false"/>
+</modules>

@@ -1,0 +1,50 @@
+@import "mixins";
+
+$layout-widget-flex-max-width: 1600px;
+$layout-widget-horizontal-gap: 36px;
+$layout-widget-vertical-gap: 36px;
+
+.hm-widgets-container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  //justify-content: center;
+
+  max-width: $layout-widget-flex-max-width;
+  margin: 0 auto;
+  padding: 0 ($layout-widget-horizontal-gap / 2);
+
+  .hm-widget-layout {
+    padding: 0 ($layout-widget-horizontal-gap / 2);
+    max-width: 100%;
+  }
+
+  .hm-widget-layout--default {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  .hm-widget-layout--wide {
+    flex-basis: 100%;
+  }
+
+  @media (max-width: $grid-breakpoint-md-end) {
+    .hm-widget-layout--default {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.hm-widget-layout {
+  margin-top: $layout-widget-vertical-gap;
+}
+
+@media(max-width: 768px) {
+  .hm-widgets-container-flex {
+    padding: 0;
+    & .hm-widget-layout {
+      padding: 0;
+      margin-top: 26px;
+      max-width: 100%;
+    }
+  }
+}

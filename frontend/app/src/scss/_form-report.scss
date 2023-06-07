@@ -1,0 +1,126 @@
+.at-form-report {
+  .photo-block {
+    padding-top: 16px;
+    padding-left: 16px;
+    img {
+      width: 100%;
+      max-width: 250px;
+    }
+  }
+  .headline-subheader {
+    font-size: 18px;
+    color: grey;
+  }
+  .resume-links {
+    font-size: 16px;
+  }
+  .v-card__title {
+    > div {
+      width: 100%;
+    }
+  }
+  .resume-report-list {
+    margin-bottom: 0;
+    min-width: 100%;
+    display: table;
+  }
+  .resume-report-list-key {
+    width: 30%;
+  }
+  .recruit-step-event {
+    h2 {
+      display: none;
+    }
+  }
+  &__table-td-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__table-row-input {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    &:last-child {
+      border: none;
+    }
+    & label {
+      margin-left: 5px;
+    }
+  }
+  &__table-row {
+    display: flex;
+    align-items: center;
+    margin: 0 !important;
+    height: 40px;
+    &:last-child {
+      border: none;
+    }
+  }
+  &__table-wrapper {
+    padding: 16px;
+
+    & *  {
+      font-size: 16px !important;
+      line-height: 18px !important;
+    }
+
+    & td {
+      padding: 10px !important;
+    }
+    & th {
+      padding: 16px 10px !important;
+      font-weight: 500;
+      font-style: normal
+    }
+  }
+  .chart-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-bottom: 16px;
+    padding: 16px;
+    &::-webkit-scrollbar-thumb:hover {
+      background: #70889E;
+    }
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      border-radius: 4px;
+    }
+    &::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #706e6e;
+      border-radius: 4px;
+    }
+  }
+}
+
+.hm-report-buttons {
+  margin-top: 15px !important;
+}
+
+.at-form-report-resume-html, .at-form-report-resume-small {
+  img {
+    max-width: 100%;
+  }
+  table {
+    border: none;
+    tr {
+      border-bottom: none !important;
+    }
+    td {
+      padding: 0 !important;
+      height: auto !important;
+      border: 0;
+    }
+    p{
+      margin-bottom: 0;
+    }
+  }
+}
+.report-list  {
+  p {
+    margin-bottom: 0;
+  }
+}

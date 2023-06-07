@@ -1,0 +1,50 @@
+@use 'sass:map'
+@import "../../../variables"
+
+
+.hm-recruiters-chat__message-form
+    position: relative
+    padding: 8px 16px
+    border-top: 1px solid #E5E5E5
+    &-input
+        height: 44px
+        box-sizing: border-box
+        width: 100%
+        padding: 10px 40px 10px 16px
+        color: #000
+        overflow-y: scroll
+        background: #F4F4F4
+        border-radius: 22px
+        &::-webkit-scrollbar
+            width: 0
+            height: 0
+        span
+            font-weight: bold
+            &[data-type="recruiter"]
+                color: #f2b600!important
+            &[data-type="vacancy"]
+                color:#46a243!important
+            &[data-type="candidate"]
+                color:#e57373!important
+            &[data-type="profile"]
+                color:#5965DB !important
+            &[data-type="candidate_phone"],
+            &[data-type="candidate_email"]
+                color:#52aced!important
+    &-btn-send
+        position: absolute
+        // top: 290px
+        width: 32px
+        height: 32px
+        right: 20px
+        top: 14px !important
+        border: none
+        color: #fff !important
+        letter-spacing: .02em
+        border-radius: 4px
+        background: url(/images/send.svg) 50% no-repeat
+        -webkit-transition: .2s
+        transition: .2s
+        &:hover
+            background: url('/images/send-hover.svg') 50% no-repeat
+            transition: 0.2s

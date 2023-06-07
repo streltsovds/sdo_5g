@@ -1,0 +1,42 @@
+.hm-like-button-like {
+    margin-right: 10px;
+}
+
+.hm-like-button-like, .hm-like-button-dislike {
+    color: #a5a5a5;
+    border-bottom: 1px dotted #a5a5a5;
+    cursor: pointer;
+}
+
+.hm-like-button-like:hover, .hm-like-button-dislike:hover {
+    color: #858585;
+}
+
+.hm-like-button-like-image, .hm-like-button-dislike-image {
+    background: transparent url(../../image/ui/like/like.png) 0 0 no-repeat;
+    width: 11px;
+    height: 12px;
+    display: inline-block;
+    position: relative;
+}
+
+.hm-like-button-dislike-image {
+    background-position: -11px 0;
+    top: 3px;
+}
+
+.hm-like-liked .hm-like-button-like-image {
+    background-position: -22px 0;
+}
+
+.hm-like-liked .hm-like-button-like {
+    color: #4a4a4a;
+}
+
+.hm-like-disliked .hm-like-button-dislike-image {
+    background-position: -33px 0;
+}
+
+.hm-like-disliked .hm-like-button-dislike {
+    color: #494949;
+}

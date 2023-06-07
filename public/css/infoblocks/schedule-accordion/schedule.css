@@ -1,0 +1,120 @@
+.schedule-accordion {
+  padding: 4px 0;
+}
+
+.page-context-accordion .ui-accordion-content .schedule-accordion ul li {
+	border: 0;
+}
+
+.schedule-accordion .lesson_bg_img_small {
+	float: left;
+	height: 32px;
+	width: 32px;
+    background-color: #cccccc !important;
+    background-image: none !important;
+    border-radius: 16px !important;
+    border: none !important;
+    overflow: hidden !important;
+    line-height: 32px !important;
+    vertical-align: middle !important;	
+}
+
+.schedule-accordion .lesson_bg_img_small img {
+	height: 24px;
+	width: 24px;
+	margin: 0 0 0 4px;
+}
+
+.schedule-accordion > h4 {
+  font-weight: normal;
+  margin-bottom: 0.7em;
+  font-size: 1.2em;
+}
+.schedule-accordion ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.schedule-accordion li {
+  padding: 5px 4px 4px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #a6a6a6;
+  zoom: 1;
+}
+.schedule-accordion li:before,
+.schedule-accordion li:after {
+  content: "";
+  display: table;
+}
+.schedule-accordion li:after {
+  clear: both;
+}
+.schedule-accordion li.first {
+  border-top-width: 0;
+}
+.schedule-accordion li.last {
+  border-bottom-width: 0;
+}
+
+.schedule-accordion li > .title {
+  margin: 0 6px;
+  display: block;
+  float: left;
+  width: 120px;
+}
+
+.schedule-accordion li > .pit {
+	float: left;
+	width: 35px;
+	display: block;
+}
+
+.schedule-accordion li > .pit .text {
+	color: #888;
+	font-size: 10px;
+	text-align: right;
+}
+
+.schedule-accordion li.infinite > .pit .text {
+	font-size: 20px;
+}
+
+.schedule-accordion li.overdue > .pit .bg {
+  background-color: #f94749;
+  -webkit-box-shadow: #f94749 0 0 3px;
+  box-shadow: #f94749 0 0 3px;
+  color: #fff;
+}
+
+
+.schedule-accordion .schedule-full {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+.schedule-accordion .schedule-full > a {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 2px 4px;
+  -webkit-transition-property: color, background-color;
+  -moz-transition-property: color, background-color;
+  -o-transition-property: color, background-color;
+  -ms-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.schedule-accordion .schedule-full > a:hover,
+.schedule-accordion .schedule-full > a:active {
+  background-color: transparent;
+}
+.page-context-accordion .schedule-accordion .schedule-full > a,
+.page-context-accordion .schedule-accordion .schedule-full > a:visited,
+.page-context-accordion .schedule-accordion .schedule-full > a:link {
+  color: #fff;
+}
+.page-context-accordion .schedule-accordion .schedule-full > a:hover,
+.page-context-accordion .schedule-accordion .schedule-full > a:active {
+  color: inherit;
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<roles>
+    <role>
+        <name>enduser</name>
+        <blocks>
+            <block>
+                <title>Кадровый резерв</title>
+                <name>reserveBlock</name>
+            </block>
+            <block>
+                <title>Кадровый резерв</title>
+                <name>reserveRespondentBlock</name>
+            </block>
+            <block>
+                <title>Адаптация</title>
+                <name>adaptationBlock</name>
+            </block>
+            <block>
+                <title>Ротация</title>
+                <name>rotationBlock</name>
+            </block>
+            <block>
+                <title>Обратная связь</title>
+                <name>feedbackBlock</name>
+                <description>Предназначен для сбора обратной связи от пользователей; в виджете представлен  список мероприятий по сбору обратной связи; мероприятия сгруппированы по курсам; мероприятия, не связанные с курсом, представлены в отдельном разделе</description>
+            </block>
+        </blocks>
+    </role>
+    <role>
+        <name>supervisor</name>
+        <blocks>
+            <block>
+                <title>Напоминание о замещении</title>
+                <name>deputyBlock</name>
+            </block>
+            <block>
+                <title>Обратная связь руководителя</title>
+                <name>feedbackBlock</name>
+                <description>Предназначен для сбора обратной связи от пользователей (руководителей); в виджете представлен  список мероприятий по сбору обратной связи; мероприятия сгруппированы по курсам; мероприятия, не связанные с курсом, представлены в отдельном разделе</description>
+            </block>
+        </blocks>
+    </role>
+</roles>

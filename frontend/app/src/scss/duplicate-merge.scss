@@ -1,0 +1,9 @@
+.duplicate-merge {
+    &__duplicate {
+        & > div,
+        .v-card,
+        .theme--light.v-list {
+            background-color: #F6D7CB !important;
+        }
+    }
+}

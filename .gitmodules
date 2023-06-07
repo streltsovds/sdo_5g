@@ -1,0 +1,10 @@
+[submodule "library/Symfony/Console"]
+	path = library/Symfony/Console
+	url = https://github.com/symfony/Console.git
+[submodule "library/Symfony/Component/Console"]
+	path = library/Symfony/Component/Console
+	url = https://github.com/symfony/Console.git
+[submodule "tools/FrontendBuilder"]
+	path = tools/FrontendBuilder
+	url = ../frontend
+	branch = manager/client/master

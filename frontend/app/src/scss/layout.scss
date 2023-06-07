@@ -1,0 +1,324 @@
+html {
+  overflow-y: auto;
+}
+
+html.hm-modal-is-shown {
+  overflow-y: hidden;
+}
+
+.main-nav {}
+
+.v-main.sidebar-is-hovering {
+  padding-right: 0px;
+}
+
+.layout-content-header {
+  margin-bottom: 26px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-right: 0 !important;
+}
+
+.container,
+.wrapper-headers-and-content:not(.layout-content-full-width) {
+  padding: 26px;
+}
+
+.breakpoint-sm-and-down {
+  .container,
+  .wrapper-headers-and-content:not(.layout-content-full-width) {
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-right: 16px;
+  }
+}
+
+/** тоже .container */
+.wrapper-headers-and-content {
+  &.layout-content-full-width {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    > .layout {
+      margin: 0 !important;
+    }
+
+    .layout-content-header {
+      margin-left: 24px;
+      margin-top: 16px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &:not(.layout-content-full-width) {
+  }
+}
+
+.hm-sidebar {
+  /* над заголовками таблицы в результатах курса */
+  z-index: 101 !important;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 4px 5px, rgba(0, 0, 0, 0.14) 0 2px 4px !important;
+}
+
+.hm-nav-menu {
+  height: 100%;
+
+  &__layout {
+    height: 100%;
+  }
+
+  &__logo {
+    flex-grow: 0;
+    margin-bottom: 20px;
+  }
+
+  .open-list-links
+  {
+    svg {
+      width: 24px !important;
+    }
+  }
+}
+
+.hm-sidebar:not(.share-width-with-content).v-navigation-drawer--clipped,
+.hm-nav-menu:not(.share-width-with-content):not(.hm-nav-menu-mini).v-navigation-drawer--clipped {
+  padding-top: 64px;
+}
+
+.hm-nav-menu.hm-nav-menu-mini,
+.hm-nav-menu.share-width-with-content {
+  /* лёгкая тень */
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.14);
+}
+
+.hm-app-content {
+  /* опускаем footer за экран */
+  min-height: 100vh;
+  padding-bottom: 34px !important;
+  background-color: #fafafa;
+}
+
+#hm-vue-app.app-content-fullscreen {
+  max-height: 100%;
+  overflow: hidden;
+
+  > .v-application > .v-application--wrap {
+    position: static;
+
+    footer {
+      display: none;
+    }
+
+    > .hm-app-content > .v-main__wrap {
+      position: static;
+    }
+  }
+}
+
+//subject-classifiers
+.subject-classifiers {
+  max-height: 438px;
+}
+
+//// скроллбар на webkit (Общий, нужно контейнеру просто задать класс)
+
+
+.widgets__height {
+   .hm-interface-edit_draggable-item .v-card__title {
+     padding-right: 50%;
+   }
+   .infoblock-card {
+    > span {
+      > div {
+        max-height: 535px ;
+        overflow-x: auto;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+          width: 4px;
+          height: 4px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+          border-radius: 4px;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+          background: #706e6e;
+          border-radius: 4px;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+          background: #70889E;
+        }
+        &::-webkit-scrollbar-track {
+          -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+          border-radius: 4px;
+        }
+        &::-webkit-scrollbar {
+          width: 4px;
+          height: 4px;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: #706e6e;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
+
+
+.hm__scrollbar {
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    border-radius: 4px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #706e6e;
+    border-radius: 4px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #70889E;
+  }
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #706e6e;
+    border-radius: 4px;
+  }
+}
+
+.hm-app {
+  &__sidebars-togglers {
+    button.hm-sidebar-toggle {
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+  }
+}
+@media(max-width: 959px) {
+  .layout-content-header {
+    margin-bottom: 16px;
+    padding-top: 56px;
+  }
+  .hm-sidebar:not(.share-width-with-content).v-navigation-drawer--clipped,
+  .hm-nav-menu:not(.share-width-with-content):not(.hm-nav-menu-mini).v-navigation-drawer--clipped {
+    padding-top: 56px;
+  }
+}
+@media(max-width: 600px) {
+  .hm-sidebar:not(.share-width-with-content).v-navigation-drawer--clipped,
+  .hm-nav-menu:not(.share-width-with-content):not(.hm-nav-menu-mini).v-navigation-drawer--clipped {
+    padding-top: 104px;
+  }
+
+  .v-toolbar__content .v-btn.v-btn--icon,
+  .v-toolbar__extension .v-btn.v-btn--icon {
+    width: 40px !important;
+    height: 40px !important;
+    &:last-child,
+    &:first-child {
+      margin: 0 !important;
+    }
+  }
+}
+.dialog-reappointment {
+  max-width: 900px;
+  .modal-reappointment {
+    display: flex;
+    flex-direction: column;
+    padding: 26px 36px !important;
+    height: 65vh;
+    & h3 {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 26px;
+      letter-spacing: 0.02em;
+      color: #1E1E1E;
+      margin-bottom: 35px;
+    }
+    &__list {
+      max-height: calc(100% - 185px);
+      overflow: auto;
+      padding: 0;
+      &::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #706e6e;
+        border-radius: 4px;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background: #70889E;
+      }
+      &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 4px;
+      }
+    }
+    & .v-list-item {
+      padding: 0;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      color: #1E1E1E;
+      min-height: min-content;
+      margin-bottom: 12px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+    &__buttons {
+      margin-top: auto;
+      & p {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        color: #424242;
+        margin-bottom: 0 !important;
+      }
+      .hm-submit {
+        min-width: 145px !important;
+        width: 145px !important;
+        margin-right: 26px;
+        & button {
+          background-color: #FF9800 !important;
+          width: 145px !important;
+          box-shadow: none !important;
+        }
+      }
+      .hm-submit-link {
+        min-width: 145px !important;
+        width: 145px !important;
+        & a {
+          background-color: inherit !important;
+          border: 1px solid #485B70 !important;
+          color: #000000 !important;
+          box-shadow: none !important;
+        }
+      }
+    }
+  }
+
+}

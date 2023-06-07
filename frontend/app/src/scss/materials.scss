@@ -1,0 +1,43 @@
+/**
+ * TODO вынести в компонент (?)
+ *
+ * @see application/modules/els/kbase/views/scripts/resource/index.tpl
+ * @see application/views/helpers/views/material/image.tpl
+ */
+
+/*
+  .material-preview-responsive {
+    display: block;
+  }
+*/
+
+.hm-material-responsive {
+  //max-height: calc(100vh - 160px);
+
+  .state-fullscreen {
+    max-height: unset;
+  }
+}
+
+//.hm-material {
+//  display: flex;
+//  flex-direction: column;
+//  align-items: center;
+//  //max-height: calc(100vh - 160px);
+//  overflow: visible;
+//
+//  //&__content {
+//  //  min-height: 150px;
+//  //  min-width: 500px;
+//  //
+//  //  overflow: hidden;
+//  //  background-color: #333;
+//  //}
+//
+//  //&__label {
+//  //  font-size: 24px;
+//  //  line-height: 32px;
+//  //  letter-spacing: 0.02rem;
+//  //  margin-top: 26px;
+//  //}
+//}

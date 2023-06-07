@@ -1,0 +1,671 @@
+/*.document-blank {
+	background: #fff;
+}
+.document-blank #container {
+	padding-top: 1px;
+	margin-top: -1px;
+}
+.document-blank #main {
+	margin: 0;
+	padding: 0;
+}
+.document-blank #main .els-box,
+.document-blank #main .els-content {
+	margin: 0;
+	display: none;
+}
+.document-blank .error-box {
+	margin: 0.5rem;
+}
+.document-blank #main .els-content {
+	display: block;
+} */
+.clearfix { clear: both }
+@media print {
+  body {
+    font-size: 17px !important;
+  }
+}
+
+.at-form.at-form-with-additional {
+  float: left;
+}
+
+.at-form.at-form-results {
+  width: 100%;
+}
+
+.at-form.at-form-with-additional {
+  width: -moz-calc(45% - 80px);
+  width: -webkit-calc(45% - 80px);
+  width: -o-calc(45% - 80px);
+  width: calc(45% - 80px);
+}
+
+.at-form-additional {
+  float: right;
+  display: none;
+  width: -moz-calc(55% - 80px);
+  width: -webkit-calc(55% - 80px);
+  width: -o-calc(55% - 80px);
+  width: calc(55% - 80px);
+}
+
+.at-form-additional .report-link-container {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.at-form-report h2 {
+  /* border-bottom: 1px solid #ffffff; */
+  padding: 12px 0;
+  margin-bottom: 0;
+}
+
+.at-form .indicator-status {
+  margin: 0.7em 0;
+}
+
+.at-form-report {
+  color: #000;
+}
+
+.at-form-report-resume {
+  color: #000;
+  /*margin: auto;*/
+  /*padding: 10px;*/
+}
+
+.at-form-report-resume.at-form-report-resume-narrow {
+  width: 840px;
+  float: left;
+}
+
+.at-form-report h1 {
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin-bottom: 1.2em;
+  color: #000;
+}
+
+#at-form-report-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 0.2em;
+  text-align: left;
+}
+
+#resume-short-description {
+  font-size: 1.3rem;
+  color: grey;
+  margin-bottom: 10px;
+}
+
+#resume-links {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+#resume-place {
+  font-size: .9rem;
+  margin: 10px 0;
+}
+
+#preffered-link {
+  color: grey;
+}
+
+.at-form-report h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.at-form-report h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 0.7em;
+}
+
+.at-form-report .footnotes a.edit,
+.at-form-report h2 a.edit {
+  padding: 0 20px;
+  text-decoration: none;
+  background: url('../../images/blog/controls-edit.png') center center no-repeat;
+}
+
+.at-form-report p {
+  margin-bottom: 2.1em;
+}
+
+.at-form-report h3.report-chart-title {
+  font-style: italic;
+  font-weight: normal;
+}
+
+.at-form-report .report-chart .inline,
+.at-form-report .report-chart .inline {
+  width: 46%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.at-form-report .report-chart .amcharts-balloon-div {
+  display: none;
+}
+
+.at-form-report .report-chart g[style='pointer-events: none'] {
+  display: none;
+}
+
+.at-form-report .report-chart-graph {
+  max-width: 55%;
+}
+
+.at-form-report .report-chart-graph > div {
+  margin-top: auto;
+  width: 100% !important;
+}
+
+.at-form-report table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 2.1em;
+}
+
+.at-form-report-resume table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 0em;
+}
+
+.at-form-report td,
+.at-form-report th {
+  border: 1px solid #bfbfbf;
+  padding: 8px;
+  vertical-align: top;
+}
+
+.at-form-report th {
+  font-style: italic;
+  font-weight: normal;
+  background-color: #eaeaea;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 10px;
+}
+
+.at-form-report td.enumerate {
+  text-align: center;
+}
+
+.at-form-report td.total {
+  font-weight: bold;
+}
+
+.at-form-report .footnotes {
+  margin: -2em 0 0;
+}
+
+.at-form-report td.ratio-hi {
+  background-color: #ccffcc;
+}
+
+.at-form-report td.ratio-me {
+  background-color: #ffff99;
+}
+
+.at-form-report td.ratio-lo {
+  background-color: #ff9999;
+}
+
+.at-form-report .report-summary .left-block,
+.at-form-report .report-summary .right-block {
+  width: 45%;
+  *width: 44.99%;
+  float: left;
+  margin-right: 40px;
+}
+
+.at-form-report .report-summary .left-wide-block,
+.at-form-report .report-summary .right-wide-block {
+  width: 68%;
+  *width: 67.99%;
+  float: left;
+}
+
+.at-form-report .report-summary .photo-block {
+  float: left;
+  width: 170px;
+}
+
+.at-form-report .report-summary .right-photo-block {
+  float: right;
+  margin-bottom: 20px;
+  /*width: 80%;*/
+}
+
+.at-form-report .report-summary .photo-block img,
+.at-form-report .report-summary .right-photo-block img {
+  width: 155px;
+}
+
+.at-form-report .resume-margin {
+  margin: 10px 0 10px 0;
+}
+
+.at-form-report table.report-list {
+  margin-bottom: 2.1em;
+  border: 0;
+}
+
+.at-form-report table.report-list td {
+  padding: 6px;
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+  border-right: 0;
+  border-left: 0;
+}
+
+.at-form-report td.report-list-key {
+  font-weight: normal;
+  width: 50%;
+}
+
+.at-form-report td.resume-report-list-key {
+  font-weight: normal;
+  width: 30%;
+}
+
+.at-form-report td.report-list-key-progress {
+  font-weight: normal;
+  width: 50%;
+  vertical-align: middle;
+}
+
+.at-form-report td.report-list-value {
+  font-weight: bold;
+}
+
+.at-form-report .report-list-percent-value {
+  float: left;
+  width: 45px;
+  padding-right: 5px;
+  text-align: right;
+}
+
+.at-form-report td.report-list-value-progress {
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.at-form-report .report-blank hr {
+  width: 100%;
+  margin: 24px 0;
+}
+
+.at-form-report .report-list-brief td.report-list-key {
+  width: 20%;
+}
+
+.at-form-report .report-list-without-keys td.report-list-key {
+  display: none;
+}
+
+.at-form-report .report-list-without-keys td.report-list-value {
+  font-weight: normal;
+  text-align: left !important;
+}
+
+.at-form-report .report-blank .report-blank-title {
+  font-style: italic;
+}
+
+.at-form-report .signature {
+  clear: both;
+}
+
+.at-form-report .signature div {
+  float: left;
+  width: 120px;
+  margin: 6px 0;
+}
+
+.at-form-report em.comment {
+  color: #ddd;
+  display: block;
+  padding-bottom: 80px;
+}
+
+.at-form-report .report-no-value {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.at-form-report .report-no-value-table {
+  font-style: italic;
+  padding: 10px;
+}
+
+.at-form-report .attention {
+  margin: 10px 0;
+  padding: 10px;
+  color: red;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: 1px solid red;
+}
+
+.at-form-report .ball {
+  color: black;
+  font-weight: bold;
+}
+
+.at-form .tooltip {
+  right: auto;
+  top: 5px;
+}
+
+.mremos-container {
+  margin: 20px 0;
+}
+
+.mremos-container .textarea-fields {
+  margin-top: 2em;
+}
+
+.mremos-container .textarea-fields .textarea-wrapper {
+  *zoom: 1;
+  border: 1px solid #b6bfc3;
+  padding: 0.5em;
+  background-color: #e6eaec;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.mremos-container .textarea-fields label {
+  color: #5d6970;
+  margin: 0 0 0.5em;
+  display: block;
+}
+
+.mremos-container .textarea-fields textarea {
+  border: 0 solid;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  *zoom: 1;
+  background: transparent;
+  height: 10em;
+}
+
+.mremos-container .textarea-fields textarea.placeholder {
+  color: #bbb;
+}
+
+.mremos-container .textarea-fields textarea::-webkit-input-placeholder {
+  color: #bbb;
+}
+
+.mremos-container .textarea-fields textarea:-moz-placeholder {
+  color: #bbb;
+}
+
+.at-form-report .progress {
+  border: 1px dotted #bbb;
+  padding: 6px;
+  width: 46% !important;
+  background: #f8f8f8;
+}
+
+.at-form-report .progress h2 {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.at-form-report .progress table {
+  margin-bottom: 0;
+}
+
+.at-form-report .progress table.report-list td {
+  border-width: 0;
+  padding: 2px;
+  font-size: 10px;
+}
+
+.els-quest-reports .report-chart {
+  margin-top: 50px;
+}
+
+.els-quest-reports .report-chart-title {
+  font-size: 18px;
+  /* margin-bottom: -30px; */
+  /* margin-left: 70px; */
+}
+
+.els-quest-reports .report-chart-table {
+  margin-top: 30px;
+}
+
+.els-quest-reports .report-chart-graph {
+  /*margin-left: -150px;*/
+}
+
+.at-form .criterion-description {
+  font-size: 12px;
+  font-weight: normal;
+  color: #555;
+  width: 180px;
+  text-align: justify;
+}
+
+.at-form .criterion-description.indicator-description {
+  text-align: left;
+}
+
+.at-form-report .report-link {
+  display: block;
+  width: 120px;
+  height: 120px;
+  background: url('../../images/icons/report-link.png') top center no-repeat;
+  padding-top: 100px;
+  text-align: center;
+  color: #888;
+  text-decoration: none;
+  float: right;
+  margin: 10px 0 0 20px;
+}
+
+.at-form-report .report-link.download-report-link {
+  background: url('../../images/icons/download-report-link.png') top center
+    no-repeat;
+  width: 130px;
+}
+
+@media print {
+  html,
+  body {
+    background: #fff !important;
+  }
+  a[href]:after {
+    content: '';
+  }
+  #ZFDebug_debug {
+    display: none;
+  }
+  .form-submit {
+    display: none;
+  }
+  .pagebreak {
+    display: block;
+    height: 0;
+    page-break-after: always;
+  }
+  .at-form-report .report-chart-graph {
+    max-width: 60%;
+  }
+  .at-form-report .title-list h1 {
+    margin-top: 9cm;
+  }
+  .at-form-report .title-list h1,
+  .at-form-report .title-list h2 {
+    text-align: right;
+  }
+  .at-form-report .title-list .footer {
+    margin-top: 7cm;
+    text-align: center;
+  }
+}
+
+/* отдельные стили для теста в виджете */
+
+/* с элементами хардкода */
+
+#manyQuizzesBlock-box .hm-widgets-widget-content {
+  height: auto !important;
+}
+
+#manyQuizzesBlock .at-form,
+#manyQuizzesBlock .at-competence {
+  padding: 0;
+  margin: 0;
+}
+
+#manyQuizzesBlock .at-competence > h2,
+#manyQuizzesBlock .quest-question h4 {
+  display: none;
+}
+
+#manyQuizzesBlock .quest-question .title img {
+  max-width: 450px;
+  max-height: 300px;
+  cursor: pointer;
+}
+
+.els-quest-reports .report-chart-table img {
+  width: 100px;
+}
+
+
+/*************************************************************************************/
+
+
+.ui-dialog {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #3aa4c9 #3aa4c9 #3aa4c9 #3aa4c9;
+	background-color: white;
+	padding: 0;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.ui-dialog .ui-icon {
+	background-image: url('../images/ui-icons_ffffff_256x240.png');
+}
+
+.ui-dialog .ui-widget-header,
+.ui-dialog .ui-widget-header a,
+.ui-dialog .ui-widget-content,
+.ui-dialog .ui-widget-content a {
+	color: #333333;
+}
+
+.ui-dialog .ui-widget-content {
+	background-color: transparent;
+}
+
+.ui-dialog .ui-dialog-content,
+.ui-dialog .ui-dialog-buttonpane,
+.ui-dialog .ui-dialog-content-wrapper {
+	margin: 0 0.818em;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	border-top: 1px solid #3aa4c9;
+	background-color: transparent;
+	padding: 0.8em 0.818em;
+	word-wrap: break-word;
+}
+
+.ui-dialog .ui-dialog-titlebar .ui-dialog-title {
+	float: none;
+	display: block;
+	margin-right: 30px;
+	color: white;
+}
+
+.ui-dialog .ui-dialog-titlebar .ui-dialog-gradient {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+	height: 100%;
+	overflow: hidden;
+}
+
+.ui-dialog .ui-dialog-titlebar .ui-dialog-gradient div {
+	height: 50%;
+	overflow: hidden;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+	right: 0.818em;
+	top: 1.5em;
+}
+
+.ui-dialog .ui-dialog-titlebar-close:hover,
+.ui-dialog .ui-dialog-titlebar-close:focus {
+	background-color: transparent;
+	padding: 0;
+	border: 1px solid white;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.ui-dialog .ui-dialog-content-wrapper {
+	border-top: 1px solid transparent;
+}
+
+.ui-dialog .ui-dialog-content-wrapper .ui-dialog-content {
+	margin: 0;
+}
+
+.ui-dialog .ui-dialog-content {
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid #27748f;
+	padding: 1em;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+	border-top: 1px solid #76c0d9;
+	background-color: transparent;
+	padding: 0.8em 0;
+}
+
+.ui-dialog .ui-dialog-buttonpane button:not(:last-of-type) {
+	margin-right: 7px;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+	margin-bottom: 5px;
+	margin-right: 3px;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+	margin: 0.5em 1.454em 0.5em 0;
+	margin: 0.5em 0.727em 0.5em 0;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	border: 1px solid #b1c0ca;
+	-moz-box-shadow: inset 0px 0px 1px 1px white;
+	-webkit-box-shadow: inset 0px 0px 1px 1px white;
+	box-shadow: inset 0px 0px 1px 1px white;
+	color: #5d6970;
+}
+

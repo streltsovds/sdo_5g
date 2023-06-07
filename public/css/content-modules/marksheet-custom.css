@@ -1,0 +1,56 @@
+
+.dateFilterDesc { width: 2em; float: left; text-align: right; padding-right: 5px; }
+
+.dateFilter {
+    margin-bottom: 5px;
+    width: 110%;
+    height: 40px;
+    text-decoration: none;
+    background-color: #FF9800;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.filter_wrap .filterSubmit { line-height: 4.6em; }
+
+.filter_wrap .filterContent { padding: 3px 0; }
+
+.filter_wrap .classFWrap { display: inline-block; margin: 0; padding: 5px; vertical-align: middle; }
+
+.report-constructor { display: inline-block; }
+
+.filter_wrap .field-filters { border-radius: 12px 12px 12px 12px; cursor: pointer; display: inline-block; height: 23px; left: 667px; top: 5px; visibility: visible; width: 151px; background-position: -151px -104px; background-image: url(../../images/application/report/btt.gif); }
+
+.filter_wrap .disabled-field-filters { background-position: 0 -104px; }
+
+.filter_wrap .dateFilterGroupDesc { width: 6em; float: left; }
+
+.field-filters-dbl strong, .field-filters-dbl em { font-size: 0.8em; }
+
+.filter_wrap .field-icon { cursor: pointer; display: inline-block; float: left; height: 17px; left: 6px; position: relative; top: 2px; width: 17px; }
+
+.filter_wrap .field-filters-value { visibility: visible; display: block; height: 22px; left: 16px; overflow: hidden; position: relative; top: 0; width: 114px; line-height: 1.7em; }
+
+.filter_wrap .field-filters-value-date { line-height: 0.9em; }
+
+
+.filter_wrap_nodata:before, .filter_wrap_nodata:after { content: ""; display: table; }
+.filter_wrap_nodata:after { clear: both; }
+.filter_wrap_nodata {
+    position: static;
+    *zoom: 1;
+}
+
+
+.filterSelect select { width: 300px; }

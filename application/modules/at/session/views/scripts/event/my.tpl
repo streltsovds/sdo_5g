@@ -1,0 +1,1 @@
+<hm-at-session-events :description='view.sessionDescription' :groups='view.groups' />

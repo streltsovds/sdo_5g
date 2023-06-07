@@ -1,0 +1,16 @@
+<?php
+    echo $this->card(
+        $this->provider,
+        array_merge(
+            array('name' => _('Название')),
+            strlen($this->provider->description) ?
+                array('description' => _('Краткое описание')) : array(),
+            array('getCities(true)'       => _('Город'))
+        ),
+        array(
+        'title' => _('Карточка учебного центра'),
+        'noico' => true
+        )
+    );
+?>
+
